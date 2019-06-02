@@ -20,25 +20,44 @@
 
 def main():
     N = int(input())
-    lst = list(map(int,input().split()))
-    a,b = bubbleSort(lst[:])
-    print(a)
+    alst = list(input().split())
+    a,b = bubbleSort(alst[:])
+    print(' '.join(map(str,a)))
     print(b)
 
-    a,b = insertionSort(lst[:])
-    print(a)
+    a,b = selectionSort(alst[:])
+    print(' '.join(map(str,a)))
     print(b)
     
 def bubbleSort(lst):
-  j = len(lst) - 1
-  bcnt = 0
-  while j:
-    for i in range(j):
-      if lst[i] > lst[i + 1]:
-        lst[i], lst[i + 1] = lst[i + 1], lst[i]
-        bcnt += 1
-    j -= 1
-  return bcnt
+    j = len(lst) - 1
+    isStateble = 'Stable'
+    bcnt = 0
+    while j:
+        for i in range(j):
+            if int(lst[i][1]) > int(lst[i + 1][1]):
+                lst[i], lst[i + 1] = lst[i + 1], lst[i]
+                bcnt += 1
+        j -= 1
+        #return bcnt,isStateble
+    return lst,isStateble
+
+def selectionSort(lst):
+    isStateble = 'Stable'
+    cnt = 0
+    for i in range(len(lst)):
+        minj = i
+        for j in range(i,len(lst)):
+            if(lst[j][1] < lst[minj][1]):
+                minj = j
+        if lst[i][1] > lst[minj][1]:
+            lst[i],lst[minj] = lst[minj],lst[i]
+            cnt += 1
+            if not(((i+1) == minj) or ((i-1) == minj)):
+                isStateble = 'Not stable'
+
+    return lst,isStateble
+    # return lst,cnt
 
 def insertionSort(lst):
     for i in range(1,len(lst)):
