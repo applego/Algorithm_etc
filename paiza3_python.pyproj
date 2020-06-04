@@ -26,6 +26,7 @@
     <Compile Include="AlgorithmAndDataStructure\ALDS1_2_B_SelectionSort.py" />
     <Compile Include="AlgorithmAndDataStructure\ALDS1_2_C_StableSort.py" />
     <Compile Include="AlgorithmAndDataStructure\ALDS2_1_MaximumProfit.py" />
+    <Compile Include="AOJ\ITP1_8_A_TogglingCases.py" />
     <Compile Include="AtCoder\ATC_001_DFS.py" />
     <Compile Include="templates\cheat_sheet.md">
       <SubType>Code</SubType>
