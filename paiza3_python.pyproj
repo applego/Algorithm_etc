@@ -26,17 +26,29 @@
     <Compile Include="AlgorithmAndDataStructure\ALDS1_2_B_SelectionSort.py" />
     <Compile Include="AlgorithmAndDataStructure\ALDS1_2_C_StableSort.py" />
     <Compile Include="AlgorithmAndDataStructure\ALDS2_1_MaximumProfit.py" />
+    <Compile Include="AOJ\ITP1_8_A_TogglingCases.py" />
+    <Compile Include="AtCoder\ATC_001_DFS.py" />
+    <Compile Include="templates\cheat_sheet.md">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="templates\regular_expression.py" />
+    <Compile Include="templates\operate_string.py" />
+    <Compile Include="templates\nibutan.py" />
+    <Compile Include="templates\template1.py" />
+    <Compile Include="AOJ\ITP1_7_D_Matrix Multiplication.py" />
     <Compile Include="AOJ\ITP1_1_C_Rectangle.py" />
     <Compile Include="AtCoder\ABC122_A.py" />
     <Compile Include="AtCoder\ABC122_B.py" />
     <Compile Include="AtCoder\ABC122_C.py" />
     <Compile Include="AtCoder\A_1.py" />
     <Compile Include="paiza3_python.py" />
+    <Compile Include="templates\アルゴリズムロジック_loop_search.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AlgorithmAndDataStructure\" />
     <Folder Include="AOJ\" />
     <Folder Include="AtCoder\" />
+    <Folder Include="templates\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
