@@ -34,5 +34,36 @@ class Dice:
             self.dice_list[4] = work[4]
             self.dice_list[5] = work[3]
 
+    def roll_until_index0top(self, num0):
+        if self.dice_list[0] == num0:
+            return
+        commands = ['E', 'E', 'E', 'N', 'N', 'N']
+        for c in commands:
+            self.roll(c)
+            if self.dice_list[0] == num0:
+                return
+        else:
+            print('error')
+
+    def get_index_by_number(self, num):
+        for i in range(len((self.dice_list))):
+            if self.dice_list[i] == num:
+                return i
+        else:
+            return -1
+
+    def get_index2_number(self, num1):
+        index1 = self.get_index_by_number(num1)
+        if index1 == 1:
+            return self.dice_list[2]
+        elif (index1 == 2):
+            return self.dice_list[4]
+        elif (index1 == 3):
+            return self.dice_list[1]
+        elif (index1 == 4):
+            return self.dice_list[3]
+        else:
+            print('error 2')
+
     def getTop(self):
         return self.dice_list[0]
