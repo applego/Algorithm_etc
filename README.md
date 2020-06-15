@@ -9,3 +9,7 @@
 - push前にpullする
 - origin/develop→origin/master
   はpull request
+
+- win_dell機での開発→win_dellブランチ
+  origin/win_dell→origin/develop
+  はpull request
