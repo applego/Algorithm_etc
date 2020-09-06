@@ -30,3 +30,10 @@ Test.assert_equals(move_zeros([]), [])
 # [9, 0.0, 9, 1, 2, 1, 1, 0.0, 3, 1, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0]
 # should equal
 # [9, 9, 1, 2, 1, 1, 3, 1, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+def move_zeros2(arr):
+    l = [i for i in arr if isinstance(i, bool) or i!=0]
+    return l + [0] * (len(arr) - len(l))
+
+def move_zeros3(array):
+    return sorted(array, key=lambda x: x == 0 and x is not False)
