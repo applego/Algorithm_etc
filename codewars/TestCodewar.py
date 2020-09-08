@@ -20,6 +20,14 @@ class Test(unittest.TestCase):#
       print(expectedAnswer)
       return False
 
+  def expect(self, isCorrect, msg):
+    if isCorrect:
+      print('correct')
+    else:
+      print(msg)
+
+
+
 # todo static（classmethodにしたい）
   # @classmethod
   # def assert_equals(cls, myAnswer, expectedAnswer):
