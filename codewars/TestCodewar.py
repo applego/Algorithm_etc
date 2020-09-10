@@ -3,11 +3,13 @@ import unittest
 class Test(unittest.TestCase):#
   # def __init__(self):
   #   self.ut = unittest.TestCase()
+  def it(self, msg):
+    print(msg)
 
   def describe(self,msg):
     print(msg)
 
-  def assert_equals(self, myAnswer, expectedAnswer):
+  def assert_equals(self, myAnswer, expectedAnswer,msg="default msg"):
     try:
       self.assertEqual(myAnswer, expectedAnswer)
       print('Correct Answer')
