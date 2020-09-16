@@ -4,9 +4,15 @@
 # import itertools
 
 def same_structure_as(original, other):
-    is_same = True
     print(original)
     print(other)
+    if isinstance(original, list) and isinstance(other, list) and len(original) == len(other):
+        for org, oth in zip(original, other):
+            if not same_structure_as(org, oth): return False
+        else: return True
+    else:return not isinstance(original, list) and not isinstance(other, list)
+
+#? ↑書き換え
     if type(original) is list and type(other) is not list:
         return False
     if type(original) is not list and type(other) is list:
@@ -50,7 +56,7 @@ Test = Test()
 # Test.assert_equals(same_structure_as([1, '[', ']'], ['[', ']', 1]), True, "[1,'[',']'] same as ['[',']',1]: False should equal True")
 # Test.assert_equals(same_structure_as([1,[1,1]], [[2, 2], 2]), False, "[1,'[',']'] same as ['[',']',1]: False should equal True")
 Test.assert_equals(same_structure_as([[[], []]], [[[], []]]), False, "[1,'[',']'] same as ['[',']',1]: False should equal True")
-Test.assert_equals(same_structure_as([1, [[[1]]]], [2, [[[2]]]]), False, "[1,'[',']'] same as ['[',']',1]: False should equal True")
+Test.assert_equals(same_structure_as([1, [[[1]]]], [2, [[[2]]]]), True, "[1,'[',']'] same as ['[',']',1]: False should equal True")
 
 #solution
 def same_structure_as2(original,other):
