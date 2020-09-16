@@ -102,10 +102,8 @@ def parse_int(string):
     if len(idxs_thousand) > 0:
         idx = idxs_thousand[0]
         if any([i > idx for i in idxs_hundred]):
+            # thousand以降にhundredがある時
             return parse_thousand(numbers[:idx]) + parse_hundred(numbers[idx + 1:])
-        # elif
-        # if len(idxs_hundred) > 0:
-        #     return parse_thousand(numbers[:idx]) + parse_hundred(numbers[idx + 1:])
         else:
             if isinstance(numbers[-1], int):
                 return parse_thousand(numbers[:idx])+numbers[-1]
@@ -171,3 +169,20 @@ Test.assert_equals(parse_int('two hundred thousand three'), 200003)
 Test.assert_equals(parse_int('two hundred thousand and three'), 200003)
 Test.assert_equals(parse_int('one million'), 1000000)
 Test.assert_equals(parse_int('seven hundred thousand'), 700000)
+
+# solutions
+
+words = {w: n for n, w in enumerate('zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen'.split())}
+words.update({w: 10 * n for n, w in enumerate('twenty thirty forty fifty sixty seventy eighty ninety hundred'.split(), 2)})
+thousands = {w: 1000 ** n for n, w in enumerate('thousand million billion trillion quadrillion quintillion sextillion septillion octillion nonillion decillion'.split(), 1)}
+def parse_int2(strng):
+    num = group = 0
+    for w in strng.replace(' and ', ' ').replace('-', ' ').split():
+        if w == 'hundred': group *= words[w]
+        elif w in words: group += words[w]
+        else:
+            num += group * thousands[w]
+            group = 0
+    return num + group
+
+Test.assert_equals(parse_int2('seven hundred eighty-three thousand nine hundred and nineteen'), 783919)
