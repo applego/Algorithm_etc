@@ -165,24 +165,45 @@ Test = Test()
 # Test.assert_equals(parse_int('three thousand seven hundred eighty-eight'),3788)
 # Test.assert_equals(parse_int('two thousand'),2000)
 # Test.assert_equals(parse_int('ninety-nine thousand nine hundred and ninety-nine'),99999)
-Test.assert_equals(parse_int('two hundred thousand three'), 200003)
-Test.assert_equals(parse_int('two hundred thousand and three'), 200003)
-Test.assert_equals(parse_int('one million'), 1000000)
-Test.assert_equals(parse_int('seven hundred thousand'), 700000)
+# Test.assert_equals(parse_int('two hundred thousand three'), 200003)
+# Test.assert_equals(parse_int('two hundred thousand and three'), 200003)
+# Test.assert_equals(parse_int('one million'), 1000000)
+# Test.assert_equals(parse_int('seven hundred thousand'), 700000)
 
 # solutions
 
+# words = {w: n for n, w in enumerate('zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen'.split())}
+# words.update({w: 10 * n for n, w in enumerate('twenty thirty forty fifty sixty seventy eighty ninety hundred'.split(), 2)})
+# thousands = {w: 1000 ** n for n, w in enumerate('thousand million billion trillion quadrillion quintillion sextillion septillion octillion nonillion decillion'.split(), 1)}
+# def parse_int2(strng):
+#     num = group = 0
+#     for w in strng.replace(' and ', ' ').replace('-', ' ').split():
+#         if w == 'hundred': group *= words[w]
+#         elif w in words: group += words[w]
+#         else:
+#             num += group * thousands[w]
+#             group = 0
+#     return num + group
+
+# Test.assert_equals(parse_int2('seven hundred eighty-three thousand nine hundred and nineteen'), 783919)
+
+#写経
 words = {w: n for n, w in enumerate('zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen'.split())}
 words.update({w: 10 * n for n, w in enumerate('twenty thirty forty fifty sixty seventy eighty ninety hundred'.split(), 2)})
-thousands = {w: 1000 ** n for n, w in enumerate('thousand million billion trillion quadrillion quintillion sextillion septillion octillion nonillion decillion'.split(), 1)}
-def parse_int2(strng):
+thousands = {w: 1000 ** n for n, w in enumerate('thousand million billion'.split(), 1)}
+def parse_int2(string):
     num = group = 0
-    for w in strng.replace(' and ', ' ').replace('-', ' ').split():
+    for w in string.replace(' and ', ' ').replace('-', ' ').split():
+        print(w)
         if w == 'hundred': group *= words[w]
         elif w in words: group += words[w]
         else:
             num += group * thousands[w]
             group = 0
+        print(num)
+        print(group)
     return num + group
 
-Test.assert_equals(parse_int2('seven hundred eighty-three thousand nine hundred and nineteen'), 783919)
+Test.assert_equals(parse_int2('one million'), 1000000)
+Test.assert_equals(parse_int2('ninety-nine thousand nine hundred and ninety-nine'),99999)
+Test.assert_equals(parse_int2('two hundred forty-six'), 246)
