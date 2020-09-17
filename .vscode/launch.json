@@ -11,5 +11,17 @@
       "program": "${file}",
       "console": "integratedTerminal"
     }
+    ,
+    {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch TypeScript",
+        "preLaunchTask": "Compile TypeScript",
+        "cwd": "${workspaceFolder}",
+        "program": "${file}",
+        "outFiles": [
+            "${workspaceFolder}/build/**/*.js"
+        ]
+    }
   ]
 }
