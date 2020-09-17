@@ -78,6 +78,16 @@ expected = [1,2,3,4,5,6,7,8,9]
 test.assert_equals(snail(array), expected)
 
 #solution
+
+def snail1(array):
+    return list(array[0]) + snail(zip(*array[1:])[::-1]) if array else []
+
+array = [[1,2,3],
+         [8,9,4],
+         [7,6,5]]
+expected = [1,2,3,4,5,6,7,8,9]
+test.assert_equals(snail1(array), expected)
+
 def snail2(array):
     ret = []
     if array and array[0]:
