@@ -1,3 +1,6 @@
+TypeScriptのチートシート（Qiita)
+.tsにするとビルドさせるため.jsに
+
 // 型の種類
 // Boolean
 var x1: boolean = false;
