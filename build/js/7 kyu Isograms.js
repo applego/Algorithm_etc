@@ -1,9 +1,27 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isIsogram = void 0;
+var isNumber = function (value) {
+    return ((typeof value === 'number') && (isFinite(value)));
+};
+var isNumberableString = function (value) {
+    var parsed = parseInt(value);
+    return !isNaN(parsed);
+};
 function isIsogram(str) {
-    console.log('iso');
-    return false;
+    console.info(str);
+    var charCounter = {};
+    var arrayStr = str.toLowerCase().split('');
+    for (var i = 0; i < arrayStr.length; i++) {
+        var c = arrayStr[i];
+        if (isNumberableString(c))
+            return false;
+        if (charCounter[c]) {
+            charCounter[c] += 1;
+            return false;
+        }
+        charCounter[c] = 1;
+    }
     return true;
 }
 exports.isIsogram = isIsogram;

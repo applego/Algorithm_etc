@@ -15,14 +15,14 @@ var Test = /** @class */ (function () {
     Test.prototype.assert_equals = function (a, b, msg) {
         try {
             assert.deepEqual(a, b);
-            console.log('Correct');
+            console.log('○---Correct');
         }
         catch (e) {
             if (msg) {
                 console.log(msg);
             }
             else {
-                console.log('Error');
+                console.log('✕---Error');
             }
             console.log('ans :' + a);
             console.log('exp :' + b);

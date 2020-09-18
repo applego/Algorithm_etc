@@ -13,14 +13,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // console.log(m1.f2(1000)); // "1,000円"
 // console.log(m1.f2(1000, 'ペソ')); // "1,000ペソ"
 var isograms = require("./7 kyu Isograms");
-isograms.isIsogram("Dermatoglyphics"); //, true );
-isograms.isIsogram("isogram"); //, true );
-isograms.isIsogram("aba"); //, false, "same chars may not be adjacent" );
-isograms.isIsogram("moOse"); //, false, "same chars may not be same case" );
-isograms.isIsogram("isIsogram"); //, false );
-isograms.isIsogram(""); //, true, "an empty string is a valid isogram" );
 var TestCodewar_1 = __importDefault(require("./TestCodewar"));
-var test = new TestCodewar_1.default(__filename);
+var test = new TestCodewar_1.default(); //__filename
 test.assert_equals(isograms.isIsogram("Dermatoglyphics"), true); // isograms.isIsogram("Dermatoglyphics")//, true );
 test.assert_equals(isograms.isIsogram("isogram"), true);
 test.assert_equals(isograms.isIsogram("aba"), false, "same chars may not be adjacent");
