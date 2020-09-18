@@ -25,7 +25,7 @@ export function isIsogram(str: string): boolean {
 }
 
 
-// 省略可能な引数は?を使う
-// export function f2(x: number, y: string = '円'): string {
-//     return x.toLocaleString() + y;
-// }
+// solution
+export function isIsogram2 (str: string): boolean {
+    return (new Set(str.toLowerCase())).size === str.length
+}
