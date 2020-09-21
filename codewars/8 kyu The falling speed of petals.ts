@@ -22,3 +22,11 @@ export function f(x: number): string {
 export function f2(x: number, y: string = '円'): string {
     return x.toLocaleString() + y;
 }
+
+//solutions
+export const sakuraFall2 = (v: number): number => v > 0 ? 400 / v : 0;
+
+//solutions2
+export const sakuraFall3 = function (v: number): number{
+    return v > 0 ? 400 / v : 0;
+}
