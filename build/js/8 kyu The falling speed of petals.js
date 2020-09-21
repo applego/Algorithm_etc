@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.f2 = exports.f = exports.sakuraFall = void 0;
+exports.sakuraFall3 = exports.sakuraFall2 = exports.f2 = exports.f = exports.sakuraFall = void 0;
 function sakuraFall(v) {
     if (v <= 0)
         return 0;
@@ -25,4 +25,10 @@ function f2(x, y) {
     return x.toLocaleString() + y;
 }
 exports.f2 = f2;
+//solutions
+exports.sakuraFall2 = function (v) { return v > 0 ? 400 / v : 0; };
+//solutions2
+exports.sakuraFall3 = function (v) {
+    return v > 0 ? 400 / v : 0;
+};
 //# sourceMappingURL=8 kyu The falling speed of petals.js.map

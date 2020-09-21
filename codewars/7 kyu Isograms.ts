@@ -29,3 +29,12 @@ export function isIsogram(str: string): boolean {
 export function isIsogram2 (str: string): boolean {
     return (new Set(str.toLowerCase())).size === str.length
 }
+
+// solutions
+export function isIsogram3(str: string): boolean {
+    //resolve str to lowercase first
+    str = str.toLowerCase();
+    //transform string to a Set to remove duplicates and
+    //compare thhe size of the set to the length of the str
+    return new Set(str.split('')).size === str.length;
+}

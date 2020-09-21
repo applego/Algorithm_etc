@@ -16,9 +16,11 @@ var isograms = require("./7 kyu Isograms");
 var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var test = new TestCodewar_1.default(); //__filename
 test.assert_equals(isograms.isIsogram("Dermatoglyphics"), true); // isograms.isIsogram("Dermatoglyphics")//, true );
-test.assert_equals(isograms.isIsogram("isogram"), true);
-test.assert_equals(isograms.isIsogram("aba"), false, "same chars may not be adjacent");
-test.assert_equals(isograms.isIsogram("moOse"), false, "same chars may not be same case");
-test.assert_equals(isograms.isIsogram("isIsogram"), false);
-test.assert_equals(isograms.isIsogram(""), true, "an empty string is a valid isogram");
+// test.assert_equals(isograms.isIsogram("isogram"), true );
+// test.assert_equals(isograms.isIsogram("aba"), false, "same chars may not be adjacent" );
+// test.assert_equals(isograms.isIsogram("moOse"), false, "same chars may not be same case" );
+// test.assert_equals(isograms.isIsogram("isIsogram"), false );
+// test.assert_equals(isograms.isIsogram(""), true, "an empty string is a valid isogram");
+var _7_kyu_Vowel_Count_1 = require("./7 kyu Vowel Count");
+test.assert_equals(_7_kyu_Vowel_Count_1.Kata.getCount("abracadabra"), 5);
 //# sourceMappingURL=main.js.map

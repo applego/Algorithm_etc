@@ -17,8 +17,12 @@ import MyTest from './TestCodewar';
 
 let test = new MyTest();//__filename
 test.assert_equals(isograms.isIsogram("Dermatoglyphics"), true);// isograms.isIsogram("Dermatoglyphics")//, true );
-test.assert_equals(isograms.isIsogram("isogram"), true );
-test.assert_equals(isograms.isIsogram("aba"), false, "same chars may not be adjacent" );
-test.assert_equals(isograms.isIsogram("moOse"), false, "same chars may not be same case" );
-test.assert_equals(isograms.isIsogram("isIsogram"), false );
-test.assert_equals(isograms.isIsogram(""), true, "an empty string is a valid isogram" );
+// test.assert_equals(isograms.isIsogram("isogram"), true );
+// test.assert_equals(isograms.isIsogram("aba"), false, "same chars may not be adjacent" );
+// test.assert_equals(isograms.isIsogram("moOse"), false, "same chars may not be same case" );
+// test.assert_equals(isograms.isIsogram("isIsogram"), false );
+// test.assert_equals(isograms.isIsogram(""), true, "an empty string is a valid isogram");
+
+import { Kata } from './7 kyu Vowel Count';
+
+test.assert_equals(Kata.getCount("abracadabra"), 5);
