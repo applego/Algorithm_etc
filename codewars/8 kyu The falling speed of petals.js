@@ -32,3 +32,8 @@ exports.sakuraFall3 = function (v) {
     return v > 0 ? 400 / v : 0;
 };
 //# sourceMappingURL=8 kyu The falling speed of petals.js.map
+
+//?↑ TypeScriptで自動生成
+function sakuraFall(v) {
+    return v > 0 ? 400 / v : 0;
+}

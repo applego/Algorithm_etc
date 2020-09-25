@@ -40,3 +40,9 @@ function isIsogram3(str) {
 }
 exports.isIsogram3 = isIsogram3;
 //# sourceMappingURL=7 kyu Isograms.js.map
+
+//? Typescriptで自動生成
+function isIsogram(str){
+    str = str.toLowerCase();
+    return new Set(str.split('')).size === str.length;
+}
