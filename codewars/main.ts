@@ -34,3 +34,8 @@ test.assert_equals(shark.shark(7, 55, 4, 16, true), "Alive!");
 test.assert_equals(shark.shark(24, 0, 4, 8, true), "Shark Bait!");
 test.assert_equals(shark.shark(40, 35, 3, 20, true), "Shark Bait!");
 test.assert_equals(shark.shark(7, 8, 3, 4, true), "Alive!");
+
+import nextid = require('./8 kyu Smallest unused ID');
+
+test.assert_equals(nextid.nextId([0,1,2,3,5]), 4);
+test.assert_equals(nextid.nextId([0,1,2,3,4,5,6,7,8,9,10]), 11);
