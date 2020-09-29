@@ -12,10 +12,10 @@ m1.sakuraFall(10);
 // console.log(m1.f2(1000)); // "1,000円"
 // console.log(m1.f2(1000, 'ペソ')); // "1,000ペソ"
 
-import isograms = require('./7 kyu Isograms');
 import MyTest from './TestCodewar';
-
 let test = new MyTest();//__filename
+
+import isograms = require('./7 kyu Isograms');
 test.assert_equals(isograms.isIsogram("Dermatoglyphics"), true);// isograms.isIsogram("Dermatoglyphics")//, true );
 // test.assert_equals(isograms.isIsogram("isogram"), true );
 // test.assert_equals(isograms.isIsogram("aba"), false, "same chars may not be adjacent" );
@@ -38,4 +38,8 @@ test.assert_equals(shark.shark(7, 8, 3, 4, true), "Alive!");
 import nextid = require('./8 kyu Smallest unused ID');
 
 test.assert_equals(nextid.nextId([0,1,2,3,5]), 4);
-test.assert_equals(nextid.nextId([0,1,2,3,4,5,6,7,8,9,10]), 11);
+test.assert_equals(nextid.nextId([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), 11);
+
+import { numberToString } from './8 kyu Convert a Number to a String!';
+
+test.assert_equals(numberToString(67), '67');
