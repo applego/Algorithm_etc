@@ -43,3 +43,8 @@ test.assert_equals(nextid.nextId([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), 11);
 import { numberToString } from './8 kyu Convert a Number to a String!';
 
 test.assert_equals(numberToString(67), '67');
+
+import { boolToWord } from "./8 kyu Convert boolean values to strings 'Yes' or 'No'";
+
+test.assert_equals(boolToWord(true), "Yes");
+test.assert_equals(boolToWord(false), "No");
