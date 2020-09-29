@@ -1,5 +1,9 @@
 export function numberToString(num: number): string {
     return num.toString(10);
+    //BP
+    // return String(num);
+    // return num.toString();
+    // return ''+ num;
 }
 
 //以下前回からのコピー(関係ない)
