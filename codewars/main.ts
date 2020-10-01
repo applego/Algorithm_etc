@@ -48,3 +48,16 @@ import { boolToWord } from "./8 kyu Convert boolean values to strings 'Yes' or '
 
 test.assert_equals(boolToWord(true), "Yes");
 test.assert_equals(boolToWord(false), "No");
+
+
+import { countSheeps } from "./8 kyu Counting sheep...";
+
+const array1 = [true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  undefined,
+  true,  false, null, true ,
+  true,  true,  true,  true ,
+  false, false, true, true];
+
+const result1 = countSheeps(array1);
+test.assert_equals(result1, 17, "There are 17 sheeps in total, not " + result1);
