@@ -1,3 +1,18 @@
+export function countSheeps_(arrayOfSheep) {
+    return arrayOfSheep.filter(Boolean).length;
+}
+
+export function countSheeps__(arrayOfSheep) {
+    return arrayOfSheep.filter(e => e === true).length;
+}
+
+export function countSheeps___(arrayOfSheep) {
+    return arrayOfSheep.reduce((total, sheep) => {
+        if (sheep) total++;
+        return total;
+    },0)
+}
+
 export function countSheeps(arrayOfSheep: (boolean | undefined | null)[]) {
     // Mainクラス想定
 
