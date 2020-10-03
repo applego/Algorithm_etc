@@ -1,12 +1,12 @@
-export function countSheeps_(arrayOfSheep) {
+export function countSheeps_(arrayOfSheep:(boolean | undefined | null)[]) {
     return arrayOfSheep.filter(Boolean).length;
 }
 
-export function countSheeps__(arrayOfSheep) {
+export function countSheeps__(arrayOfSheep:(boolean | undefined | null)[]) {
     return arrayOfSheep.filter(e => e === true).length;
 }
 
-export function countSheeps___(arrayOfSheep) {
+export function countSheeps___(arrayOfSheep:(boolean | undefined | null)[]) {
     return arrayOfSheep.reduce((total, sheep) => {
         if (sheep) total++;
         return total;
