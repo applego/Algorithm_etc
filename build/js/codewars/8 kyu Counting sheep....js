@@ -13,7 +13,23 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.countSheeps = void 0;
+exports.countSheeps = exports.countSheeps___ = exports.countSheeps__ = exports.countSheeps_ = void 0;
+function countSheeps_(arrayOfSheep) {
+    return arrayOfSheep.filter(Boolean).length;
+}
+exports.countSheeps_ = countSheeps_;
+function countSheeps__(arrayOfSheep) {
+    return arrayOfSheep.filter(function (e) { return e === true; }).length;
+}
+exports.countSheeps__ = countSheeps__;
+function countSheeps___(arrayOfSheep) {
+    return arrayOfSheep.reduce(function (total, sheep) {
+        if (sheep)
+            total++;
+        return total;
+    }, 0);
+}
+exports.countSheeps___ = countSheeps___;
 function countSheeps(arrayOfSheep) {
     // Mainクラス想定
     //よくわからんくなってき（笑）
