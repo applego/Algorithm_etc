@@ -61,3 +61,9 @@ const array1 = [true,  true,  true,  false,
 
 const result1 = countSheeps(array1);
 test.assert_equals(result1, 17, "There are 17 sheeps in total, not " + result1);
+
+import { reverseWords } from "./7 kyu Reverse words";
+test.assert_equals(reverseWords('The quick brown fox jumps over the lazy dog.'), 'ehT kciuq nworb xof spmuj revo eht yzal .god');
+test.assert_equals(reverseWords('apple'), 'elppa');
+test.assert_equals(reverseWords('a b c d'), 'a b c d');
+test.assert_equals(reverseWords('double  spaced  words'), 'elbuod  decaps  sdrow');

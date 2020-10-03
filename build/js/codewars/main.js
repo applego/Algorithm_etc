@@ -46,4 +46,9 @@ var array1 = [true, true, true, false,
     false, false, true, true];
 var result1 = _8_kyu_Counting_sheep___1.countSheeps(array1);
 test.assert_equals(result1, 17, "There are 17 sheeps in total, not " + result1);
+var _7_kyu_Reverse_words_1 = require("./7 kyu Reverse words");
+test.assert_equals(_7_kyu_Reverse_words_1.reverseWords('The quick brown fox jumps over the lazy dog.'), 'ehT kciuq nworb xof spmuj revo eht yzal .god');
+test.assert_equals(_7_kyu_Reverse_words_1.reverseWords('apple'), 'elppa');
+test.assert_equals(_7_kyu_Reverse_words_1.reverseWords('a b c d'), 'a b c d');
+test.assert_equals(_7_kyu_Reverse_words_1.reverseWords('double  spaced  words'), 'elbuod  decaps  sdrow');
 //# sourceMappingURL=main.js.map
