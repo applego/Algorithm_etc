@@ -67,3 +67,15 @@ test.assert_equals(reverseWords('The quick brown fox jumps over the lazy dog.'),
 test.assert_equals(reverseWords('apple'), 'elppa');
 test.assert_equals(reverseWords('a b c d'), 'a b c d');
 test.assert_equals(reverseWords('double  spaced  words'), 'elbuod  decaps  sdrow');
+
+//* class作ったパターンの回答
+// import IqTest from './6 kyu IQ Test';
+
+// const iqtest = new IqTest(1);
+// test.assert_equals(iqtest.iqTest('2 4 7 8 10'),3);
+// test.assert_equals(iqtest.iqTest('1 2 2'),1);
+//* methodのみ
+import { iqTest } from './6 kyu IQ Test';
+
+test.assert_equals(iqTest('2 4 7 8 10'),3);
+test.assert_equals(iqTest('1 2 2'),1);
