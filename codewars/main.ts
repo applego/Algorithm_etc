@@ -78,4 +78,15 @@ test.assert_equals(reverseWords('double  spaced  words'), 'elbuod  decaps  sdrow
 import { iqTest } from './6 kyu IQ Test';
 
 test.assert_equals(iqTest('2 4 7 8 10'),3);
-test.assert_equals(iqTest('1 2 2'),1);
+test.assert_equals(iqTest('1 2 2'), 1);
+
+import { duplicateCount} from './6 kyu Counting Duplicates';//,duplicateCount_
+
+test.assert_equals(duplicateCount(""), 0);
+test.assert_equals(duplicateCount("abcde"), 0);
+test.assert_equals(duplicateCount("aabbcde"), 2);
+test.assert_equals(duplicateCount("aabBcde"), 2,"should ignore case");
+test.assert_equals(duplicateCount("Indivisibility"), 1);
+test.assert_equals(duplicateCount("Indivisibilities"), 2, "characters may not be adjacent");
+
+// test.assert_equals(duplicateCount_("Indivisibilities"), 2, "characters may not be adjacent");
