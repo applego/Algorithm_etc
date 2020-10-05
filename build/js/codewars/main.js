@@ -51,4 +51,21 @@ test.assert_equals(_7_kyu_Reverse_words_1.reverseWords('The quick brown fox jump
 test.assert_equals(_7_kyu_Reverse_words_1.reverseWords('apple'), 'elppa');
 test.assert_equals(_7_kyu_Reverse_words_1.reverseWords('a b c d'), 'a b c d');
 test.assert_equals(_7_kyu_Reverse_words_1.reverseWords('double  spaced  words'), 'elbuod  decaps  sdrow');
+//* class作ったパターンの回答
+// import IqTest from './6 kyu IQ Test';
+// const iqtest = new IqTest(1);
+// test.assert_equals(iqtest.iqTest('2 4 7 8 10'),3);
+// test.assert_equals(iqtest.iqTest('1 2 2'),1);
+//* methodのみ
+var _6_kyu_IQ_Test_1 = require("./6 kyu IQ Test");
+test.assert_equals(_6_kyu_IQ_Test_1.iqTest('2 4 7 8 10'), 3);
+test.assert_equals(_6_kyu_IQ_Test_1.iqTest('1 2 2'), 1);
+var _6_kyu_Counting_Duplicates_1 = require("./6 kyu Counting Duplicates");
+test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount(""), 0);
+test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("abcde"), 0);
+test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("aabbcde"), 2);
+test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("aabBcde"), 2, "should ignore case");
+test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("Indivisibility"), 1);
+test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("Indivisibilities"), 2, "characters may not be adjacent");
+test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount_("Indivisibilities"), 2, "characters may not be adjacent");
 //# sourceMappingURL=main.js.map
