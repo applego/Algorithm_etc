@@ -28,6 +28,9 @@ export default class Test{
       console.log('exp :'+b);
     }
   }
+  assert_equals_param_func(func: (prm: any) => any, n: any, expected: any) {
+    this.assert_equals(func(n), expected);
+  }
 }
 
 // module.exports = Test

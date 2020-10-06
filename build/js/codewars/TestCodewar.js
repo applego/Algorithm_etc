@@ -28,6 +28,9 @@ var Test = /** @class */ (function () {
             console.log('exp :' + b);
         }
     };
+    Test.prototype.assert_equals_param_func = function (func, n, expected) {
+        this.assert_equals(func(n), expected);
+    };
     return Test;
 }());
 exports.default = Test;
