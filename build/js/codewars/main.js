@@ -60,12 +60,16 @@ test.assert_equals(_7_kyu_Reverse_words_1.reverseWords('double  spaced  words'),
 var _6_kyu_IQ_Test_1 = require("./6 kyu IQ Test");
 test.assert_equals(_6_kyu_IQ_Test_1.iqTest('2 4 7 8 10'), 3);
 test.assert_equals(_6_kyu_IQ_Test_1.iqTest('1 2 2'), 1);
-var _6_kyu_Counting_Duplicates_1 = require("./6 kyu Counting Duplicates");
+var _6_kyu_Counting_Duplicates_1 = require("./6 kyu Counting Duplicates"); //,duplicateCount_
 test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount(""), 0);
 test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("abcde"), 0);
 test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("aabbcde"), 2);
 test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("aabBcde"), 2, "should ignore case");
 test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("Indivisibility"), 1);
 test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("Indivisibilities"), 2, "characters may not be adjacent");
-test.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount_("Indivisibilities"), 2, "characters may not be adjacent");
+// test.assert_equals(duplicateCount_("Indivisibilities"), 2, "characters may not be adjacent");
+var _5_kyu_Primes_in_numbers_1 = require("./5 kyu Primes in numbers");
+test.assert_equals_param_func(_5_kyu_Primes_in_numbers_1.G964.primeFactors, 7775460, "(2**2)(3**3)(5)(7)(11**2)(17)");
+test.assert_equals_param_func(_5_kyu_Primes_in_numbers_1.G964.primeFactors, 7919, "(7919)");
+test.assert_equals_param_func(_5_kyu_Primes_in_numbers_1.G964.primeFactors, 17 * 17 * 93 * 677, "(3)(17**2)(31)(677)");
 //# sourceMappingURL=main.js.map
