@@ -6,14 +6,14 @@ export default class Test{
   constructor(public questionname?: string) {
 
   }
-  expect(isCorrect: boolean, msg: string) {
+  static expect(isCorrect: boolean, msg: string) {
     if (isCorrect)
       console.log('Correct');
     else {
       console.log(msg);
     }
   }
-  assert_equals(a: any, b: any,msg?: string) {
+  static assert_equals(a: any, b: any,msg?: string) {
     try {
       assert.deepEqual(a, b);
       console.log('○---Correct');
@@ -28,7 +28,7 @@ export default class Test{
       console.log('exp :'+b);
     }
   }
-  assert_equals_param_func(func: (prm: any) => any, n: any, expected: any) {
+  static assert_equals_param_func(func: (prm: any) => any, n: any, expected: any) {
     this.assert_equals(func(n), expected);
   }
 }

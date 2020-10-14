@@ -5,14 +5,14 @@ var Test = /** @class */ (function () {
     function Test(questionname) {
         this.questionname = questionname;
     }
-    Test.prototype.expect = function (isCorrect, msg) {
+    Test.expect = function (isCorrect, msg) {
         if (isCorrect)
             console.log('Correct');
         else {
             console.log(msg);
         }
     };
-    Test.prototype.assert_equals = function (a, b, msg) {
+    Test.assert_equals = function (a, b, msg) {
         try {
             assert.deepEqual(a, b);
             console.log('○---Correct');
@@ -28,7 +28,7 @@ var Test = /** @class */ (function () {
             console.log('exp :' + b);
         }
     };
-    Test.prototype.assert_equals_param_func = function (func, n, expected) {
+    Test.assert_equals_param_func = function (func, n, expected) {
         this.assert_equals(func(n), expected);
     };
     return Test;
