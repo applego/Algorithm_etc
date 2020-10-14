@@ -13,14 +13,14 @@ m1.sakuraFall(10);
 // console.log(m1.f2(1000)); // "1,000円"
 // console.log(m1.f2(1000, 'ペソ')); // "1,000ペソ"
 var TestCodewar_1 = __importDefault(require("./TestCodewar"));
-// let test = new MyTest();//__filename
+// let test = new Test();//__filename
 var isograms = require("./7 kyu Isograms");
 TestCodewar_1.default.assert_equals(isograms.isIsogram("Dermatoglyphics"), true); // isograms.isIsogram("Dermatoglyphics")//, true );
-// MyTest.assert_equals(isograms.isIsogram("isogram"), true );
-// MyTest.assert_equals(isograms.isIsogram("aba"), false, "same chars may not be adjacent" );
-// MyTest.assert_equals(isograms.isIsogram("moOse"), false, "same chars may not be same case" );
-// MyTest.assert_equals(isograms.isIsogram("isIsogram"), false );
-// MyTest.assert_equals(isograms.isIsogram(""), true, "an empty string is a valid isogram");
+// Test.assert_equals(isograms.isIsogram("isogram"), true );
+// Test.assert_equals(isograms.isIsogram("aba"), false, "same chars may not be adjacent" );
+// Test.assert_equals(isograms.isIsogram("moOse"), false, "same chars may not be same case" );
+// Test.assert_equals(isograms.isIsogram("isIsogram"), false );
+// Test.assert_equals(isograms.isIsogram(""), true, "an empty string is a valid isogram");
 var _7_kyu_Vowel_Count_1 = require("./7 kyu Vowel Count");
 TestCodewar_1.default.assert_equals(_7_kyu_Vowel_Count_1.Kata.getCount("abracadabra"), 5);
 var shark = require("./8 kyu Holiday VI - Shark Pontoon");
@@ -54,8 +54,8 @@ TestCodewar_1.default.assert_equals(_7_kyu_Reverse_words_1.reverseWords('double 
 //* class作ったパターンの回答
 // import IqTest from './6 kyu IQ Test';
 // const iqtest = new IqTest(1);
-// MyTest.assert_equals(iqMyTest.iqTest('2 4 7 8 10'),3);
-// MyTest.assert_equals(iqMyTest.iqTest('1 2 2'),1);
+// Test.assert_equals(iqTest.iqTest('2 4 7 8 10'),3);
+// Test.assert_equals(iqTest.iqTest('1 2 2'),1);
 //* methodのみ
 var _6_kyu_IQ_Test_1 = require("./6 kyu IQ Test");
 TestCodewar_1.default.assert_equals(_6_kyu_IQ_Test_1.iqTest('2 4 7 8 10'), 3);
@@ -67,7 +67,7 @@ TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount(
 TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("aabBcde"), 2, "should ignore case");
 TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("Indivisibility"), 1);
 TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("Indivisibilities"), 2, "characters may not be adjacent");
-// MyTest.assert_equals(duplicateCount_("Indivisibilities"), 2, "characters may not be adjacent");
+// Test.assert_equals(duplicateCount_("Indivisibilities"), 2, "characters may not be adjacent");
 var _5_kyu_Primes_in_numbers_1 = require("./5 kyu Primes in numbers");
 TestCodewar_1.default.assert_equals_param_func(_5_kyu_Primes_in_numbers_1.G964.primeFactors, 7775460, "(2**2)(3**3)(5)(7)(11**2)(17)");
 TestCodewar_1.default.assert_equals_param_func(_5_kyu_Primes_in_numbers_1.G964.primeFactors, 7919, "(7919)");
@@ -79,9 +79,22 @@ TestCodewar_1.default.assert_equals_param_func(_6_kyu_Find_the_odd_int_1.findOdd
 TestCodewar_1.default.assert_equals_param_func(_6_kyu_Find_the_odd_int_1.findOdd, [10], 10);
 TestCodewar_1.default.assert_equals_param_func(_6_kyu_Find_the_odd_int_1.findOdd, [1, 1, 1, 1, 1, 1, 10, 1, 1, 1, 1], 10);
 TestCodewar_1.default.assert_equals_param_func(_6_kyu_Find_the_odd_int_1.findOdd, [5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10], 1);
-// MyTest.assert_equals(findOdd([5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10]), 1);
+// Test.assert_equals(findOdd([5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10]), 1);
 var _6_kyu_Your_order__please_1 = require("./6 kyu Your order, please");
 TestCodewar_1.default.assert_equals(_6_kyu_Your_order__please_1.order("is2 Thi1s T4est 3a"), "Thi1s is2 3a T4est");
 TestCodewar_1.default.assert_equals(_6_kyu_Your_order__please_1.order("4of Fo1r pe6ople g3ood th5e the2"), "Fo1r the2 g3ood 4of th5e pe6ople");
 TestCodewar_1.default.assert_equals(_6_kyu_Your_order__please_1.order(""), "");
+// let a1 = [121, 144, 19, 161, 19, 144, 19, 11];
+// let a2 = [11 * 11, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19];
+// Test.assert_equals(comp(a1, a2), true);
+// a1 = [121, 144, 19, 161, 19, 144, 19, 11];
+// a2 = [11 * 21, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19];
+// Test.assert_equals(comp(a1, a2), false);
+//かんたんなの
+var _8_kyu_Returning_Strings_1 = require("./8 kyu Returning Strings");
+TestCodewar_1.default.assert_equals(_8_kyu_Returning_Strings_1.greet("Ryan"), "Hello, Ryan how are you doing today?");
+TestCodewar_1.default.assert_equals(_8_kyu_Returning_Strings_1.greet("Shingles"), "Hello, Shingles how are you doing today?");
+var _8_kyu_Gravity_Flip_1 = require("./8 kyu Gravity Flip");
+TestCodewar_1.default.assert_equals(_8_kyu_Gravity_Flip_1.flip('R', [3, 2, 1, 2]), [1, 2, 2, 3]);
+TestCodewar_1.default.assert_equals(_8_kyu_Gravity_Flip_1.flip('L', [1, 4, 5, 3, 5]), [5, 5, 4, 3, 1]);
 //# sourceMappingURL=main.js.map
