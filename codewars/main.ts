@@ -1,4 +1,6 @@
 
+import Test from './TestCodewar';
+// let test = new Test();//__filename
 
 import m1 = require("./8 kyu The falling speed of petals");
 
@@ -11,9 +13,6 @@ m1.sakuraFall(10);
 // console.log(m1.f(1000)); // "1,000円"
 // console.log(m1.f2(1000)); // "1,000円"
 // console.log(m1.f2(1000, 'ペソ')); // "1,000ペソ"
-
-import Test from './TestCodewar';
-// let test = new Test();//__filename
 
 import isograms = require('./7 kyu Isograms');
 Test.assert_equals(isograms.isIsogram("Dermatoglyphics"), true);// isograms.isIsogram("Dermatoglyphics")//, true );
@@ -134,3 +133,11 @@ import { flip } from './8 kyu Gravity Flip';
 
 Test.assert_equals(flip('R', [3, 2, 1, 2]), [1, 2, 2, 3]);
 Test.assert_equals(flip('L', [1, 4, 5, 3, 5]), [5, 5, 4, 3, 1]);
+
+import { warnTheSheep } from './8 kyu A wolf in sheep_s clothing';
+
+Test.assert_equals(warnTheSheep(["sheep", "sheep", "sheep", "sheep", "sheep", "wolf", "sheep", "sheep"]), "Oi! Sheep number 2! You are about to be eaten by a wolf!");
+Test.assert_equals(warnTheSheep(["sheep", "wolf", "sheep", "sheep", "sheep", "sheep", "sheep"]), "Oi! Sheep number 5! You are about to be eaten by a wolf!");
+Test.assert_equals(warnTheSheep(["wolf", "sheep", "sheep", "sheep", "sheep", "sheep", "sheep"]), "Oi! Sheep number 6! You are about to be eaten by a wolf!");
+Test.assert_equals(warnTheSheep(["sheep", "wolf", "sheep"]), "Oi! Sheep number 1! You are about to be eaten by a wolf!");
+Test.assert_equals(warnTheSheep(["sheep", "sheep", "wolf"]), "Pls go away and stop eating my sheep");

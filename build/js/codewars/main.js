@@ -3,6 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var TestCodewar_1 = __importDefault(require("./TestCodewar"));
+// let test = new Test();//__filename
 var m1 = require("./8 kyu The falling speed of petals");
 // m1.sakuraFall(0);
 // m1.sakuraFall(5);
@@ -12,8 +14,6 @@ m1.sakuraFall(10);
 // console.log(m1.f(1000)); // "1,000円"
 // console.log(m1.f2(1000)); // "1,000円"
 // console.log(m1.f2(1000, 'ペソ')); // "1,000ペソ"
-var TestCodewar_1 = __importDefault(require("./TestCodewar"));
-// let test = new Test();//__filename
 var isograms = require("./7 kyu Isograms");
 TestCodewar_1.default.assert_equals(isograms.isIsogram("Dermatoglyphics"), true); // isograms.isIsogram("Dermatoglyphics")//, true );
 // Test.assert_equals(isograms.isIsogram("isogram"), true );
@@ -97,4 +97,10 @@ TestCodewar_1.default.assert_equals(_8_kyu_Returning_Strings_1.greet("Shingles")
 var _8_kyu_Gravity_Flip_1 = require("./8 kyu Gravity Flip");
 TestCodewar_1.default.assert_equals(_8_kyu_Gravity_Flip_1.flip('R', [3, 2, 1, 2]), [1, 2, 2, 3]);
 TestCodewar_1.default.assert_equals(_8_kyu_Gravity_Flip_1.flip('L', [1, 4, 5, 3, 5]), [5, 5, 4, 3, 1]);
+var _8_kyu_A_wolf_in_sheep_s_clothing_1 = require("./8 kyu A wolf in sheep_s clothing");
+TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(["sheep", "sheep", "sheep", "sheep", "sheep", "wolf", "sheep", "sheep"]), "Oi! Sheep number 2! You are about to be eaten by a wolf!");
+TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(["sheep", "wolf", "sheep", "sheep", "sheep", "sheep", "sheep"]), "Oi! Sheep number 5! You are about to be eaten by a wolf!");
+TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(["wolf", "sheep", "sheep", "sheep", "sheep", "sheep", "sheep"]), "Oi! Sheep number 6! You are about to be eaten by a wolf!");
+TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(["sheep", "wolf", "sheep"]), "Oi! Sheep number 1! You are about to be eaten by a wolf!");
+TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(["sheep", "sheep", "wolf"]), "Pls go away and stop eating my sheep");
 //# sourceMappingURL=main.js.map
