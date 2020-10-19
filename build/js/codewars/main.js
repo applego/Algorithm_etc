@@ -105,5 +105,8 @@ TestCodewar_1.default.assert_equals(_6_kyu_Are_they_the__same__1.comp(a1, a2), t
 a1 = [121, 144, 19, 161, 19, 144, 19, 11];
 a2 = [11 * 21, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19];
 TestCodewar_1.default.assert_equals(_6_kyu_Are_they_the__same__1.comp(a1, a2), false);
-_6_kyu_Are_they_the__same__1.fizzBuzzOutput(30);
+a1 = [2, 2, 3];
+a2 = [4, 9, 9];
+TestCodewar_1.default.assert_equals(_6_kyu_Are_they_the__same__1.comp(a1, a2), false);
+//* 拡張メソッド fizzBuzzOutput(30)
 //# sourceMappingURL=main.js.map
