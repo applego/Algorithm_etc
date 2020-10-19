@@ -84,12 +84,6 @@ var _6_kyu_Your_order__please_1 = require("./6 kyu Your order, please");
 TestCodewar_1.default.assert_equals(_6_kyu_Your_order__please_1.order("is2 Thi1s T4est 3a"), "Thi1s is2 3a T4est");
 TestCodewar_1.default.assert_equals(_6_kyu_Your_order__please_1.order("4of Fo1r pe6ople g3ood th5e the2"), "Fo1r the2 g3ood 4of th5e pe6ople");
 TestCodewar_1.default.assert_equals(_6_kyu_Your_order__please_1.order(""), "");
-// let a1 = [121, 144, 19, 161, 19, 144, 19, 11];
-// let a2 = [11 * 11, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19];
-// Test.assert_equals(comp(a1, a2), true);
-// a1 = [121, 144, 19, 161, 19, 144, 19, 11];
-// a2 = [11 * 21, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19];
-// Test.assert_equals(comp(a1, a2), false);
 //かんたんなの
 var _8_kyu_Returning_Strings_1 = require("./8 kyu Returning Strings");
 TestCodewar_1.default.assert_equals(_8_kyu_Returning_Strings_1.greet("Ryan"), "Hello, Ryan how are you doing today?");
@@ -103,4 +97,13 @@ TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheS
 TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(["wolf", "sheep", "sheep", "sheep", "sheep", "sheep", "sheep"]), "Oi! Sheep number 6! You are about to be eaten by a wolf!");
 TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(["sheep", "wolf", "sheep"]), "Oi! Sheep number 1! You are about to be eaten by a wolf!");
 TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(["sheep", "sheep", "wolf"]), "Pls go away and stop eating my sheep");
+//一旦飛ばす
+var _6_kyu_Are_they_the__same__1 = require("./6 kyu Are they the \"same\"?");
+var a1 = [121, 144, 19, 161, 19, 144, 19, 11];
+var a2 = [11 * 11, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19];
+TestCodewar_1.default.assert_equals(_6_kyu_Are_they_the__same__1.comp(a1, a2), true);
+a1 = [121, 144, 19, 161, 19, 144, 19, 11];
+a2 = [11 * 21, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19];
+TestCodewar_1.default.assert_equals(_6_kyu_Are_they_the__same__1.comp(a1, a2), false);
+_6_kyu_Are_they_the__same__1.fizzBuzzOutput(30);
 //# sourceMappingURL=main.js.map

@@ -112,17 +112,6 @@ Test.assert_equals(order("is2 Thi1s T4est 3a"), "Thi1s is2 3a T4est");
 Test.assert_equals(order("4of Fo1r pe6ople g3ood th5e the2"), "Fo1r the2 g3ood 4of th5e pe6ople");
 Test.assert_equals(order(""), "");
 
-//一旦飛ばす
-import { comp } from './6 kyu Are they the "same"?';
-
-// let a1 = [121, 144, 19, 161, 19, 144, 19, 11];
-// let a2 = [11 * 11, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19];
-// Test.assert_equals(comp(a1, a2), true);
-
-// a1 = [121, 144, 19, 161, 19, 144, 19, 11];
-// a2 = [11 * 21, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19];
-// Test.assert_equals(comp(a1, a2), false);
-
 //かんたんなの
 import { greet } from './8 kyu Returning Strings';
 
@@ -141,3 +130,16 @@ Test.assert_equals(warnTheSheep(["sheep", "wolf", "sheep", "sheep", "sheep", "sh
 Test.assert_equals(warnTheSheep(["wolf", "sheep", "sheep", "sheep", "sheep", "sheep", "sheep"]), "Oi! Sheep number 6! You are about to be eaten by a wolf!");
 Test.assert_equals(warnTheSheep(["sheep", "wolf", "sheep"]), "Oi! Sheep number 1! You are about to be eaten by a wolf!");
 Test.assert_equals(warnTheSheep(["sheep", "sheep", "wolf"]), "Pls go away and stop eating my sheep");
+
+//一旦飛ばす
+import { comp, fizzBuzzOutput } from './6 kyu Are they the "same"?';
+
+let a1 = [121, 144, 19, 161, 19, 144, 19, 11];
+let a2 = [11 * 11, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19];
+Test.assert_equals(comp(a1, a2), true);
+
+a1 = [121, 144, 19, 161, 19, 144, 19, 11];
+a2 = [11 * 21, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19];
+Test.assert_equals(comp(a1, a2), false);
+
+//* 拡張メソッド fizzBuzzOutput(30)
