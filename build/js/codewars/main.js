@@ -109,4 +109,12 @@ a1 = [2, 2, 3];
 a2 = [4, 9, 9];
 TestCodewar_1.default.assert_equals(_6_kyu_Are_they_the__same__1.comp(a1, a2), false);
 //* 拡張メソッド fizzBuzzOutput(30)
+var _6_kyu_Valid_Braces_1 = require("./6 kyu Valid Braces");
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("()"), true);
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("[(])"), false);
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("(){}[]"), true);
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("([{}])"), true);
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("(}"), false);
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("[(])"), false);
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("[({})](]"), false);
 //# sourceMappingURL=main.js.map
