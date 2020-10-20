@@ -148,3 +148,13 @@ Test.assert_equals(comp(a1, a2), false);
 
 
 //* 拡張メソッド fizzBuzzOutput(30)
+
+import { validBraces } from './6 kyu Valid Braces';
+
+Test.assert_equals(validBraces("()"), true);
+Test.assert_equals(validBraces("[(])"), false);
+Test.assert_equals(validBraces("(){}[]"), true);
+Test.assert_equals(validBraces("([{}])"), true);
+Test.assert_equals(validBraces("(}"), false);
+Test.assert_equals(validBraces("[(])"), false);
+Test.assert_equals(validBraces("[({})](]"), false);
