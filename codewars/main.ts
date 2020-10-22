@@ -158,3 +158,10 @@ Test.assert_equals(validBraces("([{}])"), true);
 Test.assert_equals(validBraces("(}"), false);
 Test.assert_equals(validBraces("[(])"), false);
 Test.assert_equals(validBraces("[({})](]"), false);
+
+// 2020/10/22 16:22
+import { solution } from './7 kyu String ends with?';
+
+Test.assert_equals(solution('abcde', 'cde'), true);
+Test.assert_equals(solution('abcde', 'abc'), false);
+Test.assert_equals(solution('abc', ''), true);

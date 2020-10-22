@@ -117,4 +117,9 @@ TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("([{}])"),
 TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("(}"), false);
 TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("[(])"), false);
 TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("[({})](]"), false);
+// 2020/10/22 16:22
+var _7_kyu_String_ends_with_1 = require("./7 kyu String ends with?");
+TestCodewar_1.default.assert_equals(_7_kyu_String_ends_with_1.solution('abcde', 'cde'), true);
+TestCodewar_1.default.assert_equals(_7_kyu_String_ends_with_1.solution('abcde', 'abc'), false);
+TestCodewar_1.default.assert_equals(_7_kyu_String_ends_with_1.solution('abc', ''), true);
 //# sourceMappingURL=main.js.map
