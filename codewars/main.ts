@@ -165,3 +165,14 @@ import { solution } from './7 kyu String ends with?';
 Test.assert_equals(solution('abcde', 'cde'), true);
 Test.assert_equals(solution('abcde', 'abc'), false);
 Test.assert_equals(solution('abc', ''), true);
+
+// 2020/10/23 14:35
+import { divisors, divisors2 } from './7 kyu Count the divisors of a number';
+
+Test.assert_equals(divisors(1), 1);
+Test.assert_equals(divisors(10), 4);
+Test.assert_equals(divisors(11), 2);
+Test.assert_equals(divisors(54), 8);
+Test.assert_equals(divisors(64), 7);
+
+console.log(divisors2(10));

@@ -122,4 +122,12 @@ var _7_kyu_String_ends_with_1 = require("./7 kyu String ends with?");
 TestCodewar_1.default.assert_equals(_7_kyu_String_ends_with_1.solution('abcde', 'cde'), true);
 TestCodewar_1.default.assert_equals(_7_kyu_String_ends_with_1.solution('abcde', 'abc'), false);
 TestCodewar_1.default.assert_equals(_7_kyu_String_ends_with_1.solution('abc', ''), true);
+// 2020/10/23 14:35
+var _7_kyu_Count_the_divisors_of_a_number_1 = require("./7 kyu Count the divisors of a number");
+TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divisors(1), 1);
+TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divisors(10), 4);
+TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divisors(11), 2);
+TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divisors(54), 8);
+TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divisors(64), 7);
+console.log(_7_kyu_Count_the_divisors_of_a_number_1.divisors2(10));
 //# sourceMappingURL=main.js.map
