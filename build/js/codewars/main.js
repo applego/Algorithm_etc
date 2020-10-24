@@ -130,4 +130,10 @@ TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divi
 TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divisors(54), 8);
 TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divisors(64), 7);
 console.log(_7_kyu_Count_the_divisors_of_a_number_1.divisors2(10));
+// 2020/10/23 19:47
+var _7_kyu_Two_to_One_1 = require("./7 kyu Two to One");
+TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("aretheyhere", "yestheyarehere"), "aehrsty");
+TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("loopingisfunbutdangerous", "lessdangerousthancoding"), "abcdefghilnoprstu");
+TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("inmanylanguages", "theresapairoffunctions"), "acefghilmnoprstuy");
+TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("lordsofthefallen", "gamekult"), "adefghklmnorstu");
 //# sourceMappingURL=main.js.map

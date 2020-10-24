@@ -176,3 +176,11 @@ Test.assert_equals(divisors(54), 8);
 Test.assert_equals(divisors(64), 7);
 
 console.log(divisors2(10));
+
+// 2020/10/23 19:47
+import { G9642 } from './7 kyu Two to One';
+
+Test.assert_equals(G9642.longest("aretheyhere", "yestheyarehere"), "aehrsty");
+Test.assert_equals(G9642.longest("loopingisfunbutdangerous", "lessdangerousthancoding"), "abcdefghilnoprstu");
+Test.assert_equals(G9642.longest("inmanylanguages", "theresapairoffunctions"), "acefghilmnoprstuy");
+Test.assert_equals(G9642.longest("lordsofthefallen", "gamekult"), "adefghklmnorstu");

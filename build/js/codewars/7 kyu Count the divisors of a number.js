@@ -18,9 +18,9 @@ function divisors(n) {
 }
 exports.divisors = divisors;
 function divisors2(n) {
-    var a = __spreadArrays(Array(n)).map(function (v, i) { return ++i; }); // 1...n
-    return a.reduce(function (previousVal, currentVal, currentIdx, array) {
-        console.log(previousVal, currentVal, currentIdx);
+    return __spreadArrays(Array(n)).map(function (v, i) { return ++i; }) // 1...n
+        .reduce(function (previousVal, currentVal, currentIdx, array) {
+        // console.log(previousVal, currentVal, currentIdx);
         return previousVal + (n % currentVal === 0 ? 1 : 0);
     }, 0);
 }
