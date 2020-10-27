@@ -184,3 +184,10 @@ Test.assert_equals(G9642.longest("aretheyhere", "yestheyarehere"), "aehrsty");
 Test.assert_equals(G9642.longest("loopingisfunbutdangerous", "lessdangerousthancoding"), "abcdefghilnoprstu");
 Test.assert_equals(G9642.longest("inmanylanguages", "theresapairoffunctions"), "acefghilmnoprstuy");
 Test.assert_equals(G9642.longest("lordsofthefallen", "gamekult"), "adefghklmnorstu");
+
+// 2020/10/27 13:29
+import { isValidWalk } from './6 kyu Take a Ten Minute Walk';
+Test.assert_equals(isValidWalk(['n','s','n','s','n','s','n','s','n','s']), true);
+Test.assert_equals(isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']), false);
+Test.assert_equals(isValidWalk(['w']), false);
+Test.assert_equals(isValidWalk(['n','n','n','s','n','s','n','s','n','s']), false);

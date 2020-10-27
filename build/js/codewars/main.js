@@ -136,4 +136,10 @@ TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("aretheyhe
 TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("loopingisfunbutdangerous", "lessdangerousthancoding"), "abcdefghilnoprstu");
 TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("inmanylanguages", "theresapairoffunctions"), "acefghilmnoprstuy");
 TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("lordsofthefallen", "gamekult"), "adefghklmnorstu");
+// 2020/10/27 13:29
+var _6_kyu_Take_a_Ten_Minute_Walk_1 = require("./6 kyu Take a Ten Minute Walk");
+TestCodewar_1.default.assert_equals(_6_kyu_Take_a_Ten_Minute_Walk_1.isValidWalk(['n', 's', 'n', 's', 'n', 's', 'n', 's', 'n', 's']), true);
+TestCodewar_1.default.assert_equals(_6_kyu_Take_a_Ten_Minute_Walk_1.isValidWalk(['w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'e']), false);
+TestCodewar_1.default.assert_equals(_6_kyu_Take_a_Ten_Minute_Walk_1.isValidWalk(['w']), false);
+TestCodewar_1.default.assert_equals(_6_kyu_Take_a_Ten_Minute_Walk_1.isValidWalk(['n', 'n', 'n', 's', 'n', 's', 'n', 's', 'n', 's']), false);
 //# sourceMappingURL=main.js.map

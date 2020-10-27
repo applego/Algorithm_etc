@@ -23,7 +23,7 @@ var G9642 = /** @class */ (function () {
             var elem = appearCharIdxes2_1[_i];
             appearCharIdxesSet.add(elem);
         }
-        return Object.entries(alphaDic)
+        return Object.entries(alphaDic) // es2017以降？
             .filter(function (_a) {
             var key = _a[0], value = _a[1];
             return appearCharIdxesSet.has(value);
@@ -33,6 +33,16 @@ var G9642 = /** @class */ (function () {
             return key;
         })
             .join('');
+        // 提出 ver
+        return Object.keys(alphaDic)
+            .map(function (key) {
+            if (appearCharIdxesSet.has(alphaDic[key]))
+                return key;
+            //             answer += key;
+        })
+            .join('');
+        // const appearCharIdxesSum = appearCharIdxes1.concat(appearCharIdxes2).filter((value, index, array) => array.indexOf(value) === index);
+        // appearCharIdxesSum.includes()
     };
     G9642.longest_ = function (s1, s2) {
         var appearCharIdxes = G9642.getExistStringIndex(s1, alphaDic);
@@ -46,6 +56,10 @@ var G9642 = /** @class */ (function () {
                 answer += key;
         });
         return answer;
+    };
+    // BP これでいいんかい
+    G9642.longest_bp = function (s1, s2) {
+        return Array.from(new Set(Array.from(s1 + s2))).sort().join('');
     };
     return G9642;
 }());
