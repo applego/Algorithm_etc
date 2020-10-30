@@ -65,3 +65,18 @@ D1 * D2 = n
   }
   return answers;
 }
+
+// BP
+export function solequa_BP(n: number): [number, number][] {
+  let result = [], a, b,x,y;
+  for(let a = 1;a <= Math.sqrt(n); a++) {
+    if(Number.isInteger(b = n/a)){
+      if(Number.isInteger(x = (b+a)/2)){
+        if(Number.isInteger(y = (b-a)/4)){
+          result.push([x, y]);
+        }
+      }
+    }
+  }
+  return result as [number, number][];
+}
