@@ -117,4 +117,37 @@ TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("([{}])"),
 TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("(}"), false);
 TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("[(])"), false);
 TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("[({})](]"), false);
+// 2020/10/22 16:22
+var _7_kyu_String_ends_with_1 = require("./7 kyu String ends with?");
+TestCodewar_1.default.assert_equals(_7_kyu_String_ends_with_1.solution('abcde', 'cde'), true);
+TestCodewar_1.default.assert_equals(_7_kyu_String_ends_with_1.solution('abcde', 'abc'), false);
+TestCodewar_1.default.assert_equals(_7_kyu_String_ends_with_1.solution('abc', ''), true);
+// 2020/10/23 14:35
+var _7_kyu_Count_the_divisors_of_a_number_1 = require("./7 kyu Count the divisors of a number");
+TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divisors(1), 1);
+TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divisors(10), 4);
+TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divisors(11), 2);
+TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divisors(54), 8);
+TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divisors(64), 7);
+console.log(_7_kyu_Count_the_divisors_of_a_number_1.divisors2(10));
+// 2020/10/23 19:47
+var _7_kyu_Two_to_One_1 = require("./7 kyu Two to One");
+TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("aretheyhere", "yestheyarehere"), "aehrsty");
+TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("loopingisfunbutdangerous", "lessdangerousthancoding"), "abcdefghilnoprstu");
+TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("inmanylanguages", "theresapairoffunctions"), "acefghilmnoprstuy");
+TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("lordsofthefallen", "gamekult"), "adefghklmnorstu");
+// 2020/10/27 13:29
+var _6_kyu_Take_a_Ten_Minute_Walk_1 = require("./6 kyu Take a Ten Minute Walk");
+TestCodewar_1.default.assert_equals(_6_kyu_Take_a_Ten_Minute_Walk_1.isValidWalk(['n', 's', 'n', 's', 'n', 's', 'n', 's', 'n', 's']), true);
+TestCodewar_1.default.assert_equals(_6_kyu_Take_a_Ten_Minute_Walk_1.isValidWalk(['w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'e']), false);
+TestCodewar_1.default.assert_equals(_6_kyu_Take_a_Ten_Minute_Walk_1.isValidWalk(['w']), false);
+TestCodewar_1.default.assert_equals(_6_kyu_Take_a_Ten_Minute_Walk_1.isValidWalk(['n', 'n', 'n', 's', 'n', 's', 'n', 's', 'n', 's']), false);
+// 2020/10/30  9:58
+var _5_kyu_Diophantine_Equation_1 = require("./5 kyu Diophantine Equation");
+TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(5), [[3, 1]]);
+TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(12), [[4, 1]]);
+TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(13), [[7, 3]]);
+TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(16), [[4, 0]]);
+TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(90002), []);
+TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(90005), [[45003, 22501], [9003, 4499], [981, 467], [309, 37]]);
 //# sourceMappingURL=main.js.map

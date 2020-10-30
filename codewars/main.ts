@@ -158,3 +158,45 @@ Test.assert_equals(validBraces("([{}])"), true);
 Test.assert_equals(validBraces("(}"), false);
 Test.assert_equals(validBraces("[(])"), false);
 Test.assert_equals(validBraces("[({})](]"), false);
+
+// 2020/10/22 16:22
+import { solution } from './7 kyu String ends with?';
+
+Test.assert_equals(solution('abcde', 'cde'), true);
+Test.assert_equals(solution('abcde', 'abc'), false);
+Test.assert_equals(solution('abc', ''), true);
+
+// 2020/10/23 14:35
+import { divisors, divisors2 } from './7 kyu Count the divisors of a number';
+
+Test.assert_equals(divisors(1), 1);
+Test.assert_equals(divisors(10), 4);
+Test.assert_equals(divisors(11), 2);
+Test.assert_equals(divisors(54), 8);
+Test.assert_equals(divisors(64), 7);
+
+console.log(divisors2(10));
+
+// 2020/10/23 19:47
+import { G9642 } from './7 kyu Two to One';
+
+Test.assert_equals(G9642.longest("aretheyhere", "yestheyarehere"), "aehrsty");
+Test.assert_equals(G9642.longest("loopingisfunbutdangerous", "lessdangerousthancoding"), "abcdefghilnoprstu");
+Test.assert_equals(G9642.longest("inmanylanguages", "theresapairoffunctions"), "acefghilmnoprstuy");
+Test.assert_equals(G9642.longest("lordsofthefallen", "gamekult"), "adefghklmnorstu");
+
+// 2020/10/27 13:29
+import { isValidWalk } from './6 kyu Take a Ten Minute Walk';
+Test.assert_equals(isValidWalk(['n','s','n','s','n','s','n','s','n','s']), true);
+Test.assert_equals(isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']), false);
+Test.assert_equals(isValidWalk(['w']), false);
+Test.assert_equals(isValidWalk(['n','n','n','s','n','s','n','s','n','s']), false);
+
+// 2020/10/30  9:58
+import { solequa } from './5 kyu Diophantine Equation';
+Test.assert_equals(solequa(5), [[3, 1]]);
+Test.assert_equals(solequa(12), [[4, 1]]);
+Test.assert_equals(solequa(13), [[7, 3]]);
+Test.assert_equals(solequa(16), [[4, 0]]);
+Test.assert_equals(solequa(90002), []);
+Test.assert_equals(solequa(90005), [[45003, 22501], [9003, 4499], [981, 467], [309, 37]]);
