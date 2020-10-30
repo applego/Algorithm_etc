@@ -142,4 +142,12 @@ TestCodewar_1.default.assert_equals(_6_kyu_Take_a_Ten_Minute_Walk_1.isValidWalk(
 TestCodewar_1.default.assert_equals(_6_kyu_Take_a_Ten_Minute_Walk_1.isValidWalk(['w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'e', 'w', 'e']), false);
 TestCodewar_1.default.assert_equals(_6_kyu_Take_a_Ten_Minute_Walk_1.isValidWalk(['w']), false);
 TestCodewar_1.default.assert_equals(_6_kyu_Take_a_Ten_Minute_Walk_1.isValidWalk(['n', 'n', 'n', 's', 'n', 's', 'n', 's', 'n', 's']), false);
+// 2020/10/30  9:58
+var _5_kyu_Diophantine_Equation_1 = require("./5 kyu Diophantine Equation");
+TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(5), [[3, 1]]);
+TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(12), [[4, 1]]);
+TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(13), [[7, 3]]);
+TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(16), [[4, 0]]);
+TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(90002), []);
+TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(90005), [[45003, 22501], [9003, 4499], [981, 467], [309, 37]]);
 //# sourceMappingURL=main.js.map

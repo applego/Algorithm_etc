@@ -191,3 +191,12 @@ Test.assert_equals(isValidWalk(['n','s','n','s','n','s','n','s','n','s']), true)
 Test.assert_equals(isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']), false);
 Test.assert_equals(isValidWalk(['w']), false);
 Test.assert_equals(isValidWalk(['n','n','n','s','n','s','n','s','n','s']), false);
+
+// 2020/10/30  9:58
+import { solequa } from './5 kyu Diophantine Equation';
+Test.assert_equals(solequa(5), [[3, 1]]);
+Test.assert_equals(solequa(12), [[4, 1]]);
+Test.assert_equals(solequa(13), [[7, 3]]);
+Test.assert_equals(solequa(16), [[4, 0]]);
+Test.assert_equals(solequa(90002), []);
+Test.assert_equals(solequa(90005), [[45003, 22501], [9003, 4499], [981, 467], [309, 37]]);
