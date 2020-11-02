@@ -200,3 +200,9 @@ Test.assert_equals(solequa(13), [[7, 3]]);
 Test.assert_equals(solequa(16), [[4, 0]]);
 Test.assert_equals(solequa(90002), []);
 Test.assert_equals(solequa(90005), [[45003, 22501], [9003, 4499], [981, 467], [309, 37]]);
+
+// 2020/11/03  0:18
+import { multiplicationTable } from './6 kyu Multiplication table';
+Test.assert_equals(multiplicationTable(1), [[1]])
+Test.assert_equals(multiplicationTable(2), [[1, 2], [2, 4]])
+Test.assert_equals(multiplicationTable(3), [[1, 2, 3], [2, 4, 6], [3, 6, 9]])

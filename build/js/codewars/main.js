@@ -150,4 +150,9 @@ TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(13), [
 TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(16), [[4, 0]]);
 TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(90002), []);
 TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(90005), [[45003, 22501], [9003, 4499], [981, 467], [309, 37]]);
+// 2020/11/03  0:18
+var _6_kyu_Multiplication_table_1 = require("./6 kyu Multiplication table");
+TestCodewar_1.default.assert_equals(_6_kyu_Multiplication_table_1.multiplicationTable(1), [[1]]);
+TestCodewar_1.default.assert_equals(_6_kyu_Multiplication_table_1.multiplicationTable(2), [[1, 2], [2, 4]]);
+TestCodewar_1.default.assert_equals(_6_kyu_Multiplication_table_1.multiplicationTable(3), [[1, 2, 3], [2, 4, 6], [3, 6, 9]]);
 //# sourceMappingURL=main.js.map
