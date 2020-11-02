@@ -4,7 +4,7 @@ Hint:
 x2 - 4 * y2 = (x - 2*y) * (x + 2*y)
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.solequa = exports.solequa_timeout = void 0;
+exports.solequa_BP = exports.solequa = exports.solequa_timeout = void 0;
 function solequa_timeout(n) {
     // y を決める
     // x2 = n + 4y2
@@ -66,4 +66,19 @@ function solequa(n) {
     return answers;
 }
 exports.solequa = solequa;
+// BP
+function solequa_BP(n) {
+    var result = [], a, b, x, y;
+    for (var a_1 = 1; a_1 <= Math.sqrt(n); a_1++) {
+        if (Number.isInteger(b = n / a_1)) {
+            if (Number.isInteger(x = (b + a_1) / 2)) {
+                if (Number.isInteger(y = (b - a_1) / 4)) {
+                    result.push([x, y]);
+                }
+            }
+        }
+    }
+    return result;
+}
+exports.solequa_BP = solequa_BP;
 //# sourceMappingURL=5 kyu Diophantine Equation.js.map
