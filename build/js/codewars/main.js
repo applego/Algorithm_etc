@@ -5,6 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 // let test = new Test();//__filename
+var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var m1 = require("./8 kyu The falling speed of petals");
 // m1.sakuraFall(0);
 // m1.sakuraFall(5);
@@ -155,4 +156,18 @@ var _6_kyu_Multiplication_table_1 = require("./6 kyu Multiplication table");
 TestCodewar_1.default.assert_equals(_6_kyu_Multiplication_table_1.multiplicationTable(1), [[1]]);
 TestCodewar_1.default.assert_equals(_6_kyu_Multiplication_table_1.multiplicationTable(2), [[1, 2], [2, 4]]);
 TestCodewar_1.default.assert_equals(_6_kyu_Multiplication_table_1.multiplicationTable(3), [[1, 2, 3], [2, 4, 6], [3, 6, 9]]);
+// 2020/11/04 22:37
+var _6_kyu_Irreducible_Sum_of_Rationals_1 = require("./6 kyu Irreducible Sum of Rationals");
+TimeMeasure_1.default.measure('sumFracts', function () {
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts, [[1, 2], [1, 3], [1, 4]], "[13, 12]");
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts, [[1, 3], [5, 3]], "2");
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts, [[12, 3], [15, 3]], "9");
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts, [[2, 7], [1, 3], [1, 12]], "[59, 84]");
+});
+TimeMeasure_1.default.measure('sumFracts1', function () {
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [[1, 2], [1, 3], [1, 4]], "[13, 12]");
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [[1, 3], [5, 3]], "2");
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [[12, 3], [15, 3]], "9");
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [[2, 7], [1, 3], [1, 12]], "[59, 84]");
+});
 //# sourceMappingURL=main.js.map

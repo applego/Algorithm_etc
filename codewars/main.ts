@@ -2,6 +2,8 @@
 import Test from './TestCodewar';
 // let test = new Test();//__filename
 
+import TimeMeasure from './TimeMeasure';
+
 import m1 = require("./8 kyu The falling speed of petals");
 
 // m1.sakuraFall(0);
@@ -206,3 +208,18 @@ import { multiplicationTable } from './6 kyu Multiplication table';
 Test.assert_equals(multiplicationTable(1), [[1]])
 Test.assert_equals(multiplicationTable(2), [[1, 2], [2, 4]])
 Test.assert_equals(multiplicationTable(3), [[1, 2, 3], [2, 4, 6], [3, 6, 9]])
+
+// 2020/11/04 22:37
+import { G96422 } from './6 kyu Irreducible Sum of Rationals';
+TimeMeasure.measure('sumFracts', () => {
+  Test.assert_equals_param_func(G96422.sumFracts, [[1, 2], [1, 3], [1, 4]], "[13, 12]");
+  Test.assert_equals_param_func(G96422.sumFracts, [[1, 3], [5, 3]], "2");
+  Test.assert_equals_param_func(G96422.sumFracts, [[12, 3], [15, 3]], "9");
+  Test.assert_equals_param_func(G96422.sumFracts, [[2, 7], [1, 3], [1, 12]], "[59, 84]");
+});
+TimeMeasure.measure('sumFracts1', () => {
+  Test.assert_equals_param_func(G96422.sumFracts1, [[1, 2], [1, 3], [1, 4]], "[13, 12]");
+  Test.assert_equals_param_func(G96422.sumFracts1, [[1, 3], [5, 3]], "2");
+  Test.assert_equals_param_func(G96422.sumFracts1, [[12, 3], [15, 3]], "9");
+  Test.assert_equals_param_func(G96422.sumFracts1, [[2, 7], [1, 3], [1, 12]], "[59, 84]");
+});
