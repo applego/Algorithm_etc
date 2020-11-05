@@ -223,3 +223,14 @@ TimeMeasure.measure('sumFracts1', () => {
   Test.assert_equals_param_func(G96422.sumFracts1, [[12, 3], [15, 3]], "9");
   Test.assert_equals_param_func(G96422.sumFracts1, [[2, 7], [1, 3], [1, 12]], "[59, 84]");
 });
+
+// 2020/11/05 18:31
+import { squareSum,squareSum_bp } from './8 kyu Square(n) Sum';
+TimeMeasure.measure('squareSum', () => {
+  Test.assert_equals(squareSum([1, 2]), 5);
+  Test.assert_equals(squareSum([0, 3, 4, 5]), 50);
+
+  Test.assert_equals(squareSum([-1, -2]), 5);
+  Test.assert_equals(squareSum_bp([-1, -2]), 5);
+
+});

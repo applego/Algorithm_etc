@@ -170,4 +170,12 @@ TimeMeasure_1.default.measure('sumFracts1', function () {
     TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [[12, 3], [15, 3]], "9");
     TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [[2, 7], [1, 3], [1, 12]], "[59, 84]");
 });
+// 2020/11/05 18:31
+var _8_kyu_Square_n__Sum_1 = require("./8 kyu Square(n) Sum");
+TimeMeasure_1.default.measure('squareSum', function () {
+    TestCodewar_1.default.assert_equals(_8_kyu_Square_n__Sum_1.squareSum([1, 2]), 5);
+    TestCodewar_1.default.assert_equals(_8_kyu_Square_n__Sum_1.squareSum([0, 3, 4, 5]), 50);
+    TestCodewar_1.default.assert_equals(_8_kyu_Square_n__Sum_1.squareSum([-1, -2]), 5);
+    TestCodewar_1.default.assert_equals(_8_kyu_Square_n__Sum_1.squareSum_bp([-1, -2]), 5);
+});
 //# sourceMappingURL=main.js.map
