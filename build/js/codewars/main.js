@@ -178,4 +178,21 @@ TimeMeasure_1.default.measure('squareSum', function () {
     TestCodewar_1.default.assert_equals(_8_kyu_Square_n__Sum_1.squareSum([-1, -2]), 5);
     TestCodewar_1.default.assert_equals(_8_kyu_Square_n__Sum_1.squareSum_bp([-1, -2]), 5);
 });
+// 2020/11/09 12:15
+var _6_kyu_Playing_with_digits_1 = require("./6 kyu Playing with digits");
+TimeMeasure_1.default.measure('dig_pow', function () {
+    TestCodewar_1.default.assert_equals(_6_kyu_Playing_with_digits_1.G964_1109.digPow(89, 1), 1);
+});
+TimeMeasure_1.default.measure('dig_pow', function () {
+    TestCodewar_1.default.assert_equals(_6_kyu_Playing_with_digits_1.G964_1109.digPow(92, 1), -1);
+});
+TimeMeasure_1.default.measure('dig_pow', function () {
+    TestCodewar_1.default.assert_equals(_6_kyu_Playing_with_digits_1.G964_1109.digPow(114, 3), 9);
+});
+TimeMeasure_1.default.measure('dig_pow', function () {
+    TestCodewar_1.default.assert_equals(_6_kyu_Playing_with_digits_1.G964_1109.digPow(695, 2), 2);
+});
+TimeMeasure_1.default.measure('dig_pow', function () {
+    TestCodewar_1.default.assert_equals(_6_kyu_Playing_with_digits_1.G964_1109.digPow(46288, 3), 51);
+});
 //# sourceMappingURL=main.js.map

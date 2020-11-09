@@ -1,2 +1,2 @@
-NEWFILENAME="codewars/8 kyu Square(n) Sum"
+NEWFILENAME="codewars/6 kyu Playing with digits"
 touch "$NEWFILENAME.ts"

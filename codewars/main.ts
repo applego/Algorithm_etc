@@ -234,3 +234,21 @@ TimeMeasure.measure('squareSum', () => {
   Test.assert_equals(squareSum_bp([-1, -2]), 5);
 
 });
+
+// 2020/11/09 12:15
+import { G964_1109 } from './6 kyu Playing with digits';
+TimeMeasure.measure('dig_pow', () => {
+  Test.assert_equals(G964_1109.digPow(89, 1), 1);
+});
+TimeMeasure.measure('dig_pow', () => {
+  Test.assert_equals(G964_1109.digPow(92, 1), -1);
+});
+TimeMeasure.measure('dig_pow', () => {
+  Test.assert_equals(G964_1109.digPow(114, 3), 9);
+});
+TimeMeasure.measure('dig_pow', () => {
+  Test.assert_equals(G964_1109.digPow(695, 2), 2);
+});
+TimeMeasure.measure('dig_pow', () => {
+  Test.assert_equals(G964_1109.digPow(46288, 3), 51);
+});
