@@ -1,2 +1,2 @@
-NEWFILENAME="codewars/6 kyu Playing with digits"
+NEWFILENAME="codewars/8 kyu Reversed Words"
 touch "$NEWFILENAME.ts"

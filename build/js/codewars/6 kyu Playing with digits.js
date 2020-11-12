@@ -29,4 +29,6 @@ var G964_1109 = /** @class */ (function () {
     return G964_1109;
 }());
 exports.G964_1109 = G964_1109;
+// BP
+// return x % n ? -1 : x / n;
 //# sourceMappingURL=6 kyu Playing with digits.js.map

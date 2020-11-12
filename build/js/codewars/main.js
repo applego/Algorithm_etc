@@ -195,4 +195,13 @@ TimeMeasure_1.default.measure('dig_pow', function () {
 TimeMeasure_1.default.measure('dig_pow', function () {
     TestCodewar_1.default.assert_equals(_6_kyu_Playing_with_digits_1.G964_1109.digPow(46288, 3), 51);
 });
+// 2020/11/12 21:40
+var _8_kyu_Reversed_Words_1 = require("./8 kyu Reversed Words");
+TimeMeasure_1.default.measure('dig_pow', function () {
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("hello world!"), "world! hello");
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("yoda doesn't speak like this"), "this like speak doesn't yoda");
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("foobar"), "foobar");
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("kata editor"), "editor kata");
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("row row row your boat"), "boat your row row row");
+});
 //# sourceMappingURL=main.js.map

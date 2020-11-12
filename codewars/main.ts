@@ -252,3 +252,13 @@ TimeMeasure.measure('dig_pow', () => {
 TimeMeasure.measure('dig_pow', () => {
   Test.assert_equals(G964_1109.digPow(46288, 3), 51);
 });
+
+// 2020/11/12 21:40
+import { reversedWords } from './8 kyu Reversed Words';
+TimeMeasure.measure('dig_pow', () => {
+  Test.assert_equals(reversedWords("hello world!"), "world! hello");
+  Test.assert_equals(reversedWords("yoda doesn't speak like this"), "this like speak doesn't yoda");
+  Test.assert_equals(reversedWords("foobar"), "foobar");
+  Test.assert_equals(reversedWords("kata editor"), "editor kata");
+  Test.assert_equals(reversedWords("row row row your boat"), "boat your row row row");
+});
