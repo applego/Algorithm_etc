@@ -170,4 +170,38 @@ TimeMeasure_1.default.measure('sumFracts1', function () {
     TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [[12, 3], [15, 3]], "9");
     TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [[2, 7], [1, 3], [1, 12]], "[59, 84]");
 });
+// 2020/11/05 18:31
+var _8_kyu_Square_n__Sum_1 = require("./8 kyu Square(n) Sum");
+TimeMeasure_1.default.measure('squareSum', function () {
+    TestCodewar_1.default.assert_equals(_8_kyu_Square_n__Sum_1.squareSum([1, 2]), 5);
+    TestCodewar_1.default.assert_equals(_8_kyu_Square_n__Sum_1.squareSum([0, 3, 4, 5]), 50);
+    TestCodewar_1.default.assert_equals(_8_kyu_Square_n__Sum_1.squareSum([-1, -2]), 5);
+    TestCodewar_1.default.assert_equals(_8_kyu_Square_n__Sum_1.squareSum_bp([-1, -2]), 5);
+});
+// 2020/11/09 12:15
+var _6_kyu_Playing_with_digits_1 = require("./6 kyu Playing with digits");
+TimeMeasure_1.default.measure('dig_pow', function () {
+    TestCodewar_1.default.assert_equals(_6_kyu_Playing_with_digits_1.G964_1109.digPow(89, 1), 1);
+});
+TimeMeasure_1.default.measure('dig_pow', function () {
+    TestCodewar_1.default.assert_equals(_6_kyu_Playing_with_digits_1.G964_1109.digPow(92, 1), -1);
+});
+TimeMeasure_1.default.measure('dig_pow', function () {
+    TestCodewar_1.default.assert_equals(_6_kyu_Playing_with_digits_1.G964_1109.digPow(114, 3), 9);
+});
+TimeMeasure_1.default.measure('dig_pow', function () {
+    TestCodewar_1.default.assert_equals(_6_kyu_Playing_with_digits_1.G964_1109.digPow(695, 2), 2);
+});
+TimeMeasure_1.default.measure('dig_pow', function () {
+    TestCodewar_1.default.assert_equals(_6_kyu_Playing_with_digits_1.G964_1109.digPow(46288, 3), 51);
+});
+// 2020/11/12 21:40
+var _8_kyu_Reversed_Words_1 = require("./8 kyu Reversed Words");
+TimeMeasure_1.default.measure('dig_pow', function () {
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("hello world!"), "world! hello");
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("yoda doesn't speak like this"), "this like speak doesn't yoda");
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("foobar"), "foobar");
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("kata editor"), "editor kata");
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("row row row your boat"), "boat your row row row");
+});
 //# sourceMappingURL=main.js.map

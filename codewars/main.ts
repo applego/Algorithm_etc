@@ -223,3 +223,42 @@ TimeMeasure.measure('sumFracts1', () => {
   Test.assert_equals_param_func(G96422.sumFracts1, [[12, 3], [15, 3]], "9");
   Test.assert_equals_param_func(G96422.sumFracts1, [[2, 7], [1, 3], [1, 12]], "[59, 84]");
 });
+
+// 2020/11/05 18:31
+import { squareSum,squareSum_bp } from './8 kyu Square(n) Sum';
+TimeMeasure.measure('squareSum', () => {
+  Test.assert_equals(squareSum([1, 2]), 5);
+  Test.assert_equals(squareSum([0, 3, 4, 5]), 50);
+
+  Test.assert_equals(squareSum([-1, -2]), 5);
+  Test.assert_equals(squareSum_bp([-1, -2]), 5);
+
+});
+
+// 2020/11/09 12:15
+import { G964_1109 } from './6 kyu Playing with digits';
+TimeMeasure.measure('dig_pow', () => {
+  Test.assert_equals(G964_1109.digPow(89, 1), 1);
+});
+TimeMeasure.measure('dig_pow', () => {
+  Test.assert_equals(G964_1109.digPow(92, 1), -1);
+});
+TimeMeasure.measure('dig_pow', () => {
+  Test.assert_equals(G964_1109.digPow(114, 3), 9);
+});
+TimeMeasure.measure('dig_pow', () => {
+  Test.assert_equals(G964_1109.digPow(695, 2), 2);
+});
+TimeMeasure.measure('dig_pow', () => {
+  Test.assert_equals(G964_1109.digPow(46288, 3), 51);
+});
+
+// 2020/11/12 21:40
+import { reversedWords } from './8 kyu Reversed Words';
+TimeMeasure.measure('dig_pow', () => {
+  Test.assert_equals(reversedWords("hello world!"), "world! hello");
+  Test.assert_equals(reversedWords("yoda doesn't speak like this"), "this like speak doesn't yoda");
+  Test.assert_equals(reversedWords("foobar"), "foobar");
+  Test.assert_equals(reversedWords("kata editor"), "editor kata");
+  Test.assert_equals(reversedWords("row row row your boat"), "boat your row row row");
+});
