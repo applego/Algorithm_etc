@@ -64,3 +64,12 @@ $ git clone someurl.com/foo
 $ cd foo
 $ cargo build
 ```
+
+# 新規プロジェクトの立ち上げ
+
+新規プロジェクトを立ち上げるには、第 1 章で作成した projects ディレクトリに行き、 Cargo を使って新規プロジェクトを作成します。以下のように:
+
+```
+$ cargo new guessing_game --bin
+$ cd guessing_game
+```
