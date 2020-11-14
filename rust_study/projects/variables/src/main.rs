@@ -6,6 +6,7 @@ fn main() {
 
     // 変数と定数(constants)の違い
     const MAX_POINTS: u32 = 100_000;
+    println!("The value of MAX_POINTS is:{}",MAX_POINTS);
 
     // シャドーイング
     let x2 = 5;
@@ -22,40 +23,42 @@ fn main() {
     // spaces_ng = spaces.len();// これはできない
 
     // データ型
-    let guess: u32 = "42".parse().expect("Not a number!");
+    let _guess: u32 = "42".parse().expect("Not a number!");
 
     //　スカラー型
 
     // 浮動小数点型
-    let x3 = 2.0; // f64
-    let y: f32 = 3.0; // f32
+    let _x3 = 2.0; // f64
+    let _y: f32 = 3.0; // f32
 
     // 数値演算
-    let sum = 5 + 10;
+    let _sum = 5 + 10;
 
-    let difference = 95.5 - 4.3;
+    let _difference = 95.5 - 4.3;
 
-    let product = 4 * 30;
+    let _product = 4 * 30;
 
-    let quotient = 56.7 / 32.2;
+    let _quotient = 56.7 / 32.2;
 
-    let remainder = 43 % 5;
+    let _remainder = 43 % 5;
 
     // 論理値型
-    let t = true;
+    let _t = true;
 
-    let f: bool = false; // 明示的型注釈付きで
+    let _f: bool = false; // 明示的型注釈付きで
 
     // 複合型
     // タプル型
     let tup: (i32, f64, u8) = (500, 6.4, 1);
-    let (x, y, z) = tup;
-    println!("The value of y is :{}", y);
+    let (x_tup, y_tup, z_tup) = tup;
+    println!("The value of x_tup is :{}", x_tup);
+    println!("The value of y_tup is :{}", y_tup);
+    println!("The value of z_tup is :{}", z_tup);
 
-    let x: (i32, f64, u8) = (500, 6.4, 1);
-    let five_hundred = x.0;
-    let six_point_four = x.1;
-    let one = x.2;
+    let _x: (i32, f64, u8) = (500, 6.4, 1);
+    let _five_hundred = _x.0;
+    let _six_point_four = _x.1;
+    let _one = _x.2;
 
     // 配列型
     /*
@@ -65,6 +68,11 @@ fn main() {
       一度宣言されたら、サイズを伸ばすことも縮めることもできません。
     */
     let a = [1, 2, 3, 4, 5];
+    let first = a[0];
+    let second = a[1];
+    println!("The value of first is: {}",first);
+    println!("The value of second is: {}",second);
+
     let months = [
         "January",
         "February",
@@ -79,10 +87,12 @@ fn main() {
         "November",
         "December",
     ];
-    let first = a[0];
-    let second = a[1];
+    for n in 0..months.len(){
+        println!("The value of months[n] is: {}",months[n]);
+    }
 
-    let index = 10;
+
+    let index = 4;
     let element = a[index];
     println!("The value of element is:{}", element);
 }

@@ -7,13 +7,15 @@ mod tests {
     fn it_works() {
         assert_eq!(2 + 2, 4);
     }
+    // 2020/11/15  0:35
     use crate::kyu8_reversed_words::reverse_words;
     #[test]
     fn returns_expected() {
       assert_eq!(reverse_words("hello world!"), "world! hello");
     }
-    #[test]
-    fn another(){
-      panic!("Make thhis test faild");
-    }
+    //　失敗用テスト
+    // #[test]
+    // fn another(){
+    //   panic!("Make thhis test faild");
+    // }
 }

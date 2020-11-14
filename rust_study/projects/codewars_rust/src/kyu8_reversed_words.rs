@@ -1,5 +1,9 @@
 pub fn reverse_words(str:&str) -> String {
-    "backward! is This".to_string()
+    let ans:Vec<&str>= str.rsplit(" ")
+        .collect();
+    println!("The value of ans is: {}",ans);
+        // .connect(" ");
+    return "fff";
 }
 
 // #[cfg(test)]
