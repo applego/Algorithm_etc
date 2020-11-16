@@ -204,4 +204,13 @@ TimeMeasure_1.default.measure('dig_pow', function () {
     TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("kata editor"), "editor kata");
     TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("row row row your boat"), "boat your row row row");
 });
+// 2020/11/16 23:35
+var _8_kyu_Keep_Hydrated_1 = require("./8 kyu Keep Hydrated");
+TestCodewar_1.default.assert_equals(_8_kyu_Keep_Hydrated_1.litres(2), 1);
+TestCodewar_1.default.assert_equals(_8_kyu_Keep_Hydrated_1.litres(1.4), 0);
+TestCodewar_1.default.assert_equals(_8_kyu_Keep_Hydrated_1.litres(12.3), 6);
+TestCodewar_1.default.assert_equals(_8_kyu_Keep_Hydrated_1.litres(0.82), 0);
+TestCodewar_1.default.assert_equals(_8_kyu_Keep_Hydrated_1.litres(11.8), 5);
+TestCodewar_1.default.assert_equals(_8_kyu_Keep_Hydrated_1.litres(1787), 893);
+TestCodewar_1.default.assert_equals(_8_kyu_Keep_Hydrated_1.litres(0), 0);
 //# sourceMappingURL=main.js.map
