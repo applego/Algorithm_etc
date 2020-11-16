@@ -262,3 +262,13 @@ TimeMeasure.measure('dig_pow', () => {
   Test.assert_equals(reversedWords("kata editor"), "editor kata");
   Test.assert_equals(reversedWords("row row row your boat"), "boat your row row row");
 });
+
+// 2020/11/16 23:35
+import { litres } from './8 kyu Keep Hydrated';
+Test.assert_equals(litres(2),1);
+    Test.assert_equals(litres(1.4),0);
+    Test.assert_equals(litres(12.3),6);
+    Test.assert_equals(litres(0.82),0);
+    Test.assert_equals(litres(11.8),5);
+    Test.assert_equals(litres(1787),893);
+    Test.assert_equals(litres(0),0);
