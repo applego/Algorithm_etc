@@ -23,6 +23,10 @@ fn main() {
 
     //ダングリング参照を阻止
     let reference_to_nothing = dangle();
+
+    // スライス
+    // first_word関数の呼び出し結果を保持し、Stringの中身を変更する
+    main_slice();
 }
 
 fn shoyuuken_to_kannsuu() {
@@ -151,4 +155,79 @@ fn dangle() -> String {
 
     // &s
     s // 解決策
+}
+
+fn first_word(s: &String) -> usize {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return i;
+        }
+    }
+
+    s.len()
+}
+
+// スライスを返すように
+fn first_word_2(s: &str) -> &str {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[0..i];
+        }
+    }
+    &s[..]
+}
+
+fn main_slice() {
+    let mut s = String::from("hello world");
+
+    let word = first_word(&s); // wordの中身は、値5になる
+
+    s.clear(); // Stringを空にする。つまり、""と等しくする
+
+    // wordはまだ値5を保持しているが、もうこの値を有効に使用できる文字列は存在しない。
+    // wordは完全に無効なのだ!
+
+    // 文字列スライス
+    let s2 = String::from("hhello world");
+    let hello = &s2[0..5];
+    let world = &s2[6..11];
+
+    let s3 = String::from("hello");
+    let slice = &s3[0..2];
+    let slice = &s3[..2];
+
+    let s4 = String::from("hello");
+
+    let len = s4.len();
+
+    let slice = &s4[3..len];
+    let slice = &s4[3..];
+
+    let slice = &s4[0..len];
+    let slice = &s4[..];
+
+    let mut s5 = String::from("hello worrld");
+    let word = first_word(&s5);
+
+    s5.clear(); // error!
+
+    println!("the first word is: {}", word);
+
+    let my_string = String::from("hello world");
+
+    // first_wordは`String`のスライスに対して機能する
+    let word = first_word_2(&my_string[..]);
+
+    let my_string_literal = "hello world";
+
+    // first_wordっは文字列リテラルのスライスに対して機能する
+    let word = first_word_2(&my_string_literal[..]);
+
+    // 文字列リテラルは、すでに文字列スライス*な*ので、
+    // スライス記法なしでも機能するのだ!
+    let word = first_word_2(my_string_literal);
 }
