@@ -9,21 +9,21 @@
 //     // return ans;
 // }
 
-fn reverse_words_my2(str:&str) -> String {
-    return str.rsplit(" ")
-        .collect::<Vec<_>>()
-        .join(" ");
-}
+// fn reverse_words_my2(str:&str) -> String {
+//     return str.rsplit(" ")
+//         .collect::<Vec<_>>()
+//         .join(" ");
+// }
 
-pub fn reverse_words(str:&str) -> String {
+pub fn reverse_words(str: &str) -> String {
     // return str.split_whitespace()
     //     .rev()
-    return str.rsplit(" ")
+    return str
+        .rsplit(" ")
         // .rev()
         .collect::<Vec<_>>()
         .join(" ");
 }
-
 
 // #[cfg(test)]
 // mod tests {
