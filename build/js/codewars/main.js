@@ -213,4 +213,10 @@ TestCodewar_1.default.assert_equals(_8_kyu_Keep_Hydrated_1.litres(0.82), 0);
 TestCodewar_1.default.assert_equals(_8_kyu_Keep_Hydrated_1.litres(11.8), 5);
 TestCodewar_1.default.assert_equals(_8_kyu_Keep_Hydrated_1.litres(1787), 893);
 TestCodewar_1.default.assert_equals(_8_kyu_Keep_Hydrated_1.litres(0), 0);
+// 2020/11/20 22:44
+var _8_kyu_L1_Set_Alarm_1 = require("./8 kyu L1 Set Alarm");
+TestCodewar_1.default.assert_equals(_8_kyu_L1_Set_Alarm_1.setAlarm(true, true), false);
+TestCodewar_1.default.assert_equals(_8_kyu_L1_Set_Alarm_1.setAlarm(false, true), false);
+TestCodewar_1.default.assert_equals(_8_kyu_L1_Set_Alarm_1.setAlarm(true, false), true);
+TestCodewar_1.default.assert_equals(_8_kyu_L1_Set_Alarm_1.setAlarm(false, false), false);
 //# sourceMappingURL=main.js.map

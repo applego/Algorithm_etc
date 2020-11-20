@@ -266,9 +266,16 @@ TimeMeasure.measure('dig_pow', () => {
 // 2020/11/16 23:35
 import { litres } from './8 kyu Keep Hydrated';
 Test.assert_equals(litres(2),1);
-    Test.assert_equals(litres(1.4),0);
-    Test.assert_equals(litres(12.3),6);
-    Test.assert_equals(litres(0.82),0);
-    Test.assert_equals(litres(11.8),5);
-    Test.assert_equals(litres(1787),893);
-    Test.assert_equals(litres(0),0);
+Test.assert_equals(litres(1.4),0);
+Test.assert_equals(litres(12.3),6);
+Test.assert_equals(litres(0.82),0);
+Test.assert_equals(litres(11.8),5);
+Test.assert_equals(litres(1787),893);
+Test.assert_equals(litres(0),0);
+
+// 2020/11/20 22:44
+import { setAlarm } from './8 kyu L1 Set Alarm';
+Test.assert_equals(setAlarm(true, true), false);
+Test.assert_equals(setAlarm(false, true), false);
+Test.assert_equals(setAlarm(true, false), true);
+Test.assert_equals(setAlarm(false, false), false);
