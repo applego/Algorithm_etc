@@ -219,4 +219,19 @@ TestCodewar_1.default.assert_equals(_8_kyu_L1_Set_Alarm_1.setAlarm(true, true), 
 TestCodewar_1.default.assert_equals(_8_kyu_L1_Set_Alarm_1.setAlarm(false, true), false);
 TestCodewar_1.default.assert_equals(_8_kyu_L1_Set_Alarm_1.setAlarm(true, false), true);
 TestCodewar_1.default.assert_equals(_8_kyu_L1_Set_Alarm_1.setAlarm(false, false), false);
+// 2020/11/24 22:48
+//start Playing with lists/arrays https://www.codewars.com/collections/playing-with-lists-slash-arrays
+var _7_kyu_Maximum_Product_1 = require("./7 kyu Maximum Product");
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([5, 8]), 40);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([1, 2, 3]), 6);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([1, 5, 10, 9]), 90);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([4, 12, 3, 1, 5]), 48);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([5, 1, 2, 3, 1, 4]), 6);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([3, 6, -2, -5, 7, 3]), 21);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([9, 5, 10, 2, 24, -1, -48]), 50);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([5, 6, -4, 2, 3, 2, -23]), 30);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([-23, 4, -5, 99, -27, 329, -2, 7, -921]), -14);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([5, 1, 2, 3, 1, 4]), 6);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([1, 0, 1, 0, 1000]), 0);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([1, 2, 3, 0]), 6);
 //# sourceMappingURL=main.js.map
