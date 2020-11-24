@@ -23,4 +23,13 @@ fn main() {
     };
 
     user1.email = String::from("anotheremail@example.com");
+
+    //リスト5-6: user1の一部の値を使用しつつ、新しいUserインスタンスを生成する
+    let user2 = User {
+        email: String::from("another@example.com"),
+        username: String::from("anotherusername567"),
+        // active: user1.active,
+        // sign_in_count: user1.sign_in_count,
+        ..user1 // 構造体更新記法
+    };
 }
