@@ -5,7 +5,7 @@ function reversedWords(str) {
     var reversedWords = str.split(' ')
         .reverse()
         .join(' ');
-    console.log(reversedWords);
+    // console.log(reversedWords);
     return reversedWords;
 }
 exports.reversedWords = reversedWords;

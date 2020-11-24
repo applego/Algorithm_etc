@@ -279,3 +279,19 @@ Test.assert_equals(setAlarm(true, true), false);
 Test.assert_equals(setAlarm(false, true), false);
 Test.assert_equals(setAlarm(true, false), true);
 Test.assert_equals(setAlarm(false, false), false);
+
+// 2020/11/24 22:48
+  //start Playing with lists/arrays https://www.codewars.com/collections/playing-with-lists-slash-arrays
+import { adjacentElementsProduct } from './7 kyu Maximum Product';
+Test.assert_equals(adjacentElementsProduct([5, 8]), 40);
+Test.assert_equals(adjacentElementsProduct([1, 2, 3]), 6);
+Test.assert_equals(adjacentElementsProduct([1, 5, 10, 9]), 90);
+Test.assert_equals(adjacentElementsProduct([4, 12, 3, 1, 5]), 48);
+Test.assert_equals(adjacentElementsProduct([5, 1, 2, 3, 1, 4]), 6);
+Test.assert_equals(adjacentElementsProduct([3, 6, -2, -5, 7, 3]), 21);
+Test.assert_equals(adjacentElementsProduct([9, 5, 10, 2, 24, -1, -48]), 50);
+Test.assert_equals(adjacentElementsProduct([5, 6, -4, 2, 3, 2, -23]), 30);
+Test.assert_equals(adjacentElementsProduct([-23, 4, -5, 99, -27, 329, -2, 7, -921]), -14);
+Test.assert_equals(adjacentElementsProduct([5, 1, 2, 3, 1, 4]), 6);
+Test.assert_equals(adjacentElementsProduct([1, 0, 1, 0, 1000]), 0);
+Test.assert_equals(adjacentElementsProduct([1, 2, 3, 0]), 6);
