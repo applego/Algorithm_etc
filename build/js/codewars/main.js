@@ -234,4 +234,9 @@ TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsPro
 TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([5, 1, 2, 3, 1, 4]), 6);
 TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([1, 0, 1, 0, 1000]), 0);
 TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Product_1.adjacentElementsProduct([1, 2, 3, 0]), 6);
+// 2020/11/25 12:39
+var _7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1 = require("./7 kyu Minimize Sum Of Array (Array Series #1)");
+TestCodewar_1.default.assert_equals(_7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1.minSum([5, 4, 2, 3]), 22);
+TestCodewar_1.default.assert_equals(_7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1.minSum([12, 6, 10, 26, 3, 24]), 342);
+TestCodewar_1.default.assert_equals(_7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1.minSum([9, 2, 8, 7, 5, 4, 0, 6]), 74);
 //# sourceMappingURL=main.js.map

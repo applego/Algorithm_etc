@@ -295,3 +295,9 @@ Test.assert_equals(adjacentElementsProduct([-23, 4, -5, 99, -27, 329, -2, 7, -92
 Test.assert_equals(adjacentElementsProduct([5, 1, 2, 3, 1, 4]), 6);
 Test.assert_equals(adjacentElementsProduct([1, 0, 1, 0, 1000]), 0);
 Test.assert_equals(adjacentElementsProduct([1, 2, 3, 0]), 6);
+
+// 2020/11/25 12:39
+import { minSum } from './7 kyu Minimize Sum Of Array (Array Series #1)';
+Test.assert_equals(minSum([5, 4, 2, 3]), 22);
+Test.assert_equals(minSum([12, 6, 10, 26, 3, 24]), 342);
+Test.assert_equals(minSum([9, 2, 8, 7, 5, 4, 0, 6]), 74);
