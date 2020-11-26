@@ -239,4 +239,6 @@ var _7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1 = require("./7 kyu Minimize 
 TestCodewar_1.default.assert_equals(_7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1.minSum([5, 4, 2, 3]), 22);
 TestCodewar_1.default.assert_equals(_7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1.minSum([12, 6, 10, 26, 3, 24]), 342);
 TestCodewar_1.default.assert_equals(_7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1.minSum([9, 2, 8, 7, 5, 4, 0, 6]), 74);
+var _7_kyu_Product_Of_Maximums_Of_Array__Array_Series__2_1 = require("./7 kyu Product Of Maximums Of Array (Array Series #2)");
+TestCodewar_1.default.assert_equals(_7_kyu_Product_Of_Maximums_Of_Array__Array_Series__2_1.maxProduct([4, 3, 5], 2), 20);
 //# sourceMappingURL=main.js.map

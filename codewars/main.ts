@@ -301,3 +301,9 @@ import { minSum } from './7 kyu Minimize Sum Of Array (Array Series #1)';
 Test.assert_equals(minSum([5, 4, 2, 3]), 22);
 Test.assert_equals(minSum([12, 6, 10, 26, 3, 24]), 342);
 Test.assert_equals(minSum([9, 2, 8, 7, 5, 4, 0, 6]), 74);
+
+// 2020/11/26 21:16
+import { assert } from "chai";
+import { maxProduct } from "./7 kyu Product Of Maximums Of Array (Array Series #2)";
+
+Test.assert_equals(maxProduct([4, 3, 5], 2), 20);
