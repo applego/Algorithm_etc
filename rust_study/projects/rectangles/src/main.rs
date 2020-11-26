@@ -8,8 +8,16 @@ impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
     }
+
     fn can_hold(&self, other: &Rectangle) -> bool {
         self.width > other.width && self.height > other.height
+    }
+
+    fn square(size: u32) -> Rectangle {
+        Rectangle {
+            width: size,
+            height: size,
+        }
     }
 }
 
@@ -60,6 +68,10 @@ fn main() {
     //rect1にrect2ははまり込む?
     println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
     println!("Can rect1 hold rect3? {}", rect1.can_hold(&rect3));
+
+    // 関連関数
+    let square1 = Rectangle::square(3);
+    println!("square1 is {:?}", square1);
 }
 
 // fn area(rectangle: &Rectangle) -> u32 {
