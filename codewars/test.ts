@@ -1,6 +1,6 @@
 // 2020/11/26 21:16
 // mocha chai テストライブラリ使用する test.ts
-// npm test -- -w
+// npm test -- -w or yarn run test
 
 import { describe, it } from "mocha";
 import { assert } from "chai";
