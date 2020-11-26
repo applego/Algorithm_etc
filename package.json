@@ -1,0 +1,26 @@
+{
+  "name": "atcoder",
+  "version": "1.0.0",
+  "description": "2020/06/03 - 多分だけどpaiza3にマージ済 - Macの競プロ用(python)",
+  "main": "index.js",
+  "scripts": {
+    "test":"mocha --require ts-node/register --watch-extensions ts \"codewars/test.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/applego/Algorithm_AOJ_AtCoder_by_python.git"
+  },
+  "author": "applego",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/applego/Algorithm_AOJ_AtCoder_by_python/issues"
+  },
+  "homepage": "https://github.com/applego/Algorithm_AOJ_AtCoder_by_python#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.4",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "ts-node": "^9.0.0"
+  }
+}
