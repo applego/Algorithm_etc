@@ -49,6 +49,7 @@ fn main() {
     let y: Option<i8> = Some(5);
 
     let sum = x + y;
+    // ^ no implementation for `i8 + std::option::Option<i8>`
 }
 
 // 標準ライブラリ
@@ -81,3 +82,20 @@ impl Message {
 //     Some(T),
 //     None,
 // }
+
+// match フロー制御演算子
+enum Coin {
+    Penny,
+    Nickel,
+    Dime,
+    Quarter,
+}
+
+fn value_in_cents(coin: Coin) -> u32 {
+    match coin {
+        Coin::Penny => 1,
+        Coin::Nickel => 5,
+        Coin::Dime => 10,
+        Coin::Quarter => 25,
+    }
+}
