@@ -1,18 +1,3 @@
-enum IpAddrKind {
-    V4,
-    V6,
-}
-
-// struct IpAddr {
-//     kind: IpAddrKind,
-//     address: String,
-// }
-
-enum IpAddr {
-    V4(u8, u8, u8, u8),
-    V6(String),
-}
-
 fn main() {
     let four = IpAddrKind::V4;
     let six = IpAddrKind::V6;
@@ -58,6 +43,29 @@ fn main() {
         "The value of Quarter Alaska Coin is {}",
         value_coin__quarter_alaska
     );
+
+    // Option<T>とのマッチ
+    let five = Some(5);
+    let six = plus_one(five);
+    let none = plus_one(None);
+    println!("The value of six is {:?}", six);
+    println!("The value of Some(6) is {:?}", Some(6));
+    println!("The value of none is {:?}", none);
+}
+
+enum IpAddrKind {
+    V4,
+    V6,
+}
+
+// struct IpAddr {
+//     kind: IpAddrKind,
+//     address: String,
+// }
+
+enum IpAddr {
+    V4(u8, u8, u8, u8),
+    V6(String),
 }
 
 // 標準ライブラリ
@@ -119,5 +127,13 @@ fn value_in_cents(coin: Coin) -> u32 {
             println!("State quarter from {:?}!", state);
             25
         }
+    }
+}
+
+// Option<T> とのマッチ
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        None => None,
+        Some(i) => Some(i + 1),
     }
 }
