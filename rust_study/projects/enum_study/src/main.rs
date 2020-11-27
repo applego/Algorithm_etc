@@ -62,6 +62,23 @@ fn main() {
         _ => (),
     }
     println!("The value of some_u8_value is {}", some_u8_value);
+
+    // Some(3)のときだけコードを実行するmatch
+    let mut some_u8_value = Some(0u8);
+    match some_u8_value {
+        Some(3) => println!("three"),
+        _ => (),
+    }
+
+    // if let で簡潔なフロー制御
+    if let Some(3) = some_u8_value {
+        println!("three");
+    }
+
+    some_u8_value = Some(3);
+    if let Some(3) = some_u8_value {
+        println!("three");
+    }
 }
 
 enum IpAddrKind {
