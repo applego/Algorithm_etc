@@ -38,6 +38,17 @@ fn main() {
 
     let m = Message::Write(String::from("hello"));
     m.call();
+
+    // enum Option<T>
+    let some_number = Some(5);
+    let some_string = Some("a string");
+
+    let absent_number: Option<i32> = None;
+
+    let x: i8 = 5;
+    let y: Option<i8> = Some(5);
+
+    let sum = x + y;
 }
 
 // 標準ライブラリ
@@ -63,3 +74,10 @@ impl Message {
         // method body would be defined here
     }
 }
+
+// enum Option 標準ライブラリ
+
+// enum Option<T> {
+//     Some(T),
+//     None,
+// }
