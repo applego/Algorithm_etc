@@ -33,7 +33,16 @@ fn main() {
     // let loopback = IpAddr::V6(String::from("::1"));
 
     // enumで（V4とV6で型を変える ver.
-    let home = IpAddr::V4(127,0,0,1);
-    let loopback = IpAddr::V6(String::from("::1");
+    let home = IpAddr::V4(127, 0, 0, 1);
+    let loopback = IpAddr::V6(String::from("::1"));
+}
 
+// 標準ライブラリ
+struct Ipv4Addr {}
+
+struct Ipv6Addr {}
+
+enum IpAddr_lib {
+    V4(Ipv4Addr),
+    V6(Ipv6Addr),
 }
