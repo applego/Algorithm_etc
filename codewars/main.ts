@@ -307,3 +307,13 @@ import { assert } from "chai";
 import { maxProduct } from "./7 kyu Product Of Maximums Of Array (Array Series #2)";
 
 Test.assert_equals(maxProduct([4, 3, 5], 2), 20);
+
+// 2020/11/27 18:02
+import { arrayLeaders } from "./7 kyu Array Leaders (Array Series #3)";
+
+Test.assert_equals(arrayLeaders([1, 2, 3, 4, 0]), [4]);
+Test.assert_equals(arrayLeaders([16, 17, 4, 3, 5, 2]), [17, 5, 2]);
+Test.assert_equals(arrayLeaders([-1, -29, -26, -2]), [-1]);
+Test.assert_equals(arrayLeaders([-36, -12, -27]), [-36, -12]);
+Test.assert_equals(arrayLeaders([5, -2, 2]), [5, 2]);
+Test.assert_equals(arrayLeaders([0, -1, -29, 3, 2]), [0, -1, 3, 2]);

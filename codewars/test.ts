@@ -19,3 +19,15 @@ describe("Basic tests", () => {
   it("maxProduct([14, 29, -28, 39, -16, -48], 4)", () => assert.strictEqual(maxProduct([14, 29, -28, 39, -16, -48], 4), -253344));
   it("maxProduct([1], 1)", () => assert.strictEqual(maxProduct([1], 1), 1));
 });
+
+
+import { arrayLeaders } from "./7 kyu Array Leaders (Array Series #3)";
+
+describe("Basic Tests", function() {
+  it("Testing for [1, 2, 3, 4, 0]", () => assert.deepEqual(arrayLeaders([1, 2, 3, 4, 0]), [4]));
+  it("Testing for [16, 17, 4, 3, 5, 2]", () => assert.deepEqual(arrayLeaders([16, 17, 4, 3, 5, 2]), [17, 5, 2]));
+  it("Testing for [-1, -29, -26, -2]", () => assert.deepEqual(arrayLeaders([-1, -29, -26, -2]), [-1]));
+  it("Testing for [-36, -12, -27]", () => assert.deepEqual(arrayLeaders([-36, -12, -27]), [-36, -12]));
+  it("Testing for [5, -2, 2]", () => assert.deepEqual(arrayLeaders([5, -2, 2]), [5, 2]));
+  it("Testing for [0, -1, -29, 3, 2]", () => assert.deepEqual(arrayLeaders([0, -1, -29, 3, 2]), [0, -1, 3, 2]));
+});

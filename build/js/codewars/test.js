@@ -20,4 +20,13 @@ mocha_1.describe("Basic tests", function () {
     mocha_1.it("maxProduct([14, 29, -28, 39, -16, -48], 4)", function () { return chai_1.assert.strictEqual(_7_kyu_Product_Of_Maximums_Of_Array__Array_Series__2_1.maxProduct([14, 29, -28, 39, -16, -48], 4), -253344); });
     mocha_1.it("maxProduct([1], 1)", function () { return chai_1.assert.strictEqual(_7_kyu_Product_Of_Maximums_Of_Array__Array_Series__2_1.maxProduct([1], 1), 1); });
 });
+var _7_kyu_Array_Leaders__Array_Series__3_1 = require("./7 kyu Array Leaders (Array Series #3)");
+mocha_1.describe("Basic Tests", function () {
+    mocha_1.it("Testing for [1, 2, 3, 4, 0]", function () { return chai_1.assert.deepEqual(_7_kyu_Array_Leaders__Array_Series__3_1.arrayLeaders([1, 2, 3, 4, 0]), [4]); });
+    mocha_1.it("Testing for [16, 17, 4, 3, 5, 2]", function () { return chai_1.assert.deepEqual(_7_kyu_Array_Leaders__Array_Series__3_1.arrayLeaders([16, 17, 4, 3, 5, 2]), [17, 5, 2]); });
+    mocha_1.it("Testing for [-1, -29, -26, -2]", function () { return chai_1.assert.deepEqual(_7_kyu_Array_Leaders__Array_Series__3_1.arrayLeaders([-1, -29, -26, -2]), [-1]); });
+    mocha_1.it("Testing for [-36, -12, -27]", function () { return chai_1.assert.deepEqual(_7_kyu_Array_Leaders__Array_Series__3_1.arrayLeaders([-36, -12, -27]), [-36, -12]); });
+    mocha_1.it("Testing for [5, -2, 2]", function () { return chai_1.assert.deepEqual(_7_kyu_Array_Leaders__Array_Series__3_1.arrayLeaders([5, -2, 2]), [5, 2]); });
+    mocha_1.it("Testing for [0, -1, -29, 3, 2]", function () { return chai_1.assert.deepEqual(_7_kyu_Array_Leaders__Array_Series__3_1.arrayLeaders([0, -1, -29, 3, 2]), [0, -1, 3, 2]); });
+});
 //# sourceMappingURL=test.js.map
