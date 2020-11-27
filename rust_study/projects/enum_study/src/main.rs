@@ -137,3 +137,10 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
         Some(i) => Some(i + 1),
     }
 }
+
+fn plus_one_has_bag(x: Option<i32>) -> Option<i32> {
+    match x {
+        Some(i) => Some(i + 1),
+        None => None, //non-exhaustive patterns: `None` not covered
+    }
+}
