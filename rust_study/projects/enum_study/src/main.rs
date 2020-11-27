@@ -51,6 +51,17 @@ fn main() {
     println!("The value of six is {:?}", six);
     println!("The value of Some(6) is {:?}", Some(6));
     println!("The value of none is {:?}", none);
+
+    // _というプレースホルダー
+    let some_u8_value = 0u8;
+    match some_u8_value {
+        1 => println!("one"),
+        3 => println!("three"),
+        5 => println!("five"),
+        7 => println!("seven"),
+        _ => (),
+    }
+    println!("The value of some_u8_value is {}", some_u8_value);
 }
 
 enum IpAddrKind {
