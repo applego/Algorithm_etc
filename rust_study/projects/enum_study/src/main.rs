@@ -48,8 +48,16 @@ fn main() {
     let x: i8 = 5;
     let y: Option<i8> = Some(5);
 
-    let sum = x + y;
+    // let sum = x + y;
     // ^ no implementation for `i8 + std::option::Option<i8>`
+
+    // match フロー制御制御演算子
+    let coin__quarter_alaska = Coin::Quarter(UsState::Alaska);
+    let value_coin__quarter_alaska = value_in_cents(coin__quarter_alaska);
+    println!(
+        "The value of Quarter Alaska Coin is {}",
+        value_coin__quarter_alaska
+    );
 }
 
 // 標準ライブラリ
@@ -84,11 +92,19 @@ impl Message {
 // }
 
 // match フロー制御演算子
+
+#[derive(Debug)]
+enum UsState {
+    Alabama,
+    Alaska,
+    // ... などなど
+}
+
 enum Coin {
     Penny,
     Nickel,
     Dime,
-    Quarter,
+    Quarter(UsState),
 }
 
 fn value_in_cents(coin: Coin) -> u32 {
@@ -99,6 +115,9 @@ fn value_in_cents(coin: Coin) -> u32 {
         }
         Coin::Nickel => 5,
         Coin::Dime => 10,
-        Coin::Quarter => 25,
+        Coin::Quarter(state) => {
+            println!("State quarter from {:?}!", state);
+            25
+        }
     }
 }
