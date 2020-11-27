@@ -1,3 +1,4 @@
+node_modules
 rust_study/projects/struct_study/target
 rust_study/projects/rectangles/target
-node_modules
+rust_study/projects/enum_study/target
