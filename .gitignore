@@ -2,3 +2,5 @@ node_modules
 rust_study/projects/struct_study/target
 rust_study/projects/rectangles/target
 rust_study/projects/enum_study/target
+rust_study/projects/my-project/restaurant/target
+rust_study/projects/my-project/target
