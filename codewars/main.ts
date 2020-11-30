@@ -317,3 +317,16 @@ Test.assert_equals(arrayLeaders([-1, -29, -26, -2]), [-1]);
 Test.assert_equals(arrayLeaders([-36, -12, -27]), [-36, -12]);
 Test.assert_equals(arrayLeaders([5, -2, 2]), [5, 2]);
 Test.assert_equals(arrayLeaders([0, -1, -29, 3, 2]), [0, -1, 3, 2]);
+
+// 2020/11/30 22:40
+import { maxGap } from "./7 kyu Maximum Gap (Array Series #4)";
+Test.assert_equals(maxGap([13, 10, 2, 9, 5]), 4);
+Test.assert_equals(maxGap([13, 3, 5]), 8);
+Test.assert_equals(maxGap([24, 299, 131, 14, 26, 25]), 168);
+Test.assert_equals(maxGap([-3, -27, -4, -2]), 23);
+Test.assert_equals(maxGap([-7, -42, -809, -14, -12]), 767);
+Test.assert_equals(maxGap([12, -5, -7, 0, 290]), 278);
+Test.assert_equals(maxGap([-54, 37, 0, 64, -15, 640, 0]), 576);
+Test.assert_equals(maxGap([130, 30, 50]), 80);
+Test.assert_equals(maxGap([1, 1, 1]), 0);
+Test.assert_equals(maxGap([-1, -1, -1]), 0);

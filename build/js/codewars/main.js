@@ -249,4 +249,16 @@ TestCodewar_1.default.assert_equals(_7_kyu_Array_Leaders__Array_Series__3_1.arra
 TestCodewar_1.default.assert_equals(_7_kyu_Array_Leaders__Array_Series__3_1.arrayLeaders([-36, -12, -27]), [-36, -12]);
 TestCodewar_1.default.assert_equals(_7_kyu_Array_Leaders__Array_Series__3_1.arrayLeaders([5, -2, 2]), [5, 2]);
 TestCodewar_1.default.assert_equals(_7_kyu_Array_Leaders__Array_Series__3_1.arrayLeaders([0, -1, -29, 3, 2]), [0, -1, 3, 2]);
+// 2020/11/30 22:40
+var _7_kyu_Maximum_Gap__Array_Series__4_1 = require("./7 kyu Maximum Gap (Array Series #4)");
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([13, 10, 2, 9, 5]), 4);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([13, 3, 5]), 8);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([24, 299, 131, 14, 26, 25]), 168);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([-3, -27, -4, -2]), 23);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([-7, -42, -809, -14, -12]), 767);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([12, -5, -7, 0, 290]), 278);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([-54, 37, 0, 64, -15, 640, 0]), 576);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([130, 30, 50]), 80);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([1, 1, 1]), 0);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([-1, -1, -1]), 0);
 //# sourceMappingURL=main.js.map

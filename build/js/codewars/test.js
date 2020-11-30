@@ -29,4 +29,17 @@ mocha_1.describe("Basic Tests", function () {
     mocha_1.it("Testing for [5, -2, 2]", function () { return chai_1.assert.deepEqual(_7_kyu_Array_Leaders__Array_Series__3_1.arrayLeaders([5, -2, 2]), [5, 2]); });
     mocha_1.it("Testing for [0, -1, -29, 3, 2]", function () { return chai_1.assert.deepEqual(_7_kyu_Array_Leaders__Array_Series__3_1.arrayLeaders([0, -1, -29, 3, 2]), [0, -1, 3, 2]); });
 });
+var _7_kyu_Maximum_Gap__Array_Series__4_1 = require("./7 kyu Maximum Gap (Array Series #4)");
+mocha_1.describe("Basic tests", function () {
+    mocha_1.it("Testing for [13, 10, 2, 9, 5]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([13, 10, 2, 9, 5]), 4); });
+    mocha_1.it("Testing for [13, 3, 5]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([13, 3, 5]), 8); });
+    mocha_1.it("Testing for [24, 299, 131, 14, 26, 25]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([24, 299, 131, 14, 26, 25]), 168); });
+    mocha_1.it("Testing for [-3, -27, -4, -2]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([-3, -27, -4, -2]), 23); });
+    mocha_1.it("Testing for [-7, -42, -809, -14, -12]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([-7, -42, -809, -14, -12]), 767); });
+    mocha_1.it("Testing for [12, -5, -7, 0, 290]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([12, -5, -7, 0, 290]), 278); });
+    mocha_1.it("Testing for [-54, 37, 0, 64, -15, 640, 0]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([-54, 37, 0, 64, -15, 640, 0]), 576); });
+    mocha_1.it("Testing for [130, 30, 50]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([130, 30, 50]), 80); });
+    mocha_1.it("Testing for [1, 1, 1]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([1, 1, 1]), 0); });
+    mocha_1.it("Testing for [-1, -1, -1]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([-1, -1, -1]), 0); });
+});
 //# sourceMappingURL=test.js.map
