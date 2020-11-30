@@ -79,6 +79,21 @@ fn main() {
     if let Some(3) = some_u8_value {
         println!("three");
     }
+
+    let mut count = 0;
+    let coin: Coin = Coin::Quarter(UsState::Alaska);
+    // same ver.1
+    // match coin {
+    //     // {:?}州のクォーターコイン
+    //     Coin::Quarter(state) => println!("State quarter from {:?}!", state),
+    //     _ => count += 1,
+    // }
+    // same ver.2
+    if let Coin::Quarter(state) = coin {
+        println!("State quarter from {:?}!", state);
+    } else {
+        count += 1;
+    }
 }
 
 enum IpAddrKind {
