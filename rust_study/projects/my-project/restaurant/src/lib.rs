@@ -31,3 +31,14 @@ pub fn eat_at_restaurant() {
     // 相対パス
     front_of_house::hosting::add_to_waitlist();
 }
+
+fn serve_order() {}
+
+mod back_of_house {
+    fn fix_incorrent_order() {
+        cook_order();
+        super::serve_order();
+    }
+
+    fn cook_order() {}
+}
