@@ -40,6 +40,10 @@ pub fn eat_at_restaurant() {
     // The next line wont't compile if we uncomment it; we're not allowed
     // to see or modify the seasonal fruit that comes with the meal
     // meal.seasonal_fruit = String::from("blueberries");
+
+    // pub enum
+    let order1 = back_of_house::Appetizer::Soup;
+    let order2 = back_of_house::Appetizer::Salad;
 }
 
 fn serve_order() {}
@@ -65,4 +69,10 @@ mod back_of_house {
     }
 
     fn cook_order() {}
+
+    // enumを公開に指定することはそのヴァリアントをすべて公開にする
+    pub enum Appetizer {
+        Soup,
+        Salad,
+    }
 }
