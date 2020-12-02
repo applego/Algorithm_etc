@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.maxGap = void 0;
+exports.maxGap_bp = exports.maxGap = void 0;
 function maxGap(nums) {
     nums.sort(function (a, b) { return b - a; });
     var maxGap = Number.MIN_SAFE_INTEGER;
@@ -16,4 +16,15 @@ function maxGap(nums) {
     // },Number.MIN_SAFE_INTEGER)
 }
 exports.maxGap = maxGap;
+// BP
+function maxGap_bp(nums) {
+    var max = -Infinity;
+    nums = nums.sort(function (a, b) { return a - b; });
+    for (var _i = 0, _a = nums.slice(0, -1); _i < _a.length; _i++) {
+        var n = _a[_i];
+        max = Math.max(max, nums[nums.indexOf(n) + 1] - n);
+    }
+    return max;
+}
+exports.maxGap_bp = maxGap_bp;
 //# sourceMappingURL=7 kyu Maximum Gap (Array Series #4).js.map

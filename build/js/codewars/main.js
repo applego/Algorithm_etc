@@ -261,4 +261,11 @@ TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap
 TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([130, 30, 50]), 80);
 TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([1, 1, 1]), 0);
 TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([-1, -1, -1]), 0);
+// 2020/12/02  0:39
+var _7_kyu_Product_Array__Array_Series__5_1 = require("./7 kyu Product Array (Array Series #5)");
+TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([12, 20]), [20, 12]);
+TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([12, 20]), [20, 12]);
+TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([3, 27, 4, 2]), [216, 24, 162, 324]);
+TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([13, 10, 5, 2, 9]), [900, 1170, 2340, 5850, 1300]);
+TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([16, 17, 4, 3, 5, 2]), [2040, 1920, 8160, 10880, 6528, 16320]);
 //# sourceMappingURL=main.js.map

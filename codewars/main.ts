@@ -330,3 +330,11 @@ Test.assert_equals(maxGap([-54, 37, 0, 64, -15, 640, 0]), 576);
 Test.assert_equals(maxGap([130, 30, 50]), 80);
 Test.assert_equals(maxGap([1, 1, 1]), 0);
 Test.assert_equals(maxGap([-1, -1, -1]), 0);
+
+// 2020/12/02  0:39
+import { productArray } from "./7 kyu Product Array (Array Series #5)";
+Test.assert_equals(productArray([12, 20]), [20, 12]);
+Test.assert_equals(productArray([12, 20]), [20, 12]);
+Test.assert_equals(productArray([3, 27, 4, 2]), [216, 24, 162, 324]);
+Test.assert_equals(productArray([13, 10, 5, 2, 9]), [900, 1170, 2340, 5850, 1300]);
+Test.assert_equals(productArray([16, 17, 4, 3, 5, 2]), [2040, 1920, 8160, 10880, 6528, 16320]);

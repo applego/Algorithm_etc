@@ -42,4 +42,14 @@ mocha_1.describe("Basic tests", function () {
     mocha_1.it("Testing for [1, 1, 1]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([1, 1, 1]), 0); });
     mocha_1.it("Testing for [-1, -1, -1]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Gap__Array_Series__4_1.maxGap([-1, -1, -1]), 0); });
 });
+var _7_kyu_Product_Array__Array_Series__5_1 = require("./7 kyu Product Array (Array Series #5)");
+mocha_1.describe("Basic Tests", function () {
+    mocha_1.it("Testing for [12, 20]", function () { return chai_1.assert.deepEqual(_7_kyu_Product_Array__Array_Series__5_1.productArray([12, 20]), [20, 12]); });
+    mocha_1.it("Testing for [12, 20]", function () { return chai_1.assert.deepEqual(_7_kyu_Product_Array__Array_Series__5_1.productArray([12, 20]), [20, 12]); });
+    mocha_1.it("Testing for [3, 27, 4, 2]", function () { return chai_1.assert.deepEqual(_7_kyu_Product_Array__Array_Series__5_1.productArray([3, 27, 4, 2]), [216, 24, 162, 324]); });
+    mocha_1.it("Testing for [13, 10, 5, 2, 9]", function () { return chai_1.assert.deepEqual(_7_kyu_Product_Array__Array_Series__5_1.productArray([13, 10, 5, 2, 9]), [900, 1170, 2340, 5850, 1300]); });
+    mocha_1.it("Testing for [16, 17, 4, 3, 5, 2]", function () {
+        return chai_1.assert.deepEqual(_7_kyu_Product_Array__Array_Series__5_1.productArray([16, 17, 4, 3, 5, 2]), [2040, 1920, 8160, 10880, 6528, 16320]);
+    });
+});
 //# sourceMappingURL=test.js.map
