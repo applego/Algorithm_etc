@@ -25,9 +25,11 @@ mod front_of_house {
 //use でモジュールをスコープに持ち込む
 // use crate::front_of_house::hosting;
 // モジュールをuseと相対パスを使ってスコープに持ち込む
-use self::front_of_house::hosting;
+// use self::front_of_house::hosting;
 // add_to_waitlist 関数をuseスコープで持ち込む。このやりかたは慣例的ではない
-use crate::front_of_house::hosting::add_to_waitlist;
+// use crate::front_of_house::hosting::add_to_waitlist;
+// pub use で、新たなスコープのコードがその名前を使えるようにする
+pub use crate::front_of_house::hosting;
 
 pub fn eat_at_restaurant() {
     // Absolute path
@@ -39,7 +41,7 @@ pub fn eat_at_restaurant() {
     hosting::add_to_waitlist();
 
     // 慣例的ではない
-    add_to_waitlist();
+    // add_to_waitlist();
 
     // Relative path
     // 相対パス
@@ -99,12 +101,12 @@ use std::fmt::Result;
 use std::io::Result as IoResult;
 
 // fn function1()-> fmt::Result{
-fn function1()-> Result {
-    // --snip--
-    // (略)
-}
+// fn function1()-> Result {
+//     // --snip--
+//     // (略)
+// }
 
-// fn function2()-> io::Result<()>{
-fn function2()-> IoResult<()>{
-    // --snip--
-}
+// // fn function2()-> io::Result<()>{
+// fn function2()-> IoResult<()>{
+//     // --snip--
+// }
