@@ -22,10 +22,17 @@ mod front_of_house {
     }
 }
 
+//use でモジュールをスコープに持ち込む
+use crate::front_of_house::hosting;
+
 pub fn eat_at_restaurant() {
     // Absolute path
     // 絶対パス
-    crate::front_of_house::hosting::add_to_waitlist();
+    // crate::front_of_house::hosting::add_to_waitlist();
+    //* ↓ useでモジュールをスコープに持ち込む
+    hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
 
     // Relative path
     // 相対パス
