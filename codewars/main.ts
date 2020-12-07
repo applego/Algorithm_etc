@@ -338,3 +338,11 @@ Test.assert_equals(productArray([12, 20]), [20, 12]);
 Test.assert_equals(productArray([3, 27, 4, 2]), [216, 24, 162, 324]);
 Test.assert_equals(productArray([13, 10, 5, 2, 9]), [900, 1170, 2340, 5850, 1300]);
 Test.assert_equals(productArray([16, 17, 4, 3, 5, 2]), [2040, 1920, 8160, 10880, 6528, 16320]);
+
+// 2020/12/07 11:37
+import { minimumSteps } from "./7 kyu Minimum Steps (Array Series #6)";
+Test.assert_equals(minimumSteps([4, 6, 3], 7), 1);
+Test.assert_equals(minimumSteps([10, 9, 9, 8], 17), 1);
+Test.assert_equals(minimumSteps([8, 9, 10, 4, 2], 23), 3);
+Test.assert_equals(minimumSteps([19, 98, 69, 28, 75, 45, 17, 98, 67], 464), 8);
+Test.assert_equals(minimumSteps([4, 6, 3], 2), 0);
