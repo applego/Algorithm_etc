@@ -1,20 +1,35 @@
 "use strict";
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.productArray = void 0;
 function productArray(nums) {
-    return nums.map(function (v, i, array) {
-        return array
-            .filter(function (v, i) { i !== array.indexOf(v); })
-            .reduce(function (a, c) { return a * c; });
+    // * why not correct
+    // return nums.map((v, i, array) => {
+    //   return array
+    //     .filter((v, i) => { i !== array.indexOf(v); })
+    //     .reduce((a, c) => a * c);
+    // });
+    // * from BP
+    return nums.map(function (e, i) {
+        return __spreadArrays(nums).filter(function (e, i2) { return i2 != i; })
+            .reduce(function (a, c) { return a * c; }, 1);
     });
     var result = [];
     var _loop_1 = function (num) {
+        // * try1
         // let el: number = nums.splice(nums.indexOf(num), 1, 1)
         //   .reduce((acc, val) => acc * val);
         // result.push(el);
         // let nums2: number[] = nums.splice(nums.indexOf(num), 1, 1);
         // let el2: number = nums2.reduce((acc, val) => acc * val);
         // result.push(el2);
+        // * try2
         // let el: number = nums.filter((val, idx) => {
         //   idx !== nums.indexOf(num);
         // }).reduce((acc, val) => {
