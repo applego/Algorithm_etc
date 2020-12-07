@@ -57,3 +57,20 @@ describe("Basic Tests", () => {
   it("Testing for [16, 17, 4, 3, 5, 2]", () =>
     assert.deepEqual(productArray([16, 17, 4, 3, 5, 2]), [2040, 1920, 8160, 10880, 6528, 16320]));
 });
+
+import { isInteresting } from './4 kyu Catching Car Mileage Numbers';     1
+
+function test(n: number, awesome: number[], expected: number) {
+  assert.strictEqual(isInteresting(n, awesome), expected);
+}
+
+describe("solution", function(){
+ it('should work, dangit!', function() {
+    test(3, [1337, 256],     0);
+    test(1336, [1337, 256],  1);
+    test(1337, [1337, 256],  2);
+    test(11208, [1337, 256], 0);
+    test(11209, [1337, 256], 1);
+    test(11211, [1337, 256], 2);
+  });
+});

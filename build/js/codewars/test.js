@@ -52,4 +52,19 @@ mocha_1.describe("Basic Tests", function () {
         return chai_1.assert.deepEqual(_7_kyu_Product_Array__Array_Series__5_1.productArray([16, 17, 4, 3, 5, 2]), [2040, 1920, 8160, 10880, 6528, 16320]);
     });
 });
+var _4_kyu_Catching_Car_Mileage_Numbers_1 = require("./4 kyu Catching Car Mileage Numbers");
+1;
+function test(n, awesome, expected) {
+    chai_1.assert.strictEqual(_4_kyu_Catching_Car_Mileage_Numbers_1.isInteresting(n, awesome), expected);
+}
+mocha_1.describe("solution", function () {
+    mocha_1.it('should work, dangit!', function () {
+        test(3, [1337, 256], 0);
+        test(1336, [1337, 256], 1);
+        test(1337, [1337, 256], 2);
+        test(11208, [1337, 256], 0);
+        test(11209, [1337, 256], 1);
+        test(11211, [1337, 256], 2);
+    });
+});
 //# sourceMappingURL=test.js.map

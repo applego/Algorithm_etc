@@ -346,3 +346,15 @@ Test.assert_equals(minimumSteps([10, 9, 9, 8], 17), 1);
 Test.assert_equals(minimumSteps([8, 9, 10, 4, 2], 23), 3);
 Test.assert_equals(minimumSteps([19, 98, 69, 28, 75, 45, 17, 98, 67], 464), 8);
 Test.assert_equals(minimumSteps([4, 6, 3], 2), 0);
+
+// 2020/12/07 18:41
+import { isInteresting } from './4 kyu Catching Car Mileage Numbers';
+// Test.assert_equals( isInteresting(3, [1337, 256]),     0);
+// Test.assert_equals( isInteresting(1336, [1337, 256]),  1);
+// Test.assert_equals( isInteresting(1337, [1337, 256]),  2);
+// Test.assert_equals( isInteresting(11208, [1337, 256]), 0);
+// Test.assert_equals( isInteresting(11209, [1337, 256]), 1);
+// Test.assert_equals( isInteresting(11211, [1337, 256]), 2);
+// Test.assert_equals(isInteresting(123, []), 2);
+// Test.assert_equals( isInteresting(67890, []), 2);
+Test.assert_equals( isInteresting(98, []), 1);
