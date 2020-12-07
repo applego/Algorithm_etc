@@ -90,3 +90,16 @@ mod back_of_house {
         Salad,
     }
 }
+
+// 同じ名前を持つ２つのお型を同じスコープに持ち込むには親モジュールを使わないといけない
+use std::fmt;
+use std::io;
+
+fn function1()-> fmt::Result{
+    // --snip--
+    // (略)
+}
+
+fn function2()-> io::Result<()>{
+    // --snip--
+}
