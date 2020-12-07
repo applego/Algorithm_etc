@@ -92,14 +92,19 @@ mod back_of_house {
 }
 
 // 同じ名前を持つ２つのお型を同じスコープに持ち込むには親モジュールを使わないといけない
-use std::fmt;
-use std::io;
+// use std::fmt;
+// use std::io;
+// 新しい名前をasキーワードで与える
+use std::fmt::Result;
+use std::io::Result as IoResult;
 
-fn function1()-> fmt::Result{
+// fn function1()-> fmt::Result{
+fn function1()-> Result {
     // --snip--
     // (略)
 }
 
-fn function2()-> io::Result<()>{
+// fn function2()-> io::Result<()>{
+fn function2()-> IoResult<()>{
     // --snip--
 }
