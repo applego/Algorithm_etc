@@ -23,7 +23,11 @@ mod front_of_house {
 }
 
 //use でモジュールをスコープに持ち込む
-use crate::front_of_house::hosting;
+// use crate::front_of_house::hosting;
+// モジュールをuseと相対パスを使ってスコープに持ち込む
+use self::front_of_house::hosting;
+// add_to_waitlist 関数をuseスコープで持ち込む。このやりかたは慣例的ではない
+use crate::front_of_house::hosting::add_to_waitlist;
 
 pub fn eat_at_restaurant() {
     // Absolute path
@@ -33,6 +37,9 @@ pub fn eat_at_restaurant() {
     hosting::add_to_waitlist();
     hosting::add_to_waitlist();
     hosting::add_to_waitlist();
+
+    // 慣例的ではない
+    add_to_waitlist();
 
     // Relative path
     // 相対パス
