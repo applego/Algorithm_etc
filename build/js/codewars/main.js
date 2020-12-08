@@ -307,4 +307,6 @@ var _5_kyu_Decimal_to_Factorial_and_Back_1 = require("./5 kyu Decimal to Factori
 TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.dec2FactString(3628800054), "76A0000021000");
 // Test.assert_equals(G964_1208.factString2Dec("341010"), 463);
 TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.factString2Dec("76A0000021000"), 3628800054);
+TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208_BP.dec2FactString(3628800054), "76A0000021000");
+TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208_BP.factString2Dec("76A0000021000"), 3628800054);
 //# sourceMappingURL=main.js.map

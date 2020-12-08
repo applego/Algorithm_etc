@@ -90,3 +90,26 @@ export class G964_1208 {
     return result;
   }
 }
+
+/**
+ * BP
+ */
+export class G964_1208_BP{
+  public static dec2FactString = (nb: number): string => {
+    let res = '';
+    let counter = 1;
+    for (; nb; counter++){
+      res = (nb % counter).toString(16).toUpperCase() + res;
+      nb=Math.floor(nb/counter);
+    }
+    return res;
+  }
+
+  public static factString2Dec = (str: string): number => {
+    return str
+      .split('')
+      .map(v => +v)
+      .filter(v => !isNaN(v))
+      .reduce((acc, curr, i, { length }) => acc * (length - i) + curr);
+  }
+}

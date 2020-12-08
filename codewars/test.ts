@@ -91,3 +91,31 @@ describe("Basic tests", () => {
   it("Testing for [-2, -4, 0, -9, 2]", () => assert.strictEqual(maxTriSum([-2, -4, 0, -9, 2]), 0));
   it("Testing for [-5, -1, -9, 0, 2]", () => assert.strictEqual(maxTriSum([-5, -1, -9, 0, 2]), 1));
 });
+
+import { G964_1208,G964_1208_BP } from './5 kyu Decimal to Factorial and Back';
+function testing1(nb: number, expected: string) {
+    assert.equal(G964_1208.dec2FactString(nb), expected);
+}
+function testing2(nb: string, expected: number) {
+    assert.equal(G964_1208.factString2Dec(nb), expected);
+}
+function testing1BP(nb: number, expected: string) {
+    assert.equal(G964_1208_BP.dec2FactString(nb), expected);
+}
+function testing2BP(nb: string, expected: number) {
+    assert.equal(G964_1208_BP.factString2Dec(nb), expected);
+}
+describe("Fixed Tests", function () {
+  it("Basic tests dec2FactString", function () {
+    testing1(2982, "4041000");
+  });
+  it("Basic tests factString2Dec", function () {
+    testing2("341010", 463);
+  });
+  it("Basic tests dec2FactString BP", function () {
+    testing1BP(2982, "4041000");
+  });
+  it("Basic tests factString2Dec BP", function () {
+    testing2BP("341010", 463);
+  });
+});
