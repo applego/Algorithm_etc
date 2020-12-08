@@ -67,4 +67,23 @@ mocha_1.describe("solution", function () {
         test(11211, [1337, 256], 2);
     });
 });
+var _7_kyu_Maximum_Triplet_Sum__Array_Series__7_1 = require("./7 kyu Maximum Triplet Sum (Array Series #7)");
+mocha_1.describe("Basic tests", function () {
+    mocha_1.it("Testing for [3, 2, 6, 8, 2, 3]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([3, 2, 6, 8, 2, 3]), 17); });
+    mocha_1.it("Testing for [2, 9, 13, 10, 5, 2, 9, 5]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([2, 9, 13, 10, 5, 2, 9, 5]), 32); });
+    mocha_1.it("Testing for [2, 1, 8, 0, 6, 4, 8, 6, 2, 4]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([2, 1, 8, 0, 6, 4, 8, 6, 2, 4]), 18); });
+    mocha_1.it("Testing for [-3, -27, -4, -2, -27, -2]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-3, -27, -4, -2, -27, -2]), -9); });
+    mocha_1.it("Testing for [-14, -12, -7, -42, -809, -14, -12]", function () {
+        return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-14, -12, -7, -42, -809, -14, -12]), -33);
+    });
+    mocha_1.it("Testing for [-13, -50, 57, 13, 67, -13, 57, 108, 67]", function () {
+        return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-13, -50, 57, 13, 67, -13, 57, 108, 67]), 232);
+    });
+    mocha_1.it("Testing for [-7, 12, -7, 29, -5, 0, -7, 0, 0, 29]", function () {
+        return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-7, 12, -7, 29, -5, 0, -7, 0, 0, 29]), 41);
+    });
+    mocha_1.it("Testing for [-2, 0, 2]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-2, 0, 2]), 0); });
+    mocha_1.it("Testing for [-2, -4, 0, -9, 2]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-2, -4, 0, -9, 2]), 0); });
+    mocha_1.it("Testing for [-5, -1, -9, 0, 2]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-5, -1, -9, 0, 2]), 1); });
+});
 //# sourceMappingURL=test.js.map

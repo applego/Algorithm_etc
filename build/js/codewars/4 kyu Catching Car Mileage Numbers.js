@@ -158,7 +158,7 @@ function isInterestingBP(n, awesomePhrases, iteration, awesomeness) {
             return awesomeness;
         default:
             if (iteration < 2) {
-                return isInteresting(++n, awesomePhrases, ++iteration, 1);
+                return isInterestingBP(++n, awesomePhrases, ++iteration, 1);
             }
             return 0;
     }
