@@ -298,4 +298,13 @@ TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_
 TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-2, 0, 2]), 0);
 TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-2, -4, 0, -9, 2]), 0);
 TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-5, -1, -9, 0, 2]), 1);
+// 2020/12/08 16:58
+var _5_kyu_Decimal_to_Factorial_and_Back_1 = require("./5 kyu Decimal to Factorial and Back");
+// const G964_12081:G964_1208 = new G964_1208();
+// Test.assert_equals(G964_1208.dec2FactString(463), "341010");
+// Test.assert_equals(G964_1208.dec2FactString(2982), "4041000");
+// Test.assert_equals(G964_1208.dec2FactString(36288000), "A0000000000");
+TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.dec2FactString(3628800054), "76A0000021000");
+// Test.assert_equals(G964_1208.factString2Dec("341010"), 463);
+TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.factString2Dec("76A0000021000"), 3628800054);
 //# sourceMappingURL=main.js.map
