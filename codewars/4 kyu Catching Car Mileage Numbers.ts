@@ -50,8 +50,8 @@ awesomePhrases 配列は常に提供され、常に配列となりますが、�
 
  */
 export function isInteresting(n: number, awesomePhrases: number[]): number {
-  console.log(n);
-  console.info(awesomePhrases);
+  // console.log(n);
+  // console.info(awesomePhrases);
 
   if (isInterestingNumber(n, awesomePhrases)) {
     return 2;

@@ -358,3 +358,16 @@ import { isInteresting } from './4 kyu Catching Car Mileage Numbers';
 // Test.assert_equals(isInteresting(123, []), 2);
 // Test.assert_equals( isInteresting(67890, []), 2);
 Test.assert_equals( isInteresting(98, []), 1);
+
+// 2020/12/08 16:06
+import { maxTriSum } from "./7 kyu Maximum Triplet Sum (Array Series #7)";
+Test.assert_equals(maxTriSum([3, 2, 6, 8, 2, 3]), 17);
+Test.assert_equals(maxTriSum([2, 9, 13, 10, 5, 2, 9, 5]), 32);
+Test.assert_equals(maxTriSum([2, 1, 8, 0, 6, 4, 8, 6, 2, 4]), 18);
+Test.assert_equals(maxTriSum([-3, -27, -4, -2, -27, -2]), -9);
+Test.assert_equals(maxTriSum([-14, -12, -7, -42, -809, -14, -12]), -33);
+Test.assert_equals(maxTriSum([-13, -50, 57, 13, 67, -13, 57, 108, 67]), 232);
+Test.assert_equals(maxTriSum([-7, 12, -7, 29, -5, 0, -7, 0, 0, 29]), 41);
+Test.assert_equals(maxTriSum([-2, 0, 2]), 0);
+Test.assert_equals(maxTriSum([-2, -4, 0, -9, 2]), 0);
+Test.assert_equals(maxTriSum([-5, -1, -9, 0, 2]), 1);
