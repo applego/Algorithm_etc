@@ -52,8 +52,8 @@ exports.isInterestingBP = exports.isInteresting = void 0;
 
  */
 function isInteresting(n, awesomePhrases) {
-    console.log(n);
-    console.info(awesomePhrases);
+    // console.log(n);
+    // console.info(awesomePhrases);
     if (isInterestingNumber(n, awesomePhrases)) {
         return 2;
     }
