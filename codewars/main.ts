@@ -373,13 +373,13 @@ Test.assert_equals(maxTriSum([-2, -4, 0, -9, 2]), 0);
 Test.assert_equals(maxTriSum([-5, -1, -9, 0, 2]), 1);
 
 // 2020/12/08 16:58
-import { G964_1208 } from './5 kyu Decimal to Factorial and Back';
+import { G964_1208, G964_1208_BP } from './5 kyu Decimal to Factorial and Back';
 // const G964_12081:G964_1208 = new G964_1208();
 // Test.assert_equals(G964_1208.dec2FactString(463), "341010");
 // Test.assert_equals(G964_1208.dec2FactString(2982), "4041000");
 // Test.assert_equals(G964_1208.dec2FactString(36288000), "A0000000000");
 Test.assert_equals(G964_1208.dec2FactString(3628800054), "76A0000021000");
-
-
 // Test.assert_equals(G964_1208.factString2Dec("341010"), 463);
 Test.assert_equals(G964_1208.factString2Dec("76A0000021000"), 3628800054);
+Test.assert_equals(G964_1208_BP.dec2FactString(3628800054), "76A0000021000");
+Test.assert_equals(G964_1208_BP.factString2Dec("76A0000021000"), 3628800054);

@@ -86,4 +86,31 @@ mocha_1.describe("Basic tests", function () {
     mocha_1.it("Testing for [-2, -4, 0, -9, 2]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-2, -4, 0, -9, 2]), 0); });
     mocha_1.it("Testing for [-5, -1, -9, 0, 2]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-5, -1, -9, 0, 2]), 1); });
 });
+var _5_kyu_Decimal_to_Factorial_and_Back_1 = require("./5 kyu Decimal to Factorial and Back");
+function testing1(nb, expected) {
+    chai_1.assert.equal(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.dec2FactString(nb), expected);
+}
+function testing2(nb, expected) {
+    chai_1.assert.equal(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.factString2Dec(nb), expected);
+}
+function testing1BP(nb, expected) {
+    chai_1.assert.equal(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208_BP.dec2FactString(nb), expected);
+}
+function testing2BP(nb, expected) {
+    chai_1.assert.equal(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208_BP.factString2Dec(nb), expected);
+}
+mocha_1.describe("Fixed Tests", function () {
+    mocha_1.it("Basic tests dec2FactString", function () {
+        testing1(2982, "4041000");
+    });
+    mocha_1.it("Basic tests factString2Dec", function () {
+        testing2("341010", 463);
+    });
+    mocha_1.it("Basic tests dec2FactString BP", function () {
+        testing1BP(2982, "4041000");
+    });
+    mocha_1.it("Basic tests factString2Dec BP", function () {
+        testing2BP("341010", 463);
+    });
+});
 //# sourceMappingURL=test.js.map

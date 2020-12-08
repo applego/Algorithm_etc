@@ -6,7 +6,7 @@
 2番目の関数は、2乗表現の文字列を受け取り、10進表現を生成します。
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.G964_1208 = void 0;
+exports.G964_1208_BP = exports.G964_1208 = void 0;
 var factorialize_recurse = function (k) {
     if (k <= 1) {
         return 1;
@@ -84,4 +84,32 @@ var G964_1208 = /** @class */ (function () {
     return G964_1208;
 }());
 exports.G964_1208 = G964_1208;
+/**
+ * BP
+ */
+var G964_1208_BP = /** @class */ (function () {
+    function G964_1208_BP() {
+    }
+    G964_1208_BP.dec2FactString = function (nb) {
+        var res = '';
+        var counter = 1;
+        for (; nb; counter++) {
+            res = (nb % counter).toString(16).toUpperCase() + res;
+            nb = Math.floor(nb / counter);
+        }
+        return res;
+    };
+    G964_1208_BP.factString2Dec = function (str) {
+        return str
+            .split('')
+            .map(function (v) { return +v; })
+            .filter(function (v) { return !isNaN(v); })
+            .reduce(function (acc, curr, i, _a) {
+            var length = _a.length;
+            return acc * (length - i) + curr;
+        });
+    };
+    return G964_1208_BP;
+}());
+exports.G964_1208_BP = G964_1208_BP;
 //# sourceMappingURL=5 kyu Decimal to Factorial and Back.js.map
