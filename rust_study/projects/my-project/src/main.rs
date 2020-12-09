@@ -55,4 +55,17 @@ fn main() {
     for i in &mut v {
         *i += 50;
     }
+
+    // リスト8-10: enumを定義して、一つのベクタに異なる型の値を保持する
+    let row = vec![
+        SpreadsheetCell::Int(3),
+        SpreadsheetCell::Text(String::from("blue")),
+        SpreadsheetCell::Float(10.12),
+    ];
+}
+
+enum SpreadsheetCell {
+    Int(i32),
+    Float(f64),
+    Text(String),
 }
