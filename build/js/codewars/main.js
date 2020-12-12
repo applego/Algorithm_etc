@@ -328,4 +328,16 @@ TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digi
 TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(95322050), 95322500);
 TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBiggerBP(545709101), 545709110);
 TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBiggerBP(95322050), 95322500);
+// 2020/12/13  0:05
+var _7_kyu_Row_Weights_Array_Series__8__1 = require("./7 kyu Row Weights(Array Series #8?)");
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([80]), [80, 0]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([100, 50]), [100, 50]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([50, 60, 70, 80]), [120, 140]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([13, 27, 49]), [62, 27]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([70, 58, 75, 34, 91]), [236, 92]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([29, 83, 67, 53, 19, 28, 96]), [211, 164]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([0]), [0, 0]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([100, 51, 50, 100]), [150, 151]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([39, 84, 74, 18, 59, 72, 35, 61]), [207, 235]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([0, 1, 0]), [0, 1]);
 //# sourceMappingURL=main.js.map

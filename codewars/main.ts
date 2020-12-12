@@ -407,3 +407,16 @@ Test.assert_equals(nextBigger(95322050), 95322500);
 
 Test.assert_equals(nextBiggerBP(545709101), 545709110);
 Test.assert_equals(nextBiggerBP(95322050), 95322500);
+
+// 2020/12/13  0:05
+import { rowWeights } from './7 kyu Row Weights(Array Series #8?)';
+Test.assert_equals(rowWeights([80]), [80, 0]);
+Test.assert_equals(rowWeights([100, 50]), [100, 50]);
+Test.assert_equals(rowWeights([50, 60, 70, 80]), [120, 140]);
+Test.assert_equals(rowWeights([13, 27, 49]), [62, 27]);
+Test.assert_equals(rowWeights([70, 58, 75, 34, 91]), [236, 92]);
+Test.assert_equals(rowWeights([29, 83, 67, 53, 19, 28, 96]), [211, 164]);
+Test.assert_equals(rowWeights([0]), [0, 0]);
+Test.assert_equals(rowWeights([100, 51, 50, 100]), [150, 151]);
+Test.assert_equals(rowWeights([39, 84, 74, 18, 59, 72, 35, 61]), [207, 235]);
+Test.assert_equals(rowWeights([0, 1, 0]), [0, 1]);
