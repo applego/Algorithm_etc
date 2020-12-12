@@ -401,3 +401,6 @@ Test.assert_equals(nextBigger(1234567890), 1234567908);
 Test.assert_equals(nextBigger(9876543210), -1);
 Test.assert_equals(nextBigger(9999999999), -1);
 Test.assert_equals(nextBigger(59884848459853), 59884848483559);
+
+Test.assert_equals(nextBigger(545709101), 545709110);
+Test.assert_equals(nextBigger(95322050), 95322500);
