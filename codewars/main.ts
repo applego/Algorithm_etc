@@ -383,3 +383,40 @@ Test.assert_equals(G964_1208.dec2FactString(3628800054), "76A0000021000");
 Test.assert_equals(G964_1208.factString2Dec("76A0000021000"), 3628800054);
 Test.assert_equals(G964_1208_BP.dec2FactString(3628800054), "76A0000021000");
 Test.assert_equals(G964_1208_BP.factString2Dec("76A0000021000"), 3628800054);
+
+// 2020/12/09 23:45
+import { nextBigger, nextBiggerBP } from "./4 kyu Next bigger number with the same digits";
+// Test.assert_equals(isMaxAtFirst(1234567890), false);
+// Test.assert_equals(isMaxAtFirst(9876543210), true);
+// Test.assert_equals(isMaxAtFirst(9999999999), true);
+
+Test.assert_equals(nextBigger(12), 21);
+Test.assert_equals(nextBigger(513), 531);
+Test.assert_equals(nextBigger(2017), 2071);
+Test.assert_equals(nextBigger(414), 441);
+Test.assert_equals(nextBigger(144), 414);
+
+Test.assert_equals(nextBigger(123456789), 123456798);
+Test.assert_equals(nextBigger(1234567890), 1234567908);
+Test.assert_equals(nextBigger(9876543210), -1);
+Test.assert_equals(nextBigger(9999999999), -1);
+Test.assert_equals(nextBigger(59884848459853), 59884848483559);
+
+Test.assert_equals(nextBigger(545709101), 545709110);
+Test.assert_equals(nextBigger(95322050), 95322500);
+
+Test.assert_equals(nextBiggerBP(545709101), 545709110);
+Test.assert_equals(nextBiggerBP(95322050), 95322500);
+
+// 2020/12/13  0:05
+import { rowWeights } from './7 kyu Row Weights(Array Series #8?)';
+Test.assert_equals(rowWeights([80]), [80, 0]);
+Test.assert_equals(rowWeights([100, 50]), [100, 50]);
+Test.assert_equals(rowWeights([50, 60, 70, 80]), [120, 140]);
+Test.assert_equals(rowWeights([13, 27, 49]), [62, 27]);
+Test.assert_equals(rowWeights([70, 58, 75, 34, 91]), [236, 92]);
+Test.assert_equals(rowWeights([29, 83, 67, 53, 19, 28, 96]), [211, 164]);
+Test.assert_equals(rowWeights([0]), [0, 0]);
+Test.assert_equals(rowWeights([100, 51, 50, 100]), [150, 151]);
+Test.assert_equals(rowWeights([39, 84, 74, 18, 59, 72, 35, 61]), [207, 235]);
+Test.assert_equals(rowWeights([0, 1, 0]), [0, 1]);

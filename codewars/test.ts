@@ -119,3 +119,36 @@ describe("Fixed Tests", function () {
     testing2BP("341010", 463);
   });
 });
+
+import { nextBigger } from "./4 kyu Next bigger number with the same digits";
+describe("Basic tests", () => {
+  it("Small numbers", () => {
+    assert.strictEqual(nextBigger(12), 21);
+    assert.strictEqual(nextBigger(513), 531);
+    assert.strictEqual(nextBigger(2017), 2071);
+    assert.strictEqual(nextBigger(414), 441);
+    assert.strictEqual(nextBigger(144), 414);
+  });
+  it("Bigger numbers", () => {
+    assert.strictEqual(nextBigger(123456789), 123456798);
+    assert.strictEqual(nextBigger(1234567890), 1234567908);
+    assert.strictEqual(nextBigger(9876543210), -1);
+    assert.strictEqual(nextBigger(9999999999), -1);
+    assert.strictEqual(nextBigger(59884848459853), 59884848483559);
+  });
+});
+
+import { rowWeights } from './7 kyu Row Weights(Array Series #8?)';
+describe("Basic tests", () => {
+  it("Testing for [80]", () => assert.deepEqual(rowWeights([80]), [80, 0]));
+  it("Testing for [100, 50]", () => assert.deepEqual(rowWeights([100, 50]), [100, 50]));
+  it("Testing for [50, 60, 70, 80]", () => assert.deepEqual(rowWeights([50, 60, 70, 80]), [120, 140]));
+  it("Testing for [13, 27, 49]", () => assert.deepEqual(rowWeights([13, 27, 49]), [62, 27]));
+  it("Testing for [70, 58, 75, 34, 91]", () => assert.deepEqual(rowWeights([70, 58, 75, 34, 91]), [236, 92]));
+  it("Testing for [29, 83, 67, 53, 19, 28, 96]", () => assert.deepEqual(rowWeights([29, 83, 67, 53, 19, 28, 96]), [211, 164]));
+  it("Testing for [0]", () => assert.deepEqual(rowWeights([0]), [0, 0]));
+  it("Testing for [100, 51, 50, 100]", () => assert.deepEqual(rowWeights([100, 51, 50, 100]), [150, 151]));
+  it("Testing for [39, 84, 74, 18, 59, 72, 35, 61]", () =>
+    assert.deepEqual(rowWeights([39, 84, 74, 18, 59, 72, 35, 61]), [207, 235]));
+  it("Testing for [0, 1, 0]", () => assert.deepEqual(rowWeights([0, 1, 0]), [0, 1]));
+});
