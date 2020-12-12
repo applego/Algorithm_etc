@@ -51,4 +51,15 @@ fn main() {
     let s2 = String::from("world!");
     let s3 = s1 + &s2; // s1はムーブされ、もう使用できないことに注意
                        // +演算子イコール fn add(self, s: &str) -> String {
+    let s1 = String::from("tic");
+    let s2 = String::from("tac");
+    let s3 = String::from("toe");
+
+    let s = s1 + "-" + &s2 + "-" + &s3;
+
+    // format!を使用したコードの方がはるかに読みやすく、 引数の所有権を奪いません。
+    let s1 = String::from("tic");
+    let s2 = String::from("tac");
+    let s3 = String::from("toe");
+    let s = format!("{}-{}-{}", s1, s2, s3);
 }
