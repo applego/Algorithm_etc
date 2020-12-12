@@ -27,4 +27,22 @@ fn main() {
     let hello = String::from("Olá");
     let hello = String::from("Здравствуйте");
     let hello = String::from("Hola");
+
+    //リスト8-15: push_strメソッドでStringに文字列スライスを追記する
+    let mut s = String::from("foo");
+    s.push_str("bar");
+
+    // リスト8-16: 中身をStringに追加した後に、文字列スライスを使用する
+    /*
+    もし、push_strメソッドがs2の所有権を奪っていたら、最後の行でその値を出力することは不可能でしょう。 ところが、このコードは予想通りに動きます！
+        → push_strメソッドは必ずしも引数の所有権を得なくていいので、文字列スライスを取ります。
+         */
+    let mut s1 = String::from("foo");
+    let s2 = "bar";
+    s1.push_str(s2);
+    println!("s2 is {}", s2);
+
+    // リスト8-17: pushでString値に1文字を追加する
+    let mut s = String::from("lo");
+    s.push('l');
 }
