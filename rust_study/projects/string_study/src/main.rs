@@ -62,4 +62,9 @@ fn main() {
     let s2 = String::from("tac");
     let s3 = String::from("toe");
     let s = format!("{}-{}-{}", s1, s2, s3);
+
+    // リスト8-19: 文字列に対して添え字記法を試みる
+    let s1 = String::from("hello");
+    // let h = s1[0];
+    //!       `std::string::String` cannot be indexed by `{integer}`
 }
