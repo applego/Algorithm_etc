@@ -45,4 +45,10 @@ fn main() {
     // リスト8-17: pushでString値に1文字を追加する
     let mut s = String::from("lo");
     s.push('l');
+
+    // リスト8-18: +演算子を使用して二つのString値を新しいString値にする
+    let s1 = String::from("Hello, ");
+    let s2 = String::from("world!");
+    let s3 = s1 + &s2; // s1はムーブされ、もう使用できないことに注意
+                       // +演算子イコール fn add(self, s: &str) -> String {
 }
