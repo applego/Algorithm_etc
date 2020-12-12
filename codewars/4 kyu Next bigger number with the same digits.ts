@@ -59,3 +59,25 @@ const getMinAsStr = (arr: number[]): string => {
   arr.sort((a: number, b: number) => a - b);
   return arr.join('');
 }
+
+/**
+ * BP
+ */
+export const nextBiggerBP = (n: number) => {
+  let max = maxify(n);
+  while (++n <= max) {
+    if (maxify(n) === max) {
+      return n;
+    }
+  }
+  return -1;
+};
+
+const maxify = (n: number) => {
+  // +[...`${n}`]
+  return +n.toString().split('')
+    .map(n => +n)
+    .sort((a, b) => b - a)
+    .join('')
+    .replace(/^(0+)([1-9])/, '$2$1');
+};

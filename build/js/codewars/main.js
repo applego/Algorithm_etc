@@ -326,4 +326,6 @@ TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digi
 TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(59884848459853), 59884848483559);
 TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(545709101), 545709110);
 TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(95322050), 95322500);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBiggerBP(545709101), 545709110);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBiggerBP(95322050), 95322500);
 //# sourceMappingURL=main.js.map

@@ -385,7 +385,7 @@ Test.assert_equals(G964_1208_BP.dec2FactString(3628800054), "76A0000021000");
 Test.assert_equals(G964_1208_BP.factString2Dec("76A0000021000"), 3628800054);
 
 // 2020/12/09 23:45
-import { nextBigger } from "./4 kyu Next bigger number with the same digits";
+import { nextBigger, nextBiggerBP } from "./4 kyu Next bigger number with the same digits";
 // Test.assert_equals(isMaxAtFirst(1234567890), false);
 // Test.assert_equals(isMaxAtFirst(9876543210), true);
 // Test.assert_equals(isMaxAtFirst(9999999999), true);
@@ -404,3 +404,6 @@ Test.assert_equals(nextBigger(59884848459853), 59884848483559);
 
 Test.assert_equals(nextBigger(545709101), 545709110);
 Test.assert_equals(nextBigger(95322050), 95322500);
+
+Test.assert_equals(nextBiggerBP(545709101), 545709110);
+Test.assert_equals(nextBiggerBP(95322050), 95322500);
