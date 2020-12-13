@@ -3,9 +3,9 @@
 // npm test -- -w or yarn run test
 
 import { describe, it } from "mocha";
-import { assert } from "chai";
-import { maxProduct } from "./7 kyu Product Of Maximums Of Array (Array Series #2)";
+import { assert, expect } from "chai";
 
+import { maxProduct } from "./7 kyu Product Of Maximums Of Array (Array Series #2)";
 describe("Basic tests", () => {
   it("maxProduct([4, 3, 5], 2)", () => assert.strictEqual(maxProduct([4, 3, 5], 2), 20));
   it("maxProduct([10, 8, 7, 9], 3)", () => assert.strictEqual(maxProduct([10, 8, 7, 9], 3), 720));
@@ -22,7 +22,6 @@ describe("Basic tests", () => {
 
 
 import { arrayLeaders } from "./7 kyu Array Leaders (Array Series #3)";
-
 describe("Basic Tests", function() {
   it("Testing for [1, 2, 3, 4, 0]", () => assert.deepEqual(arrayLeaders([1, 2, 3, 4, 0]), [4]));
   it("Testing for [16, 17, 4, 3, 5, 2]", () => assert.deepEqual(arrayLeaders([16, 17, 4, 3, 5, 2]), [17, 5, 2]));
@@ -33,7 +32,6 @@ describe("Basic Tests", function() {
 });
 
 import { maxGap } from "./7 kyu Maximum Gap (Array Series #4)";
-
 describe("Basic tests", () => {
   it("Testing for [13, 10, 2, 9, 5]", () => assert.strictEqual(maxGap([13, 10, 2, 9, 5]), 4));
   it("Testing for [13, 3, 5]", () => assert.strictEqual(maxGap([13, 3, 5]), 8));
@@ -59,11 +57,9 @@ describe("Basic Tests", () => {
 });
 
 import { isInteresting } from './4 kyu Catching Car Mileage Numbers';     1
-
 function test(n: number, awesome: number[], expected: number) {
   assert.strictEqual(isInteresting(n, awesome), expected);
 }
-
 describe("solution", function(){
  it('should work, dangit!', function() {
     test(3, [1337, 256],     0);
@@ -151,4 +147,24 @@ describe("Basic tests", () => {
   it("Testing for [39, 84, 74, 18, 59, 72, 35, 61]", () =>
     assert.deepEqual(rowWeights([39, 84, 74, 18, 59, 72, 35, 61]), [207, 235]));
   it("Testing for [0, 1, 0]", () => assert.deepEqual(rowWeights([0, 1, 0]), [0, 1]));
+});
+
+/// <reference path="/runner/typings/mocha/index.d.ts" />
+/// <reference path="/runner/typings/chai/index.d.ts" />
+import { determinant } from './4 kyu Matrix Determinant';
+describe("determinant", function() {
+  const m1 = [[1, 3], [2, 5]];
+  const m2 = [[2, 5, 3], [1, -2, -1], [1, 3, 4]];
+
+  it("of a 1 x 1 matrix should yield the value of the one element", () => {
+   expect(determinant([[1]])).to.equal(1);
+  });
+
+  it("should work correctly for 2 x 2 matrix", () => {
+   expect(determinant(m1)).to.equal(-1);
+  });
+
+  it("should work correctly for 3 x 3 matrix", () => {
+   expect(determinant(m2)).to.equal(-20);
+  });
 });
