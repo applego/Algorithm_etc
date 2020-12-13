@@ -6,15 +6,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 // let test = new Test();//__filename
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
-var m1 = require("./8 kyu The falling speed of petals");
-// m1.sakuraFall(0);
-// m1.sakuraFall(5);
-m1.sakuraFall(10);
-// m1.sakuraFall(-1);
-// m1.sakuraFall(200);
-// console.log(m1.f(1000)); // "1,000円"
-// console.log(m1.f2(1000)); // "1,000円"
-// console.log(m1.f2(1000, 'ペソ')); // "1,000ペソ"
+var chai_1 = require("chai");
+var speedOfPetals = require("./8 kyu The falling speed of petals");
+// speedOfPetals.sakuraFall(0);
+// speedOfPetals.sakuraFall(5);
+speedOfPetals.sakuraFall(10);
+// speedOfPetals.sakuraFall(-1);
+// speedOfPetals.sakuraFall(200);
+// console.log(speedOfPetals.f(1000)); // "1,000円"
+// console.log(speedOfPetals.f2(1000)); // "1,000円"
+// console.log(speedOfPetals.f2(1000, 'ペソ')); // "1,000ペソ"
 var isograms = require("./7 kyu Isograms");
 TestCodewar_1.default.assert_equals(isograms.isIsogram("Dermatoglyphics"), true); // isograms.isIsogram("Dermatoglyphics")//, true );
 // Test.assert_equals(isograms.isIsogram("isogram"), true );
@@ -239,6 +240,7 @@ var _7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1 = require("./7 kyu Minimize 
 TestCodewar_1.default.assert_equals(_7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1.minSum([5, 4, 2, 3]), 22);
 TestCodewar_1.default.assert_equals(_7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1.minSum([12, 6, 10, 26, 3, 24]), 342);
 TestCodewar_1.default.assert_equals(_7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1.minSum([9, 2, 8, 7, 5, 4, 0, 6]), 74);
+// 2020/11/26 21:16
 var _7_kyu_Product_Of_Maximums_Of_Array__Array_Series__2_1 = require("./7 kyu Product Of Maximums Of Array (Array Series #2)");
 TestCodewar_1.default.assert_equals(_7_kyu_Product_Of_Maximums_Of_Array__Array_Series__2_1.maxProduct([4, 3, 5], 2), 20);
 // 2020/11/27 18:02
@@ -340,4 +342,11 @@ TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWei
 TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([100, 51, 50, 100]), [150, 151]);
 TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([39, 84, 74, 18, 59, 72, 35, 61]), [207, 235]);
 TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([0, 1, 0]), [0, 1]);
+// 2020/12/13 17:30
+var _4_kyu_Matrix_Determinant_1 = require("./4 kyu Matrix Determinant");
+var m1 = [[1, 3], [2, 5]];
+var m2 = [[2, 5, 3], [1, -2, -1], [1, 3, 4]];
+chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant([[1]])).to.equal(1);
+chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m1)).to.equal(-1);
+chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m2)).to.equal(-20);
 //# sourceMappingURL=main.js.map

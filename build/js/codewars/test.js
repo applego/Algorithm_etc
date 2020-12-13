@@ -130,4 +130,35 @@ mocha_1.describe("Basic tests", function () {
         chai_1.assert.strictEqual(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(59884848459853), 59884848483559);
     });
 });
+var _7_kyu_Row_Weights_Array_Series__8__1 = require("./7 kyu Row Weights(Array Series #8?)");
+mocha_1.describe("Basic tests", function () {
+    mocha_1.it("Testing for [80]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([80]), [80, 0]); });
+    mocha_1.it("Testing for [100, 50]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([100, 50]), [100, 50]); });
+    mocha_1.it("Testing for [50, 60, 70, 80]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([50, 60, 70, 80]), [120, 140]); });
+    mocha_1.it("Testing for [13, 27, 49]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([13, 27, 49]), [62, 27]); });
+    mocha_1.it("Testing for [70, 58, 75, 34, 91]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([70, 58, 75, 34, 91]), [236, 92]); });
+    mocha_1.it("Testing for [29, 83, 67, 53, 19, 28, 96]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([29, 83, 67, 53, 19, 28, 96]), [211, 164]); });
+    mocha_1.it("Testing for [0]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([0]), [0, 0]); });
+    mocha_1.it("Testing for [100, 51, 50, 100]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([100, 51, 50, 100]), [150, 151]); });
+    mocha_1.it("Testing for [39, 84, 74, 18, 59, 72, 35, 61]", function () {
+        return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([39, 84, 74, 18, 59, 72, 35, 61]), [207, 235]);
+    });
+    mocha_1.it("Testing for [0, 1, 0]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([0, 1, 0]), [0, 1]); });
+});
+/// <reference path="/runner/typings/mocha/index.d.ts" />
+/// <reference path="/runner/typings/chai/index.d.ts" />
+var _4_kyu_Matrix_Determinant_1 = require("./4 kyu Matrix Determinant");
+mocha_1.describe("determinant", function () {
+    var m1 = [[1, 3], [2, 5]];
+    var m2 = [[2, 5, 3], [1, -2, -1], [1, 3, 4]];
+    mocha_1.it("of a 1 x 1 matrix should yield the value of the one element", function () {
+        chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant([[1]])).to.equal(1);
+    });
+    mocha_1.it("should work correctly for 2 x 2 matrix", function () {
+        chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m1)).to.equal(-1);
+    });
+    mocha_1.it("should work correctly for 3 x 3 matrix", function () {
+        chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m2)).to.equal(-20);
+    });
+});
 //# sourceMappingURL=test.js.map

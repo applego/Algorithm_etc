@@ -3,18 +3,19 @@ import Test from './TestCodewar';
 // let test = new Test();//__filename
 
 import TimeMeasure from './TimeMeasure';
+import { describe, it } from "mocha";
+import { assert, expect } from "chai";
 
-import m1 = require("./8 kyu The falling speed of petals");
+import speedOfPetals = require("./8 kyu The falling speed of petals");
+// speedOfPetals.sakuraFall(0);
+// speedOfPetals.sakuraFall(5);
+speedOfPetals.sakuraFall(10);
+// speedOfPetals.sakuraFall(-1);
+// speedOfPetals.sakuraFall(200);
 
-// m1.sakuraFall(0);
-// m1.sakuraFall(5);
-m1.sakuraFall(10);
-// m1.sakuraFall(-1);
-// m1.sakuraFall(200);
-
-// console.log(m1.f(1000)); // "1,000円"
-// console.log(m1.f2(1000)); // "1,000円"
-// console.log(m1.f2(1000, 'ペソ')); // "1,000ペソ"
+// console.log(speedOfPetals.f(1000)); // "1,000円"
+// console.log(speedOfPetals.f2(1000)); // "1,000円"
+// console.log(speedOfPetals.f2(1000, 'ペソ')); // "1,000ペソ"
 
 import isograms = require('./7 kyu Isograms');
 Test.assert_equals(isograms.isIsogram("Dermatoglyphics"), true);// isograms.isIsogram("Dermatoglyphics")//, true );
@@ -303,7 +304,6 @@ Test.assert_equals(minSum([12, 6, 10, 26, 3, 24]), 342);
 Test.assert_equals(minSum([9, 2, 8, 7, 5, 4, 0, 6]), 74);
 
 // 2020/11/26 21:16
-import { assert } from "chai";
 import { maxProduct } from "./7 kyu Product Of Maximums Of Array (Array Series #2)";
 
 Test.assert_equals(maxProduct([4, 3, 5], 2), 20);
@@ -420,3 +420,11 @@ Test.assert_equals(rowWeights([0]), [0, 0]);
 Test.assert_equals(rowWeights([100, 51, 50, 100]), [150, 151]);
 Test.assert_equals(rowWeights([39, 84, 74, 18, 59, 72, 35, 61]), [207, 235]);
 Test.assert_equals(rowWeights([0, 1, 0]), [0, 1]);
+
+// 2020/12/13 17:30
+import { determinant } from './4 kyu Matrix Determinant';
+const m1 = [[1, 3], [2, 5]];
+const m2 = [[2, 5, 3], [1, -2, -1], [1, 3, 4]];
+expect(determinant([[1]])).to.equal(1);
+expect(determinant(m1)).to.equal(-1);
+expect(determinant(m2)).to.equal(-20);
