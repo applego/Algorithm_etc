@@ -6,21 +6,23 @@ mod tests {
     }
 }
 
-mod front_of_house {
-    pub mod hosting {
-        pub fn add_to_waitlist() {}
+mod front_of_house;
 
-        fn sead_at_table() {}
-    }
+// mod front_of_house {
+//     pub mod hosting {
+//         pub fn add_to_waitlist() {}
 
-    mod serving {
-        fn take_order() {}
+//         fn sead_at_table() {}
+//     }
 
-        fn serve_order() {}
+//     mod serving {
+//         fn take_order() {}
 
-        fn take_payment() {}
-    }
-}
+//         fn serve_order() {}
+
+//         fn take_payment() {}
+//     }
+// }
 
 //use でモジュールをスコープに持ち込む
 // use crate::front_of_house::hosting;
