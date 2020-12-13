@@ -66,5 +66,20 @@ fn main() {
     // リスト8-19: 文字列に対して添え字記法を試みる
     let s1 = String::from("hello");
     // let h = s1[0];
-    //!       `std::string::String` cannot be indexed by `{integer}`
+    //　!       `std::string::String` cannot be indexed by `{integer}`
+
+    // 内部表現
+    // StringはVec<u8>のラッパ
+    let len = String::from("Hola").len();
+    // この場合、lenは4になり、これは、文字列”Hola"を保持するベクタの長さが4バイトであることを意味します。
+    // これらの各文字は、UTF-8でエンコードすると、１バイトになるのです。
+
+    let len = String::from("Здравствуйте").len();
+    // UTF-8でエンコードすると、24になる。書くUnicodeスカラー値は、２バイトの領域を取るから。
+
+    let hello = "Здравствуйте";
+    // let answer = &hello[0];
+    //　! UTF-8エンコードされた時、3の最初のバイトは208、２番めは151になるので、answerは実際、208に
+    //　! なるべきですが、208は単独では有効な文字でッハありません。
+    //　! Rusthaこのコードを全くコンパイルせず、開発過程の早い段階で誤解を防いでくれるのです。
 }
