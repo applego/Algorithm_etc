@@ -82,4 +82,10 @@ fn main() {
     //　! UTF-8エンコードされた時、3の最初のバイトは208、２番めは151になるので、answerは実際、208に
     //　! なるべきですが、208は単独では有効な文字でッハありません。
     //　! Rusthaこのコードを全くコンパイルせず、開発過程の早い段階で誤解を防いでくれるのです。
+
+    let hello = "Здравствуйте";
+    let s = &hello[0..4];
+
+    // let ss = &hello[0..1];
+    //thread 'main' panicked at 'byte index 1 is not a char boundary; it is inside 'З' (bytes 0..2) of `Здравствуйте`', /Users/tokoshige_mac/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libcore/str/mod.rs:1942:47
 }
