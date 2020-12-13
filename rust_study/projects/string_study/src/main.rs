@@ -88,4 +88,16 @@ fn main() {
 
     // let ss = &hello[0..1];
     //thread 'main' panicked at 'byte index 1 is not a char boundary; it is inside 'З' (bytes 0..2) of `Здравствуйте`', /Users/tokoshige_mac/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libcore/str/mod.rs:1942:47
+
+    // 文字列を走査するメソッド郡
+
+    //もし、個々のUnicodeスカラー値に対して処理を行う必要があったら、最適な方法はcharsメソッドを使用するものです。
+    for c in "नमस्ते".chars() {
+        println!("{}", c);
+    }
+
+    // bytesメソッドは、各バイトをそのまま帰すので、最適になることもあるかもしれません
+    for b in "नमस्ते".bytes() {
+        println!("{}", b);
+    }
 }
