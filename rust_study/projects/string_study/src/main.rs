@@ -129,4 +129,38 @@ fn main() {
     //borrow of moved value: `field_value`
     // println!("{}", field_value);
     //borrow of moved value: `field_value`
+
+    // # ハッシュマップの値にアクセスする
+    let mut scores = HashMap::new();
+
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Yellow"), 50);
+
+    let team_name = String::from("Blue");
+    let score = scores.get(&team_name); //* 戻り値の型はOption<&V>
+                                        // ベクタのように、forループでハッシュマップのキーと値のペアを走査することができる
+    for (key, value) in &scores {
+        println!("{}: {}", key, value);
+    }
+
+    // # ハッシュマップを更新する
+    // ## 値を上書きする
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Blue"), 25);
+    println!("{:?}", scores);
+    // ## キーに値がなかったときのみ値を挿入する
+    scores.entry(String::from("Yellow")).or_insert(50);
+    scores.entry(String::from("Blue")).or_insert(50); // Blueはいるのでinsertされない
+    println!("{:?}", scores);
+    // ## 古い値に基づいて値を更新する
+    let text = "hello world wonderful world";
+    let mut map = HashMap::new();
+    for word in text.split_whitespace() {
+        let count = map.entry(word).or_insert(0);
+        *count += 1; // * or_insert関数は実際、このキーに対する値への可変参照(&mut V)を返す
+                     // * ここでその可変参照をcount変数にっ保持しているので、その値に代入数rには、まずアスタリスク*でcountを参照外ししなければならない。
+                     // * この可変参照は、forループの終端でスコープを抜けるので、これらの変更はすべて安全であり、借用規則により許可されるのです。
+    }
+    println!("{:?}", map);
+    // ## ハッシュ関数
 }
