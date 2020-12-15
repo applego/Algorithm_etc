@@ -113,4 +113,20 @@ fn main() {
     let initial_scores = vec![10, 50];
 
     let scores: HashMap<_, _> = teams.iter().zip(initial_scores.iter()).collect();
+
+    // # ハッシュマップと所有権
+    // i32のようなCopyトレイトを実装する方について、値はハッシュマップにコピーされます。
+    // Stringのような所有権のある値なら、値はムーブされ、リスト8-22でデモされているように、
+    // ハッシュマップっはそれらの値の所有者になるでしょう。
+
+    // use std::collections::HashMap;
+    let field_name = String::from("Favorite color");
+    let field_value = String::from("Blue");
+
+    let mut map = HashMap::new();
+    map.insert(field_name, field_value);
+    // println!("{}", field_name);
+    //borrow of moved value: `field_value`
+    // println!("{}", field_value);
+    //borrow of moved value: `field_value`
 }
