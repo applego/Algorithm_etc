@@ -349,4 +349,10 @@ var m2 = [[2, 5, 3], [1, -2, -1], [1, 3, 4]];
 chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant([[1]])).to.equal(1);
 chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m1)).to.equal(-1);
 chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m2)).to.equal(-20);
+// 2020/12/15 16:43
+var _8_kyu_Reversed_Strings_1 = require("./8 kyu Reversed Strings");
+chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('world'), 'dlrow');
+chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('hello'), 'olleh');
+chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution(''), '');
+chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('h'), 'h');
 //# sourceMappingURL=main.js.map

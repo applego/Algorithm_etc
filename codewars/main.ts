@@ -428,3 +428,10 @@ const m2 = [[2, 5, 3], [1, -2, -1], [1, 3, 4]];
 expect(determinant([[1]])).to.equal(1);
 expect(determinant(m1)).to.equal(-1);
 expect(determinant(m2)).to.equal(-20);
+
+// 2020/12/15 16:43 Rustで提出しようと思う
+import { solution as solution1225 } from './8 kyu Reversed Strings';
+assert.equal(solution1225('world'), 'dlrow');
+assert.equal(solution1225('hello'), 'olleh');
+assert.equal(solution1225(''), '');
+assert.equal(solution1225('h'), 'h');

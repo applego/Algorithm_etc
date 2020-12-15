@@ -161,4 +161,13 @@ mocha_1.describe("determinant", function () {
         chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m2)).to.equal(-20);
     });
 });
+var _8_kyu_Reversed_Strings_1 = require("./8 kyu Reversed Strings");
+mocha_1.describe("Sample Test Cases", function () {
+    mocha_1.it("Should return a string", function () {
+        chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('world'), 'dlrow');
+        chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('hello'), 'olleh');
+        chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution(''), '');
+        chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('h'), 'h');
+    });
+});
 //# sourceMappingURL=test.js.map
