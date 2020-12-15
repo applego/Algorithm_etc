@@ -1,7 +1,7 @@
 export function determinant(m:number[][]):number {
   // return the determinant of the matrix passed in
-  console.log(m[0].length);
-  console.log([...m]);
+  // console.log(m[0].length);
+  // console.log([...m]);
   switch (m[0].length) {
     case 1:
       return Math.abs(m[0][0]);
