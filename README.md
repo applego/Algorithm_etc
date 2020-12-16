@@ -21,3 +21,7 @@
 codewars/
 main.ts は F5 デバッグ
 test.ts は yarn run test
+
+codewars/rust/codewars_sotuions
+ここで ↓ でテスト（一旦(2020/12/15 17:43)
+cargo test
