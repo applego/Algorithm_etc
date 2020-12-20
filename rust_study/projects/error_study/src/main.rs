@@ -1,22 +1,38 @@
 use std::fs::File;
+use std::io::ErrorKind;
 
 fn main() {
     // panic!("crash and burn"); // クラッシュして炎上
 
     // panic! バックトレースを使用する
-    let v = vec![1,2,3];
-    v[99];
+    // let v = vec![1,2,3];
+    // v[99];
 
     // リスト9-3: ファイルを開く
     // let f: u32 = File::open("hello.txt");
                     // expected `u32`, found enum `std::result::Result`
     let f = File::open("hello.txt");
     // リスト9-4: match式を使用して返却される可能性のあるResult列挙子を処理する
-    let f = match f{
+    let f = match f {
         Ok(file)=>file,
+        Err(ref error) if error.kind() == ErrorKind::NotFound =>{
+            match File::create("hello.txt"){
+                Ok(fc)=>fc,
+                Err(e)=>{
+                    panic!(
+                        // ファイルを作成しようとしましたが、問題がありました
+                        "Tried to create file but there was a problem: {:?}",
+                        e
+                    )
+                },
+            }
+        }
         Err(error)=>{
             // ファイルを開く際に問題がありました
-            panic!("There was a problem opening the file: {:?}", error)
+            panic!(
+                "There was a problem opening the file: {:?}",
+                error
+            )
         },
     };
 }
