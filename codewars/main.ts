@@ -435,3 +435,8 @@ assert.equal(solution1225('world'), 'dlrow');
 assert.equal(solution1225('hello'), 'olleh');
 assert.equal(solution1225(''), '');
 assert.equal(solution1225('h'), 'h');
+
+// 2020/12/21  0:23
+import { GeneticAlgorithm } from './5 kyu Binary Genetic Algorithms';
+const geneticAlgorithm = new GeneticAlgorithm();
+// geneticAlgorithm.run(fitness, 10, 0.6, 0.002, 100);

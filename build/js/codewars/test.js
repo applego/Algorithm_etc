@@ -170,4 +170,16 @@ mocha_1.describe("Sample Test Cases", function () {
         chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('h'), 'h');
     });
 });
+// 2020/12/20 23:56
+// import { fitness } from "./preloaded";
+var _5_kyu_Binary_Genetic_Algorithms_1 = require("./5 kyu Binary Genetic Algorithms");
+// import { assert } from 'chai';
+// TODO: Replace examples and use TDD by writing your own tests
+mocha_1.describe('solution', function () {
+    mocha_1.it('test', function () {
+        // TDD
+        var geneticAlgorithm = new _5_kyu_Binary_Genetic_Algorithms_1.GeneticAlgorithm();
+        // assert()
+    });
+});
 //# sourceMappingURL=test.js.map
