@@ -69,6 +69,14 @@ fn read_username_from_file2() -> Result<String, io::Error> {
     Ok(s)
 }
 
+// リスト9-8: ?演算子の後のメソッド呼び出しを連結する
+fn read_username_from_file3() -> Result<String,io::Error> {
+    let mut s = String::new();
+
+    File::open("hello.txt")?.read_to_string(&mut s)?;
+
+    Ok(s)
+}
 
 // Result　enumは以下のようにOkとErrの２列挙子からなる定義
 // TとEはジェネリックな型引数：詳しくは第１０章で
