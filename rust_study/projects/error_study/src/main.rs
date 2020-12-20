@@ -61,6 +61,15 @@ fn read_username_from_file() -> Result<String,io::Error>{
     }
 }
 
+// リスト9-7: ?演算子でエラーを呼び出し元に返す関数
+fn read_username_from_file2() -> Result<String, io::Error> {
+    let mut f = File::open("hello.txt")?;
+    let mut s = String::new();
+    f.read_to_string(&mut s)?;
+    Ok(s)
+}
+
+
 // Result　enumは以下のようにOkとErrの２列挙子からなる定義
 // TとEはジェネリックな型引数：詳しくは第１０章で
 // Tが成功したときにOk列挙子に含まれて返される値の方を表すことと
