@@ -35,6 +35,10 @@ fn main() {
             )
         },
     };
+
+    let f = File::open("hello.txt").unwrap();
+
+    let f = File::open("hello.txt").expect("Failed to open hello.txt");
 }
 
 // Result　enumは以下のようにOkとErrの２列挙子からなる定義
