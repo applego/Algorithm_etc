@@ -349,10 +349,14 @@ var m2 = [[2, 5, 3], [1, -2, -1], [1, 3, 4]];
 chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant([[1]])).to.equal(1);
 chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m1)).to.equal(-1);
 chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m2)).to.equal(-20);
-// 2020/12/15 16:43
+// 2020/12/15 16:43 Rustで提出しようと思う
 var _8_kyu_Reversed_Strings_1 = require("./8 kyu Reversed Strings");
 chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('world'), 'dlrow');
 chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('hello'), 'olleh');
 chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution(''), '');
 chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('h'), 'h');
+// 2020/12/21  0:23
+var _5_kyu_Binary_Genetic_Algorithms_1 = require("./5 kyu Binary Genetic Algorithms");
+var geneticAlgorithm = new _5_kyu_Binary_Genetic_Algorithms_1.GeneticAlgorithm();
+// geneticAlgorithm.run(fitness, 10, 0.6, 0.002, 100);
 //# sourceMappingURL=main.js.map

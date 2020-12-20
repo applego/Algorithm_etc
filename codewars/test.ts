@@ -178,3 +178,17 @@ describe("Sample Test Cases", function(){
     assert.equal(solution('h'), 'h');
   });
 });
+
+// 2020/12/20 23:56
+// import { fitness } from "./preloaded";
+import { GeneticAlgorithm } from './5 kyu Binary Genetic Algorithms';
+// import { assert } from 'chai';
+// TODO: Replace examples and use TDD by writing your own tests
+describe('solution', () => {
+  it('test', () => {
+    // TDD
+    const geneticAlgorithm = new GeneticAlgorithm();
+    // assert()
+
+  });
+});
