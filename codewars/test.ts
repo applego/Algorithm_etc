@@ -192,3 +192,17 @@ describe('solution', () => {
 
   });
 });
+
+// 2020/12/21 12:15
+import { G964_20201221 } from './5 kyu Some Egyptian fractions';
+function testing(s:any, expected:any) {
+  assert.deepEqual(G964_20201221.decompose(s), expected)
+}
+describe("Fixed Tests decompose", function(){
+  it("Basic tests", function() {
+    testing("3/4", ["1/2", "1/4"]);
+    testing("12/4", ["3"]);
+    testing("4/5", ["1/2", "1/4", "1/20"]);
+    testing("0.66", ["1/2", "1/7", "1/59", "1/5163", "1/53307975"]);
+  });
+});

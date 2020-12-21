@@ -440,3 +440,13 @@ assert.equal(solution1225('h'), 'h');
 import { GeneticAlgorithm } from './5 kyu Binary Genetic Algorithms';
 const geneticAlgorithm = new GeneticAlgorithm();
 // geneticAlgorithm.run(fitness, 10, 0.6, 0.002, 100);
+
+// 2020/12/21 12:15
+import { G964_20201221 } from './5 kyu Some Egyptian fractions';
+function testing(s:any, expected:any) {
+  assert.deepEqual(G964_20201221.decompose(s), expected)
+}
+testing("3/4", ["1/2", "1/4"]);
+testing("12/4", ["3"]);
+testing("4/5", ["1/2", "1/4", "1/20"]);
+testing("0.66", ["1/2", "1/7", "1/59", "1/5163", "1/53307975"]);

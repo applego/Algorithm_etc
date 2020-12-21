@@ -359,4 +359,13 @@ chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('h'), 'h');
 var _5_kyu_Binary_Genetic_Algorithms_1 = require("./5 kyu Binary Genetic Algorithms");
 var geneticAlgorithm = new _5_kyu_Binary_Genetic_Algorithms_1.GeneticAlgorithm();
 // geneticAlgorithm.run(fitness, 10, 0.6, 0.002, 100);
+// 2020/12/21 12:15
+var _5_kyu_Some_Egyptian_fractions_1 = require("./5 kyu Some Egyptian fractions");
+function testing(s, expected) {
+    chai_1.assert.deepEqual(_5_kyu_Some_Egyptian_fractions_1.G964_20201221.decompose(s), expected);
+}
+testing("3/4", ["1/2", "1/4"]);
+testing("12/4", ["3"]);
+testing("4/5", ["1/2", "1/4", "1/20"]);
+testing("0.66", ["1/2", "1/7", "1/59", "1/5163", "1/53307975"]);
 //# sourceMappingURL=main.js.map
