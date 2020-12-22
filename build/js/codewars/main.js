@@ -378,5 +378,5 @@ fTowns1 = [['A1', 'X1'],
     ['A4', 'X4'],
     ['A5', 'X5']];
 distTable1 = ['X1', 100, 'X2', 200, 'X3', 250, 'X4', 300, 'X5', 320];
-TestCodewar_1.default.assert_equals(_5_kyu_Help_your_granny_1.G964_20201222.tour(friends1, fTowns1, distTable1), 1200);
+TestCodewar_1.default.assert_equals(_5_kyu_Help_your_granny_1.G964_20201222.tour(friends1, fTowns1, distTable1), 1020);
 //# sourceMappingURL=main.js.map

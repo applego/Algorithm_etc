@@ -5,7 +5,7 @@ var fTowns1 = [["A1", "X1"], ["A2", "X2"], ["A3", "X3"], ["A4", "X4"]];
 var distTable1 = ["X1", 100.0, "X2", 200.0, "X3", 250.0, "X4", 300.0];
 */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.G964_20201222 = void 0;
+exports.G964_20201222_BP = exports.G964_20201222 = void 0;
 var G964_20201222 = /** @class */ (function () {
     function G964_20201222() {
     }
@@ -19,7 +19,7 @@ var G964_20201222 = /** @class */ (function () {
         console.log(distTable);
         var circuit = G964_20201222.makeCircuit(friends, fTowns);
         var totaldistance = G964_20201222.calcTotalDistance(circuit, distTable);
-        return Math.round(totaldistance);
+        return Math.floor(totaldistance);
     };
     G964_20201222.makeCircuit = function (friends, fTowns) {
         // let circuit = (() => {
@@ -72,4 +72,24 @@ var G964_20201222 = /** @class */ (function () {
     return G964_20201222;
 }());
 exports.G964_20201222 = G964_20201222;
+var G964_20201222_BP = /** @class */ (function () {
+    function G964_20201222_BP() {
+    }
+    G964_20201222_BP.tour = function (friends, fTowns, distTable) {
+        var pythagoras = function (a, b) { return Math.sqrt((Math.pow(b, 2)) - (Math.pow(a, 2))); };
+        return Math.floor(friends.reduce(function (a, b) {
+            var fTown = fTowns.filter(function (value) { return value[0] === b; });
+            if (fTowns.length === 0) {
+                return a;
+            }
+            ;
+            var newValue = +distTable[distTable.indexOf(fTown[0][1]) + 1];
+            a[0] += (a[1] > 0 ? pythagoras(a[1], newValue) : newValue);
+            a[1] = +distTable[distTable.indexOf(fTown[0][1]) + 1];
+            return a;
+        }, [0, 0]).reduce(function (a, b) { return a + b; })); // a[0] = total distance, a[1] = last distance
+    };
+    return G964_20201222_BP;
+}());
+exports.G964_20201222_BP = G964_20201222_BP;
 //# sourceMappingURL=5 kyu Help your granny!.js.map

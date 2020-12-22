@@ -67,3 +67,18 @@ export class G964_20201222 {
     return Math.sqrt(d2 ** 2 - d1 ** 2);
   }
 }
+
+export class G964_20201222_BP{
+
+  public static tour = (friends: string[], fTowns: Array<string[]>, distTable: Array<string | number>) => {
+    const pythagoras = (a: number, b: number) => Math.sqrt((b ** 2) - (a ** 2));
+    return Math.floor(friends.reduce((a, b) => {
+      const fTown = fTowns.filter(value => value[0] === b);
+      if (fTowns.length === 0) { return a; };
+      const newValue = +distTable[distTable.indexOf(fTown[0][1]) + 1]
+      a[0] += (a[1] > 0 ? pythagoras(a[1], newValue) : newValue);
+      a[1] = +distTable[distTable.indexOf(fTown[0][1]) + 1]
+      return a;
+    },[0,0]).reduce((a,b)=>a+b)) // a[0] = total distance, a[1] = last distance
+  }
+}
