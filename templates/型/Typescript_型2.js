@@ -43,5 +43,18 @@ function getSpeed(speed) {
 var slowSpeed = getSpeed("slow");
 var mediumSpeed = getSpeed("medium");
 var fastSpeed = getSpeed("fast");
+// 使用例
+addEventListener("foobar", function () { });
+addEventListener("event", function () { }, true);
+addEventListener("event2", function () { }, {});
+addEventListener("event3", function () { }, {
+    capture: true,
+    once: false
+});
 // エラー例
-// getSpeed("veryfast");
+// addEventListener("foobar", () => { }, "string");
+// addEventListener("hoge", () => { }, {
+//     capture: true,
+//     once: false,
+//     excess: true
+// });

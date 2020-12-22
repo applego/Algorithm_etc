@@ -71,6 +71,19 @@ EventTarget#addEventListenerは、2つまたは3つの引数を受け取る関�
 // declareの例
 // declare function foo(arg: number): number;
 
+interface addEventListenerOptionsObject{
+    capture?: boolean;
+    once?: boolean;
+    passive?: boolean;
+}
+
+declare function addEventListener(
+    type: string,
+    handler: () => void,
+    options?: boolean | addEventListenerOptionsObject)
+    : void;
+
+
 // 使用例
 addEventListener("foobar", () => { });
 addEventListener("event", () => { }, true);
@@ -81,9 +94,9 @@ addEventListener("event3", () => { }, {
 });
 
 // エラー例
-addEventListener("foobar", () => { }, "string");
-addEventListener("hoge", () => { }, {
-    capture: true,
-    once: false,
-    excess: true
-});
+// addEventListener("foobar", () => { }, "string");
+// addEventListener("hoge", () => { }, {
+//     capture: true,
+//     once: false,
+//     excess: true
+// });
