@@ -3,18 +3,19 @@ import Test from './TestCodewar';
 // let test = new Test();//__filename
 
 import TimeMeasure from './TimeMeasure';
+import { describe, it } from "mocha";
+import { assert, expect } from "chai";
 
-import m1 = require("./8 kyu The falling speed of petals");
+import speedOfPetals = require("./8 kyu The falling speed of petals");
+// speedOfPetals.sakuraFall(0);
+// speedOfPetals.sakuraFall(5);
+speedOfPetals.sakuraFall(10);
+// speedOfPetals.sakuraFall(-1);
+// speedOfPetals.sakuraFall(200);
 
-// m1.sakuraFall(0);
-// m1.sakuraFall(5);
-m1.sakuraFall(10);
-// m1.sakuraFall(-1);
-// m1.sakuraFall(200);
-
-// console.log(m1.f(1000)); // "1,000円"
-// console.log(m1.f2(1000)); // "1,000円"
-// console.log(m1.f2(1000, 'ペソ')); // "1,000ペソ"
+// console.log(speedOfPetals.f(1000)); // "1,000円"
+// console.log(speedOfPetals.f2(1000)); // "1,000円"
+// console.log(speedOfPetals.f2(1000, 'ペソ')); // "1,000ペソ"
 
 import isograms = require('./7 kyu Isograms');
 Test.assert_equals(isograms.isIsogram("Dermatoglyphics"), true);// isograms.isIsogram("Dermatoglyphics")//, true );
@@ -303,7 +304,6 @@ Test.assert_equals(minSum([12, 6, 10, 26, 3, 24]), 342);
 Test.assert_equals(minSum([9, 2, 8, 7, 5, 4, 0, 6]), 74);
 
 // 2020/11/26 21:16
-import { assert } from "chai";
 import { maxProduct } from "./7 kyu Product Of Maximums Of Array (Array Series #2)";
 
 Test.assert_equals(maxProduct([4, 3, 5], 2), 20);
@@ -346,3 +346,122 @@ Test.assert_equals(minimumSteps([10, 9, 9, 8], 17), 1);
 Test.assert_equals(minimumSteps([8, 9, 10, 4, 2], 23), 3);
 Test.assert_equals(minimumSteps([19, 98, 69, 28, 75, 45, 17, 98, 67], 464), 8);
 Test.assert_equals(minimumSteps([4, 6, 3], 2), 0);
+
+// 2020/12/07 18:41
+import { isInteresting } from './4 kyu Catching Car Mileage Numbers';
+// Test.assert_equals( isInteresting(3, [1337, 256]),     0);
+// Test.assert_equals( isInteresting(1336, [1337, 256]),  1);
+// Test.assert_equals( isInteresting(1337, [1337, 256]),  2);
+// Test.assert_equals( isInteresting(11208, [1337, 256]), 0);
+// Test.assert_equals( isInteresting(11209, [1337, 256]), 1);
+// Test.assert_equals( isInteresting(11211, [1337, 256]), 2);
+// Test.assert_equals(isInteresting(123, []), 2);
+// Test.assert_equals( isInteresting(67890, []), 2);
+Test.assert_equals( isInteresting(98, []), 1);
+
+// 2020/12/08 16:06
+import { maxTriSum } from "./7 kyu Maximum Triplet Sum (Array Series #7)";
+Test.assert_equals(maxTriSum([3, 2, 6, 8, 2, 3]), 17);
+Test.assert_equals(maxTriSum([2, 9, 13, 10, 5, 2, 9, 5]), 32);
+Test.assert_equals(maxTriSum([2, 1, 8, 0, 6, 4, 8, 6, 2, 4]), 18);
+Test.assert_equals(maxTriSum([-3, -27, -4, -2, -27, -2]), -9);
+Test.assert_equals(maxTriSum([-14, -12, -7, -42, -809, -14, -12]), -33);
+Test.assert_equals(maxTriSum([-13, -50, 57, 13, 67, -13, 57, 108, 67]), 232);
+Test.assert_equals(maxTriSum([-7, 12, -7, 29, -5, 0, -7, 0, 0, 29]), 41);
+Test.assert_equals(maxTriSum([-2, 0, 2]), 0);
+Test.assert_equals(maxTriSum([-2, -4, 0, -9, 2]), 0);
+Test.assert_equals(maxTriSum([-5, -1, -9, 0, 2]), 1);
+
+// 2020/12/08 16:58
+import { G964_1208, G964_1208_BP } from './5 kyu Decimal to Factorial and Back';
+// const G964_12081:G964_1208 = new G964_1208();
+// Test.assert_equals(G964_1208.dec2FactString(463), "341010");
+// Test.assert_equals(G964_1208.dec2FactString(2982), "4041000");
+// Test.assert_equals(G964_1208.dec2FactString(36288000), "A0000000000");
+Test.assert_equals(G964_1208.dec2FactString(3628800054), "76A0000021000");
+// Test.assert_equals(G964_1208.factString2Dec("341010"), 463);
+Test.assert_equals(G964_1208.factString2Dec("76A0000021000"), 3628800054);
+Test.assert_equals(G964_1208_BP.dec2FactString(3628800054), "76A0000021000");
+Test.assert_equals(G964_1208_BP.factString2Dec("76A0000021000"), 3628800054);
+
+// 2020/12/09 23:45
+import { nextBigger, nextBiggerBP } from "./4 kyu Next bigger number with the same digits";
+// Test.assert_equals(isMaxAtFirst(1234567890), false);
+// Test.assert_equals(isMaxAtFirst(9876543210), true);
+// Test.assert_equals(isMaxAtFirst(9999999999), true);
+
+Test.assert_equals(nextBigger(12), 21);
+Test.assert_equals(nextBigger(513), 531);
+Test.assert_equals(nextBigger(2017), 2071);
+Test.assert_equals(nextBigger(414), 441);
+Test.assert_equals(nextBigger(144), 414);
+
+Test.assert_equals(nextBigger(123456789), 123456798);
+Test.assert_equals(nextBigger(1234567890), 1234567908);
+Test.assert_equals(nextBigger(9876543210), -1);
+Test.assert_equals(nextBigger(9999999999), -1);
+Test.assert_equals(nextBigger(59884848459853), 59884848483559);
+
+Test.assert_equals(nextBigger(545709101), 545709110);
+Test.assert_equals(nextBigger(95322050), 95322500);
+
+Test.assert_equals(nextBiggerBP(545709101), 545709110);
+Test.assert_equals(nextBiggerBP(95322050), 95322500);
+
+// 2020/12/13  0:05
+import { rowWeights } from './7 kyu Row Weights(Array Series #8?)';
+Test.assert_equals(rowWeights([80]), [80, 0]);
+Test.assert_equals(rowWeights([100, 50]), [100, 50]);
+Test.assert_equals(rowWeights([50, 60, 70, 80]), [120, 140]);
+Test.assert_equals(rowWeights([13, 27, 49]), [62, 27]);
+Test.assert_equals(rowWeights([70, 58, 75, 34, 91]), [236, 92]);
+Test.assert_equals(rowWeights([29, 83, 67, 53, 19, 28, 96]), [211, 164]);
+Test.assert_equals(rowWeights([0]), [0, 0]);
+Test.assert_equals(rowWeights([100, 51, 50, 100]), [150, 151]);
+Test.assert_equals(rowWeights([39, 84, 74, 18, 59, 72, 35, 61]), [207, 235]);
+Test.assert_equals(rowWeights([0, 1, 0]), [0, 1]);
+
+// 2020/12/13 17:30
+import { determinant } from './4 kyu Matrix Determinant';
+const m1 = [[1, 3], [2, 5]];
+const m2 = [[2, 5, 3], [1, -2, -1], [1, 3, 4]];
+expect(determinant([[1]])).to.equal(1);
+expect(determinant(m1)).to.equal(-1);
+expect(determinant(m2)).to.equal(-20);
+
+// 2020/12/15 16:43 Rustで提出しようと思う
+import { solution as solution1225 } from './8 kyu Reversed Strings';
+assert.equal(solution1225('world'), 'dlrow');
+assert.equal(solution1225('hello'), 'olleh');
+assert.equal(solution1225(''), '');
+assert.equal(solution1225('h'), 'h');
+
+// 2020/12/21  0:23
+import { GeneticAlgorithm } from './5 kyu Binary Genetic Algorithms';
+const geneticAlgorithm = new GeneticAlgorithm();
+// geneticAlgorithm.run(fitness, 10, 0.6, 0.002, 100);
+
+// 2020/12/21 12:15
+import { G964_20201221 } from './5 kyu Some Egyptian fractions';
+// function testing(s:any, expected:any) {
+//   assert.deepEqual(G964_20201221.decompose(s), expected)
+// }
+// testing("3/4", ["1/2", "1/4"]);
+// testing("12/4", ["3"]);
+// testing("4/5", ["1/2", "1/4", "1/20"]);
+// testing("0.66", ["1/2", "1/7", "1/59", "1/5163", "1/53307975"]);
+
+// 2020/12/21 21:44
+import { G964_20201222 } from './5 kyu Help your granny!';
+var friends1 = ["A1", "A2", "A3", "A4", "A5"];
+var fTowns1 = [["A1", "X1"], ["A2", "X2"], ["A3", "X3"], ["A4", "X4"]];
+var distTable1 = ["X1", 100.0, "X2", 200.0, "X3", 250.0, "X4", 300.0];
+Test.assert_equals(G964_20201222.tour(friends1, fTowns1, distTable1), 889);
+friends1 = ['A1', 'A2', 'A3', 'A4', 'A5'];
+fTowns1 = [['A1', 'X1'],
+['A2', 'X2'],
+['A3', 'X3'],
+['A4', 'X4'],
+['A5', 'X5']];
+distTable1 = ['X1', 100, 'X2', 200, 'X3', 250, 'X4', 300, 'X5', 320];
+Test.assert_equals(G964_20201222.tour(friends1, fTowns1, distTable1), 1020);

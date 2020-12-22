@@ -6,15 +6,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 // let test = new Test();//__filename
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
-var m1 = require("./8 kyu The falling speed of petals");
-// m1.sakuraFall(0);
-// m1.sakuraFall(5);
-m1.sakuraFall(10);
-// m1.sakuraFall(-1);
-// m1.sakuraFall(200);
-// console.log(m1.f(1000)); // "1,000円"
-// console.log(m1.f2(1000)); // "1,000円"
-// console.log(m1.f2(1000, 'ペソ')); // "1,000ペソ"
+var chai_1 = require("chai");
+var speedOfPetals = require("./8 kyu The falling speed of petals");
+// speedOfPetals.sakuraFall(0);
+// speedOfPetals.sakuraFall(5);
+speedOfPetals.sakuraFall(10);
+// speedOfPetals.sakuraFall(-1);
+// speedOfPetals.sakuraFall(200);
+// console.log(speedOfPetals.f(1000)); // "1,000円"
+// console.log(speedOfPetals.f2(1000)); // "1,000円"
+// console.log(speedOfPetals.f2(1000, 'ペソ')); // "1,000ペソ"
 var isograms = require("./7 kyu Isograms");
 TestCodewar_1.default.assert_equals(isograms.isIsogram("Dermatoglyphics"), true); // isograms.isIsogram("Dermatoglyphics")//, true );
 // Test.assert_equals(isograms.isIsogram("isogram"), true );
@@ -239,6 +240,7 @@ var _7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1 = require("./7 kyu Minimize 
 TestCodewar_1.default.assert_equals(_7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1.minSum([5, 4, 2, 3]), 22);
 TestCodewar_1.default.assert_equals(_7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1.minSum([12, 6, 10, 26, 3, 24]), 342);
 TestCodewar_1.default.assert_equals(_7_kyu_Minimize_Sum_Of_Array__Array_Series__1_1.minSum([9, 2, 8, 7, 5, 4, 0, 6]), 74);
+// 2020/11/26 21:16
 var _7_kyu_Product_Of_Maximums_Of_Array__Array_Series__2_1 = require("./7 kyu Product Of Maximums Of Array (Array Series #2)");
 TestCodewar_1.default.assert_equals(_7_kyu_Product_Of_Maximums_Of_Array__Array_Series__2_1.maxProduct([4, 3, 5], 2), 20);
 // 2020/11/27 18:02
@@ -275,4 +277,106 @@ TestCodewar_1.default.assert_equals(_7_kyu_Minimum_Steps__Array_Series__6_1.mini
 TestCodewar_1.default.assert_equals(_7_kyu_Minimum_Steps__Array_Series__6_1.minimumSteps([8, 9, 10, 4, 2], 23), 3);
 TestCodewar_1.default.assert_equals(_7_kyu_Minimum_Steps__Array_Series__6_1.minimumSteps([19, 98, 69, 28, 75, 45, 17, 98, 67], 464), 8);
 TestCodewar_1.default.assert_equals(_7_kyu_Minimum_Steps__Array_Series__6_1.minimumSteps([4, 6, 3], 2), 0);
+// 2020/12/07 18:41
+var _4_kyu_Catching_Car_Mileage_Numbers_1 = require("./4 kyu Catching Car Mileage Numbers");
+// Test.assert_equals( isInteresting(3, [1337, 256]),     0);
+// Test.assert_equals( isInteresting(1336, [1337, 256]),  1);
+// Test.assert_equals( isInteresting(1337, [1337, 256]),  2);
+// Test.assert_equals( isInteresting(11208, [1337, 256]), 0);
+// Test.assert_equals( isInteresting(11209, [1337, 256]), 1);
+// Test.assert_equals( isInteresting(11211, [1337, 256]), 2);
+// Test.assert_equals(isInteresting(123, []), 2);
+// Test.assert_equals( isInteresting(67890, []), 2);
+TestCodewar_1.default.assert_equals(_4_kyu_Catching_Car_Mileage_Numbers_1.isInteresting(98, []), 1);
+// 2020/12/08 16:06
+var _7_kyu_Maximum_Triplet_Sum__Array_Series__7_1 = require("./7 kyu Maximum Triplet Sum (Array Series #7)");
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([3, 2, 6, 8, 2, 3]), 17);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([2, 9, 13, 10, 5, 2, 9, 5]), 32);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([2, 1, 8, 0, 6, 4, 8, 6, 2, 4]), 18);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-3, -27, -4, -2, -27, -2]), -9);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-14, -12, -7, -42, -809, -14, -12]), -33);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-13, -50, 57, 13, 67, -13, 57, 108, 67]), 232);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-7, 12, -7, 29, -5, 0, -7, 0, 0, 29]), 41);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-2, 0, 2]), 0);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-2, -4, 0, -9, 2]), 0);
+TestCodewar_1.default.assert_equals(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-5, -1, -9, 0, 2]), 1);
+// 2020/12/08 16:58
+var _5_kyu_Decimal_to_Factorial_and_Back_1 = require("./5 kyu Decimal to Factorial and Back");
+// const G964_12081:G964_1208 = new G964_1208();
+// Test.assert_equals(G964_1208.dec2FactString(463), "341010");
+// Test.assert_equals(G964_1208.dec2FactString(2982), "4041000");
+// Test.assert_equals(G964_1208.dec2FactString(36288000), "A0000000000");
+TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.dec2FactString(3628800054), "76A0000021000");
+// Test.assert_equals(G964_1208.factString2Dec("341010"), 463);
+TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.factString2Dec("76A0000021000"), 3628800054);
+TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208_BP.dec2FactString(3628800054), "76A0000021000");
+TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208_BP.factString2Dec("76A0000021000"), 3628800054);
+// 2020/12/09 23:45
+var _4_kyu_Next_bigger_number_with_the_same_digits_1 = require("./4 kyu Next bigger number with the same digits");
+// Test.assert_equals(isMaxAtFirst(1234567890), false);
+// Test.assert_equals(isMaxAtFirst(9876543210), true);
+// Test.assert_equals(isMaxAtFirst(9999999999), true);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(12), 21);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(513), 531);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(2017), 2071);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(414), 441);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(144), 414);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(123456789), 123456798);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(1234567890), 1234567908);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(9876543210), -1);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(9999999999), -1);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(59884848459853), 59884848483559);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(545709101), 545709110);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(95322050), 95322500);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBiggerBP(545709101), 545709110);
+TestCodewar_1.default.assert_equals(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBiggerBP(95322050), 95322500);
+// 2020/12/13  0:05
+var _7_kyu_Row_Weights_Array_Series__8__1 = require("./7 kyu Row Weights(Array Series #8?)");
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([80]), [80, 0]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([100, 50]), [100, 50]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([50, 60, 70, 80]), [120, 140]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([13, 27, 49]), [62, 27]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([70, 58, 75, 34, 91]), [236, 92]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([29, 83, 67, 53, 19, 28, 96]), [211, 164]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([0]), [0, 0]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([100, 51, 50, 100]), [150, 151]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([39, 84, 74, 18, 59, 72, 35, 61]), [207, 235]);
+TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([0, 1, 0]), [0, 1]);
+// 2020/12/13 17:30
+var _4_kyu_Matrix_Determinant_1 = require("./4 kyu Matrix Determinant");
+var m1 = [[1, 3], [2, 5]];
+var m2 = [[2, 5, 3], [1, -2, -1], [1, 3, 4]];
+chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant([[1]])).to.equal(1);
+chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m1)).to.equal(-1);
+chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m2)).to.equal(-20);
+// 2020/12/15 16:43 Rustで提出しようと思う
+var _8_kyu_Reversed_Strings_1 = require("./8 kyu Reversed Strings");
+chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('world'), 'dlrow');
+chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('hello'), 'olleh');
+chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution(''), '');
+chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('h'), 'h');
+// 2020/12/21  0:23
+var _5_kyu_Binary_Genetic_Algorithms_1 = require("./5 kyu Binary Genetic Algorithms");
+var geneticAlgorithm = new _5_kyu_Binary_Genetic_Algorithms_1.GeneticAlgorithm();
+// function testing(s:any, expected:any) {
+//   assert.deepEqual(G964_20201221.decompose(s), expected)
+// }
+// testing("3/4", ["1/2", "1/4"]);
+// testing("12/4", ["3"]);
+// testing("4/5", ["1/2", "1/4", "1/20"]);
+// testing("0.66", ["1/2", "1/7", "1/59", "1/5163", "1/53307975"]);
+// 2020/12/21 21:44
+var _5_kyu_Help_your_granny_1 = require("./5 kyu Help your granny!");
+var friends1 = ["A1", "A2", "A3", "A4", "A5"];
+var fTowns1 = [["A1", "X1"], ["A2", "X2"], ["A3", "X3"], ["A4", "X4"]];
+var distTable1 = ["X1", 100.0, "X2", 200.0, "X3", 250.0, "X4", 300.0];
+TestCodewar_1.default.assert_equals(_5_kyu_Help_your_granny_1.G964_20201222.tour(friends1, fTowns1, distTable1), 889);
+friends1 = ['A1', 'A2', 'A3', 'A4', 'A5'];
+fTowns1 = [['A1', 'X1'],
+    ['A2', 'X2'],
+    ['A3', 'X3'],
+    ['A4', 'X4'],
+    ['A5', 'X5']];
+distTable1 = ['X1', 100, 'X2', 200, 'X3', 250, 'X4', 300, 'X5', 320];
+TestCodewar_1.default.assert_equals(_5_kyu_Help_your_granny_1.G964_20201222.tour(friends1, fTowns1, distTable1), 1020);
 //# sourceMappingURL=main.js.map

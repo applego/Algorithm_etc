@@ -52,4 +52,147 @@ mocha_1.describe("Basic Tests", function () {
         return chai_1.assert.deepEqual(_7_kyu_Product_Array__Array_Series__5_1.productArray([16, 17, 4, 3, 5, 2]), [2040, 1920, 8160, 10880, 6528, 16320]);
     });
 });
+var _4_kyu_Catching_Car_Mileage_Numbers_1 = require("./4 kyu Catching Car Mileage Numbers");
+1;
+function test(n, awesome, expected) {
+    chai_1.assert.strictEqual(_4_kyu_Catching_Car_Mileage_Numbers_1.isInteresting(n, awesome), expected);
+}
+mocha_1.describe("solution", function () {
+    mocha_1.it('should work, dangit!', function () {
+        test(3, [1337, 256], 0);
+        test(1336, [1337, 256], 1);
+        test(1337, [1337, 256], 2);
+        test(11208, [1337, 256], 0);
+        test(11209, [1337, 256], 1);
+        test(11211, [1337, 256], 2);
+    });
+});
+var _7_kyu_Maximum_Triplet_Sum__Array_Series__7_1 = require("./7 kyu Maximum Triplet Sum (Array Series #7)");
+mocha_1.describe("Basic tests", function () {
+    mocha_1.it("Testing for [3, 2, 6, 8, 2, 3]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([3, 2, 6, 8, 2, 3]), 17); });
+    mocha_1.it("Testing for [2, 9, 13, 10, 5, 2, 9, 5]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([2, 9, 13, 10, 5, 2, 9, 5]), 32); });
+    mocha_1.it("Testing for [2, 1, 8, 0, 6, 4, 8, 6, 2, 4]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([2, 1, 8, 0, 6, 4, 8, 6, 2, 4]), 18); });
+    mocha_1.it("Testing for [-3, -27, -4, -2, -27, -2]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-3, -27, -4, -2, -27, -2]), -9); });
+    mocha_1.it("Testing for [-14, -12, -7, -42, -809, -14, -12]", function () {
+        return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-14, -12, -7, -42, -809, -14, -12]), -33);
+    });
+    mocha_1.it("Testing for [-13, -50, 57, 13, 67, -13, 57, 108, 67]", function () {
+        return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-13, -50, 57, 13, 67, -13, 57, 108, 67]), 232);
+    });
+    mocha_1.it("Testing for [-7, 12, -7, 29, -5, 0, -7, 0, 0, 29]", function () {
+        return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-7, 12, -7, 29, -5, 0, -7, 0, 0, 29]), 41);
+    });
+    mocha_1.it("Testing for [-2, 0, 2]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-2, 0, 2]), 0); });
+    mocha_1.it("Testing for [-2, -4, 0, -9, 2]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-2, -4, 0, -9, 2]), 0); });
+    mocha_1.it("Testing for [-5, -1, -9, 0, 2]", function () { return chai_1.assert.strictEqual(_7_kyu_Maximum_Triplet_Sum__Array_Series__7_1.maxTriSum([-5, -1, -9, 0, 2]), 1); });
+});
+var _5_kyu_Decimal_to_Factorial_and_Back_1 = require("./5 kyu Decimal to Factorial and Back");
+function testing1(nb, expected) {
+    chai_1.assert.equal(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.dec2FactString(nb), expected);
+}
+function testing2(nb, expected) {
+    chai_1.assert.equal(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.factString2Dec(nb), expected);
+}
+function testing1BP(nb, expected) {
+    chai_1.assert.equal(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208_BP.dec2FactString(nb), expected);
+}
+function testing2BP(nb, expected) {
+    chai_1.assert.equal(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208_BP.factString2Dec(nb), expected);
+}
+mocha_1.describe("Fixed Tests", function () {
+    mocha_1.it("Basic tests dec2FactString", function () {
+        testing1(2982, "4041000");
+    });
+    mocha_1.it("Basic tests factString2Dec", function () {
+        testing2("341010", 463);
+    });
+    mocha_1.it("Basic tests dec2FactString BP", function () {
+        testing1BP(2982, "4041000");
+    });
+    mocha_1.it("Basic tests factString2Dec BP", function () {
+        testing2BP("341010", 463);
+    });
+});
+var _4_kyu_Next_bigger_number_with_the_same_digits_1 = require("./4 kyu Next bigger number with the same digits");
+mocha_1.describe("Basic tests", function () {
+    mocha_1.it("Small numbers", function () {
+        chai_1.assert.strictEqual(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(12), 21);
+        chai_1.assert.strictEqual(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(513), 531);
+        chai_1.assert.strictEqual(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(2017), 2071);
+        chai_1.assert.strictEqual(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(414), 441);
+        chai_1.assert.strictEqual(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(144), 414);
+    });
+    mocha_1.it("Bigger numbers", function () {
+        chai_1.assert.strictEqual(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(123456789), 123456798);
+        chai_1.assert.strictEqual(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(1234567890), 1234567908);
+        chai_1.assert.strictEqual(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(9876543210), -1);
+        chai_1.assert.strictEqual(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(9999999999), -1);
+        chai_1.assert.strictEqual(_4_kyu_Next_bigger_number_with_the_same_digits_1.nextBigger(59884848459853), 59884848483559);
+    });
+});
+var _7_kyu_Row_Weights_Array_Series__8__1 = require("./7 kyu Row Weights(Array Series #8?)");
+mocha_1.describe("Basic tests", function () {
+    mocha_1.it("Testing for [80]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([80]), [80, 0]); });
+    mocha_1.it("Testing for [100, 50]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([100, 50]), [100, 50]); });
+    mocha_1.it("Testing for [50, 60, 70, 80]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([50, 60, 70, 80]), [120, 140]); });
+    mocha_1.it("Testing for [13, 27, 49]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([13, 27, 49]), [62, 27]); });
+    mocha_1.it("Testing for [70, 58, 75, 34, 91]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([70, 58, 75, 34, 91]), [236, 92]); });
+    mocha_1.it("Testing for [29, 83, 67, 53, 19, 28, 96]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([29, 83, 67, 53, 19, 28, 96]), [211, 164]); });
+    mocha_1.it("Testing for [0]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([0]), [0, 0]); });
+    mocha_1.it("Testing for [100, 51, 50, 100]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([100, 51, 50, 100]), [150, 151]); });
+    mocha_1.it("Testing for [39, 84, 74, 18, 59, 72, 35, 61]", function () {
+        return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([39, 84, 74, 18, 59, 72, 35, 61]), [207, 235]);
+    });
+    mocha_1.it("Testing for [0, 1, 0]", function () { return chai_1.assert.deepEqual(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([0, 1, 0]), [0, 1]); });
+});
+/// <reference path="/runner/typings/mocha/index.d.ts" />
+/// <reference path="/runner/typings/chai/index.d.ts" />
+var _4_kyu_Matrix_Determinant_1 = require("./4 kyu Matrix Determinant");
+mocha_1.describe("determinant", function () {
+    var m1 = [[1, 3], [2, 5]];
+    var m2 = [[2, 5, 3], [1, -2, -1], [1, 3, 4]];
+    mocha_1.it("of a 1 x 1 matrix should yield the value of the one element", function () {
+        chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant([[1]])).to.equal(1);
+    });
+    mocha_1.it("should work correctly for 2 x 2 matrix", function () {
+        chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m1)).to.equal(-1);
+    });
+    mocha_1.it("should work correctly for 3 x 3 matrix", function () {
+        chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m2)).to.equal(-20);
+    });
+});
+var _8_kyu_Reversed_Strings_1 = require("./8 kyu Reversed Strings");
+mocha_1.describe("Sample Test Cases", function () {
+    mocha_1.it("Should return a string", function () {
+        chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('world'), 'dlrow');
+        chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('hello'), 'olleh');
+        chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution(''), '');
+        chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('h'), 'h');
+    });
+});
+// 2020/12/20 23:56
+// import { fitness } from "./preloaded";
+var _5_kyu_Binary_Genetic_Algorithms_1 = require("./5 kyu Binary Genetic Algorithms");
+// import { assert } from 'chai';
+// TODO: Replace examples and use TDD by writing your own tests
+mocha_1.describe('solution', function () {
+    mocha_1.it('test', function () {
+        // TDD
+        var geneticAlgorithm = new _5_kyu_Binary_Genetic_Algorithms_1.GeneticAlgorithm();
+        // assert()
+    });
+});
+// 2020/12/21 12:15
+var _5_kyu_Some_Egyptian_fractions_1 = require("./5 kyu Some Egyptian fractions");
+function testing(s, expected) {
+    chai_1.assert.deepEqual(_5_kyu_Some_Egyptian_fractions_1.G964_20201221.decompose(s), expected);
+}
+mocha_1.describe("Fixed Tests decompose", function () {
+    mocha_1.it("Basic tests", function () {
+        testing("3/4", ["1/2", "1/4"]);
+        testing("12/4", ["3"]);
+        testing("4/5", ["1/2", "1/4", "1/20"]);
+        testing("0.66", ["1/2", "1/7", "1/59", "1/5163", "1/53307975"]);
+    });
+});
 //# sourceMappingURL=test.js.map
