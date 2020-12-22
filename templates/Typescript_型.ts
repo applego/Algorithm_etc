@@ -72,6 +72,10 @@ showUserInfo({
 
 type IsPositiveFunc = (arg: number) => boolean;
 
+interface IsPositiveFuncI{
+    (arg: number): boolean;
+}
+
 const isPositive13: IsPositiveFunc = num => num >= 0;
 
 // 使用例
