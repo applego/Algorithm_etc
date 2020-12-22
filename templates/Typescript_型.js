@@ -16,15 +16,6 @@ function isPositive(num) {
 }
 // 使用例
 isPositive(3);
-// エラー例
-// isPositive('123');
-// const numVar: number = isPositive(-5);
-//型 'boolean' を型 'number' に割り当てることはできません。ts(2322)
-/**
- 1-2. オブジェクトの型
-1人のユーザーのデータを表すオブジェクトは、nameプロパティとageプロパティ、そしてprivateプロパティを持っています。
-nameは文字列、ageは数値、privateは真偽値です。ユーザーデータのオブジェクトの型Userを定義してください。
- */
 function showUserInfo(user) {
     // 省略
 }
@@ -35,11 +26,11 @@ showUserInfo({
     private: false
 });
 // エラー例
-showUserInfo({
-    name: 'Mary Sue',
-    private: false
-});
-var usr = {
-    name: 'Gombe Nanashino',
-    age: 100
-};
+// showUserInfo({
+//     name: 'Mary Sue',
+//     private: false,
+// });
+// const usr: User = {
+//     name: 'Gombe Nanashino',
+//     age: 100,
+// };
