@@ -64,3 +64,17 @@ showUserInfo({
 //     name: 'Gombe Nanashino',
 //     age: 100,
 // };
+
+/*
+1-3. 関数の型
+以下のコードで定義される関数isPositiveは、数値を受け取ってその数値が0以上ならtrueを、0未満ならfalseを返す関数です。以下のコードに合うように適切な型IsPositiveFuncを定義してください。
+*/
+
+const isPositive13: IsPositiveFunc = num => num >= 0;
+
+// 使用例
+isPositive13(5)
+
+// エラー例
+isPositive13('foo');
+const res: number = isPositive13(123);
