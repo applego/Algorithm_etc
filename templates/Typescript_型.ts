@@ -37,6 +37,13 @@ interface User{
     private: boolean;
 }
 
+// type でもOK
+type UserType = {
+    name: string;
+    age: number;
+    private: boolean;
+}
+
 function showUserInfo(user: User) {
     // 省略
 }
