@@ -25,12 +25,9 @@ showUserInfo({
     age: 16,
     private: false
 });
+var isPositive13 = function (num) { return num >= 0; };
+// 使用例
+isPositive13(5);
 // エラー例
-// showUserInfo({
-//     name: 'Mary Sue',
-//     private: false,
-// });
-// const usr: User = {
-//     name: 'Gombe Nanashino',
-//     age: 100,
-// };
+// isPositive13('foo');
+// const res: number = isPositive13(123);
