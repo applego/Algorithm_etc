@@ -20,5 +20,28 @@ var res = myFilter([1, 2, 3, 4, 5], function (num) { return num % 2 === 0; });
 var res2 = myFilter(['foo', 'hoge', 'bar'], function (str) { return str.length >= 4; });
 console.log(res);
 console.log(res2);
+// 追記 enum は使わない方が良いらしい（Tree-shakingの観点で（使ってないけど
+// → Union Types > const enum > enum
+var SPEED = {
+    SLOW: 'slow',
+    MEDIUM: 'medium',
+    FAST: 'fast'
+};
+function getSpeed(speed) {
+    switch (speed) {
+        case "slow":
+            return 10;
+        case "medium":
+            return 50;
+        case "fast":
+            return 200;
+        default:
+            return 0;
+    }
+}
+// 使用例
+var slowSpeed = getSpeed("slow");
+var mediumSpeed = getSpeed("medium");
+var fastSpeed = getSpeed("fast");
 // エラー例
-// myFilter([1, 2, 3, 4, 5], str => str.length >= 4);
+// getSpeed("veryfast");

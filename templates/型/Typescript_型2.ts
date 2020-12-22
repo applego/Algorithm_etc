@@ -25,3 +25,38 @@ console.log(res2);
 
 // エラー例
 // myFilter([1, 2, 3, 4, 5], str => str.length >= 4);
+
+// 2-2. いくつかの文字列を受け取れる関数
+// 以下のコードで定義されるgetSpeedは、'slow', 'medium', 'fast'のいずれかの文字列を受け取って数値を返す関数です。この関数に他の文字列を渡すのは型エラーとしたいです。この条件を満たすように型Speedを定義してください。
+
+type Speed = 'slow'|'medium'|'fast';
+
+// 追記 enum は使わない方が良いらしい（Tree-shakingの観点で（使ってないけど
+// → Union Types > const enum > enum
+const SPEED = {
+    SLOW: 'slow',
+    MEDIUM: 'medium',
+    FAST: 'fast'
+} as const;
+type SPEED = typeof SPEED[keyof typeof SPEED]; // 'slow' | 'medium' | 'fast'
+
+function getSpeed(speed: Speed): number {
+    switch (speed) {
+        case "slow":
+            return 10;
+        case "medium":
+            return 50;
+        case "fast":
+            return 200;
+        default:
+            return 0;
+    }
+}
+
+// 使用例
+const slowSpeed = getSpeed("slow");
+const mediumSpeed = getSpeed("medium");
+const fastSpeed = getSpeed("fast");
+
+// エラー例
+// getSpeed("veryfast");
