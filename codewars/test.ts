@@ -206,3 +206,30 @@ describe("Fixed Tests decompose", function(){
     testing("0.66", ["1/2", "1/7", "1/59", "1/5163", "1/53307975"]);
   });
 });
+
+// 2020/12/24  0:57
+import {accum} from './7 kyu Mumbling';
+describe("Fixed Tests accum", function() {
+  it("Basic tests", function() {
+    assert.strictEqual(
+      accum("ZpglnRxqenU"),
+      "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu"
+    );
+    assert.strictEqual(
+      accum("NyffsGeyylB"),
+      "N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb"
+    );
+    assert.strictEqual(
+      accum("MjtkuBovqrU"),
+      "M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu"
+    );
+    assert.strictEqual(
+      accum("EvidjUnokmM"),
+      "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm"
+    );
+    assert.strictEqual(
+      accum("HbideVbxncC"),
+      "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc"
+    );
+  });
+});
