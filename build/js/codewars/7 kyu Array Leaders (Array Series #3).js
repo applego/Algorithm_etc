@@ -4,10 +4,10 @@ exports.arrayLeaders = exports.arrayLeaders1 = void 0;
 function arrayLeaders1(numbers) {
     var list = [];
     for (var i = 1; i < numbers.length; i++) {
-        var sum = numbers
+        var sum_1 = numbers
             .slice(i)
             .reduce(function (acc, v) { return acc + v; });
-        list.push({ n: numbers[i - 1], sum: sum });
+        list.push({ n: numbers[i - 1], sum: sum_1 });
     }
     return list.filter(function (l) { return l.n > l.sum; }).map(function (l) { return l.n; });
 }
@@ -15,10 +15,10 @@ exports.arrayLeaders1 = arrayLeaders1;
 function arrayLeaders(numbers) {
     var leaders = [];
     for (var i = 1; i < numbers.length; i++) {
-        var sum = numbers
+        var sum_2 = numbers
             .slice(i)
             .reduce(function (acc, v) { return acc + v; });
-        if (numbers[i - 1] > sum)
+        if (numbers[i - 1] > sum_2)
             leaders.push(numbers[i - 1]);
     }
     if (numbers[numbers.length - 1] > 0)
