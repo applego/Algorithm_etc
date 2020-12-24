@@ -29,20 +29,32 @@ fn largest_char(list: &[char]) -> char {
     largest
 }
 
-fn largest<T>(list: &[T]) -> T {
-    let mut largest = list[0];
+// fn largest<T>(list: &[T]) -> T {
+//     let mut largest = list[0];
 
-    for &item in list.iter() {
-        if item > largest {
-            largest = item;
-        }
-    }
-    largest
-}
+//     for &item in list.iter() {
+//         if item > largest {
+//             largest = item;
+//         }
+//     }
+//     largest
+// }
 
 struct Point<T> {
     x: T,
     y: T,
+}
+
+impl<T> Point<T> {
+    fn x(&self) -> &T {
+        &self.x
+    }
+}
+
+fn main() {
+    let p = Point { x: 5, y: 10 };
+
+    println!("p.x = {}", p.x());
 }
 
 struct Point2<T, U> {
@@ -60,12 +72,12 @@ enum Result<T, E> {
     Err(E),
 }
 
-fn main() {
-    let integer = Point { x: 5, y: 10 };
-    let float = Point { x: 1.0, y: 4.0 };
+// fn main() {
+//     let integer = Point { x: 5, y: 10 };
+//     let float = Point { x: 1.0, y: 4.0 };
 
-    let wont_work = Point2 { x: 5, y: 4.0 }; //* Tは同じ型の必要がある
-}
+//     let wont_work = Point2 { x: 5, y: 4.0 }; //* Tは同じ型の必要がある
+// }
 
 // fn main() {
 //     let number_list = vec![34, 50, 25, 100, 65];
