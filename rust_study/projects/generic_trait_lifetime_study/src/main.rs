@@ -51,6 +51,13 @@ impl<T> Point<T> {
     }
 }
 
+// リスト10-10: ジェネリックな型引数Tに対して特定の具体的な型がある構造体にのみ適用されるimplブロック
+impl Point<f32> {
+    fn distance_from_origin(&self) -> f32 {
+        (self.x.powi(2) + self.y.powi(2)).sqrt()
+    }
+}
+
 fn main() {
     let p = Point { x: 5, y: 10 };
 
