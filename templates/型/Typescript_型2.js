@@ -83,10 +83,15 @@ var obj2 = giveId({
     num: 0,
     hoge: true
 });
+// 使用例
+// number型のステートを宣言(numStateはnumber型)
+var _a = useState(0), numState = _a[0], setNumState = _a[1];
+// setNumStateは新しい値で呼び出せる
+setNumState(3);
+// setNumStateは古いステートを新しいステートに変換する関数を渡すこともできる
+setNumState(function (state) { return state + 10; });
+// 型引数を明示することも可能
+var _b = useState(null), anotherState = _b[0], setAnotherState = _b[1];
+setAnotherState(100);
 // エラー例
-// const obj3: {
-//     id: string;
-//     piyo: string;
-// } = giveId({
-//     foo: "bar"
-// });
+// setNumStae('foobar');

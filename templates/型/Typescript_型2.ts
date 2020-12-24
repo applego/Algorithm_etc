@@ -148,6 +148,11 @@ useStateの使い方は以下の使用例も参考にしてください。
 ただし、useStateはステートの値の型を型引数として取るようにしてください。
  */
 
+type UseStateUpdateArgument<T> = T | ((oldValue: T) => T);
+declare function useState<T>(
+    initialValue: T
+): [T, (updater: UseStateUpdateArgument<T>) => void];
+
 // 使用例
 // number型のステートを宣言(numStateはnumber型)
 const [numState, setNumState] = useState(0);
@@ -161,4 +166,4 @@ const [anotherState, setAnotherState] = useState<number | null>(null);
 setAnotherState(100);
 
 // エラー例
-setNumStae('foobar');
+// setNumStae('foobar');
