@@ -19,7 +19,7 @@ export function validBraces(braces: string): boolean {
     if (!isReplaced)
       break;
   }
-  console.log(braces);
+  // console.log(braces);
   return braces.length === 0;
 
 

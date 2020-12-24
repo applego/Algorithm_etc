@@ -10,9 +10,9 @@ export class G964_20201222 {
         // your code
       // 経路を決める（友達の順番から街の順番を知る）
       // 距離を測る（X0 X2X3 はX2を直角とした三角形)
-    console.log(friends);
-    console.log(fTowns);
-    console.log(distTable);
+    // console.log(friends);
+    // console.log(fTowns);
+    // console.log(distTable);
     const circuit = G964_20201222.makeCircuit(friends, fTowns);
     const totaldistance = G964_20201222.calcTotalDistance(circuit, distTable);
     return Math.floor(totaldistance);
