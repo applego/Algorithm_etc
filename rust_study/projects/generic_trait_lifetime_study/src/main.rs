@@ -88,6 +88,23 @@ fn main() {
     let p3 = p1.mixup(p2);
 
     println!("p3.x = {}, p3.y = {}", p3.x, p3.y); //5 'c'
+
+    let integer = Some(5);
+    let float = Some(5.0);
+    // 単相化
+    let integer = Option_i32::Some(5);
+    let float = Option_f64::Some(5.0);
+}
+
+// 単相化されたバージョンのコードは、以下のようになる
+enum Option_i32 {
+    Some(i32),
+    None,
+}
+
+enum Option_f64 {
+    Some(f64),
+    None,
 }
 
 enum Option<T> {
