@@ -195,4 +195,15 @@ mocha_1.describe("Fixed Tests decompose", function () {
         testing("0.66", ["1/2", "1/7", "1/59", "1/5163", "1/53307975"]);
     });
 });
+// 2020/12/24  0:57
+var _7_kyu_Mumbling_1 = require("./7 kyu Mumbling");
+mocha_1.describe("Fixed Tests accum", function () {
+    mocha_1.it("Basic tests", function () {
+        chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("ZpglnRxqenU"), "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu");
+        chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("NyffsGeyylB"), "N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb");
+        chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("MjtkuBovqrU"), "M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu");
+        chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("EvidjUnokmM"), "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm");
+        chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("HbideVbxncC"), "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc");
+    });
+});
 //# sourceMappingURL=test.js.map

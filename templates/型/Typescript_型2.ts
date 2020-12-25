@@ -100,3 +100,70 @@ addEventListener("event3", () => { }, {
 //     once: false,
 //     excess: true
 // });
+
+/**
+ 2-4. プロパティを1つ増やす関数
+下のコードで定義されるgiveId関数は、オブジェクトを受け取って、それに新しい文字列型のプロパティidを足してできる新しいオブジェクトを返す関数です。この関数に適切な型を付けてください。なお、簡単のために、giveIdに渡されるオブジェクトobjが既にidプロパティを持っている場合は考えなくて構いません。
+ */
+function giveId<T>(obj:T):T & {id:string} {
+    const id = "本当はランダムがいいけどここではただの文字列";
+    return {
+        ...obj,
+        id
+    };
+}
+
+// 使用例
+const obbj1: {
+    id: string;
+    foo: number;
+} = giveId({ foo: 123 });
+const obj2: {
+    id: string;
+    num: number;
+    hoge: boolean;
+} = giveId({
+    num: 0,
+    hoge: true
+});
+
+// エラー例
+// const obj3: {
+//     id: string;
+//     piyo: string;
+// } = giveId({
+//     foo: "bar"
+// });
+
+/**
+ * 2-5. useState
+ReactのuseState関数は、ステートを宣言するために使われます。
+引数は1つで、宣言されるステートの初期値です。
+返り値は2つの要素を持つ配列で、最初の要素は現在のステートの値です。
+2つ目の要素は関数であり、呼び出すとステートを更新できます。
+ステート更新関数は引数に新しいステートの値を受け取ることができるほか、
+現在の値を受け取って新しい値を返す関数を渡すことができます。
+useStateの使い方は以下の使用例も参考にしてください。
+このようなuseStateをdeclareで宣言してください。
+ただし、useStateはステートの値の型を型引数として取るようにしてください。
+ */
+
+type UseStateUpdateArgument<T> = T | ((oldValue: T) => T);
+declare function useState<T>(
+    initialValue: T
+): [T, (updater: UseStateUpdateArgument<T>) => void];
+
+// 使用例
+// number型のステートを宣言(numStateはnumber型)
+const [numState, setNumState] = useState(0);
+// setNumStateは新しい値で呼び出せる
+setNumState(3);
+// setNumStateは古いステートを新しいステートに変換する関数を渡すこともできる
+setNumState(state => state + 10);
+
+// 型引数を明示することも可能
+const [anotherState, setAnotherState] = useState<number | null>(null);
+setAnotherState(100);
+
+// エラー例
+// setNumStae('foobar');

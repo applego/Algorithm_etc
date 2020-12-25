@@ -379,4 +379,17 @@ fTowns1 = [['A1', 'X1'],
     ['A5', 'X5']];
 distTable1 = ['X1', 100, 'X2', 200, 'X3', 250, 'X4', 300, 'X5', 320];
 TestCodewar_1.default.assert_equals(_5_kyu_Help_your_granny_1.G964_20201222.tour(friends1, fTowns1, distTable1), 1020);
+// 2020/12/24  0:57
+var _7_kyu_Mumbling_1 = require("./7 kyu Mumbling");
+chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("ZpglnRxqenU"), "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu");
+chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("NyffsGeyylB"), "N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb");
+chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("MjtkuBovqrU"), "M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu");
+chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("EvidjUnokmM"), "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm");
+chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("HbideVbxncC"), "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc");
+// 2020/12/25  0:40
+var _7_kyu_Drying_Potatoes_1 = require("./7 kyu Drying Potatoes");
+chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(82, 127, 80), 114);
+chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(93, 129, 91), 100);
+chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(84, 65, 80), 52);
+chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(83, 105, 79), 85);
 //# sourceMappingURL=main.js.map
