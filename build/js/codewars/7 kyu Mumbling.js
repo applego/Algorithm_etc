@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.accum = void 0;
+exports.accumBP = exports.accum = void 0;
 function accum(s) {
     var result = "";
     var repeatCnt = new RepeatCnt(1);
@@ -96,4 +96,14 @@ var wordMaker = /** @class */ (function () {
 //     this.result=first;
 //   }
 // }
+/*
+BP
+これでいけるのはうける笑
+*/
+function accumBP(s) {
+    return s.split('')
+        .map(function (c, idx) { return c.toUpperCase() + c.repeat(idx); })
+        .join('-');
+}
+exports.accumBP = accumBP;
 //# sourceMappingURL=7 kyu Mumbling.js.map

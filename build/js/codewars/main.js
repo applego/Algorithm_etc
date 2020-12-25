@@ -386,4 +386,10 @@ chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("NyffsGeyylB"), "N-Yy-Fff-Ffff
 chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("MjtkuBovqrU"), "M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu");
 chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("EvidjUnokmM"), "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm");
 chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("HbideVbxncC"), "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc");
+// 2020/12/25  0:40
+var _7_kyu_Drying_Potatoes_1 = require("./7 kyu Drying Potatoes");
+chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(82, 127, 80), 114);
+chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(93, 129, 91), 100);
+chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(84, 65, 80), 52);
+chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(83, 105, 79), 85);
 //# sourceMappingURL=main.js.map

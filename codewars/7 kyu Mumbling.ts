@@ -108,3 +108,14 @@ class wordMaker{
 //     this.result=first;
 //   }
 // }
+
+
+/*
+BP
+これでいけるのはうける笑
+*/
+export function accumBP(s: string): string{
+  return s.split('')
+    .map((c, idx) => c.toUpperCase() + c.repeat(idx))
+    .join('-');
+}

@@ -488,3 +488,10 @@ assert.strictEqual(
   accum("HbideVbxncC"),
   "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc"
 );
+
+// 2020/12/25  0:40
+import {potatoes} from './7 kyu Drying Potatoes';
+assert.strictEqual(potatoes(82, 127, 80), 114);
+assert.strictEqual(potatoes(93, 129, 91), 100);
+assert.strictEqual(potatoes(84, 65, 80), 52);
+assert.strictEqual(potatoes(83, 105, 79), 85);
