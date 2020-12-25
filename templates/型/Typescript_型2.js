@@ -93,5 +93,15 @@ setNumState(function (state) { return state + 10; });
 // 型引数を明示することも可能
 var _b = useState(null), anotherState = _b[0], setAnotherState = _b[1];
 setAnotherState(100);
+// 使用例
+// number型のステートを宣言 (numStateはnumber型)
+var _c = useState2(0), numState2 = _c[0], setNumState2 = _c[1];
+// setNumStateは新しい値で呼び出せる
+setNumState2(3);
+// setNumStateは古いステートを新しいステートに変換する関数を渡すこともできる
+setNumState2(function (state) { return state + 10; });
+// 型引数を明示することも可能
+var _d = useState2(null), anotherState2 = _d[0], setAnotherState2 = _d[1];
+setAnotherState2(100);
 // エラー例
-// setNumStae('foobar');
+// setNumState2('foobar');
