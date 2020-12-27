@@ -1,6 +1,14 @@
 // リスト10-12: summarizeメソッドで提供される振る舞いからなるSummaryトレイト
+// pub trait Summary {
+//     fn summarize(&self) -> String;
+// }
+
+// リスト10-14: summarizeメソッドのデフォルト実装があるSummaryトレイトの定義
 pub trait Summary {
-    fn summarize(&self) -> String;
+    fn summarize(&self) -> String{
+        // "(もっと読む)"
+        String::from("(Read more...)")
+    }
 }
 
 // リスト10-13: SummaryトレイトをNewsArticleとTweet型に実装する
@@ -16,6 +24,10 @@ impl Summary for NewsArticle{
         format!("{}, by {} ({}",self.headline,self.author,self.location)
     }
 }
+// impl Summary for NewsArticle{}
+// let article = NewsArticle{
+//     headline:String::from("Penguins win the Stanley Cup Chanpionship!"),
+// }
 
 pub struct Tweet {
     pub username:String,
