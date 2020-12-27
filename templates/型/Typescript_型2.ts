@@ -167,3 +167,37 @@ setAnotherState(100);
 
 // エラー例
 // setNumStae('foobar');
+
+// 2020 / 12 / 26  0: 36;
+// 2-5. useStateリトライ
+
+/**
+ [☓]useState関数は、ステートを宣言するために使われます。
+ []引数は1つで、宣言されるステートの初期値です。
+ []返り値は2つの要素を持つ配列で、最初の要素は現在のステートの値です。
+ []2つ目の要素は関数であり、呼び出すとステートを更新できます。
+ []ステート更新関数は引数に新しいステートの値を受け取ることができるほか、
+    現在の値を受け取って新しい値を返す関数を渡すことができます。
+ */
+
+type UseStateUpdateArgument2<T> = T | ((oldValue: T) => T);
+declare function useState2<T>(
+    initialState: T
+): [T, (updater: UseStateUpdateArgument2<T>) => void];
+
+
+
+// 使用例
+// number型のステートを宣言 (numStateはnumber型)
+const [numState2, setNumState2] = useState2(0);
+// setNumStateは新しい値で呼び出せる
+setNumState2(3);
+// setNumStateは古いステートを新しいステートに変換する関数を渡すこともできる
+setNumState2(state => state + 10);
+
+// 型引数を明示することも可能
+const [anotherState2, setAnotherState2] = useState2<number | null>(null);
+setAnotherState2(100);
+
+// エラー例
+// setNumState2('foobar');
