@@ -12,3 +12,5 @@ rust_study/projects/codewars_rust/target
 rust_study/projects/error_study/target
 rust_study/projects/branches/target
 rust_study/projects/generic_trait_lifetime_study/target
+rust_study/projects/generic_trait_lifetime_study/trait_lib/target
+rust_study/projects/adder/target
