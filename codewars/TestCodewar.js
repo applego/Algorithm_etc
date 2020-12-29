@@ -1,29 +1,36 @@
 'use strict';
-
-const assert = require('assert');
-
-class Test{
-  constructor() {
-    this.question = 'test';
-  }
-  expect(isCorrect, msg) {
-    if (isCorrect)
-      console.log('Correct');
-    else {
-      console.log(msg);
+exports.__esModule = true;
+var assert = require('assert');
+var Test = /** @class */ (function () {
+    function Test(questionname) {
+        this.questionname = questionname;
     }
-  }
-  assert_equals(a, b) {
-    try {
-      assert.deepEqual(a, b);
-      console.log('Correct');
-    }
-    catch (e) {
-      console.log('Error');
-      console.log(a);
-      console.log(b);
-    }
-  }
-}
-
-module.exports = Test
+    Test.expect = function (isCorrect, msg) {
+        if (isCorrect)
+            console.log('Correct');
+        else {
+            console.log(msg);
+        }
+    };
+    Test.assert_equals = function (a, b, msg) {
+        try {
+            assert.deepEqual(a, b);
+            console.log('○---Correct');
+        }
+        catch (e) {
+            if (msg) {
+                console.log(msg);
+            }
+            else {
+                console.log('✕---Error');
+            }
+            console.log('ans :' + a);
+            console.log('exp :' + b);
+        }
+    };
+    Test.assert_equals_param_func = function (func, n, expected) {
+        this.assert_equals(func(n), expected);
+    };
+    return Test;
+}());
+exports["default"] = Test;
