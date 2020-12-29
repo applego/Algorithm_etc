@@ -444,7 +444,7 @@ const geneticAlgorithm = new GeneticAlgorithm();
 // 2020/12/21 12:15
 import { G964_20201221 } from './5 kyu Some Egyptian fractions';
 // function testing(s:any, expected:any) {
-//   assert.deepEqual(G964_20201221.decompose(s), expected)
+//   Test.assert_equals(G964_20201221.decompose(s), expected)
 // }
 // testing("3/4", ["1/2", "1/4"]);
 // testing("12/4", ["3"]);
@@ -495,3 +495,10 @@ assert.strictEqual(potatoes(82, 127, 80), 114);
 assert.strictEqual(potatoes(93, 129, 91), 100);
 assert.strictEqual(potatoes(84, 65, 80), 52);
 assert.strictEqual(potatoes(83, 105, 79), 85);
+
+// 2020/12/27 23:52
+import { G964_1227 } from './5 kyu Integers: Recreation One';
+Test.assert_equals(G964_1227.listSquared(1, 250), [[1, 1], [42, 2500], [246, 84100]]);
+Test.assert_equals(G964_1227.listSquared(42, 250), [[42, 2500], [246, 84100]]);
+Test.assert_equals(G964_1227.listSquared(250, 500), [[287, 84100]]);
+Test.assert_equals(G964_1227.listSquared(300, 600), []);
