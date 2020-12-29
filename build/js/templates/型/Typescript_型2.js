@@ -3,6 +3,17 @@
 // https://qiita.com/uhyo/items/e4f54ef3b87afdd65546?utm_content=buffer525a1&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer&fbclid=IwAR0x2JkKQDEtSLd-qEoaBiL7TfetyMHHEX0Q7fjt7YN9_XtmMvDw29Qoegk
 // 難易度：★★☆☆　基本レベル
 // よく使う機能を一通り知っていれば解ける問題たちです。
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 // 2-1. ジェネリクス
 // 以下のコードで定義される関数myFilterは、配列のfilter関数を再実装したものです。myFilter関数に適切な型アノテーションを付けてください。
 // myFilter関数は色々な型の配列を受け取れる点に注意してください。必要に応じてmyFilterに型引数を追加しても構いません。
@@ -59,4 +70,40 @@ addEventListener("event3", function () { }, {
 //     once: false,
 //     excess: true
 // });
+/**
+ 2-4. プロパティを1つ増やす関数
+下のコードで定義されるgiveId関数は、オブジェクトを受け取って、それに新しい文字列型のプロパティidを足してできる新しいオブジェクトを返す関数です。この関数に適切な型を付けてください。なお、簡単のために、giveIdに渡されるオブジェクトobjが既にidプロパティを持っている場合は考えなくて構いません。
+ */
+function giveId(obj) {
+    var id = "本当はランダムがいいけどここではただの文字列";
+    return __assign(__assign({}, obj), { id: id });
+}
+// 使用例
+var obbj1 = giveId({ foo: 123 });
+var obj2 = giveId({
+    num: 0,
+    hoge: true
+});
+// 使用例
+// number型のステートを宣言(numStateはnumber型)
+var _a = useState(0), numState = _a[0], setNumState = _a[1];
+// setNumStateは新しい値で呼び出せる
+setNumState(3);
+// setNumStateは古いステートを新しいステートに変換する関数を渡すこともできる
+setNumState(function (state) { return state + 10; });
+// 型引数を明示することも可能
+var _b = useState(null), anotherState = _b[0], setAnotherState = _b[1];
+setAnotherState(100);
+// 使用例
+// number型のステートを宣言 (numStateはnumber型)
+var _c = useState2(0), numState2 = _c[0], setNumState2 = _c[1];
+// setNumStateは新しい値で呼び出せる
+setNumState2(3);
+// setNumStateは古いステートを新しいステートに変換する関数を渡すこともできる
+setNumState2(function (state) { return state + 10; });
+// 型引数を明示することも可能
+var _d = useState2(null), anotherState2 = _d[0], setAnotherState2 = _d[1];
+setAnotherState2(100);
+// エラー例
+// setNumState2('foobar');
 //# sourceMappingURL=Typescript_型2.js.map
