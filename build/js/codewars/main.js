@@ -359,7 +359,7 @@ chai_1.assert.equal(_8_kyu_Reversed_Strings_1.solution('h'), 'h');
 var _5_kyu_Binary_Genetic_Algorithms_1 = require("./5 kyu Binary Genetic Algorithms");
 var geneticAlgorithm = new _5_kyu_Binary_Genetic_Algorithms_1.GeneticAlgorithm();
 // function testing(s:any, expected:any) {
-//   assert.deepEqual(G964_20201221.decompose(s), expected)
+//   Test.assert_equals(G964_20201221.decompose(s), expected)
 // }
 // testing("3/4", ["1/2", "1/4"]);
 // testing("12/4", ["3"]);
@@ -386,4 +386,16 @@ chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("NyffsGeyylB"), "N-Yy-Fff-Ffff
 chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("MjtkuBovqrU"), "M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu");
 chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("EvidjUnokmM"), "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm");
 chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("HbideVbxncC"), "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc");
+// 2020/12/25  0:40
+var _7_kyu_Drying_Potatoes_1 = require("./7 kyu Drying Potatoes");
+chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(82, 127, 80), 114);
+chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(93, 129, 91), 100);
+chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(84, 65, 80), 52);
+chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(83, 105, 79), 85);
+// 2020/12/27 23:52
+var _5_kyu_Integers__Recreation_One_1 = require("./5 kyu Integers: Recreation One");
+TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.listSquared(1, 250), [[1, 1], [42, 2500], [246, 84100]]);
+TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.listSquared(42, 250), [[42, 2500], [246, 84100]]);
+TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.listSquared(250, 500), [[287, 84100]]);
+TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.listSquared(300, 600), []);
 //# sourceMappingURL=main.js.map

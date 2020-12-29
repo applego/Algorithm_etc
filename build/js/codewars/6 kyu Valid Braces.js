@@ -20,7 +20,7 @@ function validBraces(braces) {
         if (!isReplaced)
             break;
     }
-    console.log(braces);
+    // console.log(braces);
     return braces.length === 0;
     // let cnt_1: number = 0 //()
     // let cnt_2: number = 0 //[]
