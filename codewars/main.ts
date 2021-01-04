@@ -502,3 +502,23 @@ Test.assert_equals(G964_1227.listSquared(1, 250), [[1, 1], [42, 2500], [246, 841
 Test.assert_equals(G964_1227.listSquared(42, 250), [[42, 2500], [246, 84100]]);
 Test.assert_equals(G964_1227.listSquared(250, 500), [[287, 84100]]);
 Test.assert_equals(G964_1227.listSquared(300, 600), []);
+
+// 2020/12/30  0:05
+import { G964_1229 } from './/5 kyu Fibo akin';
+function dotest1(n: number, k:number, res:number) {
+    assert.equal(G964_1229.lengthSupUK(n, k), res)
+}
+function dotest2(n:number, res:number) {
+    assert.equal(G964_1229.comp(n), res)
+}
+dotest1(50, 25, 2);
+dotest1(3332, 973, 1391);
+dotest1(2941, 862, 1246);
+dotest1(3177, 573, 2047);
+dotest1(1745, 645, 474);
+
+dotest2(74626, 37128);
+dotest2(71749, 35692);
+dotest2(56890, 28281);
+dotest2(60441, 30054);
+dotest2(21361, 10581);

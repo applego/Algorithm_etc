@@ -19,7 +19,7 @@ var G964_1227 = /** @class */ (function () {
         // your code
         console.log(m, n);
         var result = [];
-        for (var i = m; i < n; i++) {
+        for (var i = m; i <= n; i++) {
             //
             var divisors = G964_1227.getDivisors(i);
             var sumOfDivisors = divisors.reduce(function (acc, val) {

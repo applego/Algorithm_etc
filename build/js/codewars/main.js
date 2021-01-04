@@ -398,4 +398,22 @@ TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.
 TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.listSquared(42, 250), [[42, 2500], [246, 84100]]);
 TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.listSquared(250, 500), [[287, 84100]]);
 TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.listSquared(300, 600), []);
+// 2020/12/30  0:05
+var _5_kyu_Fibo_akin_1 = require(".//5 kyu Fibo akin");
+function dotest1(n, k, res) {
+    chai_1.assert.equal(_5_kyu_Fibo_akin_1.G964_1229.lengthSupUK(n, k), res);
+}
+function dotest2(n, res) {
+    chai_1.assert.equal(_5_kyu_Fibo_akin_1.G964_1229.comp(n), res);
+}
+dotest1(50, 25, 2);
+dotest1(3332, 973, 1391);
+dotest1(2941, 862, 1246);
+dotest1(3177, 573, 2047);
+dotest1(1745, 645, 474);
+dotest2(74626, 37128);
+dotest2(71749, 35692);
+dotest2(56890, 28281);
+dotest2(60441, 30054);
+dotest2(21361, 10581);
 //# sourceMappingURL=main.js.map
