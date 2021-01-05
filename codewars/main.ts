@@ -6,6 +6,11 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 
+// 2021/01/05 12:38
+import { dirReduc } from './5 kyu Directions Reduction';
+assert.deepEqual(dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]), ["WEST"]);
+assert.deepEqual(dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH"]), []);
+
 // 2021/01/04 21:06
 //  上から書いていくスタイルにチェンジ
 import { sumPairs, sumPairs_BP } from "./5 kyu Sum of pairs";
