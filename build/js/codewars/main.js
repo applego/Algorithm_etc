@@ -7,6 +7,10 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 // let test = new Test();//__filename
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
+// 2021/01/05 12:38
+var _5_kyu_Directions_Reduction_1 = require("./5 kyu Directions Reduction");
+chai_1.assert.deepEqual(_5_kyu_Directions_Reduction_1.dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]), ["WEST"]);
+chai_1.assert.deepEqual(_5_kyu_Directions_Reduction_1.dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH"]), []);
 // 2021/01/04 21:06
 //  上から書いていくスタイルにチェンジ
 var _5_kyu_Sum_of_pairs_1 = require("./5 kyu Sum of pairs");
