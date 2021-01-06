@@ -6,6 +6,13 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 
+// 2021/01/06 12:48
+import { sumStrings } from './4 kyu Sum Strings as Numbers';
+Test.assert_equals(sumStrings('123', '456'), '579');
+// - Expected: '1757330826245818554540160790849',
+//   instead got: '1.7573308262458186e+30'
+Test.assert_equals(sumStrings('915381589456908955396757569014', '841949236788909599143403221835'), '1757330826245818554540160790849');
+
 // 2021/01/05 12:38
 import { dirReduc } from './5 kyu Directions Reduction';
 assert.deepEqual(dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]), ["WEST"]);

@@ -3,7 +3,47 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.dirReduc = void 0;
 function dirReduc(arr) {
     var result = new Array();
-    var i = 0;
+    var curr;
+    // while (
+    //   (curr = result.pop()) !== undefined
+    //   || (curr = arr.shift()) !== undefined
+    // )
+    while (curr !== undefined) {
+        var oposite = getOposite(curr);
+        var opositeIdx = arr.indexOf(oposite);
+        if (opositeIdx === 0) {
+            arr.splice(opositeIdx, 1);
+        }
+        else {
+            result.push(curr);
+        }
+    }
+    return result;
+}
+exports.dirReduc = dirReduc;
+function dirReduc_BP(arr) {
+    var pat = /(NORTHSOURH|SOUTHNORTH|EASTWEST|WESTEAST)/;
+    var way = arr.join('');
+    while (pat.test(way))
+        way = way.replace(pat, '');
+    return way.match(/(NORTH|SOUTH|EAST|WEST)/g) || [];
+}
+function getOposite(dir) {
+    switch (dir) {
+        case Direction.NORTH.toString():
+            return Direction.SOUTH.toString();
+        case Direction.SOUTH.toString():
+            return Direction.NORTH.toString();
+        case Direction.EAST.toString():
+            return Direction.WEST.toString();
+        case Direction.WEST.toString():
+            return Direction.EAST.toString();
+        default:
+            throw new Error("invalid direction");
+    }
+}
+function dirReduc2(arr) {
+    var result = new Array();
     var curr;
     while ((curr = arr.shift()) !== undefined) {
         var oposite = getOposite(curr);
@@ -16,21 +56,6 @@ function dirReduc(arr) {
         }
     }
     return result;
-}
-exports.dirReduc = dirReduc;
-function getOposite(dir) {
-    switch (dir) {
-        case Direction.NORTH.toString():
-            return Direction.SOUTH.toString();
-        case Direction.SOUTH.toString():
-            return Direction.NORTH.toString();
-        case Direction.EAST.toString():
-            return Direction.WEST.toString();
-        case Direction.WEST.toString():
-            return Direction.EAST.toString();
-        default:
-            throw new Error("不正な方向");
-    }
 }
 function dirReduc1(arr) {
     // arrのループ

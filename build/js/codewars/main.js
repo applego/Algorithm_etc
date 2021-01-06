@@ -7,6 +7,12 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 // let test = new Test();//__filename
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
+// 2021/01/06 12:48
+var _4_kyu_Sum_Strings_as_Numbers_1 = require("./4 kyu Sum Strings as Numbers");
+TestCodewar_1.default.assert_equals(_4_kyu_Sum_Strings_as_Numbers_1.sumStrings('123', '456'), '579');
+// - Expected: '1757330826245818554540160790849',
+//   instead got: '1.7573308262458186e+30'
+TestCodewar_1.default.assert_equals(_4_kyu_Sum_Strings_as_Numbers_1.sumStrings('915381589456908955396757569014', '841949236788909599143403221835'), '1757330826245818554540160790849');
 // 2021/01/05 12:38
 var _5_kyu_Directions_Reduction_1 = require("./5 kyu Directions Reduction");
 chai_1.assert.deepEqual(_5_kyu_Directions_Reduction_1.dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]), ["WEST"]);
