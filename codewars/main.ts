@@ -5,6 +5,11 @@ import Test from './TestCodewar';
 import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
+////////////////////////////////////////////////////////////////
+// 2021/01/06 22:06
+import { getSum } from "./7 kyu Beginner Series #3 Sum of Numbers";
+assert.strictEqual(getSum(0,-1),-1);
+assert.strictEqual(getSum(0, 1), 1);
 
 // 2021/01/06 12:48
 import { sumStrings } from './4 kyu Sum Strings as Numbers';

@@ -7,6 +7,11 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 // let test = new Test();//__filename
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
+////////////////////////////////////////////////////////////////
+// 2021/01/06 22:06
+var _7_kyu_Beginner_Series__3_Sum_of_Numbers_1 = require("./7 kyu Beginner Series #3 Sum of Numbers");
+chai_1.assert.strictEqual(_7_kyu_Beginner_Series__3_Sum_of_Numbers_1.getSum(0, -1), -1);
+chai_1.assert.strictEqual(_7_kyu_Beginner_Series__3_Sum_of_Numbers_1.getSum(0, 1), 1);
 // 2021/01/06 12:48
 var _4_kyu_Sum_Strings_as_Numbers_1 = require("./4 kyu Sum Strings as Numbers");
 TestCodewar_1.default.assert_equals(_4_kyu_Sum_Strings_as_Numbers_1.sumStrings('123', '456'), '579');
