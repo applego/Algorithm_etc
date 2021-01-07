@@ -6,6 +6,13 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 ////////////////////////////////////////////////////////////////
+// 2021/01/07 20:52
+import { checkParity } from './7 kyu Calculate Parity bit!';
+Test.assert_equals(checkParity('even','101010'), 1);
+Test.assert_equals(checkParity('odd','101010'), 0);
+Test.assert_equals(checkParity('even','101011'), 0);
+Test.assert_equals(checkParity('odd', '101011'), 1);
+
 // 2021/01/06 22:06
 import { getSum } from "./7 kyu Beginner Series #3 Sum of Numbers";
 assert.strictEqual(getSum(0,-1),-1);

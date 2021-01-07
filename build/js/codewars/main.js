@@ -8,6 +8,12 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/01/07 20:52
+var _7_kyu_Calculate_Parity_bit_1 = require("./7 kyu Calculate Parity bit!");
+TestCodewar_1.default.assert_equals(_7_kyu_Calculate_Parity_bit_1.checkParity('even', '101010'), 1);
+TestCodewar_1.default.assert_equals(_7_kyu_Calculate_Parity_bit_1.checkParity('odd', '101010'), 0);
+TestCodewar_1.default.assert_equals(_7_kyu_Calculate_Parity_bit_1.checkParity('even', '101011'), 0);
+TestCodewar_1.default.assert_equals(_7_kyu_Calculate_Parity_bit_1.checkParity('odd', '101011'), 1);
 // 2021/01/06 22:06
 var _7_kyu_Beginner_Series__3_Sum_of_Numbers_1 = require("./7 kyu Beginner Series #3 Sum of Numbers");
 chai_1.assert.strictEqual(_7_kyu_Beginner_Series__3_Sum_of_Numbers_1.getSum(0, -1), -1);
