@@ -8,6 +8,12 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+var _5_kyu_Second_Variation_on_Caesar_Cipher_1 = require("./5 kyu Second Variation on Caesar Cipher");
+var u, v;
+u = "I should have known that you would have a perfect answer for me!!!";
+v = ["ijJ tipvme ibw", "f lopxo uibu z", "pv xpvme ibwf ", "b qfsgfdu botx", "fs gps nf!!!"];
+TestCodewar_1.default.assert_equals(_5_kyu_Second_Variation_on_Caesar_Cipher_1.G964_20210110.encodeStr(u, 1), v);
+TestCodewar_1.default.assert_equals(_5_kyu_Second_Variation_on_Caesar_Cipher_1.G964_20210110.decode(v), u);
 // 2021/01/07 20:52
 var _7_kyu_Calculate_Parity_bit_1 = require("./7 kyu Calculate Parity bit!");
 TestCodewar_1.default.assert_equals(_7_kyu_Calculate_Parity_bit_1.checkParity('even', '101010'), 1);

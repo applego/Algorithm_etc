@@ -6,6 +6,13 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 ////////////////////////////////////////////////////////////////
+import { G964_20210110 } from './5 kyu Second Variation on Caesar Cipher';
+var u, v;
+u = "I should have known that you would have a perfect answer for me!!!";
+v = ["ijJ tipvme ibw", "f lopxo uibu z", "pv xpvme ibwf ", "b qfsgfdu botx", "fs gps nf!!!"];
+Test.assert_equals(G964_20210110.encodeStr(u, 1), v);
+Test.assert_equals(G964_20210110.decode(v), u);
+
 // 2021/01/07 20:52
 import { checkParity } from './7 kyu Calculate Parity bit!';
 Test.assert_equals(checkParity('even','101010'), 1);
