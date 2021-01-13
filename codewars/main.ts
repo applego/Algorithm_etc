@@ -4,8 +4,11 @@ import Test from './TestCodewar';
 
 import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
-import { assert, expect } from "chai";
+import { assert, expect } from   "chai";
 ////////////////////////////////////////////////////////////////
+// 2021/01/13 13:18
+// 7 kyu Jaden Casing Strings
+
 import { G964_20210110 } from './5 kyu Second Variation on Caesar Cipher';
 var u, v;
 u = "I should have known that you would have a perfect answer for me!!!";

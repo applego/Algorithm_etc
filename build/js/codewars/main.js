@@ -8,6 +8,8 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/01/13 13:18
+// import
 var _5_kyu_Second_Variation_on_Caesar_Cipher_1 = require("./5 kyu Second Variation on Caesar Cipher");
 var u, v;
 u = "I should have known that you would have a perfect answer for me!!!";
