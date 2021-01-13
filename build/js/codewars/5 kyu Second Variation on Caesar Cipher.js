@@ -35,8 +35,8 @@ var G964_20210110 = /** @class */ (function () {
     G964_20210110.getShiftNum = function (s) {
         if (s.length !== 2)
             throw new Error;
-        var idx = s[0].charCodeAt(0) - 'a'.charCodeAt(0);
-        var idx2 = s[1].charCodeAt(0) - 'a'.charCodeAt(0);
+        // const idx = s[0].charCodeAt(0) - 'a'.charCodeAt(0);
+        // const idx2 = s[1].charCodeAt(0) - 'a'.charCodeAt(0);
         var shift = (s[1].charCodeAt(0) - s[0].charCodeAt(0)) % G964_20210110.Alphabet.length;
         return shift;
     };
@@ -74,8 +74,6 @@ var G964_20210110 = /** @class */ (function () {
     };
     G964_20210110.decode = function (arr) {
         var _a;
-        // your code
-        // prefix からshiftを判別
         var firstEleArr = (_a = arr.shift()) === null || _a === void 0 ? void 0 : _a.split('');
         if (!firstEleArr)
             throw new Error;
