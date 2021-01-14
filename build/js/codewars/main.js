@@ -8,8 +8,12 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/01/14 21:02
+var _6_kyu_Find_the_unique_number_1 = require("./6 kyu Find the unique number");
+chai_1.assert.strictEqual(_6_kyu_Find_the_unique_number_1.findUniq([1, 1, 1, 2, 1, 1]), 2);
+chai_1.assert.strictEqual(_6_kyu_Find_the_unique_number_1.findUniq([0, 0, 0.55, 0, 0]), 0.55);
 // 2021/01/13 13:18
-// import
+// 7 kyu Jaden Casing Strings
 var _5_kyu_Second_Variation_on_Caesar_Cipher_1 = require("./5 kyu Second Variation on Caesar Cipher");
 var u, v;
 u = "I should have known that you would have a perfect answer for me!!!";
