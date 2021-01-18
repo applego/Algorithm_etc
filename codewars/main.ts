@@ -6,6 +6,14 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from   "chai";
 ////////////////////////////////////////////////////////////////
+// 2021/01/18 21:55
+import { nbDig } from './7 kyu Count the Digit';
+// Test.assert_equals(nbDig(10, 1), 4);
+// Test.assert_equals(nbDig(25, 1), 11);
+Test.assert_equals(nbDig(5750, 0), 4700);
+// Test.assert_equals(nbDig(11011, 2), 9481);
+// Test.assert_equals(nbDig(12224, 8), 7733);
+// Test.assert_equals(nbDig(11549, 1), 11905);
 // 2021/01/18 21:27
 // 5 kyu Function Cache.js
 
