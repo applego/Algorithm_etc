@@ -8,6 +8,7 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/01/18 21:27
 // 2021/01/14 21:02
 var _6_kyu_Find_the_unique_number_1 = require("./6 kyu Find the unique number");
 chai_1.assert.strictEqual(_6_kyu_Find_the_unique_number_1.findUniq([1, 1, 1, 2, 1, 1]), 2);

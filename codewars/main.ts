@@ -6,6 +6,9 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from   "chai";
 ////////////////////////////////////////////////////////////////
+// 2021/01/18 21:27
+// 5 kyu Function Cache.js
+
 // 2021/01/14 21:02
 import { findUniq } from './6 kyu Find the unique number';
 assert.strictEqual(findUniq([ 1, 1, 1, 2, 1, 1 ]), 2);
