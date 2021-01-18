@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.findUniq = void 0;
+exports.findUniq_BP = exports.findUniq = void 0;
 function findUniq(arr) {
     // Do the magic
     var arrSet = Array.from(new Set(arr));
@@ -27,6 +27,11 @@ function findUniq(arr) {
     return arr[0];
 }
 exports.findUniq = findUniq;
+function findUniq_BP(arr) {
+    arr = arr.sort();
+    return arr[0] == arr[1] ? arr[arr.length - 1] : arr[0];
+}
+exports.findUniq_BP = findUniq_BP;
 /**
  * 重複していない数を返す
  * 重複していたら削除

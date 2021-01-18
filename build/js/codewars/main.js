@@ -8,6 +8,16 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/01/18 21:55
+var _7_kyu_Count_the_Digit_1 = require("./7 kyu Count the Digit");
+// Test.assert_equals(nbDig(10, 1), 4);
+// Test.assert_equals(nbDig(25, 1), 11);
+TestCodewar_1.default.assert_equals(_7_kyu_Count_the_Digit_1.nbDig(5750, 0), 4700);
+// Test.assert_equals(nbDig(11011, 2), 9481);
+// Test.assert_equals(nbDig(12224, 8), 7733);
+// Test.assert_equals(nbDig(11549, 1), 11905);
+// 2021/01/18 21:27
+// 5 kyu Function Cache.js
 // 2021/01/14 21:02
 var _6_kyu_Find_the_unique_number_1 = require("./6 kyu Find the unique number");
 chai_1.assert.strictEqual(_6_kyu_Find_the_unique_number_1.findUniq([1, 1, 1, 2, 1, 1]), 2);
