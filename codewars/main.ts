@@ -4,8 +4,17 @@ import Test from './TestCodewar';
 
 import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
-import { assert, expect } from   "chai";
+import { assert, expect } from "chai";
 ////////////////////////////////////////////////////////////////
+
+// 2021/01/20 19:12
+import { Challenge } from './7 kyu Get the Middle Character';
+function test(string:string, expected:string) {
+  assert.strictEqual(Challenge.getMiddle(string), expected)
+}
+test("test", "es");
+test("testing", "t");
+
 // 2021/01/18 21:55
 import { nbDig } from './7 kyu Count the Digit';
 // Test.assert_equals(nbDig(10, 1), 4);

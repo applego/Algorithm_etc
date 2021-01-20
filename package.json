@@ -4,7 +4,7 @@
   "description": "2020/06/03 - 多分だけどpaiza3にマージ済 - Macの競プロ用(python)",
   "main": "index.js",
   "scripts": {
-    "test":"mocha --require ts-node/register --watch-extensions ts \"codewars/test.ts\""
+    "test": "mocha --require ts-node/register --watch-extensions ts \"codewars/test.ts\""
   },
   "repository": {
     "type": "git",
