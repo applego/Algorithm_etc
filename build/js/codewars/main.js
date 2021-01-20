@@ -8,6 +8,13 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/01/20 19:12
+var _7_kyu_Get_the_Middle_Character_1 = require("./7 kyu Get the Middle Character");
+function test(string, expected) {
+    chai_1.assert.strictEqual(_7_kyu_Get_the_Middle_Character_1.Challenge.getMiddle(string), expected);
+}
+test("test", "es");
+test("testing", "t");
 // 2021/01/18 21:55
 var _7_kyu_Count_the_Digit_1 = require("./7 kyu Count the Digit");
 // Test.assert_equals(nbDig(10, 1), 4);
