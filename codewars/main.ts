@@ -6,6 +6,10 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 ////////////////////////////////////////////////////////////////
+// 2021/01/21 23:36
+import { digitalRoot } from './6 kyu Sum of Digits  Digital Root';
+assert.equal(digitalRoot(16), 7);
+assert.equal(digitalRoot(456), 6 );
 
 // 2021/01/20 19:12
 import { Challenge } from './7 kyu Get the Middle Character';

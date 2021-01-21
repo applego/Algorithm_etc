@@ -12,7 +12,7 @@ var Challenge = /** @class */ (function () {
         }
         else {
             var middle = len / 2;
-            return s.split('').slice(middle - 1, middle).join('');
+            return s.split('').slice(middle - 1, middle + 1).join('');
         }
     };
     return Challenge;
