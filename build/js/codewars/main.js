@@ -8,6 +8,10 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/01/21 23:36
+var _6_kyu_Sum_of_Digits__Digital_Root_1 = require("./6 kyu Sum of Digits  Digital Root");
+chai_1.assert.equal(_6_kyu_Sum_of_Digits__Digital_Root_1.digitalRoot(16), 7);
+chai_1.assert.equal(_6_kyu_Sum_of_Digits__Digital_Root_1.digitalRoot(456), 6);
 // 2021/01/20 19:12
 var _7_kyu_Get_the_Middle_Character_1 = require("./7 kyu Get the Middle Character");
 function test(string, expected) {
