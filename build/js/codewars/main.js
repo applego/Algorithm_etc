@@ -8,6 +8,15 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/01/25 21:45
+var _7_kyu_Exes_and_Ohs_1 = require("./7 kyu Exes and Ohs");
+// assert.strictEqual(xo('xo'),true);
+// assert.strictEqual(xo("xxOo"),true);
+// assert.strictEqual(xo("xxxm"),false);
+// assert.strictEqual(xo("Oo"),false);
+// assert.strictEqual(xo("ooom"), false);
+chai_1.assert.strictEqual(_7_kyu_Exes_and_Ohs_1.xo("xxxoo"), false);
+chai_1.assert.strictEqual(_7_kyu_Exes_and_Ohs_1.xo("XOoXoXxoxOOXOOoXOXXxoxXOooxOo"), false);
 // 2021/01/21 23:36
 var _6_kyu_Sum_of_Digits__Digital_Root_1 = require("./6 kyu Sum of Digits  Digital Root");
 chai_1.assert.equal(_6_kyu_Sum_of_Digits__Digital_Root_1.digitalRoot(16), 7);
