@@ -6,6 +6,17 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 ////////////////////////////////////////////////////////////////
+// 2021/01/25 21:45
+import { xo } from './7 kyu Exes and Ohs';
+// assert.strictEqual(xo('xo'),true);
+// assert.strictEqual(xo("xxOo"),true);
+// assert.strictEqual(xo("xxxm"),false);
+// assert.strictEqual(xo("Oo"),false);
+// assert.strictEqual(xo("ooom"), false);
+assert.strictEqual(xo("xxxoo"), false);
+assert.strictEqual(xo("XOoXoXxoxOOXOOoXOXXxoxXOooxOo"), false);
+
+
 // 2021/01/21 23:36
 import { digitalRoot } from './6 kyu Sum of Digits  Digital Root';
 assert.equal(digitalRoot(16), 7);
