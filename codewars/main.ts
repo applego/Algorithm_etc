@@ -6,6 +6,12 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 ////////////////////////////////////////////////////////////////
+// 2021/01/26 12:49
+import { betterThanAverage } from './8 kyu How good are you really';
+Test.assert_equals(betterThanAverage([2, 3], 5),true);
+Test.assert_equals(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75),true);
+Test.assert_equals(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 69), true);
+
 // 2021/01/25 21:45
 import { xo } from './7 kyu Exes and Ohs';
 // assert.strictEqual(xo('xo'),true);
