@@ -8,6 +8,11 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/01/26 12:49
+var _8_kyu_How_good_are_you_really_1 = require("./8 kyu How good are you really");
+TestCodewar_1.default.assert_equals(_8_kyu_How_good_are_you_really_1.betterThanAverage([2, 3], 5), true);
+TestCodewar_1.default.assert_equals(_8_kyu_How_good_are_you_really_1.betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75), true);
+TestCodewar_1.default.assert_equals(_8_kyu_How_good_are_you_really_1.betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 69), true);
 // 2021/01/25 21:45
 var _7_kyu_Exes_and_Ohs_1 = require("./7 kyu Exes and Ohs");
 // assert.strictEqual(xo('xo'),true);
