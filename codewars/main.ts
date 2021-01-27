@@ -6,6 +6,26 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 ////////////////////////////////////////////////////////////////
+// 2021/01/27 21:37
+import { DNAtoRNA } from './8 kyu DNA to RNA Conversion';
+assert.equal(DNAtoRNA("TTTT"), "UUUU");
+assert.equal(DNAtoRNA("GCAT"), "GCAU");
+assert.equal(DNAtoRNA("GACCGCCGCC"), "GACCGCCGCC");
+
+// 2021/01/27 18:08
+//* 未
+import { josephusSurvivor } from './5 kyu Josephus Survivor';
+// assert.strictEqual(josephusSurvivor(7, 3), 4);
+// assert.strictEqual(josephusSurvivor(11, 19), 10);
+// assert.strictEqual(josephusSurvivor(40, 3), 28);
+// assert.strictEqual(josephusSurvivor(14, 2), 13);
+// assert.strictEqual(josephusSurvivor(100, 1), 100);
+// assert.strictEqual(josephusSurvivor(1, 300), 1);
+// assert.strictEqual(josephusSurvivor(2, 300), 1);
+// assert.strictEqual(josephusSurvivor(5, 300), 1);
+// assert.strictEqual(josephusSurvivor(7, 300), 7);
+// assert.strictEqual(josephusSurvivor(300, 300), 265);
+
 // 2021/01/26 12:49
 import { betterThanAverage } from './8 kyu How good are you really';
 Test.assert_equals(betterThanAverage([2, 3], 5),true);
