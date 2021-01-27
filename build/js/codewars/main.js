@@ -8,6 +8,18 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/01/27 18:08
+var _5_kyu_Josephus_Survivor_1 = require("./5 kyu Josephus Survivor");
+chai_1.assert.strictEqual(_5_kyu_Josephus_Survivor_1.josephusSurvivor(7, 3), 4);
+chai_1.assert.strictEqual(_5_kyu_Josephus_Survivor_1.josephusSurvivor(11, 19), 10);
+chai_1.assert.strictEqual(_5_kyu_Josephus_Survivor_1.josephusSurvivor(40, 3), 28);
+chai_1.assert.strictEqual(_5_kyu_Josephus_Survivor_1.josephusSurvivor(14, 2), 13);
+chai_1.assert.strictEqual(_5_kyu_Josephus_Survivor_1.josephusSurvivor(100, 1), 100);
+chai_1.assert.strictEqual(_5_kyu_Josephus_Survivor_1.josephusSurvivor(1, 300), 1);
+chai_1.assert.strictEqual(_5_kyu_Josephus_Survivor_1.josephusSurvivor(2, 300), 1);
+chai_1.assert.strictEqual(_5_kyu_Josephus_Survivor_1.josephusSurvivor(5, 300), 1);
+chai_1.assert.strictEqual(_5_kyu_Josephus_Survivor_1.josephusSurvivor(7, 300), 7);
+chai_1.assert.strictEqual(_5_kyu_Josephus_Survivor_1.josephusSurvivor(300, 300), 265);
 // 2021/01/26 12:49
 var _8_kyu_How_good_are_you_really_1 = require("./8 kyu How good are you really");
 TestCodewar_1.default.assert_equals(_8_kyu_How_good_are_you_really_1.betterThanAverage([2, 3], 5), true);
