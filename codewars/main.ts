@@ -6,6 +6,9 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 ////////////////////////////////////////////////////////////////
+//　2021/01/29 22:41
+import { findAverage } from './8 kyu Calculate average';
+assert.strictEqual(findAverage([1,1,1]), 1);
 // 2021/01/29 22:34
 import { goals } from './8 kyu Grasshopper - Messi goals function';
 assert.equal(goals(5, 10, 2), 17);
