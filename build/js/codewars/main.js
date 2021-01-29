@@ -8,6 +8,9 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/01/29 22:34
+var _8_kyu_Grasshopper___Messi_goals_function_1 = require("./8 kyu Grasshopper - Messi goals function");
+chai_1.assert.equal(_8_kyu_Grasshopper___Messi_goals_function_1.goals(5, 10, 2), 17);
 // 2021/01/27 21:37
 var _8_kyu_DNA_to_RNA_Conversion_1 = require("./8 kyu DNA to RNA Conversion");
 chai_1.assert.equal(_8_kyu_DNA_to_RNA_Conversion_1.DNAtoRNA("TTTT"), "UUUU");
