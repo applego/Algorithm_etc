@@ -6,6 +6,9 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 ////////////////////////////////////////////////////////////////
+// 2021/01/29 22:34
+import { goals } from './8 kyu Grasshopper - Messi goals function';
+assert.equal(goals(5, 10, 2), 17);
 // 2021/01/27 21:37
 import { DNAtoRNA } from './8 kyu DNA to RNA Conversion';
 assert.equal(DNAtoRNA("TTTT"), "UUUU");
