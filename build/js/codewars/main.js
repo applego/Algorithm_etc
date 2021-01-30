@@ -8,6 +8,13 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/01/30 23:44
+var _5_kyu_Product_of_consecutive_Fib_numbers_1 = require("./5 kyu Product of consecutive Fib numbers");
+function dotest0130(prod, expected) {
+    chai_1.assert.deepEqual(_5_kyu_Product_of_consecutive_Fib_numbers_1.G964_20210130_t.productFib(prod), expected);
+}
+dotest0130(4895, [55, 89, true]);
+dotest0130(5895, [89, 144, false]);
 //　2021/01/29 22:41
 var _8_kyu_Calculate_average_1 = require("./8 kyu Calculate average");
 chai_1.assert.strictEqual(_8_kyu_Calculate_average_1.findAverage([1, 1, 1]), 1);
