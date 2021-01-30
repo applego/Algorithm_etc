@@ -6,6 +6,12 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 ////////////////////////////////////////////////////////////////
+// 2021/01/31  3:00
+import { quarterOf } from './8 kyu Quarter of the year';
+assert.equal(quarterOf(3), 1);
+assert.equal(quarterOf(8), 3);
+assert.equal(quarterOf(11), 4);
+
 // 2021/01/30 23:44
 import { G964_20210130, G964_20210130_t } from './5 kyu Product of consecutive Fib numbers';
 function dotest0130(prod: number, expected: any[]) {
