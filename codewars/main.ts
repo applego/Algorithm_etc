@@ -6,6 +6,14 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 ////////////////////////////////////////////////////////////////
+// 2021/01/30 23:44
+import { G964_20210130, G964_20210130_t } from './5 kyu Product of consecutive Fib numbers';
+function dotest0130(prod: number, expected: any[]) {
+    assert.deepEqual(G964_20210130_t.productFib(prod), expected);
+}
+dotest0130(4895, [55, 89, true])
+dotest0130(5895, [89, 144, false])
+
 //　2021/01/29 22:41
 import { findAverage } from './8 kyu Calculate average';
 assert.strictEqual(findAverage([1,1,1]), 1);
