@@ -6,6 +6,15 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 ////////////////////////////////////////////////////////////////
+// 2021/02/01 18:40
+import { G964 as G964_20210201 } from './4 kyu Strings Mix';
+function testing(s1:string, s2:string, expected:string) {
+    assert.deepEqual(G964_20210201.mix(s1, s2), expected);
+}
+testing("Are they here", "yes, they are here", "2:eeeee/2:yy/=:hh/=:rr");
+testing("looping is fun but dangerous", "less dangerous than coding", "1:ooo/1:uuu/2:sss/=:nnn/1:ii/2:aa/2:dd/2:ee/=:gg");
+testing(" In many languages", " there's a pair of functions", "1:aaa/1:nnn/1:gg/2:ee/2:ff/2:ii/2:oo/2:rr/2:ss/2:tt");
+
 // 2021/01/31  3:00
 import { quarterOf } from './8 kyu Quarter of the year';
 assert.equal(quarterOf(3), 1);

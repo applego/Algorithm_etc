@@ -8,6 +8,19 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/02/01 18:40
+var _4_kyu_Strings_Mix_1 = require("./4 kyu Strings Mix");
+function testing(s1, s2, expected) {
+    chai_1.assert.deepEqual(_4_kyu_Strings_Mix_1.G964.mix(s1, s2), expected);
+}
+testing("Are they here", "yes, they are here", "2:eeeee/2:yy/=:hh/=:rr");
+testing("looping is fun but dangerous", "less dangerous than coding", "1:ooo/1:uuu/2:sss/=:nnn/1:ii/2:aa/2:dd/2:ee/=:gg");
+testing(" In many languages", " there's a pair of functions", "1:aaa/1:nnn/1:gg/2:ee/2:ff/2:ii/2:oo/2:rr/2:ss/2:tt");
+// 2021/01/31  3:00
+var _8_kyu_Quarter_of_the_year_1 = require("./8 kyu Quarter of the year");
+chai_1.assert.equal(_8_kyu_Quarter_of_the_year_1.quarterOf(3), 1);
+chai_1.assert.equal(_8_kyu_Quarter_of_the_year_1.quarterOf(8), 3);
+chai_1.assert.equal(_8_kyu_Quarter_of_the_year_1.quarterOf(11), 4);
 // 2021/01/30 23:44
 var _5_kyu_Product_of_consecutive_Fib_numbers_1 = require("./5 kyu Product of consecutive Fib numbers");
 function dotest0130(prod, expected) {

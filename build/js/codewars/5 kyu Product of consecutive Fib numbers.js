@@ -1,25 +1,37 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.G964_20210130 = exports.G964_20210130_t = void 0;
+exports.G964_20210130 = exports.G964_20210130_t = exports.G964_20210130_BP = void 0;
+// BP
+var G964_20210130_BP = /** @class */ (function () {
+    function G964_20210130_BP() {
+    }
+    G964_20210130_BP.productFib = function (prod) {
+        var _a;
+        var p1 = 1, p2 = 1;
+        while (p1 * p2 < prod)
+            _a = [p2, p1 + p2], p1 = _a[0], p2 = _a[1];
+        return [p1, p2, (p1 * p2 == prod)];
+    };
+    return G964_20210130_BP;
+}());
+exports.G964_20210130_BP = G964_20210130_BP;
 var G964_20210130_t = /** @class */ (function () {
     function G964_20210130_t() {
     }
     G964_20210130_t.fibonaccies = {};
     G964_20210130_t.productFib = function (prod) {
         var fibonacci = function (n) {
-            if (n === 0) {
-                G964_20210130_t.fibonaccies[0] = 0;
+            if (n === 0)
                 return 0;
-            }
-            if (n === 1) {
-                G964_20210130_t.fibonaccies[1] = 1;
+            if (n === 1)
                 return 1;
-            }
             if (G964_20210130_t.fibonaccies[n] != null) {
                 return G964_20210130_t.fibonaccies[n];
             }
             return fibonacci(n - 1) + fibonacci(n - 2);
         };
+        G964_20210130_t.fibonaccies[0] = 0;
+        G964_20210130_t.fibonaccies[1] = 1;
         var m = 0;
         while (true) {
             var mFib = fibonacci(m);
