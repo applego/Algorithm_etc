@@ -200,3 +200,15 @@ export class G964_BP {
     return G964_BP.merge(G964_BP.getOccurences(s1, '1'), G964_BP.getOccurences(s2, '2'));
   }
 }
+
+// * BP 2
+export class G964_2 {
+  public static mix = (s1: string, s2: string):string =>
+    'abcdefghijklmnopqrstuvwxyz'
+      .split('')
+      // .reduce((rs, ll) => [...rs, [s1, s2].map(s => s.replace(RegExp(`[^${ll}]`, 'g'), '')).reduce((s1, s2) => s1.length == s2.length ? '=:' + s1 : s1.length > s2.length ? '1:' + s1 : '2:' + s2)], [])
+      // .filter(a => a.length >= 4)
+      // .sort((a, b) => a.length != b.length
+      //   ? b.length - a.length : a.charCodeAt(0) - b.charCodeAt(0))
+      .join('/');
+}
