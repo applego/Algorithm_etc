@@ -7,7 +7,37 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 // let test = new Test();//__filename
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
-////////////////////////////////////////////////////////////////
+var data1 = "What do you remember? When I looked at his streaky glasses, I wanted " +
+    "to leave him. And before that? He stole those cherries for me at midnight. We were walking " +
+    "in the rain and I loved him. And before that? I saw him coming " +
+    "toward me that time at the picnic, edgy, foreign.";
+var data2 = "Some say the world will end in fire, Some say in ice. From what I've tasted of desire " +
+    "I hold with those who favor fire. But if it had to perish twice, I think I know enough of hate" +
+    " To say that for destruction ice Is also great And would suffice.";
+var data1Sol = "\vctg?.nadr d gdbW\n\v,i    lnis tl eh\n\v mtIAakietboaara\n\veeo nnigsoe st?t\n\vd wsddnh lfls   \n\vgaaa  gtfeoeehWd\n" +
+    "\vytrwbI .o rasiho\n\v, d e i rtev,se \n\v t hflnW h e  ny\n\vfhmioo emot Is o\n\voeemrvt eshh tIu\n\vr   eehw eaiwr  \n" +
+    "\veptc deea tmaelr\n\viihot  rtc?.naoe\n\vgcamhhre h  tkom\n\vnntiaia meHAeyke\n\v.i ntmiwirend em";
+var data2Sol = "fa  h ttrheI ilS\nitifakw   s'irdo\nc cotnihftivce m\neAereocaihree,we\n.n   wedroe . i \n\vdIdT , es t Sls\n\v seoe t.eIaFola\n" +
+    "\vw s nIo   srm y\n\voatso  Bwhtoee \n\vulrautpuhoem nt\n\vlsuyghetold sdh\n\vdoc hir  d wa e\n\v  tt niif ohyi \n\vsgihoksfawfa nw\n" +
+    "\vuroaf h vi ti o\n\vfent I iotd nfr";
+// * 先に↓
+// assert.strictEqual(code(data1), data1Sol);
+// assert.strictEqual(code(data2), data2Sol);
+// assert.strictEqual(code(""), "");
+// assert.strictEqual(decode(data2Sol), data2);
+// 2021/02/07 23:25
+var _6_kyu_Moves_in_squared_strings__III_1 = require("./6 kyu Moves in squared strings (III)");
+chai_1.assert.strictEqual(_6_kyu_Moves_in_squared_strings__III_1.oper(_6_kyu_Moves_in_squared_strings__III_1.diag1Sym, "wuUyPC\neNHWxw\nehifmi\ntBTlFI\nvWNpdv\nIFkGjZ"), "weetvI\nuNhBWF\nUHiTNk\nyWflpG\nPxmFdj\nCwiIvZ");
+var a = _6_kyu_Moves_in_squared_strings__III_1.oper(_6_kyu_Moves_in_squared_strings__III_1.rot90Clock, "rgavce\nvGcEKl\ndChZVW\nxNWgXR\niJBYDO\nSdmEKb");
+var b = "Sixdvr\ndJNCGg\nmBWhca\nEYgZEv\nKDXVKc\nbORWle";
+console.log(a);
+console.log(b);
+chai_1.assert.strictEqual(a, b);
+a = _6_kyu_Moves_in_squared_strings__III_1.oper(_6_kyu_Moves_in_squared_strings__III_1.selfieAndDiag1, "NJVGhr\nMObsvw\ntPhCtl\nsoEnhi\nrtQRLK\nzjliWg");
+b = "NJVGhr|NMtsrz\nMObsvw|JOPotj\ntPhCtl|VbhEQl\nsoEnhi|GsCnRi\nrtQRLK|hvthLW\nzjliWg|rwliKg";
+console.log(a);
+console.log(b);
+chai_1.assert.strictEqual(a, b);
 // 2021/02/01 18:40
 var _4_kyu_Strings_Mix_1 = require("./4 kyu Strings Mix");
 function testing(s1, s2, expected) {

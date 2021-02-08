@@ -233,3 +233,29 @@ describe("Fixed Tests accum", function() {
     );
   });
 });
+
+// 2021/02/07 23:25
+import { rot90Clock, diag1Sym, selfieAndDiag1, oper } from './6 kyu Moves in squared strings (III)';
+
+describe("Fixed Tests", function() {
+  it("Basic tests diag1Sym", function() {
+    assert.strictEqual(
+      oper(diag1Sym, "wuUyPC\neNHWxw\nehifmi\ntBTlFI\nvWNpdv\nIFkGjZ"),
+      "weetvI\nuNhBWF\nUHiTNk\nyWflpG\nPxmFdj\nCwiIvZ"
+    );
+  });
+
+  it("Basic tests rot90Clock", function() {
+    assert.strictEqual(
+      oper(rot90Clock, "rgavce\nvGcEKl\ndChZVW\nxNWgXR\niJBYDO\nSdmEKb"),
+      "Sixdvr\ndJNCGg\nmBWhca\nEYgZEv\nKDXVKc\nbORWle"
+    );
+  });
+
+  it("Basic tests selfieAndDiag1", function() {
+    assert.strictEqual(
+      oper(selfieAndDiag1, "NJVGhr\nMObsvw\ntPhCtl\nsoEnhi\nrtQRLK\nzjliWg"),
+      "NJVGhr|NMtsrz\nMObsvw|JOPotj\ntPhCtl|VbhEQl\nsoEnhi|GsCnRi\nrtQRLK|hvthLW\nzjliWg|rwliKg"
+    );
+  });
+});

@@ -183,18 +183,18 @@ mocha_1.describe('solution', function () {
     });
 });
 // 2020/12/21 12:15
-var _5_kyu_Some_Egyptian_fractions_1 = require("./5 kyu Some Egyptian fractions");
+var unsolved_5_kyu_Some_Egyptian_fractions_1 = require("./unsolved 5 kyu Some Egyptian fractions");
 function testing(s, expected) {
-    chai_1.assert.deepEqual(_5_kyu_Some_Egyptian_fractions_1.G964_20201221.decompose(s), expected);
+    chai_1.assert.deepEqual(unsolved_5_kyu_Some_Egyptian_fractions_1.G964_20201221.decompose(s), expected);
 }
-mocha_1.describe("Fixed Tests decompose", function () {
-    mocha_1.it("Basic tests", function () {
-        testing("3/4", ["1/2", "1/4"]);
-        testing("12/4", ["3"]);
-        testing("4/5", ["1/2", "1/4", "1/20"]);
-        testing("0.66", ["1/2", "1/7", "1/59", "1/5163", "1/53307975"]);
-    });
-});
+// describe("Fixed Tests decompose", function(){
+//   it("Basic tests", function() {
+//     testing("3/4", ["1/2", "1/4"]);
+//     testing("12/4", ["3"]);
+//     testing("4/5", ["1/2", "1/4", "1/20"]);
+//     testing("0.66", ["1/2", "1/7", "1/59", "1/5163", "1/53307975"]);
+//   });
+// });
 // 2020/12/24  0:57
 var _7_kyu_Mumbling_1 = require("./7 kyu Mumbling");
 mocha_1.describe("Fixed Tests accum", function () {
@@ -204,6 +204,19 @@ mocha_1.describe("Fixed Tests accum", function () {
         chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("MjtkuBovqrU"), "M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu");
         chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("EvidjUnokmM"), "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm");
         chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("HbideVbxncC"), "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc");
+    });
+});
+// 2021/02/07 23:25
+var _6_kyu_Moves_in_squared_strings__III_1 = require("./6 kyu Moves in squared strings (III)");
+mocha_1.describe("Fixed Tests", function () {
+    mocha_1.it("Basic tests diag1Sym", function () {
+        chai_1.assert.strictEqual(_6_kyu_Moves_in_squared_strings__III_1.oper(_6_kyu_Moves_in_squared_strings__III_1.diag1Sym, "wuUyPC\neNHWxw\nehifmi\ntBTlFI\nvWNpdv\nIFkGjZ"), "weetvI\nuNhBWF\nUHiTNk\nyWflpG\nPxmFdj\nCwiIvZ");
+    });
+    mocha_1.it("Basic tests rot90Clock", function () {
+        chai_1.assert.strictEqual(_6_kyu_Moves_in_squared_strings__III_1.oper(_6_kyu_Moves_in_squared_strings__III_1.rot90Clock, "rgavce\nvGcEKl\ndChZVW\nxNWgXR\niJBYDO\nSdmEKb"), "Sixdvr\ndJNCGg\nmBWhca\nEYgZEv\nKDXVKc\nbORWle");
+    });
+    mocha_1.it("Basic tests selfieAndDiag1", function () {
+        chai_1.assert.strictEqual(_6_kyu_Moves_in_squared_strings__III_1.oper(_6_kyu_Moves_in_squared_strings__III_1.selfieAndDiag1, "NJVGhr\nMObsvw\ntPhCtl\nsoEnhi\nrtQRLK\nzjliWg"), "NJVGhr|NMtsrz\nMObsvw|JOPotj\ntPhCtl|VbhEQl\nsoEnhi|GsCnRi\nrtQRLK|hvthLW\nzjliWg|rwliKg");
     });
 });
 //# sourceMappingURL=test.js.map
