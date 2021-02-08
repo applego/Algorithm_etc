@@ -6,6 +6,68 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from "mocha";
 import { assert, expect } from "chai";
 ////////////////////////////////////////////////////////////////
+// 2021/02/07 23:10
+import { code, decode } from "./5 kyu Coding with Squared Strings";
+const data1 = "What do you remember? When I looked at his streaky glasses, I wanted " +
+  "to leave him. And before that? He stole those cherries for me at midnight. We were walking " +
+  "in the rain and I loved him. And before that? I saw him coming " +
+  "toward me that time at the picnic, edgy, foreign.";
+
+const data2 = "Some say the world will end in fire, Some say in ice. From what I've tasted of desire " +
+  "I hold with those who favor fire. But if it had to perish twice, I think I know enough of hate" +
+  " To say that for destruction ice Is also great And would suffice.";
+
+const data1Sol =
+  "\vctg?.nadr d gdbW\n\v,i    lnis tl eh\n\v mtIAakietboaara\n\veeo nnigsoe st?t\n\vd wsddnh lfls   \n\vgaaa  gtfeoeehWd\n" +
+  "\vytrwbI .o rasiho\n\v, d e i rtev,se \n\v t hflnW h e  ny\n\vfhmioo emot Is o\n\voeemrvt eshh tIu\n\vr   eehw eaiwr  \n" +
+  "\veptc deea tmaelr\n\viihot  rtc?.naoe\n\vgcamhhre h  tkom\n\vnntiaia meHAeyke\n\v.i ntmiwirend em";
+
+const data2Sol =
+  "fa  h ttrheI ilS\nitifakw   s'irdo\nc cotnihftivce m\neAereocaihree,we\n.n   wedroe . i \n\vdIdT , es t Sls\n\v seoe t.eIaFola\n" +
+  "\vw s nIo   srm y\n\voatso  Bwhtoee \n\vulrautpuhoem nt\n\vlsuyghetold sdh\n\vdoc hir  d wa e\n\v  tt niif ohyi \n\vsgihoksfawfa nw\n" +
+  "\vuroaf h vi ti o\n\vfent I iotd nfr";
+
+// * 先に↓
+// assert.strictEqual(code(data1), data1Sol);
+// assert.strictEqual(code(data2), data2Sol);
+// assert.strictEqual(code(""), "");
+// assert.strictEqual(decode(data2Sol), data2);
+
+// 2021/02/07 23:25
+import { rot90Clock, diag1Sym, selfieAndDiag1, oper } from './6 kyu Moves in squared strings (III)';
+
+assert.strictEqual(
+  oper(diag1Sym, "wuUyPC\neNHWxw\nehifmi\ntBTlFI\nvWNpdv\nIFkGjZ"),
+  "weetvI\nuNhBWF\nUHiTNk\nyWflpG\nPxmFdj\nCwiIvZ"
+);
+
+let a = oper(rot90Clock, "rgavce\nvGcEKl\ndChZVW\nxNWgXR\niJBYDO\nSdmEKb");
+let b = "Sixdvr\ndJNCGg\nmBWhca\nEYgZEv\nKDXVKc\nbORWle";
+console.log(a);
+console.log(b);
+assert.strictEqual(
+  a
+  ,
+  b
+);
+
+a = oper(selfieAndDiag1, "NJVGhr\nMObsvw\ntPhCtl\nsoEnhi\nrtQRLK\nzjliWg");
+b = "NJVGhr|NMtsrz\nMObsvw|JOPotj\ntPhCtl|VbhEQl\nsoEnhi|GsCnRi\nrtQRLK|hvthLW\nzjliWg|rwliKg";
+console.log(a);
+console.log(b);
+assert.strictEqual(
+a  ,b
+);
+
+// 2021/02/01 18:40
+import { G964 as G964_20210201 } from './4 kyu Strings Mix';
+function testing(s1:string, s2:string, expected:string) {
+    assert.deepEqual(G964_20210201.mix(s1, s2), expected);
+}
+testing("Are they here", "yes, they are here", "2:eeeee/2:yy/=:hh/=:rr");
+testing("looping is fun but dangerous", "less dangerous than coding", "1:ooo/1:uuu/2:sss/=:nnn/1:ii/2:aa/2:dd/2:ee/=:gg");
+testing(" In many languages", " there's a pair of functions", "1:aaa/1:nnn/1:gg/2:ee/2:ff/2:ii/2:oo/2:rr/2:ss/2:tt");
+
 // 2021/01/31  3:00
 import { quarterOf } from './8 kyu Quarter of the year';
 assert.equal(quarterOf(3), 1);
@@ -583,7 +645,7 @@ const geneticAlgorithm = new GeneticAlgorithm();
 // geneticAlgorithm.run(fitness, 10, 0.6, 0.002, 100);
 
 // 2020/12/21 12:15
-import { G964_20201221 } from './5 kyu Some Egyptian fractions';
+import { G964_20201221 } from './unsolved 5 kyu Some Egyptian fractions';
 // function testing(s:any, expected:any) {
 //   Test.assert_equals(G964_20201221.decompose(s), expected)
 // }

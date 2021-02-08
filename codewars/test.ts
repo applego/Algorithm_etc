@@ -194,18 +194,18 @@ describe('solution', () => {
 });
 
 // 2020/12/21 12:15
-import { G964_20201221 } from './5 kyu Some Egyptian fractions';
+import { G964_20201221 } from './unsolved 5 kyu Some Egyptian fractions';
 function testing(s:any, expected:any) {
   assert.deepEqual(G964_20201221.decompose(s), expected)
 }
-describe("Fixed Tests decompose", function(){
-  it("Basic tests", function() {
-    testing("3/4", ["1/2", "1/4"]);
-    testing("12/4", ["3"]);
-    testing("4/5", ["1/2", "1/4", "1/20"]);
-    testing("0.66", ["1/2", "1/7", "1/59", "1/5163", "1/53307975"]);
-  });
-});
+// describe("Fixed Tests decompose", function(){
+//   it("Basic tests", function() {
+//     testing("3/4", ["1/2", "1/4"]);
+//     testing("12/4", ["3"]);
+//     testing("4/5", ["1/2", "1/4", "1/20"]);
+//     testing("0.66", ["1/2", "1/7", "1/59", "1/5163", "1/53307975"]);
+//   });
+// });
 
 // 2020/12/24  0:57
 import {accum} from './7 kyu Mumbling';
@@ -230,6 +230,32 @@ describe("Fixed Tests accum", function() {
     assert.strictEqual(
       accum("HbideVbxncC"),
       "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc"
+    );
+  });
+});
+
+// 2021/02/07 23:25
+import { rot90Clock, diag1Sym, selfieAndDiag1, oper } from './6 kyu Moves in squared strings (III)';
+
+describe("Fixed Tests", function() {
+  it("Basic tests diag1Sym", function() {
+    assert.strictEqual(
+      oper(diag1Sym, "wuUyPC\neNHWxw\nehifmi\ntBTlFI\nvWNpdv\nIFkGjZ"),
+      "weetvI\nuNhBWF\nUHiTNk\nyWflpG\nPxmFdj\nCwiIvZ"
+    );
+  });
+
+  it("Basic tests rot90Clock", function() {
+    assert.strictEqual(
+      oper(rot90Clock, "rgavce\nvGcEKl\ndChZVW\nxNWgXR\niJBYDO\nSdmEKb"),
+      "Sixdvr\ndJNCGg\nmBWhca\nEYgZEv\nKDXVKc\nbORWle"
+    );
+  });
+
+  it("Basic tests selfieAndDiag1", function() {
+    assert.strictEqual(
+      oper(selfieAndDiag1, "NJVGhr\nMObsvw\ntPhCtl\nsoEnhi\nrtQRLK\nzjliWg"),
+      "NJVGhr|NMtsrz\nMObsvw|JOPotj\ntPhCtl|VbhEQl\nsoEnhi|GsCnRi\nrtQRLK|hvthLW\nzjliWg|rwliKg"
     );
   });
 });
