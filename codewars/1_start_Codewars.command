@@ -1,3 +1,3 @@
 
-NEWFILENAME="6 kyu Moves in squared strings (III)"
+NEWFILENAME="8 kyu Opposite number"
 touch "codewars/$NEWFILENAME.ts"
