@@ -382,3 +382,13 @@ describe('Mixed values', function () {
     assert.equal(expressionsMatter(1, 10, 1), 12);
   });
 });
+
+// 2021 / 02 / 15 22: 43;
+import { countSheep } from "./8 kyu If you can't sleep, just count sheep";
+describe('Sample Test Cases', function () {
+  it('Should return a string', function () {
+    assert.equal(countSheep(1), '1 sheep...');
+    assert.equal(countSheep(2), '1 sheep...2 sheep...');
+    assert.equal(countSheep(3), '1 sheep...2 sheep...3 sheep...');
+  });
+});
