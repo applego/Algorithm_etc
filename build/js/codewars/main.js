@@ -7,19 +7,48 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 // let test = new Test();//__filename
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
-var data1 = "What do you remember? When I looked at his streaky glasses, I wanted " +
-    "to leave him. And before that? He stole those cherries for me at midnight. We were walking " +
-    "in the rain and I loved him. And before that? I saw him coming " +
-    "toward me that time at the picnic, edgy, foreign.";
+////////////////////////////////////////////////////////////////
+// 2021/02/17 20:51
+var _7_kyu_Maximum_Length_Difference_1 = require("./7 kyu Maximum Length Difference");
+function testing_20210217(actual, expected) {
+    chai_1.assert.equal(actual, expected);
+}
+var s1 = [
+    'hoqq',
+    'bbllkw',
+    'oox',
+    'ejjuyyy',
+    'plmiis',
+    'xxxzgpsssa',
+    'xxwwkktt',
+    'znnnnfqknaz',
+    'qqquuhii',
+    'dvvvwz',
+];
+var s2 = ['cccooommaaqqoxii', 'gggqaffhhh', 'tttoowwwmmww'];
+testing_20210217(_7_kyu_Maximum_Length_Difference_1.G964_20210217.mxdiflg(s1, s2), 13);
+s1 = [
+    'ejjjjmmtthh',
+    'zxxuueeg',
+    'aanlljrrrxx',
+    'dqqqaaabbb',
+    'oocccffuucccjjjkkkjyyyeehh',
+];
+s2 = ['bbbaaayddqbbrrrv'];
+testing_20210217(_7_kyu_Maximum_Length_Difference_1.G964_20210217.mxdiflg(s1, s2), 10);
+var data1 = 'What do you remember? When I looked at his streaky glasses, I wanted ' +
+    'to leave him. And before that? He stole those cherries for me at midnight. We were walking ' +
+    'in the rain and I loved him. And before that? I saw him coming ' +
+    'toward me that time at the picnic, edgy, foreign.';
 var data2 = "Some say the world will end in fire, Some say in ice. From what I've tasted of desire " +
-    "I hold with those who favor fire. But if it had to perish twice, I think I know enough of hate" +
-    " To say that for destruction ice Is also great And would suffice.";
-var data1Sol = "\vctg?.nadr d gdbW\n\v,i    lnis tl eh\n\v mtIAakietboaara\n\veeo nnigsoe st?t\n\vd wsddnh lfls   \n\vgaaa  gtfeoeehWd\n" +
-    "\vytrwbI .o rasiho\n\v, d e i rtev,se \n\v t hflnW h e  ny\n\vfhmioo emot Is o\n\voeemrvt eshh tIu\n\vr   eehw eaiwr  \n" +
-    "\veptc deea tmaelr\n\viihot  rtc?.naoe\n\vgcamhhre h  tkom\n\vnntiaia meHAeyke\n\v.i ntmiwirend em";
+    'I hold with those who favor fire. But if it had to perish twice, I think I know enough of hate' +
+    ' To say that for destruction ice Is also great And would suffice.';
+var data1Sol = '\vctg?.nadr d gdbW\n\v,i    lnis tl eh\n\v mtIAakietboaara\n\veeo nnigsoe st?t\n\vd wsddnh lfls   \n\vgaaa  gtfeoeehWd\n' +
+    '\vytrwbI .o rasiho\n\v, d e i rtev,se \n\v t hflnW h e  ny\n\vfhmioo emot Is o\n\voeemrvt eshh tIu\n\vr   eehw eaiwr  \n' +
+    '\veptc deea tmaelr\n\viihot  rtc?.naoe\n\vgcamhhre h  tkom\n\vnntiaia meHAeyke\n\v.i ntmiwirend em';
 var data2Sol = "fa  h ttrheI ilS\nitifakw   s'irdo\nc cotnihftivce m\neAereocaihree,we\n.n   wedroe . i \n\vdIdT , es t Sls\n\v seoe t.eIaFola\n" +
-    "\vw s nIo   srm y\n\voatso  Bwhtoee \n\vulrautpuhoem nt\n\vlsuyghetold sdh\n\vdoc hir  d wa e\n\v  tt niif ohyi \n\vsgihoksfawfa nw\n" +
-    "\vuroaf h vi ti o\n\vfent I iotd nfr";
+    '\vw s nIo   srm y\n\voatso  Bwhtoee \n\vulrautpuhoem nt\n\vlsuyghetold sdh\n\vdoc hir  d wa e\n\v  tt niif ohyi \n\vsgihoksfawfa nw\n' +
+    '\vuroaf h vi ti o\n\vfent I iotd nfr';
 // * 先に↓
 // assert.strictEqual(code(data1), data1Sol);
 // assert.strictEqual(code(data2), data2Sol);
@@ -27,14 +56,15 @@ var data2Sol = "fa  h ttrheI ilS\nitifakw   s'irdo\nc cotnihftivce m\neAereocaih
 // assert.strictEqual(decode(data2Sol), data2);
 // 2021/02/07 23:25
 var _6_kyu_Moves_in_squared_strings__III_1 = require("./6 kyu Moves in squared strings (III)");
-chai_1.assert.strictEqual(_6_kyu_Moves_in_squared_strings__III_1.oper(_6_kyu_Moves_in_squared_strings__III_1.diag1Sym, "wuUyPC\neNHWxw\nehifmi\ntBTlFI\nvWNpdv\nIFkGjZ"), "weetvI\nuNhBWF\nUHiTNk\nyWflpG\nPxmFdj\nCwiIvZ");
-var a = _6_kyu_Moves_in_squared_strings__III_1.oper(_6_kyu_Moves_in_squared_strings__III_1.rot90Clock, "rgavce\nvGcEKl\ndChZVW\nxNWgXR\niJBYDO\nSdmEKb");
-var b = "Sixdvr\ndJNCGg\nmBWhca\nEYgZEv\nKDXVKc\nbORWle";
+chai_1.assert.strictEqual(_6_kyu_Moves_in_squared_strings__III_1.oper(_6_kyu_Moves_in_squared_strings__III_1.diag1Sym, 'wuUyPC\neNHWxw\nehifmi\ntBTlFI\nvWNpdv\nIFkGjZ'), 'weetvI\nuNhBWF\nUHiTNk\nyWflpG\nPxmFdj\nCwiIvZ');
+var a = _6_kyu_Moves_in_squared_strings__III_1.oper(_6_kyu_Moves_in_squared_strings__III_1.rot90Clock, 'rgavce\nvGcEKl\ndChZVW\nxNWgXR\niJBYDO\nSdmEKb');
+var b = 'Sixdvr\ndJNCGg\nmBWhca\nEYgZEv\nKDXVKc\nbORWle';
 console.log(a);
 console.log(b);
 chai_1.assert.strictEqual(a, b);
-a = _6_kyu_Moves_in_squared_strings__III_1.oper(_6_kyu_Moves_in_squared_strings__III_1.selfieAndDiag1, "NJVGhr\nMObsvw\ntPhCtl\nsoEnhi\nrtQRLK\nzjliWg");
-b = "NJVGhr|NMtsrz\nMObsvw|JOPotj\ntPhCtl|VbhEQl\nsoEnhi|GsCnRi\nrtQRLK|hvthLW\nzjliWg|rwliKg";
+a = _6_kyu_Moves_in_squared_strings__III_1.oper(_6_kyu_Moves_in_squared_strings__III_1.selfieAndDiag1, 'NJVGhr\nMObsvw\ntPhCtl\nsoEnhi\nrtQRLK\nzjliWg');
+b =
+    'NJVGhr|NMtsrz\nMObsvw|JOPotj\ntPhCtl|VbhEQl\nsoEnhi|GsCnRi\nrtQRLK|hvthLW\nzjliWg|rwliKg';
 console.log(a);
 console.log(b);
 chai_1.assert.strictEqual(a, b);
@@ -43,9 +73,9 @@ var _4_kyu_Strings_Mix_1 = require("./4 kyu Strings Mix");
 function testing(s1, s2, expected) {
     chai_1.assert.deepEqual(_4_kyu_Strings_Mix_1.G964.mix(s1, s2), expected);
 }
-testing("Are they here", "yes, they are here", "2:eeeee/2:yy/=:hh/=:rr");
-testing("looping is fun but dangerous", "less dangerous than coding", "1:ooo/1:uuu/2:sss/=:nnn/1:ii/2:aa/2:dd/2:ee/=:gg");
-testing(" In many languages", " there's a pair of functions", "1:aaa/1:nnn/1:gg/2:ee/2:ff/2:ii/2:oo/2:rr/2:ss/2:tt");
+testing('Are they here', 'yes, they are here', '2:eeeee/2:yy/=:hh/=:rr');
+testing('looping is fun but dangerous', 'less dangerous than coding', '1:ooo/1:uuu/2:sss/=:nnn/1:ii/2:aa/2:dd/2:ee/=:gg');
+testing(' In many languages', " there's a pair of functions", '1:aaa/1:nnn/1:gg/2:ee/2:ff/2:ii/2:oo/2:rr/2:ss/2:tt');
 // 2021/01/31  3:00
 var _8_kyu_Quarter_of_the_year_1 = require("./8 kyu Quarter of the year");
 chai_1.assert.equal(_8_kyu_Quarter_of_the_year_1.quarterOf(3), 1);
@@ -66,9 +96,9 @@ var _8_kyu_Grasshopper___Messi_goals_function_1 = require("./8 kyu Grasshopper -
 chai_1.assert.equal(_8_kyu_Grasshopper___Messi_goals_function_1.goals(5, 10, 2), 17);
 // 2021/01/27 21:37
 var _8_kyu_DNA_to_RNA_Conversion_1 = require("./8 kyu DNA to RNA Conversion");
-chai_1.assert.equal(_8_kyu_DNA_to_RNA_Conversion_1.DNAtoRNA("TTTT"), "UUUU");
-chai_1.assert.equal(_8_kyu_DNA_to_RNA_Conversion_1.DNAtoRNA("GCAT"), "GCAU");
-chai_1.assert.equal(_8_kyu_DNA_to_RNA_Conversion_1.DNAtoRNA("GACCGCCGCC"), "GACCGCCGCC");
+chai_1.assert.equal(_8_kyu_DNA_to_RNA_Conversion_1.DNAtoRNA('TTTT'), 'UUUU');
+chai_1.assert.equal(_8_kyu_DNA_to_RNA_Conversion_1.DNAtoRNA('GCAT'), 'GCAU');
+chai_1.assert.equal(_8_kyu_DNA_to_RNA_Conversion_1.DNAtoRNA('GACCGCCGCC'), 'GACCGCCGCC');
 // assert.strictEqual(josephusSurvivor(7, 3), 4);
 // assert.strictEqual(josephusSurvivor(11, 19), 10);
 // assert.strictEqual(josephusSurvivor(40, 3), 28);
@@ -91,8 +121,8 @@ var _7_kyu_Exes_and_Ohs_1 = require("./7 kyu Exes and Ohs");
 // assert.strictEqual(xo("xxxm"),false);
 // assert.strictEqual(xo("Oo"),false);
 // assert.strictEqual(xo("ooom"), false);
-chai_1.assert.strictEqual(_7_kyu_Exes_and_Ohs_1.xo("xxxoo"), false);
-chai_1.assert.strictEqual(_7_kyu_Exes_and_Ohs_1.xo("XOoXoXxoxOOXOOoXOXXxoxXOooxOo"), false);
+chai_1.assert.strictEqual(_7_kyu_Exes_and_Ohs_1.xo('xxxoo'), false);
+chai_1.assert.strictEqual(_7_kyu_Exes_and_Ohs_1.xo('XOoXoXxoxOOXOOoXOXXxoxXOooxOo'), false);
 // 2021/01/21 23:36
 var _6_kyu_Sum_of_Digits__Digital_Root_1 = require("./6 kyu Sum of Digits  Digital Root");
 chai_1.assert.equal(_6_kyu_Sum_of_Digits__Digital_Root_1.digitalRoot(16), 7);
@@ -102,8 +132,8 @@ var _7_kyu_Get_the_Middle_Character_1 = require("./7 kyu Get the Middle Characte
 function test(string, expected) {
     chai_1.assert.strictEqual(_7_kyu_Get_the_Middle_Character_1.Challenge.getMiddle(string), expected);
 }
-test("test", "es");
-test("testing", "t");
+test('test', 'es');
+test('testing', 't');
 // 2021/01/18 21:55
 var _7_kyu_Count_the_Digit_1 = require("./7 kyu Count the Digit");
 // Test.assert_equals(nbDig(10, 1), 4);
@@ -122,8 +152,14 @@ chai_1.assert.strictEqual(_6_kyu_Find_the_unique_number_1.findUniq([0, 0, 0.55, 
 // 7 kyu Jaden Casing Strings
 var _5_kyu_Second_Variation_on_Caesar_Cipher_1 = require("./5 kyu Second Variation on Caesar Cipher");
 var u, v;
-u = "I should have known that you would have a perfect answer for me!!!";
-v = ["ijJ tipvme ibw", "f lopxo uibu z", "pv xpvme ibwf ", "b qfsgfdu botx", "fs gps nf!!!"];
+u = 'I should have known that you would have a perfect answer for me!!!';
+v = [
+    'ijJ tipvme ibw',
+    'f lopxo uibu z',
+    'pv xpvme ibwf ',
+    'b qfsgfdu botx',
+    'fs gps nf!!!',
+];
 TestCodewar_1.default.assert_equals(_5_kyu_Second_Variation_on_Caesar_Cipher_1.G964_20210110.encodeStr(u, 1), v);
 TestCodewar_1.default.assert_equals(_5_kyu_Second_Variation_on_Caesar_Cipher_1.G964_20210110.decode(v), u);
 // 2021/01/07 20:52
@@ -144,21 +180,25 @@ TestCodewar_1.default.assert_equals(_4_kyu_Sum_Strings_as_Numbers_1.sumStrings('
 TestCodewar_1.default.assert_equals(_4_kyu_Sum_Strings_as_Numbers_1.sumStrings('915381589456908955396757569014', '841949236788909599143403221835'), '1757330826245818554540160790849');
 // 2021/01/05 12:38
 var _5_kyu_Directions_Reduction_1 = require("./5 kyu Directions Reduction");
-chai_1.assert.deepEqual(_5_kyu_Directions_Reduction_1.dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]), ["WEST"]);
-chai_1.assert.deepEqual(_5_kyu_Directions_Reduction_1.dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH"]), []);
+chai_1.assert.deepEqual(_5_kyu_Directions_Reduction_1.dirReduc(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST']), ['WEST']);
+chai_1.assert.deepEqual(_5_kyu_Directions_Reduction_1.dirReduc(['NORTH', 'SOUTH', 'SOUTH', 'EAST', 'WEST', 'NORTH']), []);
 // 2021/01/04 21:06
 //  上から書いていくスタイルにチェンジ
 var _5_kyu_Sum_of_pairs_1 = require("./5 kyu Sum of pairs");
 var l1 = [1, 4, 8, 7, 3, 15], l2 = [1, -2, 3, 0, -6, 1], l3 = [20, -13, 40], l4 = [1, 2, 3, 4, 1, 0], l5 = [10, 5, 2, 3, 7, 5], l6 = [4, -2, 3, 3, 4], l7 = [0, 2, 0], l8 = [5, 9, 13, -3];
-chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l1, 8), [1, 7], "Basic: [" + l1 + "] should return [1, 7] for sum = 8");
-chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l2, -6), [0, -6], "Negatives: [" + l2 + "] should return [0, -6] for sum = -6");
-chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l3, -7), undefined, "No Match: [" + l3 + "] should return undefined for sum = -7");
-chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l4, 2), [1, 1], "First Match From Left: [" + l4 + "] should return [1, 1] for sum = 2 ");
-chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs_BP(l5, 10), [3, 7], "First Match From Left REDUX!: [" + l5 + "] should return [3, 7] for sum = 10 ");
-chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l5, 10), [3, 7], "First Match From Left REDUX!: [" + l5 + "] should return [3, 7] for sum = 10 ");
-chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l6, 8), [4, 4], "Duplicates: [" + l6 + "] should return [4, 4] for sum = 8");
-chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l7, 0), [0, 0], "Zeroes: [" + l7 + "] should return [0, 0] for sum = 0");
-chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l8, 10), [13, -3], "Subtraction: [" + l8 + "] should return [13, -3] for sum = 10");
+chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l1, 8), [1, 7], 'Basic: [' + l1 + '] should return [1, 7] for sum = 8');
+chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l2, -6), [0, -6], 'Negatives: [' + l2 + '] should return [0, -6] for sum = -6');
+chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l3, -7), undefined, 'No Match: [' + l3 + '] should return undefined for sum = -7');
+chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l4, 2), [1, 1], 'First Match From Left: [' + l4 + '] should return [1, 1] for sum = 2 ');
+chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs_BP(l5, 10), [3, 7], 'First Match From Left REDUX!: [' +
+    l5 +
+    '] should return [3, 7] for sum = 10 ');
+chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l5, 10), [3, 7], 'First Match From Left REDUX!: [' +
+    l5 +
+    '] should return [3, 7] for sum = 10 ');
+chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l6, 8), [4, 4], 'Duplicates: [' + l6 + '] should return [4, 4] for sum = 8');
+chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l7, 0), [0, 0], 'Zeroes: [' + l7 + '] should return [0, 0] for sum = 0');
+chai_1.assert.deepEqual(_5_kyu_Sum_of_pairs_1.sumPairs(l8, 10), [13, -3], 'Subtraction: [' + l8 + '] should return [13, -3] for sum = 10');
 var speedOfPetals = require("./8 kyu The falling speed of petals");
 // speedOfPetals.sakuraFall(0);
 // speedOfPetals.sakuraFall(5);
@@ -169,37 +209,57 @@ speedOfPetals.sakuraFall(10);
 // console.log(speedOfPetals.f2(1000)); // "1,000円"
 // console.log(speedOfPetals.f2(1000, 'ペソ')); // "1,000ペソ"
 var isograms = require("./7 kyu Isograms");
-TestCodewar_1.default.assert_equals(isograms.isIsogram("Dermatoglyphics"), true); // isograms.isIsogram("Dermatoglyphics")//, true );
+TestCodewar_1.default.assert_equals(isograms.isIsogram('Dermatoglyphics'), true); // isograms.isIsogram("Dermatoglyphics")//, true );
 // Test.assert_equals(isograms.isIsogram("isogram"), true );
 // Test.assert_equals(isograms.isIsogram("aba"), false, "same chars may not be adjacent" );
 // Test.assert_equals(isograms.isIsogram("moOse"), false, "same chars may not be same case" );
 // Test.assert_equals(isograms.isIsogram("isIsogram"), false );
 // Test.assert_equals(isograms.isIsogram(""), true, "an empty string is a valid isogram");
 var _7_kyu_Vowel_Count_1 = require("./7 kyu Vowel Count");
-TestCodewar_1.default.assert_equals(_7_kyu_Vowel_Count_1.Kata.getCount("abracadabra"), 5);
+TestCodewar_1.default.assert_equals(_7_kyu_Vowel_Count_1.Kata.getCount('abracadabra'), 5);
 var shark = require("./8 kyu Holiday VI - Shark Pontoon");
-TestCodewar_1.default.assert_equals(shark.shark(12, 50, 4, 8, true), "Alive!");
-TestCodewar_1.default.assert_equals(shark.shark(7, 55, 4, 16, true), "Alive!");
-TestCodewar_1.default.assert_equals(shark.shark(24, 0, 4, 8, true), "Shark Bait!");
-TestCodewar_1.default.assert_equals(shark.shark(40, 35, 3, 20, true), "Shark Bait!");
-TestCodewar_1.default.assert_equals(shark.shark(7, 8, 3, 4, true), "Alive!");
+TestCodewar_1.default.assert_equals(shark.shark(12, 50, 4, 8, true), 'Alive!');
+TestCodewar_1.default.assert_equals(shark.shark(7, 55, 4, 16, true), 'Alive!');
+TestCodewar_1.default.assert_equals(shark.shark(24, 0, 4, 8, true), 'Shark Bait!');
+TestCodewar_1.default.assert_equals(shark.shark(40, 35, 3, 20, true), 'Shark Bait!');
+TestCodewar_1.default.assert_equals(shark.shark(7, 8, 3, 4, true), 'Alive!');
 var nextid = require("./8 kyu Smallest unused ID");
 TestCodewar_1.default.assert_equals(nextid.nextId([0, 1, 2, 3, 5]), 4);
 TestCodewar_1.default.assert_equals(nextid.nextId([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), 11);
 var _8_kyu_Convert_a_Number_to_a_String_1 = require("./8 kyu Convert a Number to a String!");
 TestCodewar_1.default.assert_equals(_8_kyu_Convert_a_Number_to_a_String_1.numberToString(67), '67');
 var _8_kyu_Convert_boolean_values_to_strings__Yes__or__No_1 = require("./8 kyu Convert boolean values to strings 'Yes' or 'No'");
-TestCodewar_1.default.assert_equals(_8_kyu_Convert_boolean_values_to_strings__Yes__or__No_1.boolToWord(true), "Yes");
-TestCodewar_1.default.assert_equals(_8_kyu_Convert_boolean_values_to_strings__Yes__or__No_1.boolToWord(false), "No");
+TestCodewar_1.default.assert_equals(_8_kyu_Convert_boolean_values_to_strings__Yes__or__No_1.boolToWord(true), 'Yes');
+TestCodewar_1.default.assert_equals(_8_kyu_Convert_boolean_values_to_strings__Yes__or__No_1.boolToWord(false), 'No');
 var _8_kyu_Counting_sheep___1 = require("./8 kyu Counting sheep...");
-var array1 = [true, true, true, false,
-    true, true, true, true,
-    true, false, true, undefined,
-    true, false, null, true,
-    true, true, true, true,
-    false, false, true, true];
+var array1 = [
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    undefined,
+    true,
+    false,
+    null,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    true,
+];
 var result1 = _8_kyu_Counting_sheep___1.countSheeps(array1);
-TestCodewar_1.default.assert_equals(result1, 17, "There are 17 sheeps in total, not " + result1);
+TestCodewar_1.default.assert_equals(result1, 17, 'There are 17 sheeps in total, not ' + result1);
 var _7_kyu_Reverse_words_1 = require("./7 kyu Reverse words");
 TestCodewar_1.default.assert_equals(_7_kyu_Reverse_words_1.reverseWords('The quick brown fox jumps over the lazy dog.'), 'ehT kciuq nworb xof spmuj revo eht yzal .god');
 TestCodewar_1.default.assert_equals(_7_kyu_Reverse_words_1.reverseWords('apple'), 'elppa');
@@ -215,17 +275,17 @@ var _6_kyu_IQ_Test_1 = require("./6 kyu IQ Test");
 TestCodewar_1.default.assert_equals(_6_kyu_IQ_Test_1.iqTest('2 4 7 8 10'), 3);
 TestCodewar_1.default.assert_equals(_6_kyu_IQ_Test_1.iqTest('1 2 2'), 1);
 var _6_kyu_Counting_Duplicates_1 = require("./6 kyu Counting Duplicates"); //,duplicateCount_
-TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount(""), 0);
-TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("abcde"), 0);
-TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("aabbcde"), 2);
-TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("aabBcde"), 2, "should ignore case");
-TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("Indivisibility"), 1);
-TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount("Indivisibilities"), 2, "characters may not be adjacent");
+TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount(''), 0);
+TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount('abcde'), 0);
+TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount('aabbcde'), 2);
+TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount('aabBcde'), 2, 'should ignore case');
+TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount('Indivisibility'), 1);
+TestCodewar_1.default.assert_equals(_6_kyu_Counting_Duplicates_1.duplicateCount('Indivisibilities'), 2, 'characters may not be adjacent');
 // Test.assert_equals(duplicateCount_("Indivisibilities"), 2, "characters may not be adjacent");
 var _5_kyu_Primes_in_numbers_1 = require("./5 kyu Primes in numbers");
-TestCodewar_1.default.assert_equals_param_func(_5_kyu_Primes_in_numbers_1.G964.primeFactors, 7775460, "(2**2)(3**3)(5)(7)(11**2)(17)");
-TestCodewar_1.default.assert_equals_param_func(_5_kyu_Primes_in_numbers_1.G964.primeFactors, 7919, "(7919)");
-TestCodewar_1.default.assert_equals_param_func(_5_kyu_Primes_in_numbers_1.G964.primeFactors, 17 * 17 * 93 * 677, "(3)(17**2)(31)(677)");
+TestCodewar_1.default.assert_equals_param_func(_5_kyu_Primes_in_numbers_1.G964.primeFactors, 7775460, '(2**2)(3**3)(5)(7)(11**2)(17)');
+TestCodewar_1.default.assert_equals_param_func(_5_kyu_Primes_in_numbers_1.G964.primeFactors, 7919, '(7919)');
+TestCodewar_1.default.assert_equals_param_func(_5_kyu_Primes_in_numbers_1.G964.primeFactors, 17 * 17 * 93 * 677, '(3)(17**2)(31)(677)');
 var _6_kyu_Find_the_odd_int_1 = require("./6 kyu Find the odd int");
 TestCodewar_1.default.assert_equals_param_func(_6_kyu_Find_the_odd_int_1.findOdd, [20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5], 5);
 TestCodewar_1.default.assert_equals_param_func(_6_kyu_Find_the_odd_int_1.findOdd, [1, 1, 2, -2, 5, 2, 4, 4, -1, -2, 5], -1);
@@ -235,42 +295,69 @@ TestCodewar_1.default.assert_equals_param_func(_6_kyu_Find_the_odd_int_1.findOdd
 TestCodewar_1.default.assert_equals_param_func(_6_kyu_Find_the_odd_int_1.findOdd, [5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10], 1);
 // Test.assert_equals(findOdd([5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10]), 1);
 var _6_kyu_Your_order__please_1 = require("./6 kyu Your order, please");
-TestCodewar_1.default.assert_equals(_6_kyu_Your_order__please_1.order("is2 Thi1s T4est 3a"), "Thi1s is2 3a T4est");
-TestCodewar_1.default.assert_equals(_6_kyu_Your_order__please_1.order("4of Fo1r pe6ople g3ood th5e the2"), "Fo1r the2 g3ood 4of th5e pe6ople");
-TestCodewar_1.default.assert_equals(_6_kyu_Your_order__please_1.order(""), "");
+TestCodewar_1.default.assert_equals(_6_kyu_Your_order__please_1.order('is2 Thi1s T4est 3a'), 'Thi1s is2 3a T4est');
+TestCodewar_1.default.assert_equals(_6_kyu_Your_order__please_1.order('4of Fo1r pe6ople g3ood th5e the2'), 'Fo1r the2 g3ood 4of th5e pe6ople');
+TestCodewar_1.default.assert_equals(_6_kyu_Your_order__please_1.order(''), '');
 //かんたんなの
 var _8_kyu_Returning_Strings_1 = require("./8 kyu Returning Strings");
-TestCodewar_1.default.assert_equals(_8_kyu_Returning_Strings_1.greet("Ryan"), "Hello, Ryan how are you doing today?");
-TestCodewar_1.default.assert_equals(_8_kyu_Returning_Strings_1.greet("Shingles"), "Hello, Shingles how are you doing today?");
+TestCodewar_1.default.assert_equals(_8_kyu_Returning_Strings_1.greet('Ryan'), 'Hello, Ryan how are you doing today?');
+TestCodewar_1.default.assert_equals(_8_kyu_Returning_Strings_1.greet('Shingles'), 'Hello, Shingles how are you doing today?');
 var _8_kyu_Gravity_Flip_1 = require("./8 kyu Gravity Flip");
 TestCodewar_1.default.assert_equals(_8_kyu_Gravity_Flip_1.flip('R', [3, 2, 1, 2]), [1, 2, 2, 3]);
 TestCodewar_1.default.assert_equals(_8_kyu_Gravity_Flip_1.flip('L', [1, 4, 5, 3, 5]), [5, 5, 4, 3, 1]);
 var _8_kyu_A_wolf_in_sheep_s_clothing_1 = require("./8 kyu A wolf in sheep_s clothing");
-TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(["sheep", "sheep", "sheep", "sheep", "sheep", "wolf", "sheep", "sheep"]), "Oi! Sheep number 2! You are about to be eaten by a wolf!");
-TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(["sheep", "wolf", "sheep", "sheep", "sheep", "sheep", "sheep"]), "Oi! Sheep number 5! You are about to be eaten by a wolf!");
-TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(["wolf", "sheep", "sheep", "sheep", "sheep", "sheep", "sheep"]), "Oi! Sheep number 6! You are about to be eaten by a wolf!");
-TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(["sheep", "wolf", "sheep"]), "Oi! Sheep number 1! You are about to be eaten by a wolf!");
-TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(["sheep", "sheep", "wolf"]), "Pls go away and stop eating my sheep");
+TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep([
+    'sheep',
+    'sheep',
+    'sheep',
+    'sheep',
+    'sheep',
+    'wolf',
+    'sheep',
+    'sheep',
+]), 'Oi! Sheep number 2! You are about to be eaten by a wolf!');
+TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(['sheep', 'wolf', 'sheep', 'sheep', 'sheep', 'sheep', 'sheep']), 'Oi! Sheep number 5! You are about to be eaten by a wolf!');
+TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(['wolf', 'sheep', 'sheep', 'sheep', 'sheep', 'sheep', 'sheep']), 'Oi! Sheep number 6! You are about to be eaten by a wolf!');
+TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(['sheep', 'wolf', 'sheep']), 'Oi! Sheep number 1! You are about to be eaten by a wolf!');
+TestCodewar_1.default.assert_equals(_8_kyu_A_wolf_in_sheep_s_clothing_1.warnTheSheep(['sheep', 'sheep', 'wolf']), 'Pls go away and stop eating my sheep');
 //一旦飛ばす
 var _6_kyu_Are_they_the__same__1 = require("./6 kyu Are they the \"same\"?");
 var a1 = [121, 144, 19, 161, 19, 144, 19, 11];
-var a2 = [11 * 11, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19];
+var a2 = [
+    11 * 11,
+    121 * 121,
+    144 * 144,
+    19 * 19,
+    161 * 161,
+    19 * 19,
+    144 * 144,
+    19 * 19,
+];
 TestCodewar_1.default.assert_equals(_6_kyu_Are_they_the__same__1.comp(a1, a2), true);
 a1 = [121, 144, 19, 161, 19, 144, 19, 11];
-a2 = [11 * 21, 121 * 121, 144 * 144, 19 * 19, 161 * 161, 19 * 19, 144 * 144, 19 * 19];
+a2 = [
+    11 * 21,
+    121 * 121,
+    144 * 144,
+    19 * 19,
+    161 * 161,
+    19 * 19,
+    144 * 144,
+    19 * 19,
+];
 TestCodewar_1.default.assert_equals(_6_kyu_Are_they_the__same__1.comp(a1, a2), false);
 a1 = [2, 2, 3];
 a2 = [4, 9, 9];
 TestCodewar_1.default.assert_equals(_6_kyu_Are_they_the__same__1.comp(a1, a2), false);
 //* 拡張メソッド fizzBuzzOutput(30)
 var _6_kyu_Valid_Braces_1 = require("./6 kyu Valid Braces");
-TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("()"), true);
-TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("[(])"), false);
-TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("(){}[]"), true);
-TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("([{}])"), true);
-TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("(}"), false);
-TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("[(])"), false);
-TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces("[({})](]"), false);
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces('()'), true);
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces('[(])'), false);
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces('(){}[]'), true);
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces('([{}])'), true);
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces('(}'), false);
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces('[(])'), false);
+TestCodewar_1.default.assert_equals(_6_kyu_Valid_Braces_1.validBraces('[({})](]'), false);
 // 2020/10/22 16:22
 var _7_kyu_String_ends_with_1 = require("./7 kyu String ends with?");
 TestCodewar_1.default.assert_equals(_7_kyu_String_ends_with_1.solution('abcde', 'cde'), true);
@@ -286,10 +373,10 @@ TestCodewar_1.default.assert_equals(_7_kyu_Count_the_divisors_of_a_number_1.divi
 console.log(_7_kyu_Count_the_divisors_of_a_number_1.divisors2(10));
 // 2020/10/23 19:47
 var _7_kyu_Two_to_One_1 = require("./7 kyu Two to One");
-TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("aretheyhere", "yestheyarehere"), "aehrsty");
-TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("loopingisfunbutdangerous", "lessdangerousthancoding"), "abcdefghilnoprstu");
-TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("inmanylanguages", "theresapairoffunctions"), "acefghilmnoprstuy");
-TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest("lordsofthefallen", "gamekult"), "adefghklmnorstu");
+TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest('aretheyhere', 'yestheyarehere'), 'aehrsty');
+TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest('loopingisfunbutdangerous', 'lessdangerousthancoding'), 'abcdefghilnoprstu');
+TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest('inmanylanguages', 'theresapairoffunctions'), 'acefghilmnoprstuy');
+TestCodewar_1.default.assert_equals(_7_kyu_Two_to_One_1.G9642.longest('lordsofthefallen', 'gamekult'), 'adefghklmnorstu');
 // 2020/10/27 13:29
 var _6_kyu_Take_a_Ten_Minute_Walk_1 = require("./6 kyu Take a Ten Minute Walk");
 TestCodewar_1.default.assert_equals(_6_kyu_Take_a_Ten_Minute_Walk_1.isValidWalk(['n', 's', 'n', 's', 'n', 's', 'n', 's', 'n', 's']), true);
@@ -303,25 +390,65 @@ TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(12), [
 TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(13), [[7, 3]]);
 TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(16), [[4, 0]]);
 TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(90002), []);
-TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(90005), [[45003, 22501], [9003, 4499], [981, 467], [309, 37]]);
+TestCodewar_1.default.assert_equals(_5_kyu_Diophantine_Equation_1.solequa(90005), [
+    [45003, 22501],
+    [9003, 4499],
+    [981, 467],
+    [309, 37],
+]);
 // 2020/11/03  0:18
 var _6_kyu_Multiplication_table_1 = require("./6 kyu Multiplication table");
 TestCodewar_1.default.assert_equals(_6_kyu_Multiplication_table_1.multiplicationTable(1), [[1]]);
-TestCodewar_1.default.assert_equals(_6_kyu_Multiplication_table_1.multiplicationTable(2), [[1, 2], [2, 4]]);
-TestCodewar_1.default.assert_equals(_6_kyu_Multiplication_table_1.multiplicationTable(3), [[1, 2, 3], [2, 4, 6], [3, 6, 9]]);
+TestCodewar_1.default.assert_equals(_6_kyu_Multiplication_table_1.multiplicationTable(2), [
+    [1, 2],
+    [2, 4],
+]);
+TestCodewar_1.default.assert_equals(_6_kyu_Multiplication_table_1.multiplicationTable(3), [
+    [1, 2, 3],
+    [2, 4, 6],
+    [3, 6, 9],
+]);
 // 2020/11/04 22:37
 var _6_kyu_Irreducible_Sum_of_Rationals_1 = require("./6 kyu Irreducible Sum of Rationals");
 TimeMeasure_1.default.measure('sumFracts', function () {
-    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts, [[1, 2], [1, 3], [1, 4]], "[13, 12]");
-    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts, [[1, 3], [5, 3]], "2");
-    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts, [[12, 3], [15, 3]], "9");
-    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts, [[2, 7], [1, 3], [1, 12]], "[59, 84]");
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts, [
+        [1, 2],
+        [1, 3],
+        [1, 4],
+    ], '[13, 12]');
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts, [
+        [1, 3],
+        [5, 3],
+    ], '2');
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts, [
+        [12, 3],
+        [15, 3],
+    ], '9');
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts, [
+        [2, 7],
+        [1, 3],
+        [1, 12],
+    ], '[59, 84]');
 });
 TimeMeasure_1.default.measure('sumFracts1', function () {
-    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [[1, 2], [1, 3], [1, 4]], "[13, 12]");
-    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [[1, 3], [5, 3]], "2");
-    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [[12, 3], [15, 3]], "9");
-    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [[2, 7], [1, 3], [1, 12]], "[59, 84]");
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [
+        [1, 2],
+        [1, 3],
+        [1, 4],
+    ], '[13, 12]');
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [
+        [1, 3],
+        [5, 3],
+    ], '2');
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [
+        [12, 3],
+        [15, 3],
+    ], '9');
+    TestCodewar_1.default.assert_equals_param_func(_6_kyu_Irreducible_Sum_of_Rationals_1.G96422.sumFracts1, [
+        [2, 7],
+        [1, 3],
+        [1, 12],
+    ], '[59, 84]');
 });
 // 2020/11/05 18:31
 var _8_kyu_Square_n__Sum_1 = require("./8 kyu Square(n) Sum");
@@ -351,11 +478,11 @@ TimeMeasure_1.default.measure('dig_pow', function () {
 // 2020/11/12 21:40
 var _8_kyu_Reversed_Words_1 = require("./8 kyu Reversed Words");
 TimeMeasure_1.default.measure('dig_pow', function () {
-    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("hello world!"), "world! hello");
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords('hello world!'), 'world! hello');
     TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("yoda doesn't speak like this"), "this like speak doesn't yoda");
-    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("foobar"), "foobar");
-    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("kata editor"), "editor kata");
-    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords("row row row your boat"), "boat your row row row");
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords('foobar'), 'foobar');
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords('kata editor'), 'editor kata');
+    TestCodewar_1.default.assert_equals(_8_kyu_Reversed_Words_1.reversedWords('row row row your boat'), 'boat your row row row');
 });
 // 2020/11/16 23:35
 var _8_kyu_Keep_Hydrated_1 = require("./8 kyu Keep Hydrated");
@@ -420,8 +547,21 @@ var _7_kyu_Product_Array__Array_Series__5_1 = require("./7 kyu Product Array (Ar
 TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([12, 20]), [20, 12]);
 TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([12, 20]), [20, 12]);
 TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([3, 27, 4, 2]), [216, 24, 162, 324]);
-TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([13, 10, 5, 2, 9]), [900, 1170, 2340, 5850, 1300]);
-TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([16, 17, 4, 3, 5, 2]), [2040, 1920, 8160, 10880, 6528, 16320]);
+TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([13, 10, 5, 2, 9]), [
+    900,
+    1170,
+    2340,
+    5850,
+    1300,
+]);
+TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([16, 17, 4, 3, 5, 2]), [
+    2040,
+    1920,
+    8160,
+    10880,
+    6528,
+    16320,
+]);
 // 2020/12/07 11:37
 var _7_kyu_Minimum_Steps__Array_Series__6_1 = require("./7 kyu Minimum Steps (Array Series #6)");
 TestCodewar_1.default.assert_equals(_7_kyu_Minimum_Steps__Array_Series__6_1.minimumSteps([4, 6, 3], 7), 1);
@@ -458,11 +598,11 @@ var _5_kyu_Decimal_to_Factorial_and_Back_1 = require("./5 kyu Decimal to Factori
 // Test.assert_equals(G964_1208.dec2FactString(463), "341010");
 // Test.assert_equals(G964_1208.dec2FactString(2982), "4041000");
 // Test.assert_equals(G964_1208.dec2FactString(36288000), "A0000000000");
-TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.dec2FactString(3628800054), "76A0000021000");
+TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.dec2FactString(3628800054), '76A0000021000');
 // Test.assert_equals(G964_1208.factString2Dec("341010"), 463);
-TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.factString2Dec("76A0000021000"), 3628800054);
-TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208_BP.dec2FactString(3628800054), "76A0000021000");
-TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208_BP.factString2Dec("76A0000021000"), 3628800054);
+TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208.factString2Dec('76A0000021000'), 3628800054);
+TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208_BP.dec2FactString(3628800054), '76A0000021000');
+TestCodewar_1.default.assert_equals(_5_kyu_Decimal_to_Factorial_and_Back_1.G964_1208_BP.factString2Dec('76A0000021000'), 3628800054);
 // 2020/12/09 23:45
 var _4_kyu_Next_bigger_number_with_the_same_digits_1 = require("./4 kyu Next bigger number with the same digits");
 // Test.assert_equals(isMaxAtFirst(1234567890), false);
@@ -496,8 +636,15 @@ TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWei
 TestCodewar_1.default.assert_equals(_7_kyu_Row_Weights_Array_Series__8__1.rowWeights([0, 1, 0]), [0, 1]);
 // 2020/12/13 17:30
 var _4_kyu_Matrix_Determinant_1 = require("./4 kyu Matrix Determinant");
-var m1 = [[1, 3], [2, 5]];
-var m2 = [[2, 5, 3], [1, -2, -1], [1, 3, 4]];
+var m1 = [
+    [1, 3],
+    [2, 5],
+];
+var m2 = [
+    [2, 5, 3],
+    [1, -2, -1],
+    [1, 3, 4],
+];
 chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant([[1]])).to.equal(1);
 chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m1)).to.equal(-1);
 chai_1.expect(_4_kyu_Matrix_Determinant_1.determinant(m2)).to.equal(-20);
@@ -519,25 +666,32 @@ var geneticAlgorithm = new _5_kyu_Binary_Genetic_Algorithms_1.GeneticAlgorithm()
 // testing("0.66", ["1/2", "1/7", "1/59", "1/5163", "1/53307975"]);
 // 2020/12/21 21:44
 var _5_kyu_Help_your_granny_1 = require("./5 kyu Help your granny!");
-var friends1 = ["A1", "A2", "A3", "A4", "A5"];
-var fTowns1 = [["A1", "X1"], ["A2", "X2"], ["A3", "X3"], ["A4", "X4"]];
-var distTable1 = ["X1", 100.0, "X2", 200.0, "X3", 250.0, "X4", 300.0];
-TestCodewar_1.default.assert_equals(_5_kyu_Help_your_granny_1.G964_20201222.tour(friends1, fTowns1, distTable1), 889);
-friends1 = ['A1', 'A2', 'A3', 'A4', 'A5'];
-fTowns1 = [['A1', 'X1'],
+var friends1 = ['A1', 'A2', 'A3', 'A4', 'A5'];
+var fTowns1 = [
+    ['A1', 'X1'],
     ['A2', 'X2'],
     ['A3', 'X3'],
     ['A4', 'X4'],
-    ['A5', 'X5']];
+];
+var distTable1 = ['X1', 100.0, 'X2', 200.0, 'X3', 250.0, 'X4', 300.0];
+TestCodewar_1.default.assert_equals(_5_kyu_Help_your_granny_1.G964_20201222.tour(friends1, fTowns1, distTable1), 889);
+friends1 = ['A1', 'A2', 'A3', 'A4', 'A5'];
+fTowns1 = [
+    ['A1', 'X1'],
+    ['A2', 'X2'],
+    ['A3', 'X3'],
+    ['A4', 'X4'],
+    ['A5', 'X5'],
+];
 distTable1 = ['X1', 100, 'X2', 200, 'X3', 250, 'X4', 300, 'X5', 320];
 TestCodewar_1.default.assert_equals(_5_kyu_Help_your_granny_1.G964_20201222.tour(friends1, fTowns1, distTable1), 1020);
 // 2020/12/24  0:57
 var _7_kyu_Mumbling_1 = require("./7 kyu Mumbling");
-chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("ZpglnRxqenU"), "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu");
-chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("NyffsGeyylB"), "N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb");
-chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("MjtkuBovqrU"), "M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu");
-chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("EvidjUnokmM"), "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm");
-chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum("HbideVbxncC"), "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc");
+chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum('ZpglnRxqenU'), 'Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu');
+chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum('NyffsGeyylB'), 'N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb');
+chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum('MjtkuBovqrU'), 'M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu');
+chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum('EvidjUnokmM'), 'E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm');
+chai_1.assert.strictEqual(_7_kyu_Mumbling_1.accum('HbideVbxncC'), 'H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc');
 // 2020/12/25  0:40
 var _7_kyu_Drying_Potatoes_1 = require("./7 kyu Drying Potatoes");
 chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(82, 127, 80), 114);
@@ -546,8 +700,15 @@ chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(84, 65, 80), 52);
 chai_1.assert.strictEqual(_7_kyu_Drying_Potatoes_1.potatoes(83, 105, 79), 85);
 // 2020/12/27 23:52
 var _5_kyu_Integers__Recreation_One_1 = require("./5 kyu Integers: Recreation One");
-TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.listSquared(1, 250), [[1, 1], [42, 2500], [246, 84100]]);
-TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.listSquared(42, 250), [[42, 2500], [246, 84100]]);
+TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.listSquared(1, 250), [
+    [1, 1],
+    [42, 2500],
+    [246, 84100],
+]);
+TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.listSquared(42, 250), [
+    [42, 2500],
+    [246, 84100],
+]);
 TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.listSquared(250, 500), [[287, 84100]]);
 TestCodewar_1.default.assert_equals(_5_kyu_Integers__Recreation_One_1.G964_1227.listSquared(300, 600), []);
 // 2020/12/30  0:05
