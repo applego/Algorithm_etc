@@ -1,6 +1,6 @@
 export class G964_20210217 {
   public static mxdiflg = (a1: string[], a2: string[]): number => {
-    if (!a1 || !a2) return -1;
+    if (a1.length === 0 || a2.length === 0) return -1;
     let max1 = 0;
     let min1 = Number.MAX_VALUE;
     a1.forEach((v) => {
