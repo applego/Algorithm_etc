@@ -58,7 +58,7 @@ mnop|dhlp
 
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.oper = exports.selfieAndDiag1 = exports.diag1Sym = exports.rot90Clock = void 0;
+exports.oper____ = exports.selfieAndDiag1____ = exports.diag1Sym____ = exports.rot90Clock____ = exports.oper = exports.selfieAndDiag1 = exports.diag1Sym = exports.rot90Clock = void 0;
 /**
  *
  */
@@ -110,4 +110,35 @@ function oper(fct, s) {
     return fct(s);
 }
 exports.oper = oper;
+// for submit
+function rot90Clock____(strng) {
+    return strng.split('\n')
+        .reverse()
+        .map(function (v, i, arr) {
+        return arr.map(function (el) { return el[i]; }).join('');
+    }).join('\n');
+}
+exports.rot90Clock____ = rot90Clock____;
+function diag1Sym____(strng) {
+    return strng.split('\n')
+        .map(function (v, i, arr) {
+        return arr.map(function (el) { return el[i]; }).join('');
+    }).join('\n');
+}
+exports.diag1Sym____ = diag1Sym____;
+function selfieAndDiag1____(strng) {
+    var arrSelf = strng.split('\n');
+    var arrDiag = diag1Sym(strng).split('\n');
+    var arrResult = [];
+    for (var i = 0; i < arrSelf.length; i++) {
+        var elnew = arrSelf[i] + "|" + arrDiag[i];
+        arrResult.push(elnew);
+    }
+    return arrResult.join('\n');
+}
+exports.selfieAndDiag1____ = selfieAndDiag1____;
+function oper____(fct, s) {
+    return fct(s);
+}
+exports.oper____ = oper____;
 //# sourceMappingURL=6 kyu Moves in squared strings (III).js.map

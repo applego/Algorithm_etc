@@ -1,3 +1,3 @@
 
-NEWFILENAME="8 kyu If you can't sleep, just count sheep!!"
+NEWFILENAME="7 kyu Maximum Length Difference"
 touch "codewars/$NEWFILENAME.ts"

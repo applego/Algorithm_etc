@@ -392,3 +392,37 @@ describe('Sample Test Cases', function () {
     assert.equal(countSheep(3), '1 sheep...2 sheep...3 sheep...');
   });
 });
+
+// 2021/02/17 20:51
+import { G964_20210217 } from './7 kyu Maximum Length Difference';
+function testing_20210217(actual: number, expected: number) {
+  assert.equal(actual, expected);
+}
+
+describe('Fixed Tests', function () {
+  it('Basic tests mxdiflg', function () {
+    var s1 = [
+      'hoqq',
+      'bbllkw',
+      'oox',
+      'ejjuyyy',
+      'plmiis',
+      'xxxzgpsssa',
+      'xxwwkktt',
+      'znnnnfqknaz',
+      'qqquuhii',
+      'dvvvwz',
+    ];
+    var s2 = ['cccooommaaqqoxii', 'gggqaffhhh', 'tttoowwwmmww'];
+    testing_20210217(G964_20210217.mxdiflg(s1, s2), 13);
+    s1 = [
+      'ejjjjmmtthh',
+      'zxxuueeg',
+      'aanlljrrrxx',
+      'dqqqaaabbb',
+      'oocccffuucccjjjkkkjyyyeehh',
+    ];
+    s2 = ['bbbaaayddqbbrrrv'];
+    testing_20210217(G964_20210217.mxdiflg(s1, s2), 10);
+  });
+});
