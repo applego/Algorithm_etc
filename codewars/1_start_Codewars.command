@@ -1,7 +1,7 @@
 
-NEWFILENAME="7 kyu Maximum Length Difference"
+NEWFILENAME="8 kyu Even or Odd"
 touch "codewars/$NEWFILENAME.ts"
 
 
-NEWFILENAME2="第一回アルゴリズム実技検定B - 増減管理"
+NEWFILENAME2="第一回アルゴリズム実技検定C - 3 番目"
 touch "AtCoder/$NEWFILENAME2.ts"
