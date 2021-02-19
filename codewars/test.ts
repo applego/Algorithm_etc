@@ -437,3 +437,13 @@ describe('solution', function () {
     assert.equal(even_or_odd(1), 'Odd');
   });
 });
+
+// 2021/02/19 22:10
+import { thirdBiggerNumber } from '../AtCoder/第一回アルゴリズム実技検定C - 3 番目';
+describe('AtCoder/第一回アルゴリズム実技検定C - 3 番目', () => {
+  it('Basic tests', () => {
+    assert.equal(thirdBiggerNumber('4 18 25 20 9 13'), 18);
+    assert.equal(thirdBiggerNumber('95 96 97 98 99 100'), 98);
+    assert.equal(thirdBiggerNumber('19 92 3 35 78 1'), 35);
+  });
+});
