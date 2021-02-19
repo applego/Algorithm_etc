@@ -426,3 +426,14 @@ describe('Fixed Tests', function () {
     testing_20210217(G964_20210217.mxdiflg(s1, s2), 10);
   });
 });
+
+// 2021/02/19 21:38
+import { even_or_odd } from './8 kyu Even or Odd';
+describe('solution', function () {
+  it('basicTests', function () {
+    assert.equal(even_or_odd(2), 'Even');
+    assert.equal(even_or_odd(0), 'Even');
+    assert.equal(even_or_odd(7), 'Odd');
+    assert.equal(even_or_odd(1), 'Odd');
+  });
+});
