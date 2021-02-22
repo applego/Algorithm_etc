@@ -447,3 +447,8 @@ describe('AtCoder/第一回アルゴリズム実技検定C - 3 番目', () => {
     assert.equal(thirdBiggerNumber('19 92 3 35 78 1'), 35);
   });
 });
+
+// 2021/02/22 23:45
+import { greet } from './8 kyu Function 1 - hello world';
+describe('hello world', () =>
+  it('greeting', () => assert.equal(greet(), 'hello world!')));
