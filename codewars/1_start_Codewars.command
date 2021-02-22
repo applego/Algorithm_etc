@@ -1,5 +1,5 @@
 
-NEWFILENAME="8 kyu Even or Odd"
+NEWFILENAME="8 kyu Grasshopper - Terminal game move function"
 touch "codewars/$NEWFILENAME.ts"
 
 

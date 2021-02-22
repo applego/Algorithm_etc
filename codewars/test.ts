@@ -452,3 +452,10 @@ describe('AtCoder/第一回アルゴリズム実技検定C - 3 番目', () => {
 import { greet } from './8 kyu Function 1 - hello world';
 describe('hello world', () =>
   it('greeting', () => assert.equal(greet(), 'hello world!')));
+
+import { move } from './8 kyu Grasshopper - Terminal game move function';
+describe('Fixed tests', () => {
+  it('move(0, 4)', () => assert.strictEqual(move(0, 4), 8));
+  it('move(3, 6)', () => assert.strictEqual(move(3, 6), 15));
+  it('move(2, 5)', () => assert.strictEqual(move(2, 5), 12));
+});
