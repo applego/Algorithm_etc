@@ -1,5 +1,5 @@
 
-NEWFILENAME="8 kyu Grasshopper - Terminal game move function"
+NEWFILENAME="7 kyu Growth of a Population"
 touch "codewars/$NEWFILENAME.ts"
 
 

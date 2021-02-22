@@ -459,3 +459,24 @@ describe('Fixed tests', () => {
   it('move(3, 6)', () => assert.strictEqual(move(3, 6), 15));
   it('move(2, 5)', () => assert.strictEqual(move(2, 5), 12));
 });
+
+// 2021/02/22 23:54
+import { G964_20210222 } from './7 kyu Growth of a Population';
+function testing20210222(
+  p0: number,
+  percent: number,
+  aug: number,
+  p: number,
+  expected: number
+) {
+  assert.equal(G964_20210222.nbYear(p0, percent, aug, p), expected);
+}
+
+describe('Fixed Tests', function () {
+  it('Basic tests nbYear', function () {
+    testing20210222(1500, 5, 100, 5000, 15);
+    testing20210222(1500000, 2.5, 10000, 2000000, 10);
+    testing20210222(1500000, 0.25, 1000, 2000000, 94);
+    testing20210222(1500000, 0.25, -1000, 2000000, 151);
+  });
+});
