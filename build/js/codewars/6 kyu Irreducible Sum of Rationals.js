@@ -1,4 +1,20 @@
 "use strict";
+var __read = (this && this.__read) || function (o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.G964 = exports.G96422 = void 0;
 var G96422 = /** @class */ (function () {
@@ -100,11 +116,11 @@ var G964 = /** @class */ (function () {
     G964.sumFracts = function (l) {
         if (l.length === 0)
             return null;
-        var _a = l.reduce(function (_a, _b) {
-            var a = _a[0], x = _a[1];
-            var b = _b[0], y = _b[1];
+        var _a = __read(l.reduce(function (_a, _b) {
+            var _c = __read(_a, 2), a = _c[0], x = _c[1];
+            var _d = __read(_b, 2), b = _d[0], y = _d[1];
             return [a * y + b * x, x * y];
-        }), n = _a[0], d = _a[1];
+        }), 2), n = _a[0], d = _a[1];
         var g = G964.gcd(n, d);
         return g === d ? "" + n / d : "[" + n / g + ", " + d / g + "]";
     };

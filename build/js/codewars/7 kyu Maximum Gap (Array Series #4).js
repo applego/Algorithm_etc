@@ -1,4 +1,15 @@
 "use strict";
+var __values = (this && this.__values) || function(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.maxGap_bp = exports.maxGap = void 0;
 function maxGap(nums) {
@@ -18,11 +29,21 @@ function maxGap(nums) {
 exports.maxGap = maxGap;
 // BP
 function maxGap_bp(nums) {
+    var e_1, _a;
     var max = -Infinity;
     nums = nums.sort(function (a, b) { return a - b; });
-    for (var _i = 0, _a = nums.slice(0, -1); _i < _a.length; _i++) {
-        var n = _a[_i];
-        max = Math.max(max, nums[nums.indexOf(n) + 1] - n);
+    try {
+        for (var _b = __values(nums.slice(0, -1)), _c = _b.next(); !_c.done; _c = _b.next()) {
+            var n = _c.value;
+            max = Math.max(max, nums[nums.indexOf(n) + 1] - n);
+        }
+    }
+    catch (e_1_1) { e_1 = { error: e_1_1 }; }
+    finally {
+        try {
+            if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+        }
+        finally { if (e_1) throw e_1.error; }
     }
     return max;
 }

@@ -1,4 +1,38 @@
 "use strict";
+/**
+ 10
+9
+10
+3
+100
+100
+90
+80
+10
+30
+10
+
+up 1
+down 7
+up 97
+stay
+down 10
+down 10
+down 70
+up 20
+down 20
+
+up 1
+down 7
+up 97
+down 0
+down 10
+down 10
+down 70
+up 20
+down 20
+
+ */
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -18,44 +52,22 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-var __read = (this && this.__read) || function (o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        }
-        finally { if (e) throw e.error; }
-    }
-    return ar;
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-/**
-消える魔球
-V m/s
-T s
-S s
-D m
-
-T 秒後のボールの位置（ピッチャーからの距離）は V * T
-S 秒後のボールの位置（ピッチャーからの距離）は V * S
-
- */
 var fs = __importStar(require("fs"));
-var _a = __read(fs
+var input = fs
     .readFileSync('/dev/stdin', 'utf8')
     .trim()
-    .split(' ')
-    .map(Number), 4), v = _a[0], t = _a[1], s = _a[2], d = _a[3];
-if (v * t <= d && d <= v * s) {
-    console.log('No');
-}
-else {
-    console.log('Yes');
-}
-//# sourceMappingURL=ABC191A - Vanishing Pitch.js.map
+    .split('\n')
+    .map(Number);
+input.reduce(function (pre, curr, i) {
+    var diff = curr - pre;
+    var upordownorstay = diff === 0 ? 'stay' : diff > 0 ? 'up' : 'down';
+    if (i > 1) {
+        if (diff === 0)
+            console.log('stay');
+        else
+            console.log((diff > 0 ? 'up' : 'down') + " " + Math.abs(diff));
+    }
+    return curr;
+});
+//# sourceMappingURL=第一回アルゴリズム実技検定B - 増減管理.js.map

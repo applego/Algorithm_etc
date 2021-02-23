@@ -18,6 +18,22 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __read = (this && this.__read) || function (o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
 消える魔球
@@ -32,7 +48,7 @@ S 秒後のボールの位置（ピッチャーからの距離）は V * S
  */
 var fs = __importStar(require("fs"));
 var input = fs.readFileSync('/dev/stdin', 'utf8').trim().split('\n');
-var _a = input[0].split(' '), n = _a[0], x = _a[1];
+var _a = __read(input[0].split(' '), 2), n = _a[0], x = _a[1];
 var arr = input[1].split(' ');
 var arrRemoveX = arr.filter(function (v) { return v !== x; });
 console.log(arrRemoveX.join(' '));
