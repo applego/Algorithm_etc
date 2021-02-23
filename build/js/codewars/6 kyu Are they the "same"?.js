@@ -1,10 +1,34 @@
 "use strict";
-var __spreadArrays = (this && this.__spreadArrays) || function () {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
+var __values = (this && this.__values) || function(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+};
+var __read = (this && this.__read) || function (o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+};
+var __spread = (this && this.__spread) || function () {
+    for (var ar = [], i = 0; i < arguments.length; i++) ar = ar.concat(__read(arguments[i]));
+    return ar;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.comp_ = exports.comp = exports.fizzBuzzOutput = void 0;
@@ -19,17 +43,27 @@ function fizzBuzzOutput(num) {
 exports.fizzBuzzOutput = fizzBuzzOutput;
 // ↑TSの拡張メソッドの呼び出し側（問題と無関係）
 function comp(a1, a2) {
+    var e_1, _a;
     if (!a1 || !a2)
         return false;
-    for (var _i = 0, a2_1 = a2; _i < a2_1.length; _i++) {
-        var value = a2_1[_i];
-        var sqrt = Math.sqrt(value);
-        if (!a1.includes(sqrt))
-            return false;
-        else {
-            var delete_idx = a1.indexOf(sqrt);
-            delete a1[delete_idx];
+    try {
+        for (var a2_1 = __values(a2), a2_1_1 = a2_1.next(); !a2_1_1.done; a2_1_1 = a2_1.next()) {
+            var value = a2_1_1.value;
+            var sqrt = Math.sqrt(value);
+            if (!a1.includes(sqrt))
+                return false;
+            else {
+                var delete_idx = a1.indexOf(sqrt);
+                delete a1[delete_idx];
+            }
         }
+    }
+    catch (e_1_1) { e_1 = { error: e_1_1 }; }
+    finally {
+        try {
+            if (a2_1_1 && !a2_1_1.done && (_a = a2_1.return)) _a.call(a2_1);
+        }
+        finally { if (e_1) throw e_1.error; }
     }
     return true;
     // your code
@@ -43,8 +77,8 @@ exports.comp = comp;
 function comp_(a1, a2) {
     if (!(a1 && a2) || a1.length !== a2.length)
         return false;
-    var a1SortedSquared = __spreadArrays(a1).sort().map(function (n) { return Math.pow(n, 2); });
-    var a2Sorted = __spreadArrays(a2).sort();
+    var a1SortedSquared = __spread(a1).sort().map(function (n) { return Math.pow(n, 2); });
+    var a2Sorted = __spread(a2).sort();
     return JSON.stringify(a1SortedSquared) === JSON.stringify(a2Sorted);
 }
 exports.comp_ = comp_;

@@ -5,22 +5,19 @@ var G964_20210217 = /** @class */ (function () {
     function G964_20210217() {
     }
     G964_20210217.mxdiflg = function (a1, a2) {
-        if (!a1 || !a2)
+        if (a1.length === 0 || a2.length === 0)
             return -1;
         var max1 = 0;
-        var min1 = Number.MAX_SAFE_INTEGER;
+        var min1 = Number.MAX_VALUE;
         a1.forEach(function (v) {
-            console.log(v.length);
             if (v.length > max1)
                 max1 = v.length;
             if (v.length < min1)
                 min1 = v.length;
         });
         var max2 = 0;
-        var min2 = Number.MAX_SAFE_INTEGER;
-        console.log('a2');
+        var min2 = Number.MAX_VALUE;
         a2.forEach(function (v) {
-            console.log(v.length);
             if (v.length > max2)
                 max2 = v.length;
             if (v.length < min2)

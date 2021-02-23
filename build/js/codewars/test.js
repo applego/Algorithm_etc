@@ -406,4 +406,59 @@ mocha_1.describe('Fixed Tests', function () {
         testing_20210217(_7_kyu_Maximum_Length_Difference_1.G964_20210217.mxdiflg(s1, s2), 10);
     });
 });
+// 2021/02/19 21:38
+var _8_kyu_Even_or_Odd_1 = require("./8 kyu Even or Odd");
+mocha_1.describe('solution', function () {
+    mocha_1.it('basicTests', function () {
+        chai_1.assert.equal(_8_kyu_Even_or_Odd_1.even_or_odd(2), 'Even');
+        chai_1.assert.equal(_8_kyu_Even_or_Odd_1.even_or_odd(0), 'Even');
+        chai_1.assert.equal(_8_kyu_Even_or_Odd_1.even_or_odd(7), 'Odd');
+        chai_1.assert.equal(_8_kyu_Even_or_Odd_1.even_or_odd(1), 'Odd');
+    });
+});
+// 2021/02/19 22:10
+var _____________C___3___1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u5B9F\u6280\u691C\u5B9AC - 3 \u756A\u76EE");
+mocha_1.describe('AtCoder/第一回アルゴリズム実技検定C - 3 番目', function () {
+    mocha_1.it('Basic tests', function () {
+        chai_1.assert.equal(_____________C___3___1.thirdBiggerNumber('4 18 25 20 9 13'), 18);
+        chai_1.assert.equal(_____________C___3___1.thirdBiggerNumber('95 96 97 98 99 100'), 98);
+        chai_1.assert.equal(_____________C___3___1.thirdBiggerNumber('19 92 3 35 78 1'), 35);
+    });
+});
+// 2021/02/22 23:45
+var _8_kyu_Function_1___hello_world_1 = require("./8 kyu Function 1 - hello world");
+mocha_1.describe('hello world', function () {
+    return mocha_1.it('greeting', function () { return chai_1.assert.equal(_8_kyu_Function_1___hello_world_1.greet(), 'hello world!'); });
+});
+var _8_kyu_Grasshopper___Terminal_game_move_function_1 = require("./8 kyu Grasshopper - Terminal game move function");
+mocha_1.describe('Fixed tests', function () {
+    mocha_1.it('move(0, 4)', function () { return chai_1.assert.strictEqual(_8_kyu_Grasshopper___Terminal_game_move_function_1.move(0, 4), 8); });
+    mocha_1.it('move(3, 6)', function () { return chai_1.assert.strictEqual(_8_kyu_Grasshopper___Terminal_game_move_function_1.move(3, 6), 15); });
+    mocha_1.it('move(2, 5)', function () { return chai_1.assert.strictEqual(_8_kyu_Grasshopper___Terminal_game_move_function_1.move(2, 5), 12); });
+});
+// 2021/02/22 23:54
+var _7_kyu_Growth_of_a_Population_1 = require("./7 kyu Growth of a Population");
+function testing20210222(p0, percent, aug, p, expected) {
+    chai_1.assert.equal(_7_kyu_Growth_of_a_Population_1.G964_20210222.nbYear(p0, percent, aug, p), expected);
+}
+mocha_1.describe('Fixed Tests', function () {
+    mocha_1.it('Basic tests nbYear', function () {
+        testing20210222(1500, 5, 100, 5000, 15);
+        testing20210222(1500000, 2.5, 10000, 2000000, 10);
+        testing20210222(1500000, 0.25, 1000, 2000000, 94);
+        testing20210222(1500000, 0.25, -1000, 2000000, 151);
+    });
+});
+// 2021/02/23 10:02
+var _____________D_______1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u5B9F\u6280\u691C\u5B9AD - \u91CD\u8907\u691C\u67FB");
+mocha_1.describe('AtCoder/第一回アルゴリズム実技検定D - 重複検査', function () {
+    mocha_1.it('Basic tests', function () {
+        var input = "6\n1\n5\n6\n3\n2\n6\n";
+        var output = '6 4';
+        chai_1.assert.equal(_____________D_______1.test20210223(input), output);
+        input = "7\n5\n4\n3\n2\n7\n6\n1\n";
+        output = 'Correct';
+        chai_1.assert.equal(_____________D_______1.test20210223(input), output);
+    });
+});
 //# sourceMappingURL=test.js.map

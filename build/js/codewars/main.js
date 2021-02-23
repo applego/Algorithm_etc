@@ -8,6 +8,14 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/02/23 10:02
+var _____________D_______1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u5B9F\u6280\u691C\u5B9AD - \u91CD\u8907\u691C\u67FB");
+var input = "6\n1\n5\n6\n3\n2\n6\n";
+var output = '6 4';
+chai_1.assert.equal(_____________D_______1.test20210223(input), output);
+input = "7\n5\n4\n3\n2\n7\n6\n1\n";
+output = 'Correct';
+chai_1.assert.equal(_____________D_______1.test20210223(input), output);
 // 2021/02/17 20:51
 var _7_kyu_Maximum_Length_Difference_1 = require("./7 kyu Maximum Length Difference");
 function testing_20210217(actual, expected) {

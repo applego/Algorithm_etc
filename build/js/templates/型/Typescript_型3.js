@@ -7,6 +7,17 @@ TypeScriptの型入門の内容をとりあえず知っていれば解ける問�
 関数に適切な型を付ける問題では、型引数を自由に足して構いません。また、引数や返り値の型にアノテーションを施してもTypeScriptの型推論能力が足りずに関数内で型エラーが発生することがあります。その場合はasなどを用いて適宜エラーを回避しても構いません。
 
 */
+var __values = (this && this.__values) || function(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+};
 /**
  3-1. 配列からMapを作る
 以下のコードで定義される関数mapFromArrayは、オブジェクトの配列からMapを作って返す関数です。
@@ -16,10 +27,20 @@ TypeScriptの型入門の内容をとりあえず知っていれば解ける問�
 // my first answer(not correct)
 //! interface mapArr { id: number, name: string; };
 function mapFromArray(arr, key) {
+    var e_1, _a;
     var result = new Map();
-    for (var _i = 0, arr_1 = arr; _i < arr_1.length; _i++) {
-        var obj = arr_1[_i];
-        result.set(obj[key], obj);
+    try {
+        for (var arr_1 = __values(arr), arr_1_1 = arr_1.next(); !arr_1_1.done; arr_1_1 = arr_1.next()) {
+            var obj = arr_1_1.value;
+            result.set(obj[key], obj);
+        }
+    }
+    catch (e_1_1) { e_1 = { error: e_1_1 }; }
+    finally {
+        try {
+            if (arr_1_1 && !arr_1_1.done && (_a = arr_1.return)) _a.call(arr_1);
+        }
+        finally { if (e_1) throw e_1.error; }
     }
     return result;
 }

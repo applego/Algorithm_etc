@@ -1,4 +1,15 @@
 "use strict";
+var __values = (this && this.__values) || function(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sumPairs_BP = exports.sumPairs2 = exports.sumPairs = void 0;
 function sumPairs(ints, s) {
@@ -47,12 +58,22 @@ var hasPair = function (ints, target) {
     return ints.includes(target);
 };
 function sumPairs_BP(ints, s) {
+    var e_1, _a;
     var seen = new Set();
-    for (var _i = 0, ints_1 = ints; _i < ints_1.length; _i++) {
-        var n = ints_1[_i];
-        if (seen.has(s - n))
-            return [s - n, n];
-        seen.add(n);
+    try {
+        for (var ints_1 = __values(ints), ints_1_1 = ints_1.next(); !ints_1_1.done; ints_1_1 = ints_1.next()) {
+            var n = ints_1_1.value;
+            if (seen.has(s - n))
+                return [s - n, n];
+            seen.add(n);
+        }
+    }
+    catch (e_1_1) { e_1 = { error: e_1_1 }; }
+    finally {
+        try {
+            if (ints_1_1 && !ints_1_1.done && (_a = ints_1.return)) _a.call(ints_1);
+        }
+        finally { if (e_1) throw e_1.error; }
     }
 }
 exports.sumPairs_BP = sumPairs_BP;
