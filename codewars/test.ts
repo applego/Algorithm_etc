@@ -480,3 +480,59 @@ describe('Fixed Tests', function () {
     testing20210222(1500000, 0.25, -1000, 2000000, 151);
   });
 });
+
+// 2021/02/23 10:02
+import {
+  test20210223,
+  test20210223BP,
+} from '../AtCoder/第一回アルゴリズム実技検定D - 重複検査';
+describe('AtCoder/第一回アルゴリズム実技検定D - 重複検査', () => {
+  it('Basic tests', () => {
+    let input = `6
+1
+5
+6
+3
+2
+6
+`;
+    let output = '6 4';
+    assert.equal(test20210223(input), output);
+    input = `7
+5
+4
+3
+2
+7
+6
+1
+`;
+    output = 'Correct';
+    assert.equal(test20210223(input), output);
+  });
+});
+describe('AtCoder/第一回アルゴリズム実技検定D - 重複検査', () => {
+  it('Basic tests(BP)', () => {
+    let input = `6
+1
+5
+6
+3
+2
+6
+`;
+    let output = '6 4';
+    assert.equal(test20210223BP(input), output);
+    input = `7
+5
+4
+3
+2
+7
+6
+1
+`;
+    output = 'Correct';
+    assert.equal(test20210223BP(input), output);
+  });
+});
