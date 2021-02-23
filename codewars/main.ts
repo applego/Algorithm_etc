@@ -5,6 +5,51 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from 'mocha';
 import { assert, expect } from 'chai';
 ////////////////////////////////////////////////////////////////
+// 2021/02/23 19:01
+import { recoverFollower } from '../AtCoder/第一回アルゴリズム実技検定E - SNS のログ';
+
+let input20210222 = `6 7
+1 1 2
+1 2 3
+1 3 4
+1 1 5
+1 5 6
+3 1
+2 6
+`;
+let output20210222 = `NYYNYY
+NNYNNN
+NNNYNN
+NNNNNN
+NNNNNY
+YNNNYN
+`;
+assert.equal(recoverFollower(input20210222), output20210222);
+
+// 2021/02/23 10:02
+import { test20210223BP } from '../AtCoder/第一回アルゴリズム実技検定D - 重複検査';
+let input = `6
+1
+5
+6
+3
+2
+6
+`;
+let output = '6 4';
+assert.equal(test20210223BP(input), output);
+input = `7
+5
+4
+3
+2
+7
+6
+1
+`;
+output = 'Correct';
+assert.equal(test20210223BP(input), output);
+
 // 2021/02/17 20:51
 import { G964_20210217 } from './7 kyu Maximum Length Difference';
 function testing_20210217(actual: number, expected: number) {

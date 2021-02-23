@@ -14,16 +14,53 @@ var __assign = (this && this.__assign) || function () {
     };
     return __assign.apply(this, arguments);
 };
+var __values = (this && this.__values) || function(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+};
+var __read = (this && this.__read) || function (o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+};
 // 2-1. ジェネリクス
 // 以下のコードで定義される関数myFilterは、配列のfilter関数を再実装したものです。myFilter関数に適切な型アノテーションを付けてください。
 // myFilter関数は色々な型の配列を受け取れる点に注意してください。必要に応じてmyFilterに型引数を追加しても構いません。
 function myFilter(arr, predicate) {
+    var e_1, _a;
     var result = [];
-    for (var _i = 0, arr_1 = arr; _i < arr_1.length; _i++) {
-        var elm = arr_1[_i];
-        if (predicate(elm)) {
-            result.push(elm);
+    try {
+        for (var arr_1 = __values(arr), arr_1_1 = arr_1.next(); !arr_1_1.done; arr_1_1 = arr_1.next()) {
+            var elm = arr_1_1.value;
+            if (predicate(elm)) {
+                result.push(elm);
+            }
         }
+    }
+    catch (e_1_1) { e_1 = { error: e_1_1 }; }
+    finally {
+        try {
+            if (arr_1_1 && !arr_1_1.done && (_a = arr_1.return)) _a.call(arr_1);
+        }
+        finally { if (e_1) throw e_1.error; }
     }
     return result;
 }
@@ -86,23 +123,23 @@ var obj2 = giveId({
 });
 // 使用例
 // number型のステートを宣言(numStateはnumber型)
-var _a = useState(0), numState = _a[0], setNumState = _a[1];
+var _a = __read(useState(0), 2), numState = _a[0], setNumState = _a[1];
 // setNumStateは新しい値で呼び出せる
 setNumState(3);
 // setNumStateは古いステートを新しいステートに変換する関数を渡すこともできる
 setNumState(function (state) { return state + 10; });
 // 型引数を明示することも可能
-var _b = useState(null), anotherState = _b[0], setAnotherState = _b[1];
+var _b = __read(useState(null), 2), anotherState = _b[0], setAnotherState = _b[1];
 setAnotherState(100);
 // 使用例
 // number型のステートを宣言 (numStateはnumber型)
-var _c = useState2(0), numState2 = _c[0], setNumState2 = _c[1];
+var _c = __read(useState2(0), 2), numState2 = _c[0], setNumState2 = _c[1];
 // setNumStateは新しい値で呼び出せる
 setNumState2(3);
 // setNumStateは古いステートを新しいステートに変換する関数を渡すこともできる
 setNumState2(function (state) { return state + 10; });
 // 型引数を明示することも可能
-var _d = useState2(null), anotherState2 = _d[0], setAnotherState2 = _d[1];
+var _d = __read(useState2(null), 2), anotherState2 = _d[0], setAnotherState2 = _d[1];
 setAnotherState2(100);
 // エラー例
 // setNumState2('foobar');

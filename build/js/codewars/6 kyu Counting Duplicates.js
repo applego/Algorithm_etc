@@ -1,7 +1,19 @@
 "use strict";
+var __values = (this && this.__values) || function(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.duplicateCount = void 0;
 function duplicateCount(text) {
+    var e_1, _a;
     //配列化　小文字化
     var lowercase = text.toLowerCase();
     // let count
@@ -17,10 +29,19 @@ function duplicateCount(text) {
     //出現カウント
     //2回以上出現した文字のカウント
     var cnt_over_twice = 0; //sCounter.filter()
-    for (var _i = 0, _a = Object.keys(sCounter); _i < _a.length; _i++) {
-        var k = _a[_i];
-        if (sCounter[k] >= 2)
-            cnt_over_twice++;
+    try {
+        for (var _b = __values(Object.keys(sCounter)), _c = _b.next(); !_c.done; _c = _b.next()) {
+            var k = _c.value;
+            if (sCounter[k] >= 2)
+                cnt_over_twice++;
+        }
+    }
+    catch (e_1_1) { e_1 = { error: e_1_1 }; }
+    finally {
+        try {
+            if (_c && !_c.done && (_a = _b.return)) _a.call(_b);
+        }
+        finally { if (e_1) throw e_1.error; }
     }
     return cnt_over_twice;
 }
