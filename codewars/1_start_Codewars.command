@@ -1,5 +1,5 @@
 
-NEWFILENAME="8 kyu Even or Odd"
+NEWFILENAME="7 kyu Growth of a Population"
 touch "codewars/$NEWFILENAME.ts"
 
 
