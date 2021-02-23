@@ -450,15 +450,78 @@ mocha_1.describe('Fixed Tests', function () {
     });
 });
 // 2021/02/23 10:02
-var _____________D_______1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u5B9F\u6280\u691C\u5B9AD - \u91CD\u8907\u691C\u67FB");
-mocha_1.describe('AtCoder/第一回アルゴリズム実技検定D - 重複検査', function () {
+// import {
+//   test20210223,
+//   test20210223BP,
+// } from '../AtCoder/第一回アルゴリズム実技検定D - 重複検査';
+// describe('AtCoder/第一回アルゴリズム実技検定D - 重複検査', () => {
+//   it('Basic tests', () => {
+//     let input = `6
+// 1
+// 5
+// 6
+// 3
+// 2
+// 6
+// `;
+//     let output = '6 4';
+//     assert.equal(test20210223(input), output);
+//     input = `7
+// 5
+// 4
+// 3
+// 2
+// 7
+// 6
+// 1
+// `;
+//     output = 'Correct';
+//     assert.equal(test20210223(input), output);
+//   });
+// });
+// describe('AtCoder/第一回アルゴリズム実技検定D - 重複検査', () => {
+//   it('Basic tests(BP)', () => {
+//     let input = `6
+// 1
+// 5
+// 6
+// 3
+// 2
+// 6
+// `;
+//     let output = '6 4';
+//     assert.equal(test20210223BP(input), output);
+//     input = `7
+// 5
+// 4
+// 3
+// 2
+// 7
+// 6
+// 1
+// `;
+//     output = 'Correct';
+//     assert.equal(test20210223BP(input), output);
+//   });
+// });
+// 2021/02/23 19:01
+var _____________E___SNS____1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u5B9F\u6280\u691C\u5B9AE - SNS \u306E\u30ED\u30B0");
+mocha_1.describe('../AtCoder/第一回アルゴリズム実技検定E - SNS のログ', function () {
     mocha_1.it('Basic tests', function () {
-        var input = "6\n1\n5\n6\n3\n2\n6\n";
-        var output = '6 4';
-        chai_1.assert.equal(_____________D_______1.test20210223(input), output);
-        input = "7\n5\n4\n3\n2\n7\n6\n1\n";
-        output = 'Correct';
-        chai_1.assert.equal(_____________D_______1.test20210223(input), output);
+        var input = "6 7\n1 1 2\n1 2 3\n1 3 4\n1 1 5\n1 5 6\n3 1\n2 6\n";
+        var output = "NYYNYY\nNNYNNN\nNNNYNN\nNNNNNN\nNNNNNY\nYNNNYN\n";
+        chai_1.assert.equal(_____________E___SNS____1.recoverFollower(input), output);
+        //     input = `7
+        // 5
+        // 4
+        // 3
+        // 2
+        // 7
+        // 6
+        // 1
+        // `;
+        //     output = 'Correct';
+        //     assert.equal(test20210223BP(input), output);
     });
 });
 //# sourceMappingURL=test.js.map

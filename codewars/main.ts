@@ -5,6 +5,27 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from 'mocha';
 import { assert, expect } from 'chai';
 ////////////////////////////////////////////////////////////////
+// 2021/02/23 19:01
+import { recoverFollower } from '../AtCoder/第一回アルゴリズム実技検定E - SNS のログ';
+
+let input20210222 = `6 7
+1 1 2
+1 2 3
+1 3 4
+1 1 5
+1 5 6
+3 1
+2 6
+`;
+let output20210222 = `NYYNYY
+NNYNNN
+NNNYNN
+NNNNNN
+NNNNNY
+YNNNYN
+`;
+assert.equal(recoverFollower(input20210222), output20210222);
+
 // 2021/02/23 10:02
 import { test20210223BP } from '../AtCoder/第一回アルゴリズム実技検定D - 重複検査';
 let input = `6
