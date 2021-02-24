@@ -532,4 +532,16 @@ mocha_1.describe('KataTest', function () {
         chai_1.assert.deepEqual(_8_kyu_Sum_without_highest_and_lowest_number_1.sumArray([6, 0, 1, 10, 10]), 17);
     });
 });
+// 2021/02/24 18:35
+var ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1 = require("../AOJ/ALDS1_3_D_Areas on the Cross-Section Diagram");
+mocha_1.describe('../AOJ/ALDS1_3_D_Areas on the Cross-Section Diagram.js', function () {
+    mocha_1.it('BasicTests', function () {
+        var input = '\\\\//';
+        var output = "4\n1 4";
+        chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(input), output);
+        input = '\\\\///\\_/\\/\\\\\\\\/_/\\\\///__\\\\\\_\\\\/_\\/_/\\';
+        output = "35\n5 4 2 1 19 9";
+        chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(input), output);
+    });
+});
 //# sourceMappingURL=test.js.map

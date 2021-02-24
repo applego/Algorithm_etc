@@ -97,7 +97,6 @@ export function recoverFollower(input: string): string {
         .join('');
     })
     .join('\n');
-  result;
   console.log(result);
   return result;
   // Object.values(users).forEach(user => {
