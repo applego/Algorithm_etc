@@ -46,8 +46,12 @@ export function answer(input: string): string {
   }
   let msg = sum + '\n';
   console.log(sum);
-  msg += areaStack.length.toString() + ' ';
-  msg += areaStack.map((s) => s.area).join(' ');
+  if (!areaStack.length) {
+    msg += areaStack.length.toString();
+  } else {
+    msg += areaStack.length.toString() + ' ';
+    msg += areaStack.map((s) => s.area).join(' ');
+  }
   console.log(msg);
   return msg;
 }

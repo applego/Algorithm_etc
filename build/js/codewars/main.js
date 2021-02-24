@@ -16,6 +16,10 @@ chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(in
 input20210224 = '\\\\///\\_/\\/\\\\\\\\/_/\\\\///__\\\\\\_\\\\/_\\/_/\\';
 output20210224 = "35\n5 4 2 1 19 9";
 chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(input20210224), output20210224);
+input20210224 =
+    '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\';
+output20210224 = "0\n0";
+chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(input20210224), output20210224);
 // 2021/02/23 19:01
 var _____________E___SNS____1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u5B9F\u6280\u691C\u5B9AE - SNS \u306E\u30ED\u30B0");
 var input20210222 = "6 7\n1 1 2\n1 2 3\n1 3 4\n1 1 5\n1 5 6\n3 1\n2 6\n";

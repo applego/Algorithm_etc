@@ -543,5 +543,10 @@ mocha_1.describe('../AOJ/ALDS1_3_D_Areas on the Cross-Section Diagram.js', funct
         output = "35\n5 4 2 1 19 9";
         chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(input), output);
     });
+    mocha_1.it('SubmitTests', function () {
+        var input = '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\';
+        var output = "0\n0";
+        chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(input), output);
+    });
 });
 //# sourceMappingURL=test.js.map

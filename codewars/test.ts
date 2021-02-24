@@ -594,4 +594,12 @@ describe('../AOJ/ALDS1_3_D_Areas on the Cross-Section Diagram.js', function () {
 5 4 2 1 19 9`;
     assert.deepEqual(answer20210224(input), output);
   });
+  it('SubmitTests', () => {
+    let input =
+      '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\';
+
+    let output = `0
+0`;
+    assert.deepEqual(answer20210224(input), output);
+  });
 });

@@ -47,8 +47,13 @@ function answer(input) {
     }
     var msg = sum + '\n';
     console.log(sum);
-    msg += areaStack.length.toString();
-    msg += areaStack.map(function (s) { return s.area; }).join(' ');
+    if (!areaStack.length) {
+        msg += areaStack.length.toString();
+    }
+    else {
+        msg += areaStack.length.toString() + ' ';
+        msg += areaStack.map(function (s) { return s.area; }).join(' ');
+    }
     console.log(msg);
     return msg;
 }
