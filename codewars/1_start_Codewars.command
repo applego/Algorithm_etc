@@ -1,5 +1,5 @@
 
-NEWFILENAME="7 kyu Growth of a Population"
+NEWFILENAME="8 kyu Sum without highest and lowest number"
 touch "codewars/$NEWFILENAME.ts"
 
 

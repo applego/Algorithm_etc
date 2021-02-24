@@ -570,3 +570,13 @@ YNNNYN`;
     //     assert.equal(test20210223BP(input), output);
   });
 });
+
+// 2021/02/24 12:17
+import { sumArray } from './8 kyu Sum without highest and lowest number';
+
+describe('KataTest', function () {
+  it('BasicTests', function () {
+    assert.deepEqual(sumArray([6, 2, 1, 8, 10]), 16);
+    assert.deepEqual(sumArray([6, 0, 1, 10, 10]), 17);
+  });
+});
