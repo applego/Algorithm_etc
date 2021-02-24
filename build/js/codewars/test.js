@@ -509,7 +509,7 @@ var _____________E___SNS____1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30
 mocha_1.describe('../AtCoder/第一回アルゴリズム実技検定E - SNS のログ', function () {
     mocha_1.it('Basic tests', function () {
         var input = "6 7\n1 1 2\n1 2 3\n1 3 4\n1 1 5\n1 5 6\n3 1\n2 6\n";
-        var output = "NYYNYY\nNNYNNN\nNNNYNN\nNNNNNN\nNNNNNY\nYNNNYN\n";
+        var output = "NYYNYY\nNNYNNN\nNNNYNN\nNNNNNN\nNNNNNY\nYNNNYN";
         chai_1.assert.equal(_____________E___SNS____1.recoverFollower(input), output);
         //     input = `7
         // 5
@@ -522,6 +522,31 @@ mocha_1.describe('../AtCoder/第一回アルゴリズム実技検定E - SNS の�
         // `;
         //     output = 'Correct';
         //     assert.equal(test20210223BP(input), output);
+    });
+});
+// 2021/02/24 12:17
+var _8_kyu_Sum_without_highest_and_lowest_number_1 = require("./8 kyu Sum without highest and lowest number");
+mocha_1.describe('KataTest', function () {
+    mocha_1.it('BasicTests', function () {
+        chai_1.assert.deepEqual(_8_kyu_Sum_without_highest_and_lowest_number_1.sumArray([6, 2, 1, 8, 10]), 16);
+        chai_1.assert.deepEqual(_8_kyu_Sum_without_highest_and_lowest_number_1.sumArray([6, 0, 1, 10, 10]), 17);
+    });
+});
+// 2021/02/24 18:35
+var ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1 = require("../AOJ/ALDS1_3_D_Areas on the Cross-Section Diagram");
+mocha_1.describe('../AOJ/ALDS1_3_D_Areas on the Cross-Section Diagram.js', function () {
+    mocha_1.it('BasicTests', function () {
+        var input = '\\\\//';
+        var output = "4\n1 4";
+        chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(input), output);
+        input = '\\\\///\\_/\\/\\\\\\\\/_/\\\\///__\\\\\\_\\\\/_\\/_/\\';
+        output = "35\n5 4 2 1 19 9";
+        chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(input), output);
+    });
+    mocha_1.it('SubmitTests', function () {
+        var input = '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\';
+        var output = "0\n0";
+        chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(input), output);
     });
 });
 //# sourceMappingURL=test.js.map

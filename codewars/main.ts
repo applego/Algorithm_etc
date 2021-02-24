@@ -5,6 +5,24 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from 'mocha';
 import { assert, expect } from 'chai';
 ////////////////////////////////////////////////////////////////
+// 2021/02/24 18:35
+import { answer as answer20210224 } from '../AOJ/ALDS1_3_D_Areas on the Cross-Section Diagram';
+
+let input20210224 = '\\\\//';
+let output20210224 = `4
+1 4`;
+assert.deepEqual(answer20210224(input20210224), output20210224);
+input20210224 = '\\\\///\\_/\\/\\\\\\\\/_/\\\\///__\\\\\\_\\\\/_\\/_/\\';
+output20210224 = `35
+5 4 2 1 19 9`;
+assert.deepEqual(answer20210224(input20210224), output20210224);
+input20210224 =
+  '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\';
+
+output20210224 = `0
+0`;
+assert.deepEqual(answer20210224(input20210224), output20210224);
+
 // 2021/02/23 19:01
 import { recoverFollower } from '../AtCoder/第一回アルゴリズム実技検定E - SNS のログ';
 
