@@ -1,5 +1,5 @@
 
-NEWFILENAME="8 kyu Sum without highest and lowest number"
+NEWFILENAME="8 kyu Convert number to reversed array of digits"
 touch "codewars/$NEWFILENAME.ts"
 
 
