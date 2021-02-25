@@ -668,3 +668,13 @@ describe('../AOJ/ALDS1_4_B_二分探索', function () {
     );
   });
 });
+
+// 2021/02/25 20:43
+import { digitize } from './8 kyu Convert number to reversed array of digits';
+// chai.config.truncateThreshold = 0;
+
+describe('digitize', function () {
+  it('Sample test', function () {
+    assert.deepEqual(digitize(35231), [1, 3, 2, 5, 3]);
+  });
+});
