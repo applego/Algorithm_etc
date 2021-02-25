@@ -564,4 +564,13 @@ mocha_1.describe('../AOJ/ALDS1_4_A_線形探索', function () {
         chai_1.assert.deepEqual(ALDS1_4_A_____1.linearSearch(input), output);
     });
 });
+// 2021/02/25 15:09
+var ALDS1_4_B_____1 = require("../AOJ/ALDS1_4_B_\u4E8C\u5206\u63A2\u7D22");
+mocha_1.describe('../AOJ/ALDS1_4_B_二分探索', function () {
+    mocha_1.it('BasicTests', function () {
+        chai_1.assert.deepEqual(ALDS1_4_B_____1.answer("5\n1 2 3 4 5\n3\n3 4 1\n"), "3");
+        chai_1.assert.deepEqual(ALDS1_4_B_____1.answer("3\n1 2 3\n1\n5\n"), "0");
+        chai_1.assert.deepEqual(ALDS1_4_B_____1.answer("5\n1 1 2 2 3\n2\n1 2\n"), "2");
+    });
+});
 //# sourceMappingURL=test.js.map

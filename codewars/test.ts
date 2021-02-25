@@ -631,3 +631,40 @@ describe('../AOJ/ALDS1_4_A_線形探索', function () {
     assert.deepEqual(linearSearch(input), output);
   });
 });
+
+// 2021/02/25 15:09
+import { answer as binarySearch } from '../AOJ/ALDS1_4_B_二分探索';
+describe('../AOJ/ALDS1_4_B_二分探索', function () {
+  it('BasicTests', function () {
+    assert.deepEqual(
+      binarySearch(
+        `5
+1 2 3 4 5
+3
+3 4 1
+`
+      ),
+      `3`
+    );
+    assert.deepEqual(
+      binarySearch(
+        `3
+1 2 3
+1
+5
+`
+      ),
+      `0`
+    );
+    assert.deepEqual(
+      binarySearch(
+        `5
+1 1 2 2 3
+2
+1 2
+`
+      ),
+      `2`
+    );
+  });
+});

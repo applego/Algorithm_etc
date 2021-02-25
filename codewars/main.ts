@@ -5,6 +5,50 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from 'mocha';
 import { assert, expect } from 'chai';
 ////////////////////////////////////////////////////////////////
+// 2021/02/25 15:09
+import { answer as binarySearch } from '../AOJ/ALDS1_4_B_二分探索';
+
+assert.deepEqual(
+  binarySearch(
+    `5
+1 2 3 4 5
+3
+3 4 1
+`
+  ),
+  `3`
+);
+assert.deepEqual(
+  binarySearch(
+    `3
+1 2 3
+1
+5
+`
+  ),
+  `0`
+);
+assert.deepEqual(
+  binarySearch(
+    `5
+1 1 2 2 3
+2
+1 2
+`
+  ),
+  `2`
+);
+assert.deepEqual(
+  binarySearch(
+    `30
+0 0 0 0 2 3 3 3 4 5 6 7 8 8 8 9 9 9 10 11 11 12 12 12 12 13 13 7000000 500000000 1000000000
+16
+2 0 5 11 3 16 4 6 1 10 7 14 15 7000000 9 5555555
+`
+  ),
+  `11`
+);
+
 // 2021/02/25 14:44
 import { linearSearch } from '../AOJ/ALDS1_4_A_線形探索';
 
