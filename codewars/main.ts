@@ -5,6 +5,31 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from 'mocha';
 import { assert, expect } from 'chai';
 ////////////////////////////////////////////////////////////////
+// 2021/02/25 14:44
+import { linearSearch } from '../AOJ/ALDS1_4_A_線形探索';
+
+let input20210225 = `5
+1 2 3 4 5
+3
+3 4 1
+`;
+let output20210225 = `3`;
+assert.deepEqual(linearSearch(input20210225), output20210225);
+input20210225 = `3
+3 1 2
+1
+5
+`;
+output20210225 = `0`;
+assert.deepEqual(linearSearch(input20210225), output20210225);
+input20210225 = `5
+1 1 2 2 3
+2
+1 2
+`;
+output20210225 = `2`;
+assert.deepEqual(linearSearch(input20210225), output20210225);
+
 // 2021/02/24 18:35
 import { answer as answer20210224 } from '../AOJ/ALDS1_3_D_Areas on the Cross-Section Diagram';
 

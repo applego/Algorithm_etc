@@ -549,4 +549,19 @@ mocha_1.describe('../AOJ/ALDS1_3_D_Areas on the Cross-Section Diagram.js', funct
         chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(input), output);
     });
 });
+// 2021/02/25 14:44
+var ALDS1_4_A_____1 = require("../AOJ/ALDS1_4_A_\u7DDA\u5F62\u63A2\u7D22");
+mocha_1.describe('../AOJ/ALDS1_4_A_線形探索', function () {
+    mocha_1.it('BasicTests', function () {
+        var input = "5\n1 2 3 4 5\n3\n3 4 1\n";
+        var output = "3";
+        chai_1.assert.deepEqual(ALDS1_4_A_____1.linearSearch(input), output);
+        input = "3\n3 1 2\n1\n5\n";
+        output = "0";
+        chai_1.assert.deepEqual(ALDS1_4_A_____1.linearSearch(input), output);
+        input = "5\n1 1 2 2 3\n2\n1 2\n";
+        output = "2";
+        chai_1.assert.deepEqual(ALDS1_4_A_____1.linearSearch(input), output);
+    });
+});
 //# sourceMappingURL=test.js.map

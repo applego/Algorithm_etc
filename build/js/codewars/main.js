@@ -8,6 +8,17 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/02/25 14:44
+var ALDS1_4_A_____1 = require("../AOJ/ALDS1_4_A_\u7DDA\u5F62\u63A2\u7D22");
+var input20210225 = "5\n1 2 3 4 5\n3\n3 4 1\n";
+var output20210225 = "3";
+chai_1.assert.deepEqual(ALDS1_4_A_____1.linearSearch(input20210225), output20210225);
+input20210225 = "3\n3 1 2\n1\n5\n";
+output20210225 = "0";
+chai_1.assert.deepEqual(ALDS1_4_A_____1.linearSearch(input20210225), output20210225);
+input20210225 = "5\n1 1 2 2 3\n2\n1 2\n";
+output20210225 = "2";
+chai_1.assert.deepEqual(ALDS1_4_A_____1.linearSearch(input20210225), output20210225);
 // 2021/02/24 18:35
 var ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1 = require("../AOJ/ALDS1_3_D_Areas on the Cross-Section Diagram");
 var input20210224 = '\\\\//';
