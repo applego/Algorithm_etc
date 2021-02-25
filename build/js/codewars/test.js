@@ -573,4 +573,22 @@ mocha_1.describe('../AOJ/ALDS1_4_B_二分探索', function () {
         chai_1.assert.deepEqual(ALDS1_4_B_____1.answer("5\n1 1 2 2 3\n2\n1 2\n"), "2");
     });
 });
+// 2021/02/25 20:43
+var _8_kyu_Convert_number_to_reversed_array_of_digits_1 = require("./8 kyu Convert number to reversed array of digits");
+// chai.config.truncateThreshold = 0;
+mocha_1.describe('digitize', function () {
+    mocha_1.it('Sample test', function () {
+        chai_1.assert.deepEqual(_8_kyu_Convert_number_to_reversed_array_of_digits_1.digitize(35231), [1, 3, 2, 5, 3]);
+    });
+});
+// 2021/02/25 21:03
+var _____________F___DoubleCamelCase_Sort_1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u5B9F\u6280\u691C\u5B9AF - DoubleCamelCase Sort");
+mocha_1.describe('../AtCoder/第一回アルゴリズム実技検定F - DoubleCamelCase Sort', function () {
+    mocha_1.it('Sample test', function () {
+        chai_1.assert.deepEqual(_____________F___DoubleCamelCase_Sort_1.answer('FisHDoGCaTAAAaAAbCAC'), 'AAAaAAbCACCaTDoGFisH');
+    });
+    mocha_1.it('Sample test2', function () {
+        chai_1.assert.deepEqual(_____________F___DoubleCamelCase_Sort_1.answer('AAAAAjhfgaBCsahdfakGZsZGdEAA'), 'AAAAAAAjhfgaBCsahdfakGGdEZsZ');
+    });
+});
 //# sourceMappingURL=test.js.map

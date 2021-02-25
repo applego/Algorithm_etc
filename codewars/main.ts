@@ -5,6 +5,17 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from 'mocha';
 import { assert, expect } from 'chai';
 ////////////////////////////////////////////////////////////////
+// 2021/02/25 21:03
+import { answer as answer20210225 } from '../AtCoder/第一回アルゴリズム実技検定F - DoubleCamelCase Sort';
+assert.deepEqual(
+  answer20210225('FisHDoGCaTAAAaAAbCAC'),
+  'AAAaAAbCACCaTDoGFisH'
+);
+assert.deepEqual(
+  answer20210225('AAAAAjhfgaBCsahdfakGZsZGdEAA'),
+  'AAAAAAAjhfgaBCsahdfakGGdEZsZ'
+);
+
 // 2021/02/25 15:09
 import { answer as binarySearch } from '../AOJ/ALDS1_4_B_二分探索';
 

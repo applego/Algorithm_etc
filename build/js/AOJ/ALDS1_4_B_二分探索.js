@@ -20,8 +20,8 @@ function binarySearch(arr, target) {
 }
 exports.answer = function (input) {
     var lines = input.trim().split('\n');
-    var arrS = lines[1].split(' ');
-    var arrT = lines[3].split(' ');
+    var arrS = lines[1].split(' ').map(Number);
+    var arrT = lines[3].split(' ').map(Number);
     var sum = arrT.reduce(function (acc, curr) {
         return acc + binarySearch(arrS, curr);
     }, 0);
@@ -45,8 +45,8 @@ exports.answer = function (input) {
 // }
 // (function (input) {
 //   const lines = input.trim().split('\n');
-//   const arrS = lines[1].split(' ');
-//   const arrT = lines[3].split(' ');
+//   const arrS = lines[1].split(' ').map(Number);
+//   const arrT = lines[3].split(' ').map(Number);
 //   const sum = arrT.reduce((acc, curr) => {
 //     return acc + binarySearch(arrS, curr);
 //   }, 0);

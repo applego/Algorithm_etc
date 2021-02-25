@@ -678,3 +678,21 @@ describe('digitize', function () {
     assert.deepEqual(digitize(35231), [1, 3, 2, 5, 3]);
   });
 });
+
+// 2021/02/25 21:03
+import { answer as answer20210225 } from '../AtCoder/第一回アルゴリズム実技検定F - DoubleCamelCase Sort';
+
+describe('../AtCoder/第一回アルゴリズム実技検定F - DoubleCamelCase Sort', function () {
+  it('Sample test', function () {
+    assert.deepEqual(
+      answer20210225('FisHDoGCaTAAAaAAbCAC'),
+      'AAAaAAbCACCaTDoGFisH'
+    );
+  });
+  it('Sample test2', function () {
+    assert.deepEqual(
+      answer20210225('AAAAAjhfgaBCsahdfakGZsZGdEAA'),
+      'AAAAAAAjhfgaBCsahdfakGGdEZsZ'
+    );
+  });
+});
