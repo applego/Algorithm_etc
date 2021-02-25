@@ -21,6 +21,7 @@ class User {
     this.followers = new Array<User>();
   }
   public follow(user: User) {
+    if (this.id === user.id) return;
     if (
       this.followings.length > 0 &&
       this.followings.find((following) => following.id === user.id)
