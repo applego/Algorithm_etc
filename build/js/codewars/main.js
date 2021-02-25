@@ -8,6 +8,10 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/02/25 21:03
+var _____________F___DoubleCamelCase_Sort_1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u5B9F\u6280\u691C\u5B9AF - DoubleCamelCase Sort");
+chai_1.assert.deepEqual(_____________F___DoubleCamelCase_Sort_1.answer('FisHDoGCaTAAAaAAbCAC'), 'AAAaAAbCACCaTDoGFisH');
+chai_1.assert.deepEqual(_____________F___DoubleCamelCase_Sort_1.answer('AAAAAjhfgaBCsahdfakGZsZGdEAA'), 'AAAAAAAjhfgaBCsahdfakGGdEZsZ');
 // 2021/02/25 15:09
 var ALDS1_4_B_____1 = require("../AOJ/ALDS1_4_B_\u4E8C\u5206\u63A2\u7D22");
 chai_1.assert.deepEqual(ALDS1_4_B_____1.answer("5\n1 2 3 4 5\n3\n3 4 1\n"), "3");

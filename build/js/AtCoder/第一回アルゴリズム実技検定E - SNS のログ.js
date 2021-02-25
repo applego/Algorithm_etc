@@ -39,6 +39,8 @@ var User = /** @class */ (function () {
         this.followers = new Array();
     }
     User.prototype.follow = function (user) {
+        if (this.id === user.id)
+            return;
         if (this.followings.length > 0 &&
             this.followings.find(function (following) { return following.id === user.id; }))
             return;
