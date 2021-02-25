@@ -5,6 +5,93 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from 'mocha';
 import { assert, expect } from 'chai';
 ////////////////////////////////////////////////////////////////
+// 2021/02/25 15:09
+import { answer as binarySearch } from '../AOJ/ALDS1_4_B_二分探索';
+
+assert.deepEqual(
+  binarySearch(
+    `5
+1 2 3 4 5
+3
+3 4 1
+`
+  ),
+  `3`
+);
+assert.deepEqual(
+  binarySearch(
+    `3
+1 2 3
+1
+5
+`
+  ),
+  `0`
+);
+assert.deepEqual(
+  binarySearch(
+    `5
+1 1 2 2 3
+2
+1 2
+`
+  ),
+  `2`
+);
+assert.deepEqual(
+  binarySearch(
+    `30
+0 0 0 0 2 3 3 3 4 5 6 7 8 8 8 9 9 9 10 11 11 12 12 12 12 13 13 7000000 500000000 1000000000
+16
+2 0 5 11 3 16 4 6 1 10 7 14 15 7000000 9 5555555
+`
+  ),
+  `11`
+);
+
+// 2021/02/25 14:44
+import { linearSearch } from '../AOJ/ALDS1_4_A_線形探索';
+
+let input20210225 = `5
+1 2 3 4 5
+3
+3 4 1
+`;
+let output20210225 = `3`;
+assert.deepEqual(linearSearch(input20210225), output20210225);
+input20210225 = `3
+3 1 2
+1
+5
+`;
+output20210225 = `0`;
+assert.deepEqual(linearSearch(input20210225), output20210225);
+input20210225 = `5
+1 1 2 2 3
+2
+1 2
+`;
+output20210225 = `2`;
+assert.deepEqual(linearSearch(input20210225), output20210225);
+
+// 2021/02/24 18:35
+import { answer as answer20210224 } from '../AOJ/ALDS1_3_D_Areas on the Cross-Section Diagram';
+
+let input20210224 = '\\\\//';
+let output20210224 = `4
+1 4`;
+assert.deepEqual(answer20210224(input20210224), output20210224);
+input20210224 = '\\\\///\\_/\\/\\\\\\\\/_/\\\\///__\\\\\\_\\\\/_\\/_/\\';
+output20210224 = `35
+5 4 2 1 19 9`;
+assert.deepEqual(answer20210224(input20210224), output20210224);
+input20210224 =
+  '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\';
+
+output20210224 = `0
+0`;
+assert.deepEqual(answer20210224(input20210224), output20210224);
+
 // 2021/02/23 19:01
 import { recoverFollower } from '../AtCoder/第一回アルゴリズム実技検定E - SNS のログ';
 

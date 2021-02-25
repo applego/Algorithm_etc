@@ -8,6 +8,35 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/02/25 15:09
+var ALDS1_4_B_____1 = require("../AOJ/ALDS1_4_B_\u4E8C\u5206\u63A2\u7D22");
+chai_1.assert.deepEqual(ALDS1_4_B_____1.answer("5\n1 2 3 4 5\n3\n3 4 1\n"), "3");
+chai_1.assert.deepEqual(ALDS1_4_B_____1.answer("3\n1 2 3\n1\n5\n"), "0");
+chai_1.assert.deepEqual(ALDS1_4_B_____1.answer("5\n1 1 2 2 3\n2\n1 2\n"), "2");
+chai_1.assert.deepEqual(ALDS1_4_B_____1.answer("30\n0 0 0 0 2 3 3 3 4 5 6 7 8 8 8 9 9 9 10 11 11 12 12 12 12 13 13 7000000 500000000 1000000000\n16\n2 0 5 11 3 16 4 6 1 10 7 14 15 7000000 9 5555555\n"), "11");
+// 2021/02/25 14:44
+var ALDS1_4_A_____1 = require("../AOJ/ALDS1_4_A_\u7DDA\u5F62\u63A2\u7D22");
+var input20210225 = "5\n1 2 3 4 5\n3\n3 4 1\n";
+var output20210225 = "3";
+chai_1.assert.deepEqual(ALDS1_4_A_____1.linearSearch(input20210225), output20210225);
+input20210225 = "3\n3 1 2\n1\n5\n";
+output20210225 = "0";
+chai_1.assert.deepEqual(ALDS1_4_A_____1.linearSearch(input20210225), output20210225);
+input20210225 = "5\n1 1 2 2 3\n2\n1 2\n";
+output20210225 = "2";
+chai_1.assert.deepEqual(ALDS1_4_A_____1.linearSearch(input20210225), output20210225);
+// 2021/02/24 18:35
+var ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1 = require("../AOJ/ALDS1_3_D_Areas on the Cross-Section Diagram");
+var input20210224 = '\\\\//';
+var output20210224 = "4\n1 4";
+chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(input20210224), output20210224);
+input20210224 = '\\\\///\\_/\\/\\\\\\\\/_/\\\\///__\\\\\\_\\\\/_\\/_/\\';
+output20210224 = "35\n5 4 2 1 19 9";
+chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(input20210224), output20210224);
+input20210224 =
+    '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\';
+output20210224 = "0\n0";
+chai_1.assert.deepEqual(ALDS1_3_D_Areas_on_the_Cross_Section_Diagram_1.answer(input20210224), output20210224);
 // 2021/02/23 19:01
 var _____________E___SNS____1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u5B9F\u6280\u691C\u5B9AE - SNS \u306E\u30ED\u30B0");
 var input20210222 = "6 7\n1 1 2\n1 2 3\n1 3 4\n1 1 5\n1 5 6\n3 1\n2 6\n";
