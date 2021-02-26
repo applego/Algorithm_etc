@@ -1,5 +1,5 @@
 
-NEWFILENAME="8 kyu Convert number to reversed array of digits"
+NEWFILENAME="6 kyu Digit Recovery"
 touch "codewars/$NEWFILENAME.ts"
 
 

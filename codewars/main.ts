@@ -5,6 +5,15 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from 'mocha';
 import { assert, expect } from 'chai';
 ////////////////////////////////////////////////////////////////
+//　2021/02/26 12:05
+import { recover } from './6 kyu Digit Recovery';
+assert.deepEqual(recover('NEO'), '1');
+assert.deepEqual(recover('ONETWO'), '12');
+assert.deepEqual(recover('TWWTONE'), '21');
+assert.deepEqual(recover('ZYX'), 'No digits found');
+assert.deepEqual(recover('ONENO'), '11');
+assert.deepEqual(recover('NEOTWONEINEIGHTOWSVEEN'), '12219827');
+
 // 2021/02/25 21:03
 import { answer as answer20210225 } from '../AtCoder/第一回アルゴリズム実技検定F - DoubleCamelCase Sort';
 assert.deepEqual(
