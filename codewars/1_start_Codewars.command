@@ -1,5 +1,5 @@
 
-NEWFILENAME="6 kyu Digit Recovery"
+NEWFILENAME="7 kyu Number of People in the Bus"
 touch "codewars/$NEWFILENAME.ts"
 
 

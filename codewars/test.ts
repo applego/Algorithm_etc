@@ -709,3 +709,42 @@ describe('./6 kyu Digit Recovery', () => {
     assert.deepEqual(recover('NEOTWONEINEIGHTOWSVEEN'), '12219827');
   });
 });
+
+// 2021/02/27  0:22
+import { number } from './7 kyu Number of People in the Bus';
+
+describe('number', () => {
+  it('basic tests', () => {
+    assert.equal(
+      number([
+        [10, 0],
+        [3, 5],
+        [5, 8],
+      ]),
+      5
+    );
+    assert.equal(
+      number([
+        [3, 0],
+        [9, 1],
+        [4, 10],
+        [12, 2],
+        [6, 1],
+        [7, 10],
+      ]),
+      17
+    );
+    assert.equal(
+      number([
+        [3, 0],
+        [9, 1],
+        [4, 8],
+        [12, 2],
+        [6, 1],
+        [7, 8],
+      ]),
+      21
+    );
+    assert.equal(number([[0, 0]]), 0);
+  });
+});
