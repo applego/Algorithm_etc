@@ -696,3 +696,16 @@ describe('../AtCoder/第一回アルゴリズム実技検定F - DoubleCamelCase 
     );
   });
 });
+
+//　2021/02/26 12:05
+import { recover } from './6 kyu Digit Recovery';
+describe('./6 kyu Digit Recovery', () => {
+  it('Sample test', function () {
+    assert.deepEqual(recover('NEO'), '1');
+    assert.deepEqual(recover('ONETWO'), '12');
+    assert.deepEqual(recover('TWWTONE'), '21');
+    assert.deepEqual(recover('ZYX'), 'No digits found');
+    assert.deepEqual(recover('ONENO'), '11');
+    assert.deepEqual(recover('NEOTWONEINEIGHTOWSVEEN'), '12219827');
+  });
+});

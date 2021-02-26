@@ -28,6 +28,7 @@ export const answer = (input: string): string => {
   return arr.join('');
 };
 
-import * as fs from 'fs';
-const input = fs.readFileSync('/dev/stdin', 'utf8');
-console.log(answer(input));
+// * 提出用
+// import * as fs from 'fs';
+// const input = fs.readFileSync('/dev/stdin', 'utf8');
+// console.log(answer(input));
