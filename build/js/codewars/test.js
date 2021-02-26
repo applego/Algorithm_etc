@@ -591,4 +591,16 @@ mocha_1.describe('../AtCoder/第一回アルゴリズム実技検定F - DoubleCa
         chai_1.assert.deepEqual(_____________F___DoubleCamelCase_Sort_1.answer('AAAAAjhfgaBCsahdfakGZsZGdEAA'), 'AAAAAAAjhfgaBCsahdfakGGdEZsZ');
     });
 });
+//　2021/02/26 12:05
+var _6_kyu_Digit_Recovery_1 = require("./6 kyu Digit Recovery");
+mocha_1.describe('./6 kyu Digit Recovery', function () {
+    mocha_1.it('Sample test', function () {
+        chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('NEO'), '1');
+        chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('ONETWO'), '12');
+        chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('TWWTONE'), '21');
+        chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('ZYX'), 'No digits found');
+        chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('ONENO'), '11');
+        chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('NEOTWONEINEIGHTOWSVEEN'), '12219827');
+    });
+});
 //# sourceMappingURL=test.js.map

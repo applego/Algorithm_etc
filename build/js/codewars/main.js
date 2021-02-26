@@ -8,6 +8,14 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+//　2021/02/26 12:05
+var _6_kyu_Digit_Recovery_1 = require("./6 kyu Digit Recovery");
+chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('NEO'), '1');
+chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('ONETWO'), '12');
+chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('TWWTONE'), '21');
+chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('ZYX'), 'No digits found');
+chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('ONENO'), '11');
+chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('NEOTWONEINEIGHTOWSVEEN'), '12219827');
 // 2021/02/25 21:03
 var _____________F___DoubleCamelCase_Sort_1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u5B9F\u6280\u691C\u5B9AF - DoubleCamelCase Sort");
 chai_1.assert.deepEqual(_____________F___DoubleCamelCase_Sort_1.answer('FisHDoGCaTAAAaAAbCAC'), 'AAAaAAbCACCaTDoGFisH');
