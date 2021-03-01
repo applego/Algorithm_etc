@@ -53,20 +53,16 @@ var alph = {
 // type AvailableLength = typeof AvailableLength[keyof typeof AvailableLength];
 // AvailableLength[3];
 function recover(str) {
-    //have fun ^.^
     var e_1, _a;
-    var i = 0;
+    //have fun ^.^
     var result = '';
-    while (i < str.length - 1) {
-        var flgFind = false;
+    for (var i = 0; i < str.length; i++) {
         try {
             for (var _b = (e_1 = void 0, __values(Object.keys(alph))), _c = _b.next(); !_c.done; _c = _b.next()) {
                 var digit = _c.value;
                 var tmp = str.slice(i, i + digit.length);
                 if (__spread(tmp).sort().join('') === __spread(digit).sort().join('')) {
                     result += alph[digit];
-                    i += digit.length - 1;
-                    flgFind = true;
                     break;
                 }
             }
@@ -78,8 +74,6 @@ function recover(str) {
             }
             finally { if (e_1) throw e_1.error; }
         }
-        if (!flgFind)
-            i++;
     }
     return result || 'No digits found';
 }

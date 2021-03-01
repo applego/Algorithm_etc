@@ -8,6 +8,32 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/03/01 22:17
+var _5_kyu_Some_Egyptian_fractions_1 = require("./5 kyu Some Egyptian fractions");
+{
+    var test_1 = function (arr) {
+        return arr.forEach(function (f) {
+            var t = function (a, b) {
+                var stra = a.toString();
+                var strb = b.toString();
+                console.log("stra:" + stra + " strb:" + strb);
+                // assert.deepEqual()
+                console.log(stra + " + " + strb + " = " + a.add(b));
+                console.log(stra + " - " + strb + " = " + a.subtract(b));
+                console.log(stra + " * " + strb + " = " + a.multiply(b));
+                console.log(stra + " / " + strb + " = " + a.divide(b));
+            };
+            t(f.a, f.b);
+            t(f.b, f.a);
+        });
+    };
+    test_1([
+        { a: new _5_kyu_Some_Egyptian_fractions_1.fraction(5), b: new _5_kyu_Some_Egyptian_fractions_1.fraction(1, 2) },
+        { a: new _5_kyu_Some_Egyptian_fractions_1.fraction(2, 3), b: new _5_kyu_Some_Egyptian_fractions_1.fraction(1, 6) },
+        { a: new _5_kyu_Some_Egyptian_fractions_1.fraction(1, 2), b: new _5_kyu_Some_Egyptian_fractions_1.fraction(1, 2) },
+        { a: new _5_kyu_Some_Egyptian_fractions_1.fraction(1 / 3), b: new _5_kyu_Some_Egyptian_fractions_1.fraction(3) },
+    ]);
+}
 //　2021/02/26 12:05
 var _6_kyu_Digit_Recovery_1 = require("./6 kyu Digit Recovery");
 chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('NEO'), '1');
