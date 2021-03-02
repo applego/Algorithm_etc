@@ -1,5 +1,5 @@
 
-NEWFILENAME="7 kyu Number of People in the Bus"
+NEWFILENAME="5 kyu Some Egyptian fractions"
 touch "codewars/$NEWFILENAME.ts"
 
 

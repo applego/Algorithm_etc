@@ -5,6 +5,49 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from 'mocha';
 import { assert, expect } from 'chai';
 ////////////////////////////////////////////////////////////////
+// 2021/03/01 22:17
+import {
+  fraction,
+  G964 as G964_20210301,
+} from './5 kyu Some Egyptian fractions';
+type frac = {
+  a: fraction;
+  b: fraction;
+};
+{
+  const test = (arr: frac[]) =>
+    arr.forEach((f) => {
+      const t = (a: fraction, b: fraction) => {
+        const stra = a.toString();
+        const strb = b.toString();
+        console.log(`stra:${stra} strb:${strb}`);
+        // assert.deepEqual()
+        console.log(`${stra} + ${strb} = ${a.add(b)}`);
+        console.log(`${stra} - ${strb} = ${a.subtract(b)}`);
+        console.log(`${stra} * ${strb} = ${a.multiply(b)}`);
+        console.log(`${stra} / ${strb} = ${a.divide(b)}`);
+      };
+      t(f.a, f.b);
+      t(f.b, f.a);
+    });
+  test([
+    { a: new fraction(5), b: new fraction(1, 2) },
+    { a: new fraction(2, 3), b: new fraction(1, 6) },
+    { a: new fraction(1, 2), b: new fraction(1, 2) },
+    { a: new fraction(1 / 3), b: new fraction(3) },
+  ]);
+}
+function testing_20210301(s: string, expected: string[]) {
+  assert.deepEqual(G964_20210301.decompose(s), expected);
+}
+testing_20210301('3/4', ['1/2', '1/4']);
+testing_20210301('12/4', ['3']);
+testing_20210301('4/5', ['1/2', '1/4', '1/20']);
+testing_20210301('21/23', ['1/2', '1/3', '1/13', '1/359', '1/644046']);
+testing_20210301('0.66', ['1/2', '1/7', '1/59', '1/5163', '1/53307975']);
+
+testing_20210301('0', []);
+
 //　2021/02/26 12:05
 import { recover } from './6 kyu Digit Recovery';
 assert.deepEqual(recover('NEO'), '1');

@@ -603,4 +603,75 @@ mocha_1.describe('./6 kyu Digit Recovery', function () {
         chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('NEOTWONEINEIGHTOWSVEEN'), '12219827');
     });
 });
+// 2021/02/27  0:22
+var _7_kyu_Number_of_People_in_the_Bus_1 = require("./7 kyu Number of People in the Bus");
+mocha_1.describe('number', function () {
+    mocha_1.it('basic tests', function () {
+        chai_1.assert.equal(_7_kyu_Number_of_People_in_the_Bus_1.number([
+            [10, 0],
+            [3, 5],
+            [5, 8],
+        ]), 5);
+        chai_1.assert.equal(_7_kyu_Number_of_People_in_the_Bus_1.number([
+            [3, 0],
+            [9, 1],
+            [4, 10],
+            [12, 2],
+            [6, 1],
+            [7, 10],
+        ]), 17);
+        chai_1.assert.equal(_7_kyu_Number_of_People_in_the_Bus_1.number([
+            [3, 0],
+            [9, 1],
+            [4, 8],
+            [12, 2],
+            [6, 1],
+            [7, 8],
+        ]), 21);
+        chai_1.assert.equal(_7_kyu_Number_of_People_in_the_Bus_1.number([[0, 0]]), 0);
+    });
+});
+// 2021/03/01 19:30
+var _5_kyu_Some_Egyptian_fractions_1 = require("./5 kyu Some Egyptian fractions");
+mocha_1.describe('分数クラスのテスト', function () {
+    mocha_1.it('Basic', function () {
+        var test = function (arr) {
+            return arr.forEach(function (f) {
+                var t = function (a, b) {
+                    var stra = a.toString();
+                    var strb = b.toString();
+                    // console.log(`stra:${stra} strb:${strb}`);
+                    // // assert.deepEqual()
+                    // console.log(`${stra} + ${strb} = ${a.add(b)}`);
+                    // console.log(`${stra} - ${strb} = ${a.subtract(b)}`);
+                    // console.log(`${stra} * ${strb} = ${a.multiply(b)}`);
+                    // console.log(`${stra} / ${strb} = ${a.divide(b)}`);
+                };
+                t(f.a, f.b);
+                t(f.b, f.a);
+            });
+        };
+        test([
+            { a: new _5_kyu_Some_Egyptian_fractions_1.fraction(5), b: new _5_kyu_Some_Egyptian_fractions_1.fraction(1, 2) },
+            { a: new _5_kyu_Some_Egyptian_fractions_1.fraction(2, 3), b: new _5_kyu_Some_Egyptian_fractions_1.fraction(1, 6) },
+            { a: new _5_kyu_Some_Egyptian_fractions_1.fraction(1, 2), b: new _5_kyu_Some_Egyptian_fractions_1.fraction(1, 2) },
+            { a: new _5_kyu_Some_Egyptian_fractions_1.fraction(1 / 3), b: new _5_kyu_Some_Egyptian_fractions_1.fraction(3) },
+        ]);
+    });
+});
+function testing_20210301(s, expected) {
+    chai_1.assert.deepEqual(_5_kyu_Some_Egyptian_fractions_1.G964.decompose(s), expected);
+}
+mocha_1.describe('Fixed Tests decompose', function () {
+    mocha_1.it('Basic tests', function () {
+        testing_20210301('3/4', ['1/2', '1/4']);
+        testing_20210301('12/4', ['3']);
+        testing_20210301('4/5', ['1/2', '1/4', '1/20']);
+        testing_20210301('21/23', ['1/2', '1/3', '1/13', '1/359', '1/644046']);
+        testing_20210301('0.66', ['1/2', '1/7', '1/59', '1/5163', '1/53307975']);
+    });
+    mocha_1.it('Attempt tests', function () {
+        testing_20210301('0', []);
+    });
+});
 //# sourceMappingURL=test.js.map
