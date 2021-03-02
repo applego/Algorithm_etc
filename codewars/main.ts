@@ -5,6 +5,29 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from 'mocha';
 import { assert, expect } from 'chai';
 ////////////////////////////////////////////////////////////////
+// 2021/03/02 20:00
+import { G } from '../AtCoder/第一回アルゴリズム実技検定G - 組分け';
+
+assert.deepEqual(
+  G.main(
+    `6
+10 10 -10 -10 -10
+10 -10 -10 -10
+-10 -10 -10
+10 -10
+-10`
+  ),
+  40
+);
+assert.deepEqual(
+  G.main(
+    `3
+1 1
+1`
+  ),
+  3
+);
+
 // 2021/03/01 22:17
 import {
   fraction,

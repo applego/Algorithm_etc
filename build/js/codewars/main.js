@@ -8,6 +8,10 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/03/02 20:00
+var _____________G______1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u5B9F\u6280\u691C\u5B9AG - \u7D44\u5206\u3051");
+chai_1.assert.deepEqual(_____________G______1.G.main("6\n10 10 -10 -10 -10\n10 -10 -10 -10\n-10 -10 -10\n10 -10\n-10"), 40);
+chai_1.assert.deepEqual(_____________G______1.G.main("3\n1 1\n1"), 3);
 // 2021/03/01 22:17
 var _5_kyu_Some_Egyptian_fractions_1 = require("./5 kyu Some Egyptian fractions");
 {

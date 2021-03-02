@@ -674,4 +674,12 @@ mocha_1.describe('Fixed Tests decompose', function () {
         testing_20210301('0', []);
     });
 });
+// 2021/03/02 20:00
+var _____________G______1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u5B9F\u6280\u691C\u5B9AG - \u7D44\u5206\u3051");
+mocha_1.describe('Fixed Tests decompose', function () {
+    mocha_1.it('Basic tests', function () {
+        chai_1.assert.deepEqual(_____________G______1.G.main("6\n10 10 -10 -10 -10\n10 -10 -10 -10\n-10 -10 -10\n10 -10\n-10"), 40);
+        chai_1.assert.deepEqual(_____________G______1.G.main("3\n1 1\n1"), 3);
+    });
+});
 //# sourceMappingURL=test.js.map

@@ -800,3 +800,29 @@ describe('Fixed Tests decompose', function () {
     testing_20210301('0', []);
   });
 });
+
+// 2021/03/02 20:00
+import { G } from '../AtCoder/第一回アルゴリズム実技検定G - 組分け';
+describe('Fixed Tests decompose', function () {
+  it('Basic tests', function () {
+    assert.deepEqual(
+      G.main(
+        `6
+10 10 -10 -10 -10
+10 -10 -10 -10
+-10 -10 -10
+10 -10
+-10`
+      ),
+      40
+    );
+    assert.deepEqual(
+      G.main(
+        `3
+1 1
+1`
+      ),
+      3
+    );
+  });
+});
