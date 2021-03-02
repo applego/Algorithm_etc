@@ -30,7 +30,7 @@ var G964 = /** @class */ (function () {
         // if (arr[0] === undefined) throw new Error('arr[0] is undefined');
         var tmpDenominator = Number.isNaN(Number(arr[1])) ? 1 : Number(arr[1]);
         var a = new fraction(Number(arr[0]), tmpDenominator);
-        if (a.isNumeratorOne())
+        if (a.isNumeratorZero())
             return [];
         if (a.isInteger())
             return [a.toString()];
@@ -103,6 +103,9 @@ var fraction = /** @class */ (function () {
     };
     fraction.prototype.isInteger = function () {
         return Number.isInteger(this.numerize());
+    };
+    fraction.prototype.isNumeratorZero = function () {
+        return this.numerator === 0;
     };
     fraction.prototype.isNumeratorOne = function () {
         return this.numerator === 1;
