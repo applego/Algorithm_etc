@@ -25,7 +25,38 @@ var G964 = /** @class */ (function () {
     function G964() {
     }
     G964.decompose = function (n) {
-        return new Array();
+        console.log(n);
+        var arr = n.split('/');
+        // if (arr[0] === undefined) throw new Error('arr[0] is undefined');
+        var tmpDenominator = Number.isNaN(Number(arr[1])) ? 1 : Number(arr[1]);
+        var a = new fraction(Number(arr[0]), tmpDenominator);
+        if (a.isNumeratorOne())
+            return [];
+        if (a.isInteger())
+            return [a.toString()];
+        var result = [];
+        if (a.valueOf() > 1) {
+            var seisuu = Math.floor(a.valueOf());
+            result.push(seisuu.toString());
+            a = a.subtract(new fraction(seisuu));
+        }
+        // ここから少数部分のはず
+        for (var i = 2; i < Number.MAX_SAFE_INTEGER; i++) {
+            // const tmpA = new fraction(a.numerator, a.denominator);
+            var tmpA = a.copy();
+            // tmpA = tmpA.add(new fraction(1, 1));
+            console.log(a.toString());
+            var target = new fraction(1, i);
+            if (tmpA.subtract(target).valueOf() > 0) {
+                a = a.subtract(target);
+                result.push(target.toString());
+            }
+            if (a.isNumeratorOne()) {
+                result.push(a.toString());
+                break;
+            }
+        }
+        return result;
     };
     return G964;
 }());
@@ -70,6 +101,16 @@ var fraction = /** @class */ (function () {
     fraction.prototype.valueOf = function () {
         return this.numerize();
     };
+    fraction.prototype.isInteger = function () {
+        return Number.isInteger(this.numerize());
+    };
+    fraction.prototype.isNumeratorOne = function () {
+        return this.numerator === 1;
+    };
+    fraction.prototype.copy = function () {
+        return new fraction(this.numerator, this.denominator);
+    };
+    /** 計算 */
     fraction.prototype.add = function (other) {
         return new fraction(this.numerator * other.denominator + other.numerator * this.denominator, other.denominator * this.denominator);
     };

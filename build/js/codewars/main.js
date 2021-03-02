@@ -34,6 +34,15 @@ var _5_kyu_Some_Egyptian_fractions_1 = require("./5 kyu Some Egyptian fractions"
         { a: new _5_kyu_Some_Egyptian_fractions_1.fraction(1 / 3), b: new _5_kyu_Some_Egyptian_fractions_1.fraction(3) },
     ]);
 }
+function testing_20210301(s, expected) {
+    chai_1.assert.deepEqual(_5_kyu_Some_Egyptian_fractions_1.G964.decompose(s), expected);
+}
+testing_20210301('3/4', ['1/2', '1/4']);
+testing_20210301('12/4', ['3']);
+testing_20210301('4/5', ['1/2', '1/4', '1/20']);
+testing_20210301('21/23', ['1/2', '1/3', '1/13', '1/359', '1/644046']);
+testing_20210301('0.66', ['1/2', '1/7', '1/59', '1/5163', '1/53307975']);
+testing_20210301('0', []);
 //　2021/02/26 12:05
 var _6_kyu_Digit_Recovery_1 = require("./6 kyu Digit Recovery");
 chai_1.assert.deepEqual(_6_kyu_Digit_Recovery_1.recover('NEO'), '1');

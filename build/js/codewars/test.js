@@ -640,12 +640,12 @@ mocha_1.describe('分数クラスのテスト', function () {
                 var t = function (a, b) {
                     var stra = a.toString();
                     var strb = b.toString();
-                    console.log("stra:" + stra + " strb:" + strb);
-                    // assert.deepEqual()
-                    console.log(stra + " + " + strb + " = " + a.add(b));
-                    console.log(stra + " - " + strb + " = " + a.subtract(b));
-                    console.log(stra + " * " + strb + " = " + a.multiply(b));
-                    console.log(stra + " / " + strb + " = " + a.divide(b));
+                    // console.log(`stra:${stra} strb:${strb}`);
+                    // // assert.deepEqual()
+                    // console.log(`${stra} + ${strb} = ${a.add(b)}`);
+                    // console.log(`${stra} - ${strb} = ${a.subtract(b)}`);
+                    // console.log(`${stra} * ${strb} = ${a.multiply(b)}`);
+                    // console.log(`${stra} / ${strb} = ${a.divide(b)}`);
                 };
                 t(f.a, f.b);
                 t(f.b, f.a);
@@ -667,7 +667,11 @@ mocha_1.describe('Fixed Tests decompose', function () {
         testing_20210301('3/4', ['1/2', '1/4']);
         testing_20210301('12/4', ['3']);
         testing_20210301('4/5', ['1/2', '1/4', '1/20']);
+        testing_20210301('21/23', ['1/2', '1/3', '1/13', '1/359', '1/644046']);
         testing_20210301('0.66', ['1/2', '1/7', '1/59', '1/5163', '1/53307975']);
+    });
+    mocha_1.it('Attempt tests', function () {
+        testing_20210301('0', []);
     });
 });
 //# sourceMappingURL=test.js.map
