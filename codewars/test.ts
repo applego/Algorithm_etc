@@ -803,7 +803,7 @@ describe('Fixed Tests decompose', function () {
 
 // 2021/03/02 20:00
 import { G } from '../AtCoder/第一回アルゴリズム実技検定G - 組分け';
-describe('Fixed Tests decompose', function () {
+describe('Fixed Tests decompose2', function () {
   it('Basic tests', function () {
     assert.deepEqual(
       G.main(
@@ -826,3 +826,50 @@ describe('Fixed Tests decompose', function () {
     );
   });
 });
+// 2021/03/03 10:04
+// ! G2 読み込めない謎現象
+// import { G2 } from '../AOJ/ALDS1_4_C_Dictionary';
+// describe('Fixed Tests decompose3', function () {
+//   it('Basic tests', function () {
+//     console.log(G2);
+//     assert.deepEqual(
+//       G2.main(
+//         `6
+// insert AAA
+// insert AAC
+// find AAA
+// find CCC
+// insert CCC
+// find CCC
+// insert CCC`
+//       ),
+//       `yes
+// no
+// yes`
+//     );
+//     assert.deepEqual(
+//       G2.main(
+//         `13
+// insert AAA
+// insert AAC
+// insert AGA
+// insert AGG
+// insert TTT
+// find AAA
+// find CCC
+// find CCC
+// insert CCC
+// find CCC
+// insert T
+// find TTT
+// find T`
+//       ),
+//       `yes
+// no
+// no
+// yes
+// yes
+// yes`
+//     );
+//   });
+// });
