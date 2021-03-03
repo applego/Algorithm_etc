@@ -42,7 +42,7 @@ var G = /** @class */ (function () {
         var inputArr = input.split('\n');
         var n = Number(inputArr.shift());
         var a = inputArr.map(function (_) { return _.split(' ').map(Number); });
-        console.log(a);
+        // console.log(a);
         var m = Number.MIN_SAFE_INTEGER;
         G.perm(Array(n), 0, function (g) {
             var r = 0;

@@ -8,6 +8,38 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/03/03 10:04
+var ALDS1_4_C_Dictionary_1 = require("../AOJ/ALDS1_4_C_Dictionary");
+chai_1.assert.deepEqual(ALDS1_4_C_Dictionary_1.G2.main("6\ninsert AAA\ninsert AAC\nfind AAA\nfind CCC\ninsert CCC\nfind CCC\ninsert CCC"), "yes\nno\nyes");
+chai_1.assert.deepEqual(ALDS1_4_C_Dictionary_1.G2.main("13\ninsert AAA\ninsert AAC\ninsert AGA\ninsert AGG\ninsert TTT\nfind AAA\nfind CCC\nfind CCC\ninsert CCC\nfind CCC\ninsert T\nfind TTT\nfind T"), "yes\nno\nno\nyes\nyes\nyes");
+//     assert.deepEqual(
+//       G2.main(
+//         `15
+// insert AAA
+// insert AAC
+// insert AGA
+// insert AGG
+// insert TTT
+// find AAA
+// find CCC
+// find CCC
+// insert CCC
+// find CCC
+// find CC
+// insert T
+// find TTT
+// find T
+// find A`
+//       ),
+//       `yes
+// no
+// no
+// yes
+// no
+// yes
+// yes
+// no`
+//     );
 // 2021/03/02 20:00
 var _____________G______1 = require("../AtCoder/\u7B2C\u4E00\u56DE\u30A2\u30EB\u30B4\u30EA\u30BA\u30E0\u5B9F\u6280\u691C\u5B9AG - \u7D44\u5206\u3051");
 chai_1.assert.deepEqual(_____________G______1.G.main("6\n10 10 -10 -10 -10\n10 -10 -10 -10\n-10 -10 -10\n10 -10\n-10"), 40);
