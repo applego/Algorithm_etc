@@ -14,26 +14,22 @@
 
 export class G3 {
   static main(input: string): number {
-    let bestP = 0;
     const inputArr = input.split('\n');
     const firstLine = inputArr.shift()?.split(' ').map(Number);
     if (!firstLine) throw new Error('firstLine was undefined');
     const [cntPackage, cntTrack] = [firstLine[0], firstLine[1]];
-    const arrPackageWeight = inputArr.map(Number);
+    const arrPackageWeight = inputArr.slice().map(Number);
 
-    let maxWeight = Number.MIN_SAFE_INTEGER;
-    let sum = 0;
-    arrPackageWeight.forEach((v) => {
-      if (v > maxWeight) maxWeight = v;
-      sum += v;
-    });
-    let ave = Math.floor(sum / cntTrack) * 2;
+    let sum = arrPackageWeight.reduce((acc, curr) => {
+      return acc + curr;
+    }, 0);
+    let ave = Math.floor(sum / cntTrack);
 
-    let left = 0;
-    let right = Math.max(maxWeight, ave);
+    let left = ave / 2;
+    let right = ave * 2;
     while (right - left > 1) {
       let mid = Math.floor((left + right) / 2);
-      const loader = new Loader(arrPackageWeight.slice(), cntTrack);
+      const loader = new Loader(arrPackageWeight, cntTrack);
       const ccp = loader.CapableCntOfPackage(mid);
       if (ccp >= cntPackage) right = mid;
       else left = mid;
@@ -45,31 +41,19 @@ export class G3 {
 class Loader {
   constructor(private arrPackageWeight: number[], private cntTrack: number) {}
   CapableCntOfPackage(P: number): number {
-    // 何個運べるかを返す
     let capableCntOfPackage = 0;
-    let tracks: Track[] = [];
-    for (let i = 0; i < this.cntTrack; i++) {
-      tracks.push(new Track(P, 0));
-    }
-    // * NG let tracks = Array(this.cntTrack).map((_) => {
-    //   return new Track(P, 0);
-    // });
-    let targetTrack: Track | undefined;
-    let targetPackageWeight: number | undefined;
-    while (
-      // (targetPackageWeight = this.arrPackageWeight.shift()) !== undefined
-      // &&
-      (targetTrack = tracks.shift()) !== undefined
-      // true
-    ) {
-      targetPackageWeight = this.arrPackageWeight.shift();
-      while (targetPackageWeight && targetTrack.canLoad(targetPackageWeight)) {
-        targetTrack.load(targetPackageWeight);
-        capableCntOfPackage++;
-        targetPackageWeight = this.arrPackageWeight.shift();
+    let ip = 0;
+    for (let it = 0; it < this.cntTrack; it++) {
+      const track = new Track(P, 0);
+      for (; ip < this.arrPackageWeight.length; ip++) {
+        const pweight = this.arrPackageWeight[ip];
+        if (track.canLoad(pweight)) {
+          track.load(pweight);
+          capableCntOfPackage++;
+        } else {
+          break;
+        }
       }
-      if (targetPackageWeight)
-        this.arrPackageWeight.unshift(targetPackageWeight);
     }
     return capableCntOfPackage;
   }
