@@ -5,6 +5,25 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from 'mocha';
 import { assert, expect } from 'chai';
 ////////////////////////////////////////////////////////////////
+// 2021/03/04  0:04
+import { G3 } from '../AOJ/ALDS1_4_D_割り当て';
+assert.deepEqual(
+  G3.main(`5 3
+8
+1
+7
+3
+9`),
+  10
+);
+assert.deepEqual(
+  G3.main(`4 2
+1
+2
+2
+6`),
+  6
+);
 // 2021/03/03 10:04
 import { G2 } from '../AOJ/ALDS1_4_C_Dictionary';
 assert.deepEqual(

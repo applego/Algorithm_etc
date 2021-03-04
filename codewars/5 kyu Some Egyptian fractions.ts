@@ -18,7 +18,7 @@ export class G964 {
       // const tmpA = new fraction(a.numerator, a.denominator);
       const tmpA = a.copy();
       // tmpA = tmpA.add(new fraction(1, 1));
-      console.log(a.toString());
+      // console.log(a.toString());
       const target = new fraction(1, i);
       if (tmpA.subtract(target).valueOf() > 0) {
         a = a.subtract(target);

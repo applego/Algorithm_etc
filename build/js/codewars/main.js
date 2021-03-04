@@ -8,6 +8,10 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/03/04  0:04
+var ALDS1_4_D_____1 = require("../AOJ/ALDS1_4_D_\u5272\u308A\u5F53\u3066");
+chai_1.assert.deepEqual(ALDS1_4_D_____1.G3.main("5 3\n8\n1\n7\n3\n9"), 10);
+chai_1.assert.deepEqual(ALDS1_4_D_____1.G3.main("4 2\n1\n2\n2\n6"), 6);
 // 2021/03/03 10:04
 var ALDS1_4_C_Dictionary_1 = require("../AOJ/ALDS1_4_C_Dictionary");
 chai_1.assert.deepEqual(ALDS1_4_C_Dictionary_1.G2.main("6\ninsert AAA\ninsert AAC\nfind AAA\nfind CCC\ninsert CCC\nfind CCC\ninsert CCC"), "yes\nno\nyes");
