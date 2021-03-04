@@ -1,5 +1,5 @@
 
-NEWFILENAME="5 kyu Some Egyptian fractions"
+NEWFILENAME="7 kyu The Coupon Code"
 touch "codewars/$NEWFILENAME.ts"
 
 
