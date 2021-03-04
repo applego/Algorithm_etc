@@ -873,3 +873,27 @@ describe('Fixed Tests decompose2', function () {
 //     );
 //   });
 // });
+
+// 2021/03/03 12:13
+import { G3 } from '../AOJ/ALDS1_4_D_割り当て';
+describe('../AOJ/ALDS1_4_D_割り当て', () => {
+  it('Basic tests', () => {
+    assert.deepEqual(
+      G3.main(`5 3
+8
+1
+7
+3
+9`),
+      10
+    );
+    assert.deepEqual(
+      G3.main(`4 2
+1
+2
+2
+6`),
+      6
+    );
+  });
+});
