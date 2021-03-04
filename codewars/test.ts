@@ -897,3 +897,18 @@ describe('../AOJ/ALDS1_4_D_割り当て', () => {
     );
   });
 });
+
+// 2021/03/04 21:19
+import { checkCoupon } from './7 kyu The Coupon Code';
+describe('./7 kyu The Coupon Code', () => {
+  it('Basic tests', () => {
+    assert.equal(
+      checkCoupon('123', '123', 'September 5, 2014', 'October 1, 2014'),
+      true
+    );
+    assert.equal(
+      checkCoupon('123a', '123', 'September 5, 2014', 'October 1, 2014'),
+      false
+    );
+  });
+});
