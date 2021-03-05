@@ -1,9 +1,9 @@
 
-NEWFILENAME="7 kyu The Coupon Code"
+NEWFILENAME="8 kyu Find the smallest integer in the array"
 touch "codewars/$NEWFILENAME.ts"
 
 
-NEWFILENAME2="第一回アルゴリズム実技検定G - 組分け"
+NEWFILENAME2="abc002A - 正直者"
 touch "AtCoder/$NEWFILENAME2.ts"
 
 NEWFILENAME3="ALDS1_4_D_割当"
