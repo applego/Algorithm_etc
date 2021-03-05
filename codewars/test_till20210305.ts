@@ -912,3 +912,12 @@ describe('./7 kyu The Coupon Code', () => {
     );
   });
 });
+
+// 2021/03/05 21:54
+import { answer as a20210305 } from '../AtCoder/abc002A - 正直者';
+describe('../AtCoder/abc002A - 正直者.ts', () => {
+  it('Basic tests', () => {
+    assert.deepEqual(a20210305('10 11'), 11);
+    assert.deepEqual(a20210305('100000000 10000000'), 100000000);
+  });
+});
