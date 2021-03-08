@@ -1,5 +1,5 @@
 
-NEWFILENAME="8 kyu Find the smallest integer in the array"
+NEWFILENAME="5 kyu Mixbonacci"
 touch "codewars/$NEWFILENAME.ts"
 
 
