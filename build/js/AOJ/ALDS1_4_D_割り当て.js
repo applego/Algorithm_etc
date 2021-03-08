@@ -35,26 +35,21 @@ var G3 = /** @class */ (function () {
     }
     G3.main = function (input) {
         var _a;
-        var bestP = 0;
         var inputArr = input.split('\n');
         var firstLine = (_a = inputArr.shift()) === null || _a === void 0 ? void 0 : _a.split(' ').map(Number);
         if (!firstLine)
             throw new Error('firstLine was undefined');
         var _b = __read([firstLine[0], firstLine[1]], 2), cntPackage = _b[0], cntTrack = _b[1];
-        var arrPackageWeight = inputArr.map(Number);
-        var maxWeight = Number.MIN_SAFE_INTEGER;
-        var sum = 0;
-        arrPackageWeight.forEach(function (v) {
-            if (v > maxWeight)
-                maxWeight = v;
-            sum += v;
-        });
-        var ave = Math.floor(sum / cntTrack) * 2;
-        var left = 0;
-        var right = Math.max(maxWeight, ave);
+        var arrPackageWeight = inputArr.slice().map(Number);
+        var sum = arrPackageWeight.reduce(function (acc, curr) {
+            return acc + curr;
+        }, 0);
+        var ave = Math.floor(sum / cntTrack);
+        var left = ave / 2;
+        var right = ave * 2;
         while (right - left > 1) {
             var mid = Math.floor((left + right) / 2);
-            var loader = new Loader(arrPackageWeight.slice(), cntTrack);
+            var loader = new Loader(arrPackageWeight, cntTrack);
             var ccp = loader.CapableCntOfPackage(mid);
             if (ccp >= cntPackage)
                 right = mid;
@@ -72,31 +67,20 @@ var Loader = /** @class */ (function () {
         this.cntTrack = cntTrack;
     }
     Loader.prototype.CapableCntOfPackage = function (P) {
-        // 何個運べるかを返す
         var capableCntOfPackage = 0;
-        var tracks = [];
-        for (var i = 0; i < this.cntTrack; i++) {
-            tracks.push(new Track(P, 0));
-        }
-        // * NG let tracks = Array(this.cntTrack).map((_) => {
-        //   return new Track(P, 0);
-        // });
-        var targetTrack;
-        var targetPackageWeight;
-        while (
-        // (targetPackageWeight = this.arrPackageWeight.shift()) !== undefined
-        // &&
-        (targetTrack = tracks.shift()) !== undefined
-        // true
-        ) {
-            targetPackageWeight = this.arrPackageWeight.shift();
-            while (targetPackageWeight && targetTrack.canLoad(targetPackageWeight)) {
-                targetTrack.load(targetPackageWeight);
-                capableCntOfPackage++;
-                targetPackageWeight = this.arrPackageWeight.shift();
+        var ip = 0;
+        for (var it_1 = 0; it_1 < this.cntTrack; it_1++) {
+            var track = new Track(P, 0);
+            for (; ip < this.arrPackageWeight.length; ip++) {
+                var pweight = this.arrPackageWeight[ip];
+                if (track.canLoad(pweight)) {
+                    track.load(pweight);
+                    capableCntOfPackage++;
+                }
+                else {
+                    break;
+                }
             }
-            if (targetPackageWeight)
-                this.arrPackageWeight.unshift(targetPackageWeight);
         }
         return capableCntOfPackage;
     };

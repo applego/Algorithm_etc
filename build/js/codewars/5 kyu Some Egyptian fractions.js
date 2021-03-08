@@ -45,7 +45,7 @@ var G964 = /** @class */ (function () {
             // const tmpA = new fraction(a.numerator, a.denominator);
             var tmpA = a.copy();
             // tmpA = tmpA.add(new fraction(1, 1));
-            console.log(a.toString());
+            // console.log(a.toString());
             var target = new fraction(1, i);
             if (tmpA.subtract(target).valueOf() > 0) {
                 a = a.subtract(target);
