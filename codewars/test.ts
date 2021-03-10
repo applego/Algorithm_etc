@@ -214,3 +214,15 @@ describe('Example Tests', () => {
     // ]);
   });
 });
+
+// 2021/03/10 22:49
+import { wallpaper } from './7 kyu Easy wallpaper';
+describe('Fixed Tests wallpaper', function () {
+  it('Basic tests', function () {
+    assert.strictEqual(wallpaper(6.3, 4.5, 3.29), 'sixteen');
+    assert.strictEqual(wallpaper(6.3, 5.8, 3.13), 'seventeen');
+    assert.strictEqual(wallpaper(6.1, 6.7, 2.81), 'sixteen');
+    assert.strictEqual(wallpaper(6.1, 2.0, 3.15), 'twelve');
+    assert.strictEqual(wallpaper(4.4, 3.0, 2.75), 'ten');
+  });
+});

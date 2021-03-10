@@ -1,5 +1,5 @@
 
-NEWFILENAME="5 kyu Mixbonacci"
+NEWFILENAME="7 kyu Easy wallpaper"
 touch "codewars/$NEWFILENAME.ts"
 
 
