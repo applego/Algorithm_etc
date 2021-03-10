@@ -126,6 +126,6 @@ export function mixbonacci(pattern: string[], length: number): number[] {
     const e = DicKeyAndFunc[p](DicKeyAndCnt[p]++);
     result.push(e);
   }
-  console.log(result);
+  //! これのせいでエラーになる console.log(result);
   return result;
 }
