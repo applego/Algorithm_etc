@@ -11,5 +11,5 @@ touch "AOJ/$NEWFILENAME3.ts"
 
 
 // Go codewars
-NEWFILENAME4="8 kyu Return Negative"
+NEWFILENAME4="8 kyu Is he gonna survive?"
 touch "codewars/$NEWFILENAME4.go"
