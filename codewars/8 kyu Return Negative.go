@@ -7,7 +7,7 @@ import (
 
 // import "fmt"
 
-func main() {
+func negative() {
 
 	main2()
 	main3()
