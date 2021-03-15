@@ -1,4 +1,4 @@
-package main
+package kata
 
 func Hero(bullets, dragons int) bool {
   if bullets/2 >= dragons{
