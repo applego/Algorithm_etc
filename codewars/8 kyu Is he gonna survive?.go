@@ -1,10 +1,12 @@
 package main
 
-func main() {
-	Hero(3)
-}
-
 func Hero(bullets, dragons int) bool {
-  // your code
-	return true
+  if bullets/2 >= dragons{
+		return true
+	}
+	return false
+
+	// * BP
+	// return bullets/2 >= dragons;
+	// return bullets >= dragons*2;
 }
