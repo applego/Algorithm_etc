@@ -11,5 +11,7 @@ touch "AOJ/$NEWFILENAME3.ts"
 
 
 // Go codewars
-NEWFILENAME4="8 kyu Is he gonna survive?"
+NEWFILENAME4="6 kyu Vasya - Clerk"
 touch "codewars/$NEWFILENAME4.go"
+
+ginkgo generate "codewars/$NEWFILENAME4_test"
