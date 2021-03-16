@@ -1,5 +1,5 @@
 
-NEWFILENAME="7 kyu Easy wallpaper"
+NEWFILENAME="8 kyu A Needle in the Haystack"
 touch "codewars/$NEWFILENAME.ts"
 
 
