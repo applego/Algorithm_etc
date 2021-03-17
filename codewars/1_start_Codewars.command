@@ -1,5 +1,5 @@
 
-NEWFILENAME="8 kyu A Needle in the Haystack"
+NEWFILENAME="5 kyu Phone Directory"
 touch "codewars/$NEWFILENAME.ts"
 
 
