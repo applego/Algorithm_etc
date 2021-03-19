@@ -11,7 +11,7 @@ touch "AOJ/$NEWFILENAME3.ts"
 
 
 // Go codewars
-NEWFILENAME4="8 kyu Grasshopper - Check for factor"
-touch "codewars/$NEWFILENAME4.go"
+NEWFILENAME4="8 kyu Beginner Series #1 School Paperwork"
+ginkgo generate "codewars/8 kyu Beginner Series #1 School Paperwork_test"
 
-ginkgo generate "codewars/$NEWFILENAME4_test"
+touch "codewars/$NEWFILENAME4.go"
