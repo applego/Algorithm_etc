@@ -11,7 +11,8 @@ touch "AOJ/$NEWFILENAME3.ts"
 
 
 // Go codewars
-ginkgo generate "codewars/8 kyu Grasshopper - Grade book_test"
+cd codewars
+ginkgo generate "7 kyu Rotate for a Max_test"
 ginkgo generate "8 kyu Surface Area and Volume of a Box_test"
 
 // not work
