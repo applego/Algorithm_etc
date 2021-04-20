@@ -475,3 +475,30 @@ describe('Fixed Tests', function () {
     );
   });
 });
+
+import { getMostProfitFromStockQuotes } from './6 kyu Most profit from stock quotes';
+describe('getMostProfitFromStockQuotes basic tests', function () {
+  it('getMostProfitFromStockQuotes should return the max profit from stock trading', () => {
+    [
+      {
+        quotes: [1, 2, 3, 4, 5, 6],
+        expected: 15,
+      },
+      {
+        quotes: [6, 5, 4, 3, 2, 1],
+        expected: 0,
+      },
+      {
+        quotes: [1, 6, 5, 10, 8, 7],
+        expected: 18,
+      },
+    ].forEach((data) => {
+      const actual: number = getMostProfitFromStockQuotes(data.quotes);
+      assert.strictEqual(
+        actual,
+        data.expected,
+        `Most profit for [${data.quotes}] quotes`
+      );
+    });
+  });
+});
