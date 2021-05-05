@@ -502,3 +502,23 @@ describe('getMostProfitFromStockQuotes basic tests', function () {
     });
   });
 });
+
+import { factorial, factorial_shorter } from './7 kyu Factorial';
+
+describe('Basic tests', () => {
+  it('Testing for 0', () => assert.strictEqual(factorial(0), 1));
+  it('Testing for 1', () => assert.strictEqual(factorial(1), 1));
+  it('Testing for 4', () => assert.strictEqual(factorial(4), 24));
+  it('Testing for 7', () => assert.strictEqual(factorial(7), 5040));
+  it('Testing for 17', () =>
+    assert.strictEqual(factorial(17), 355687428096000));
+});
+
+describe('Basic tests2', () => {
+  it('Testing for 0', () => assert.strictEqual(factorial_shorter(0), 1));
+  it('Testing for 1', () => assert.strictEqual(factorial_shorter(1), 1));
+  it('Testing for 4', () => assert.strictEqual(factorial_shorter(4), 24));
+  it('Testing for 7', () => assert.strictEqual(factorial_shorter(7), 5040));
+  it('Testing for 17', () =>
+    assert.strictEqual(factorial_shorter(17), 355687428096000));
+});

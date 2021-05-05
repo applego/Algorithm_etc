@@ -1,5 +1,5 @@
 
-NEWFILENAME="6 kyu Most profit from stock quotes"
+NEWFILENAME="7 kyu Factorial"
 touch "codewars/$NEWFILENAME.ts"
 
 
@@ -12,7 +12,7 @@ touch "AOJ/$NEWFILENAME3.ts"
 
 // Go codewars
 cd codewars
-ginkgo generate "5 kyu Gap in Primes_test"
+ginkgo generate "7 kyu Complementary DNA_test"
 ginkgo generate "8 kyu Surface Area and Volume of a Box_test"
 
 // not work

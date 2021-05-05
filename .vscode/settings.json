@@ -1,4 +1,6 @@
 {
   "python.linting.pylintEnabled": true,
-  "python.linting.enabled": true
+  "python.linting.enabled": true,
+  "go.gopath": "/Users/tokoshige_mac/go",
+  "go.formatOnSave": true
 }
