@@ -17,3 +17,18 @@ func Solve(s string) int {
 	}
   return lenMax
 }
+
+func SolveBP(s string) int {
+	len,lenMax := 0, 0
+	for _, c := range s {
+		switch c {
+		case 'a' , 'i' , 'u' , 'e' , 'o':
+			if len++; len > lenMax {
+				lenMax = len
+			}
+		default:
+			len = 0
+		}
+	}
+  return lenMax
+}
