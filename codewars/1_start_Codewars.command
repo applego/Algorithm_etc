@@ -12,7 +12,7 @@ touch "AOJ/$NEWFILENAME3.ts"
 
 // Go codewars
 cd codewars
-ginkgo generate "7 kyu Longest vowel chain_test"
+ginkgo generate "6 kyu Buying a car_test"
 ginkgo generate "8 kyu Surface Area and Volume of a Box_test"
 
 // not work
