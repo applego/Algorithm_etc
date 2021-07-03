@@ -1,5 +1,5 @@
 
-NEWFILENAME="7 kyu Factorial"
+NEWFILENAME="6 kyu Reducing by steps"
 touch "codewars/$NEWFILENAME.ts"
 
 
@@ -12,7 +12,7 @@ touch "AOJ/$NEWFILENAME3.ts"
 
 // Go codewars
 cd codewars
-ginkgo generate "6 kyu How Much?_test"
+ginkgo generate "7 kyu All Star Code Challenge #1_test"
 ginkgo generate "8 kyu Surface Area and Volume of a Box_test"
 
 // not work

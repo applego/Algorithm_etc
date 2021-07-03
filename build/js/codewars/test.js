@@ -402,15 +402,81 @@ var num = '1-541-754-3010,1-541-914-3010,1-541-984-3012,1-321-512-2222,1-741-984
     '7-121-504-8974,7-681-512-2222,9-421-674-8974,2-908-512-2222,8-421-674-8974,' +
     '15-098-512-2222,9-421-674-8974,3-498-512-2222,12-099-500-8000,8-931-512-4855,' +
     '3-098-512-2222';
-function testing(strng, num, expected) {
+function testing_20210316(strng, num, expected) {
     chai_1.assert.equal(_5_kyu_Phone_Directory_1.G964.phone(strng, num), expected);
 }
 mocha_1.describe('Fixed Tests', function () {
     mocha_1.it('phone', function () {
-        testing(dr, '48-421-674-8974', 'Phone => 48-421-674-8974, Name => Anastasia, Address => Via Quirinal Roma');
-        testing(dr, '19-421-674-8974', 'Phone => 19-421-674-8974, Name => C Powel, Address => Chateau des Fosses Strasbourg F-68000');
-        testing(dr, '1-921-512-2222', 'Phone => 1-921-512-2222, Name => Wilfrid Stevens, Address => Wild Street AA-67209');
-        testing(dr, '1-908-512-2222', "Phone => 1-908-512-2222, Name => Peter O'Brien, Address => High Street CC-47209");
+        testing_20210316(dr, '48-421-674-8974', 'Phone => 48-421-674-8974, Name => Anastasia, Address => Via Quirinal Roma');
+        testing_20210316(dr, '19-421-674-8974', 'Phone => 19-421-674-8974, Name => C Powel, Address => Chateau des Fosses Strasbourg F-68000');
+        testing_20210316(dr, '1-921-512-2222', 'Phone => 1-921-512-2222, Name => Wilfrid Stevens, Address => Wild Street AA-67209');
+        testing_20210316(dr, '1-908-512-2222', "Phone => 1-908-512-2222, Name => Peter O'Brien, Address => High Street CC-47209");
+    });
+});
+var _6_kyu_Most_profit_from_stock_quotes_1 = require("./6 kyu Most profit from stock quotes");
+mocha_1.describe('getMostProfitFromStockQuotes basic tests', function () {
+    mocha_1.it('getMostProfitFromStockQuotes should return the max profit from stock trading', function () {
+        [
+            {
+                quotes: [1, 2, 3, 4, 5, 6],
+                expected: 15,
+            },
+            {
+                quotes: [6, 5, 4, 3, 2, 1],
+                expected: 0,
+            },
+            {
+                quotes: [1, 6, 5, 10, 8, 7],
+                expected: 18,
+            },
+        ].forEach(function (data) {
+            var actual = _6_kyu_Most_profit_from_stock_quotes_1.getMostProfitFromStockQuotes(data.quotes);
+            chai_1.assert.strictEqual(actual, data.expected, "Most profit for [" + data.quotes + "] quotes");
+        });
+    });
+});
+var _7_kyu_Factorial_1 = require("./7 kyu Factorial");
+mocha_1.describe('Basic tests', function () {
+    mocha_1.it('Testing for 0', function () { return chai_1.assert.strictEqual(_7_kyu_Factorial_1.factorial(0), 1); });
+    mocha_1.it('Testing for 1', function () { return chai_1.assert.strictEqual(_7_kyu_Factorial_1.factorial(1), 1); });
+    mocha_1.it('Testing for 4', function () { return chai_1.assert.strictEqual(_7_kyu_Factorial_1.factorial(4), 24); });
+    mocha_1.it('Testing for 7', function () { return chai_1.assert.strictEqual(_7_kyu_Factorial_1.factorial(7), 5040); });
+    mocha_1.it('Testing for 17', function () {
+        return chai_1.assert.strictEqual(_7_kyu_Factorial_1.factorial(17), 355687428096000);
+    });
+});
+mocha_1.describe('Basic tests2', function () {
+    mocha_1.it('Testing for 0', function () { return chai_1.assert.strictEqual(_7_kyu_Factorial_1.factorial_shorter(0), 1); });
+    mocha_1.it('Testing for 1', function () { return chai_1.assert.strictEqual(_7_kyu_Factorial_1.factorial_shorter(1), 1); });
+    mocha_1.it('Testing for 4', function () { return chai_1.assert.strictEqual(_7_kyu_Factorial_1.factorial_shorter(4), 24); });
+    mocha_1.it('Testing for 7', function () { return chai_1.assert.strictEqual(_7_kyu_Factorial_1.factorial_shorter(7), 5040); });
+    mocha_1.it('Testing for 17', function () {
+        return chai_1.assert.strictEqual(_7_kyu_Factorial_1.factorial_shorter(17), 355687428096000);
+    });
+});
+// 2021/06/30 15:55
+var _6_kyu_Reducing_by_steps_1 = require("./6 kyu Reducing by steps");
+function testing_20210630(actual, expected) {
+    chai_1.assert.deepEqual(actual, expected);
+}
+mocha_1.describe("Fixed Tests gcdi, lcmu, som, mini, maxi", function () {
+    mocha_1.it("Basic tests", function () {
+        var a = [18, 69, -90, -78, 65, 40];
+        var r = [18, 3, 3, 3, 1, 1];
+        var op = _6_kyu_Reducing_by_steps_1.G964.operArray(_6_kyu_Reducing_by_steps_1.G964.gcdi, a, a[0]);
+        testing_20210630(op, r);
+        r = [18, 414, 2070, 26910, 26910, 107640];
+        op = _6_kyu_Reducing_by_steps_1.G964.operArray(_6_kyu_Reducing_by_steps_1.G964.lcmu, a, a[0]);
+        testing_20210630(op, r);
+        r = [18, 87, -3, -81, -16, 24];
+        op = _6_kyu_Reducing_by_steps_1.G964.operArray(_6_kyu_Reducing_by_steps_1.G964.som, a, 0);
+        testing_20210630(op, r);
+        r = [18, 18, -90, -90, -90, -90];
+        op = _6_kyu_Reducing_by_steps_1.G964.operArray(_6_kyu_Reducing_by_steps_1.G964.mini, a, a[0]);
+        testing_20210630(op, r);
+        r = [18, 69, 69, 69, 69, 69];
+        op = _6_kyu_Reducing_by_steps_1.G964.operArray(_6_kyu_Reducing_by_steps_1.G964.maxi, a, a[0]);
+        testing_20210630(op, r);
     });
 });
 //# sourceMappingURL=test.js.map

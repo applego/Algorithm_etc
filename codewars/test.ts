@@ -447,28 +447,28 @@ const num =
   '15-098-512-2222,9-421-674-8974,3-498-512-2222,12-099-500-8000,8-931-512-4855,' +
   '3-098-512-2222';
 
-function testing(strng: string, num: string, expected: string) {
+function testing_20210316(strng: string, num: string, expected: string) {
   assert.equal(G964_20210316.phone(strng, num), expected);
 }
 
 describe('Fixed Tests', function () {
   it('phone', function () {
-    testing(
+    testing_20210316(
       dr,
       '48-421-674-8974',
       'Phone => 48-421-674-8974, Name => Anastasia, Address => Via Quirinal Roma'
     );
-    testing(
+    testing_20210316(
       dr,
       '19-421-674-8974',
       'Phone => 19-421-674-8974, Name => C Powel, Address => Chateau des Fosses Strasbourg F-68000'
     );
-    testing(
+    testing_20210316(
       dr,
       '1-921-512-2222',
       'Phone => 1-921-512-2222, Name => Wilfrid Stevens, Address => Wild Street AA-67209'
     );
-    testing(
+    testing_20210316(
       dr,
       '1-908-512-2222',
       "Phone => 1-908-512-2222, Name => Peter O'Brien, Address => High Street CC-47209"
@@ -521,4 +521,32 @@ describe('Basic tests2', () => {
   it('Testing for 7', () => assert.strictEqual(factorial_shorter(7), 5040));
   it('Testing for 17', () =>
     assert.strictEqual(factorial_shorter(17), 355687428096000));
+});
+
+// 2021/06/30 15:55
+import { G964 as G964_2022_0630 } from './6 kyu Reducing by steps';
+
+function testing_20210630(actual:any, expected:any) {
+  assert.deepEqual(actual, expected);
+}
+
+describe("Fixed Tests gcdi, lcmu, som, mini, maxi", function() {
+    it("Basic tests", function() {
+        var a = [ 18, 69, -90, -78, 65, 40 ];
+        var r = [ 18, 3, 3, 3, 1, 1 ];
+        var op = G964_2022_0630.operArray(G964_2022_0630.gcdi, a, a[0]);
+        testing_20210630(op, r);
+        r = [ 18, 414, 2070, 26910, 26910, 107640 ];
+        op = G964_2022_0630.operArray(G964_2022_0630.lcmu, a, a[0]);
+        testing_20210630(op, r);
+        r = [ 18, 87, -3, -81, -16, 24 ];
+        op = G964_2022_0630.operArray(G964_2022_0630.som, a, 0);
+        testing_20210630(op, r);
+        r = [ 18, 18, -90, -90, -90, -90 ];
+        op = G964_2022_0630.operArray(G964_2022_0630.mini, a, a[0]);
+        testing_20210630(op, r);
+        r = [ 18, 69, 69, 69, 69, 69 ];
+        op = G964_2022_0630.operArray(G964_2022_0630.maxi, a, a[0]);
+        testing_20210630(op, r);
+    });
 });
