@@ -8,6 +8,27 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/06/30 16:07
+var _6_kyu_Reducing_by_steps_1 = require("./6 kyu Reducing by steps");
+function testing_20210630(actual, expected) {
+    chai_1.assert.deepEqual(actual, expected);
+}
+var a0630 = [18, 69, -90, -78, 65, 40];
+var r = [18, 3, 3, 3, 1, 1];
+var op = _6_kyu_Reducing_by_steps_1.G964.operArray(_6_kyu_Reducing_by_steps_1.G964.gcdi, a0630, a0630[0]);
+testing_20210630(op, r);
+r = [18, 414, 2070, 26910, 26910, 107640];
+op = _6_kyu_Reducing_by_steps_1.G964.operArray(_6_kyu_Reducing_by_steps_1.G964.lcmu, a0630, a0630[0]);
+testing_20210630(op, r);
+r = [18, 87, -3, -81, -16, 24];
+op = _6_kyu_Reducing_by_steps_1.G964.operArray(_6_kyu_Reducing_by_steps_1.G964.som, a0630, 0);
+testing_20210630(op, r);
+r = [18, 18, -90, -90, -90, -90];
+op = _6_kyu_Reducing_by_steps_1.G964.operArray(_6_kyu_Reducing_by_steps_1.G964.mini, a0630, a0630[0]);
+testing_20210630(op, r);
+r = [18, 69, 69, 69, 69, 69];
+op = _6_kyu_Reducing_by_steps_1.G964.operArray(_6_kyu_Reducing_by_steps_1.G964.maxi, a0630, a0630[0]);
+testing_20210630(op, r);
 // 2021/03/16 22:32
 var _5_kyu_Phone_Directory_1 = require("./5 kyu Phone Directory");
 var dr = '/+1-541-754-3010 156 Alphand_St. <J Steeve>\n 133, Green, Rd. <E Kustur> NY-56423 ;+1-541-914-3010\n' +
@@ -52,150 +73,26 @@ testing20210316(dr, '1-908-512-2222', "Phone => 1-908-512-2222, Name => Peter O'
 var _5_kyu_Mixbonacci_1 = require("./5 kyu Mixbonacci");
 chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci([], 10), []);
 chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['fib'], 0), []);
-chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['fib'], 10), [
-    0,
-    1,
-    1,
-    2,
-    3,
-    5,
-    8,
-    13,
-    21,
-    34,
-]);
+chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['fib'], 10), [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]);
 chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['pad'], 10), [1, 0, 0, 1, 0, 1, 1, 1, 2, 2]);
-chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['jac'], 10), [
-    0,
-    1,
-    1,
-    3,
-    5,
-    11,
-    21,
-    43,
-    85,
-    171,
-]);
-chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['pel'], 10), [
-    0,
-    1,
-    2,
-    5,
-    12,
-    29,
-    70,
-    169,
-    408,
-    985,
-]);
-chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['tri'], 10), [
-    0,
-    0,
-    1,
-    1,
-    2,
-    4,
-    7,
-    13,
-    24,
-    44,
-]);
-chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['tet'], 10), [
-    0,
-    0,
-    0,
-    1,
-    1,
-    2,
-    4,
-    8,
-    15,
-    29,
-]);
-chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['fib', 'tet'], 10), [
-    0,
-    0,
-    1,
-    0,
-    1,
-    0,
-    2,
-    1,
-    3,
-    1,
-]);
-chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['jac', 'jac', 'pel'], 10), [
-    0,
-    1,
-    0,
-    1,
-    3,
-    1,
-    5,
-    11,
-    2,
-    21,
-]);
+chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['jac'], 10), [0, 1, 1, 3, 5, 11, 21, 43, 85, 171]);
+chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['pel'], 10), [0, 1, 2, 5, 12, 29, 70, 169, 408, 985]);
+chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['tri'], 10), [0, 0, 1, 1, 2, 4, 7, 13, 24, 44]);
+chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['tet'], 10), [0, 0, 0, 1, 1, 2, 4, 8, 15, 29]);
+chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['fib', 'tet'], 10), [0, 0, 1, 0, 1, 0, 2, 1, 3, 1]);
+chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['jac', 'jac', 'pel'], 10), [0, 1, 0, 1, 3, 1, 5, 11, 2, 21]);
 chai_1.assert.deepStrictEqual(_5_kyu_Mixbonacci_1.mixbonacci(['pel'], 59), [
-    0,
-    1,
-    2,
-    5,
-    12,
-    29,
-    70,
-    169,
-    408,
-    985,
-    2378,
-    5741,
-    13860,
-    33461,
-    80782,
-    195025,
-    470832,
-    1136689,
-    2744210,
-    6625109,
-    15994428,
-    38613965,
-    93222358,
-    225058681,
-    543339720,
-    1311738121,
-    3166815962,
-    7645370045,
-    18457556052,
-    44560482149,
-    107578520350,
-    259717522849,
-    627013566048,
-    1513744654945,
-    3654502875938,
-    8822750406821,
-    21300003689580,
-    51422757785981,
-    124145519261542,
-    299713796309065,
-    723573111879672,
-    1746860020068409,
-    4217293152016490,
-    10181446324101388,
-    24580185800219264,
-    59341817924539920,
-    143263821649299100,
-    345869461223138200,
-    835002744095575400,
-    2015874949414289000,
-    4866752642924153000,
-    11749380235262595000,
-    28365513113449340000,
-    68480406462161280000,
-    165326326037771900000,
-    399133058537705100000,
-    963592443113182100000,
-    2.3263179447640693e21,
+    0, 1, 2, 5, 12, 29, 70, 169, 408, 985, 2378, 5741, 13860, 33461, 80782,
+    195025, 470832, 1136689, 2744210, 6625109, 15994428, 38613965, 93222358,
+    225058681, 543339720, 1311738121, 3166815962, 7645370045, 18457556052,
+    44560482149, 107578520350, 259717522849, 627013566048, 1513744654945,
+    3654502875938, 8822750406821, 21300003689580, 51422757785981,
+    124145519261542, 299713796309065, 723573111879672, 1746860020068409,
+    4217293152016490, 10181446324101388, 24580185800219264, 59341817924539920,
+    143263821649299100, 345869461223138200, 835002744095575400,
+    2015874949414289000, 4866752642924153000, 11749380235262595000,
+    28365513113449340000, 68480406462161280000, 165326326037771900000,
+    399133058537705100000, 963592443113182100000, 2.3263179447640693e21,
     5.616228332641321e21,
 ]);
 // 2021/03/04  0:04
@@ -866,21 +763,8 @@ var _7_kyu_Product_Array__Array_Series__5_1 = require("./7 kyu Product Array (Ar
 TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([12, 20]), [20, 12]);
 TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([12, 20]), [20, 12]);
 TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([3, 27, 4, 2]), [216, 24, 162, 324]);
-TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([13, 10, 5, 2, 9]), [
-    900,
-    1170,
-    2340,
-    5850,
-    1300,
-]);
-TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([16, 17, 4, 3, 5, 2]), [
-    2040,
-    1920,
-    8160,
-    10880,
-    6528,
-    16320,
-]);
+TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([13, 10, 5, 2, 9]), [900, 1170, 2340, 5850, 1300]);
+TestCodewar_1.default.assert_equals(_7_kyu_Product_Array__Array_Series__5_1.productArray([16, 17, 4, 3, 5, 2]), [2040, 1920, 8160, 10880, 6528, 16320]);
 // 2020/12/07 11:37
 var _7_kyu_Minimum_Steps__Array_Series__6_1 = require("./7 kyu Minimum Steps (Array Series #6)");
 TestCodewar_1.default.assert_equals(_7_kyu_Minimum_Steps__Array_Series__6_1.minimumSteps([4, 6, 3], 7), 1);
