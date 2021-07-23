@@ -1,5 +1,5 @@
 
-NEWFILENAME="6 kyu Reducing by steps"
+NEWFILENAME="7 kyu Summing a number's digits"
 touch "codewars/$NEWFILENAME.ts"
 
 

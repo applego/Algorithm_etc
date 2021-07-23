@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.G964 = void 0;
+exports.G964_BP = exports.G964 = void 0;
 var G964 = /** @class */ (function () {
     function G964() {
     }
@@ -73,4 +73,38 @@ var G964 = /** @class */ (function () {
     return G964;
 }());
 exports.G964 = G964;
+var G964_BP = /** @class */ (function () {
+    function G964_BP() {
+    }
+    G964_BP.gcdi = function (x, y) {
+        x = Math.abs(x);
+        y = Math.abs(y);
+        while (y !== 0) {
+            var t = x;
+            x = y;
+            y = t % y;
+        }
+        return x;
+    };
+    G964_BP.lcmu = function (a, b) {
+        return Math.abs(a * b) / G964.gcdi(a, b);
+    };
+    G964_BP.som = function (a, b) {
+        return a + b;
+    };
+    G964_BP.maxi = function (a, b) {
+        return Math.max(a, b);
+    };
+    G964_BP.mini = function (a, b) {
+        return Math.min(a, b);
+    };
+    G964_BP.operArray = function (fct, arr, init) {
+        return arr.map(function (u) {
+            init = fct(init, u);
+            return init;
+        });
+    };
+    return G964_BP;
+}());
+exports.G964_BP = G964_BP;
 //# sourceMappingURL=6 kyu Reducing by steps.js.map

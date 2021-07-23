@@ -479,4 +479,13 @@ mocha_1.describe("Fixed Tests gcdi, lcmu, som, mini, maxi", function () {
         testing_20210630(op, r);
     });
 });
+// 2021/07/23 23:06
+var _7_kyu_Summing_a_numbers_digits_1 = require("./7 kyu Summing a numbers digits");
+mocha_1.describe("example", function () {
+    mocha_1.it("test", function () {
+        chai_1.assert.equal(_7_kyu_Summing_a_numbers_digits_1.sumDigits(10), 1);
+        chai_1.assert.equal(_7_kyu_Summing_a_numbers_digits_1.sumDigits(99), 18);
+        chai_1.assert.equal(_7_kyu_Summing_a_numbers_digits_1.sumDigits(-32), 5);
+    });
+});
 //# sourceMappingURL=test.js.map
