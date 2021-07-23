@@ -550,3 +550,13 @@ describe("Fixed Tests gcdi, lcmu, som, mini, maxi", function() {
         testing_20210630(op, r);
     });
 });
+
+// 2021/07/23 23:06
+import { sumDigits } from './7 kyu Summing a numbers digits';
+describe("example", function() {
+  it("test", function() {
+    assert.equal(sumDigits(10), 1);
+    assert.equal(sumDigits(99), 18);
+    assert.equal(sumDigits(-32), 5);
+  });
+});

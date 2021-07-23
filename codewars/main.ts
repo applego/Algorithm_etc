@@ -5,6 +5,13 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from 'mocha';
 import { assert, expect } from 'chai';
 ////////////////////////////////////////////////////////////////
+// 2021/07/23 23:06
+import { sumDigits } from './7 kyu Summing a numbers digits';
+
+assert.equal(sumDigits(10), 1);
+assert.equal(sumDigits(99), 18);
+assert.equal(sumDigits(-32), 5);
+
 // 2021/06/30 16:07
 import { G964 as G964_2022_0630 } from './6 kyu Reducing by steps';
 

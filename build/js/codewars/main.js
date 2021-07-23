@@ -8,6 +8,11 @@ var TestCodewar_1 = __importDefault(require("./TestCodewar"));
 var TimeMeasure_1 = __importDefault(require("./TimeMeasure"));
 var chai_1 = require("chai");
 ////////////////////////////////////////////////////////////////
+// 2021/07/23 23:06
+var _7_kyu_Summing_a_numbers_digits_1 = require("./7 kyu Summing a numbers digits");
+chai_1.assert.equal(_7_kyu_Summing_a_numbers_digits_1.sumDigits(10), 1);
+chai_1.assert.equal(_7_kyu_Summing_a_numbers_digits_1.sumDigits(99), 18);
+chai_1.assert.equal(_7_kyu_Summing_a_numbers_digits_1.sumDigits(-32), 5);
 // 2021/06/30 16:07
 var _6_kyu_Reducing_by_steps_1 = require("./6 kyu Reducing by steps");
 function testing_20210630(actual, expected) {
