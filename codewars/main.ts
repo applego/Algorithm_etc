@@ -5,6 +5,13 @@ import TimeMeasure from './TimeMeasure';
 import { describe, it } from 'mocha';
 import { assert, expect } from 'chai';
 ////////////////////////////////////////////////////////////////
+
+// 2021/07/31 22:42
+import { expandedForm } from './6 kyu Write Number in Expanded Form';
+assert.equal(expandedForm(12), '10 + 2');
+assert.equal(expandedForm(42), '40 + 2');
+assert.equal(expandedForm(70304), '70000 + 300 + 4');
+
 // 2021/07/23 23:06
 import { sumDigits } from './7 kyu Summing a numbers digits';
 

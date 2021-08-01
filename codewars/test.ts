@@ -55,102 +55,38 @@ describe('Example Tests', () => {
   it('should work with example tests', () => {
     assert.deepStrictEqual(mixbonacci([], 10), []);
     assert.deepStrictEqual(mixbonacci(['fib'], 0), []);
-    assert.deepStrictEqual(mixbonacci(['fib'], 10), [
-      0,
-      1,
-      1,
-      2,
-      3,
-      5,
-      8,
-      13,
-      21,
-      34,
-    ]);
-    assert.deepStrictEqual(mixbonacci(['pad'], 10), [
-      1,
-      0,
-      0,
-      1,
-      0,
-      1,
-      1,
-      1,
-      2,
-      2,
-    ]);
-    assert.deepStrictEqual(mixbonacci(['jac'], 10), [
-      0,
-      1,
-      1,
-      3,
-      5,
-      11,
-      21,
-      43,
-      85,
-      171,
-    ]);
-    assert.deepStrictEqual(mixbonacci(['pel'], 10), [
-      0,
-      1,
-      2,
-      5,
-      12,
-      29,
-      70,
-      169,
-      408,
-      985,
-    ]);
-    assert.deepStrictEqual(mixbonacci(['tri'], 10), [
-      0,
-      0,
-      1,
-      1,
-      2,
-      4,
-      7,
-      13,
-      24,
-      44,
-    ]);
-    assert.deepStrictEqual(mixbonacci(['tet'], 10), [
-      0,
-      0,
-      0,
-      1,
-      1,
-      2,
-      4,
-      8,
-      15,
-      29,
-    ]);
-    assert.deepStrictEqual(mixbonacci(['fib', 'tet'], 10), [
-      0,
-      0,
-      1,
-      0,
-      1,
-      0,
-      2,
-      1,
-      3,
-      1,
-    ]);
-    assert.deepStrictEqual(mixbonacci(['jac', 'jac', 'pel'], 10), [
-      0,
-      1,
-      0,
-      1,
-      3,
-      1,
-      5,
-      11,
-      2,
-      21,
-    ]);
+    assert.deepStrictEqual(
+      mixbonacci(['fib'], 10),
+      [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+    );
+    assert.deepStrictEqual(
+      mixbonacci(['pad'], 10),
+      [1, 0, 0, 1, 0, 1, 1, 1, 2, 2]
+    );
+    assert.deepStrictEqual(
+      mixbonacci(['jac'], 10),
+      [0, 1, 1, 3, 5, 11, 21, 43, 85, 171]
+    );
+    assert.deepStrictEqual(
+      mixbonacci(['pel'], 10),
+      [0, 1, 2, 5, 12, 29, 70, 169, 408, 985]
+    );
+    assert.deepStrictEqual(
+      mixbonacci(['tri'], 10),
+      [0, 0, 1, 1, 2, 4, 7, 13, 24, 44]
+    );
+    assert.deepStrictEqual(
+      mixbonacci(['tet'], 10),
+      [0, 0, 0, 1, 1, 2, 4, 8, 15, 29]
+    );
+    assert.deepStrictEqual(
+      mixbonacci(['fib', 'tet'], 10),
+      [0, 0, 1, 0, 1, 0, 2, 1, 3, 1]
+    );
+    assert.deepStrictEqual(
+      mixbonacci(['jac', 'jac', 'pel'], 10),
+      [0, 1, 0, 1, 3, 1, 5, 11, 2, 21]
+    );
     // assert.deepStrictEqual(mixbonacci(['pel'], 59), [
     //   0,
     //   1,
@@ -526,37 +462,61 @@ describe('Basic tests2', () => {
 // 2021/06/30 15:55
 import { G964 as G964_2022_0630 } from './6 kyu Reducing by steps';
 
-function testing_20210630(actual:any, expected:any) {
+function testing_20210630(actual: any, expected: any) {
   assert.deepEqual(actual, expected);
 }
 
-describe("Fixed Tests gcdi, lcmu, som, mini, maxi", function() {
-    it("Basic tests", function() {
-        var a = [ 18, 69, -90, -78, 65, 40 ];
-        var r = [ 18, 3, 3, 3, 1, 1 ];
-        var op = G964_2022_0630.operArray(G964_2022_0630.gcdi, a, a[0]);
-        testing_20210630(op, r);
-        r = [ 18, 414, 2070, 26910, 26910, 107640 ];
-        op = G964_2022_0630.operArray(G964_2022_0630.lcmu, a, a[0]);
-        testing_20210630(op, r);
-        r = [ 18, 87, -3, -81, -16, 24 ];
-        op = G964_2022_0630.operArray(G964_2022_0630.som, a, 0);
-        testing_20210630(op, r);
-        r = [ 18, 18, -90, -90, -90, -90 ];
-        op = G964_2022_0630.operArray(G964_2022_0630.mini, a, a[0]);
-        testing_20210630(op, r);
-        r = [ 18, 69, 69, 69, 69, 69 ];
-        op = G964_2022_0630.operArray(G964_2022_0630.maxi, a, a[0]);
-        testing_20210630(op, r);
-    });
+describe('Fixed Tests gcdi, lcmu, som, mini, maxi', function () {
+  it('Basic tests', function () {
+    var a = [18, 69, -90, -78, 65, 40];
+    var r = [18, 3, 3, 3, 1, 1];
+    var op = G964_2022_0630.operArray(G964_2022_0630.gcdi, a, a[0]);
+    testing_20210630(op, r);
+    r = [18, 414, 2070, 26910, 26910, 107640];
+    op = G964_2022_0630.operArray(G964_2022_0630.lcmu, a, a[0]);
+    testing_20210630(op, r);
+    r = [18, 87, -3, -81, -16, 24];
+    op = G964_2022_0630.operArray(G964_2022_0630.som, a, 0);
+    testing_20210630(op, r);
+    r = [18, 18, -90, -90, -90, -90];
+    op = G964_2022_0630.operArray(G964_2022_0630.mini, a, a[0]);
+    testing_20210630(op, r);
+    r = [18, 69, 69, 69, 69, 69];
+    op = G964_2022_0630.operArray(G964_2022_0630.maxi, a, a[0]);
+    testing_20210630(op, r);
+  });
 });
 
 // 2021/07/23 23:06
 import { sumDigits } from './7 kyu Summing a numbers digits';
-describe("example", function() {
-  it("test", function() {
+describe('example', function () {
+  it('test', function () {
     assert.equal(sumDigits(10), 1);
     assert.equal(sumDigits(99), 18);
     assert.equal(sumDigits(-32), 5);
+  });
+});
+
+// 2021/07/31 22:42
+// import { expandedForm, yah_test1  } from './6 kyu Write Number in Expanded Form';
+import { expandedForm } from './6 kyu Write Number in Expanded Form';
+describe('Tests', () => {
+  it('test', () => {
+    assert.equal(expandedForm(12), '10 + 2');
+    assert.equal(expandedForm(42), '40 + 2');
+    assert.equal(expandedForm(70304), '70000 + 300 + 4');
+  });
+});
+
+// 2021/07/31 23:40 yah_test
+import { yah_test1_2 } from './6 kyu Write Number in Expanded Form copy';
+describe('Tests2', () => {
+  it('test', () => {
+    assert.equal(
+      yah_test1_2('1000 2000 3000 4000 5000 6000 7000 8000 9000 10000'),
+      55000
+    );
+    // assert.equal(expandedForm(42), '40 + 2');
+    // assert.equal(expandedForm(70304), '70000 + 300 + 4');
   });
 });
