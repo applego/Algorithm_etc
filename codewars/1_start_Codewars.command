@@ -16,7 +16,7 @@ ginkgo generate "7 kyu All Star Code Challenge #1_test"
 ginkgo generate "8 kyu Surface Area and Volume of a Box_test"
 
 // Python codewars
-touch "7 kyu Binary Addition.py"
+touch "6 kyu Checkerboard Resolution.py"
 
 // not work
 NEWFILENAME4="8 kyu Surface Area and Volume of a Boxt"
@@ -24,3 +24,6 @@ echo "$NEWFILENAME4_test"
 ginkgo generate "$NEWFILENAME4_test"
 
 touch "codewars/$NEWFILENAME4.go"
+
+// windowsで使用できない文字を_に変換
+find /Users/tokoshige_mac/Projects/Atcoder -depth -name '*[<>:"/\\|?*\ ]*' -execdir sh -c 'mv "$1" "$(echo "$1" | perl -pe "s/[<>:\"\/\\\\|?* ]/_/g")"' sh {} \;
