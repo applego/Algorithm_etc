@@ -16,7 +16,7 @@ ginkgo generate "7 kyu All Star Code Challenge #1_test"
 ginkgo generate "8 kyu Surface Area and Volume of a Box_test"
 
 // Python codewars
-touch "6 kyu Checkerboard Resolution.py"
+touch "codewars/6 kyu Checkerboard Resolution.py"
 
 // not work
 NEWFILENAME4="8 kyu Surface Area and Volume of a Boxt"
