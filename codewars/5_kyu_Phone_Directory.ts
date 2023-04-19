@@ -5,28 +5,28 @@
 const ErrorMessages = {
   ErrorNotFound: 'Error => Not found: num',
   ErrorTooManyPeople: 'Error => Too many people: num',
-} as const;
-type ErrorMessages = typeof ErrorMessages[keyof typeof ErrorMessages];
+} as const
+type ErrorMessages = typeof ErrorMessages[keyof typeof ErrorMessages]
 
 export class G964 {
-  private static ErrorNotFound = 'Error => Not found: ';
-  private static ErrorTooManyPeople = 'Error => Too many people: ';
+  private static ErrorNotFound = 'Error => Not found: '
+  private static ErrorTooManyPeople = 'Error => Too many people: '
   public static phone = (strng: string, num: string): string => {
-    const directories = strng.split('\n');
+    const directories = strng.split('\n')
 
-    const matchNumberlist = directories.filter((s) => s.includes(num));
-    if (matchNumberlist.length == 0) return G964.ErrorNotFound + num;
-    if (matchNumberlist.length > 1) return G964.ErrorTooManyPeople + num;
-    let s = matchNumberlist[0];
+    const matchNumberlist = directories.filter((s) => s.indexOf(num) >= 0)
+    if (matchNumberlist.length == 0) return G964.ErrorNotFound + num
+    if (matchNumberlist.length > 1) return G964.ErrorTooManyPeople + num
+    let s = matchNumberlist[0]
 
     //formated as +X-abc-def-ghij where X stands for one or two digits),
-    const regexNum = /\+[0-9]{1,2}-[0-9]{3}-[0-9]{3}-[0-9]{4}/;
-    const regexName = /<([^)]+)>/;
-    const regexName2 = /<(.+)>/;
-    let s2 = s.replace(regexNum, '');
-    const matchName = regexName.exec(s2);
-    const name = matchName ? matchName[1] : '';
-    let s3 = s2.replace(regexName, '');
+    const regexNum = /\+[0-9]{1,2}-[0-9]{3}-[0-9]{3}-[0-9]{4}/
+    const regexName = /<([^)]+)>/
+    const regexName2 = /<(.+)>/
+    let s2 = s.replace(regexNum, '')
+    const matchName = regexName.exec(s2)
+    const name = matchName ? matchName[1] : ''
+    let s3 = s2.replace(regexName, '')
     // const address = s3
     //   .trim()
     //   .split(/ |_/)
@@ -40,9 +40,9 @@ export class G964 {
       .replace(/\*|;|,|\/|\?|\$|:/g, '')
       .replace('  ', ' ')
       .replace('_', ' ')
-      .trim();
-    return `Phone => ${num}, Name => ${name}, Address => ${address}`;
-  };
+      .trim()
+    return `Phone => ${num}, Name => ${name}, Address => ${address}`
+  }
 }
 /*
 expected 'Phone => 1-541-754-3010, Name => J Steeve, Address => 156 Alphand_St.';
