@@ -12,6 +12,8 @@ int main(){
         ans += count;
         H /= 2;
         count *= 2;
+
+        // printf("H: %lld, ans: %lld, count: %lld\n", H, ans, count);
     }
     cout << ans << endl;
 }
