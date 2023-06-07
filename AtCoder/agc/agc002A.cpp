@@ -1,21 +1,37 @@
+/*
+a b
+が入力
+bはa以上の整数
+-10^9 <= a <= b <= 10^9
+
+a,a+1,a+2,...,b-1,bのすべての積が
+    正ならば：Positive
+    負ならば：Negative
+    0ならば：Zero
+を出力せよ
+
+意識、抽象化、抽象化レベルの統一（SLAP）を意識する
+TDD
+
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main(){
-  int a, b, c;
-    cin >> a >> b >> c;
+    long long a, b;
+    cin >> a >> b;
 
-    int ans = 0;
-    while(a % 2 == 0 && b % 2 == 0 && c % 2 == 0){
-        if(a == b && b == c){
-            cout << -1 << endl;
-            return 0;
+    if(a <= 0 && b >= 0){
+        cout << "Zero" << endl;
+    }else if(a > 0){
+        cout << "Positive" << endl;
+    }else{
+        if((b - a) % 2 == 0){
+            cout << "Negative" << endl;
+        }else{
+            cout << "Positive" << endl;
         }
-        int aa = a, bb = b, cc = c;
-        a = (bb + cc) / 2;
-        b = (aa + cc) / 2;
-        c = (aa + bb) / 2;
-        ans++;
     }
-    cout << ans << endl;
 }
