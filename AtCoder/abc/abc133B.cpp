@@ -132,3 +132,42 @@ int main(){
     cout << ans << endl;
     return 0;
 }
+
+// refacotr by copilot
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+int calc_distance(const std::vector<int>& x, const std::vector<int>& y) {
+    int sum = 0;
+    for (size_t i = 0; i < x.size(); i++) {
+        sum += (x[i] - y[i]) * (x[i] - y[i]);
+    }
+    return sum;
+}
+
+int main() {
+    int n, d;
+    std::cin >> n >> d;
+
+    std::vector<std::vector<int>> x(n, std::vector<int>(d));
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < d; j++) {
+            std::cin >> x[i][j];
+        }
+    }
+
+    int ans = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            int distance = calc_distance(x[i], x[j]);
+            int root = std::sqrt(distance);
+            if (root * root == distance) {
+                ans++;
+            }
+        }
+    }
+
+    std::cout << ans << '\n';
+    return 0;
+}
